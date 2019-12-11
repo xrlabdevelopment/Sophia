@@ -1,0 +1,61 @@
+# -------------------------------
+# Setup CMake minimum version
+# -------------------------------
+cmake_minimum_required(VERSION 3.10)
+
+message(STATUS "Architecture: ${CMAKE_GENERATOR_PLATFORM}")
+
+# -------------------------------
+# Setup the "DAE" solution
+# -------------------------------
+include(cmake\\version.txt)
+
+project(DAE VERSION     "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}"
+            LANGUAGES   CSharp)
+
+message(STATUS "Generating project: ${PROJECT_NAME} v${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}")
+
+# -------------------------------
+# CMake dependencies
+# -------------------------------
+include(GNUInstallDirs)
+
+include(cmake\\directories.txt)
+include(cmake\\macros.txt)
+
+# --------------------------
+# Setup global properties
+# --------------------------
+SET_PROPERTY(GLOBAL PROPERTY USE_FOLDERS ON)
+SET(CMAKE_DEBUG_POSTFIX _d)
+
+OPTION(SOPHIA_ENABLE_TESTS "Add tests to the solution" OFF)
+
+# ------------------------
+# Setup CMAKE output directories
+# ------------------------
+SET (CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG           "${OUTPUT_BINDIR}/${CONFIGURATION_DEBUG}")
+SET (CMAKE_RUNTIME_OUTPUT_DIRECTORY_MINSIZEREL      "${OUTPUT_BINDIR}/${CONFIGURATION_MINSIZEREL}")
+SET (CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO  "${OUTPUT_BINDIR}/${CONFIGURATION_RELWITHDEBINFO}")
+SET (CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE         "${OUTPUT_BINDIR}/${CONFIGURATION_RELEASE}")
+SET (CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG           "${OUTPUT_BINDIR}/${CONFIGURATION_DEBUG}")
+SET (CMAKE_LIBRARY_OUTPUT_DIRECTORY_MINSIZEREL      "${OUTPUT_BINDIR}/${CONFIGURATION_MINSIZEREL}")
+SET (CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELWITHDEBINFO  "${OUTPUT_BINDIR}/${CONFIGURATION_RELWITHDEBINFO}")
+SET (CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE         "${OUTPUT_BINDIR}/${CONFIGURATION_RELEASE}")
+SET (CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG           "${OUTPUT_BINDIR}/${CONFIGURATION_DEBUG}")
+SET (CMAKE_ARCHIVE_OUTPUT_DIRECTORY_MINSIZEREL      "${OUTPUT_BINDIR}/${CONFIGURATION_MINSIZEREL}")
+SET (CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELWITHDEBINFO  "${OUTPUT_BINDIR}/${CONFIGURATION_RELWITHDEBINFO}")
+SET (CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE         "${OUTPUT_BINDIR}/${CONFIGURATION_RELEASE}")
+
+message(STATUS "Output directory: ${OUTPUT_BINDIR}")
+
+add_subdirectory(src)
+
+# --------------------------------
+# Install readme and license file.
+# --------------------------------
+INSTALL_DIRECTORY("${CMAKE_CURRENT_SOURCE_DIR}/resources" ${SOPHIA_ADDITIONAL_FILES_INSTALL_DIR})
+
+install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE" "${CMAKE_CURRENT_SOURCE_DIR}/README.md"
+    	DESTINATION ${SOPHIA_ADDITIONAL_FILES_INSTALL_DIR}
+		PERMISSIONS OWNER_READ GROUP_READ WORLD_READ)
