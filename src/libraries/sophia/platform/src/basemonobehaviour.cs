@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Bandyte.Core
+namespace Sophia
 {
     public class BaseMonoBehaviour : MonoBehaviour
     {
