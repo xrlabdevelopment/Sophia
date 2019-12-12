@@ -1,5 +1,5 @@
-namespace Sophia
+namespace Sophia.Core
 {
-    public interface IActor
+    public interface IActor : IIdentifier
     {}
 }
