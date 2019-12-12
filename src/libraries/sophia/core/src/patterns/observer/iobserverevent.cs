@@ -1,4 +1,4 @@
-namespace Sophia
+namespace Sophia.Core
 {
     public interface IObserverEvent
     {
