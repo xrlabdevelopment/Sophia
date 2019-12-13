@@ -30,6 +30,8 @@ REM --------------------------------------------
 REM Build the Sophia library in Debug and Release
 "%MSBUILD%" %SOPHIA_LIB%/core/sophia_core.csproj /p:Configuration=Debug /p:Platform="x64" 
 "%MSBUILD%" %SOPHIA_LIB%/core/sophia_core.csproj /p:Configuration=Release /p:Platform="x64" 
+"%MSBUILD%" %SOPHIA_LIB%/core/sophia_editor.csproj /p:Configuration=Debug /p:Platform="x64" 
+"%MSBUILD%" %SOPHIA_LIB%/core/sophia_editor.csproj /p:Configuration=Release /p:Platform="x64" 
 "%MSBUILD%" %SOPHIA_LIB%/platform/sophia_platform.csproj /p:Configuration=Debug /p:Platform="x64" 
 "%MSBUILD%" %SOPHIA_LIB%/platform/sophia_platform.csproj /p:Configuration=Release /p:Platform="x64"
 
