@@ -6,20 +6,8 @@ namespace Sophia.Platform
     {
         public abstract IActor Parent { get; }
 
-        public int ID
-        {
-            get
-            {
-                return GetInstanceID();
-            }
-        }
-        public string Name
-        {
-            get
-            {
-                return gameObject.name;
-            }
-        }
+        public abstract int ID { get; }
+        public abstract string Name { get; }
 
         //--------------------------------------------------------------------------------------
         public abstract bool drop();

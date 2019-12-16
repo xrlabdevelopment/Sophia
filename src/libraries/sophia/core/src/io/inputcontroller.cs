@@ -1,11 +1,10 @@
 using System.Collections.Generic;
-
 namespace Sophia.Core
 {
     public abstract class InputController
     {
-        private readonly List<InputKeyCommand>  input_key_commands;
-        private readonly List<InputAxisCommand> input_axis_commands;
+        private readonly List<InputKeyCommand>  input_key_commands = new List<InputKeyCommand>();
+        private readonly List<InputAxisCommand> input_axis_commands = new List<InputAxisCommand>();
 
         //--------------------------------------------------------------------------------------
         public abstract void initialize();
