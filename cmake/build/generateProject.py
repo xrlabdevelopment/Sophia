@@ -21,6 +21,8 @@ if __name__ == '__main__':
     
     t = timeit.default_timer()
 
+    print("\tTarget folder: " + sys.argv[1])
+
     # Retrieve root directory & build directory
     src_dir = retrieveSrcDir()       
     build_dir = os.path.join(os.path.split(src_dir)[0],sys.argv[1])
@@ -40,7 +42,7 @@ if __name__ == '__main__':
     for argument in sys.argv[3:] :
         if argument:
             print('\t\tCommand found:' + argument)
-            cmd = "%s %s" %(cmd, argument)
+            cmd = "%s \"%s\"" %(cmd, argument)
             
     print("\tStarting %s" % cmd)
     print('\n')
