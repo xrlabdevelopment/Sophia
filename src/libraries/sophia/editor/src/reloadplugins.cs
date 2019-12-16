@@ -8,7 +8,7 @@ namespace Sophia.Editor
         [MenuItem("Tools/Reload Plugins %r")]
         static void reload()
         {
-            Debug.Log("Reload Plugins")
+            Debug.Log("Reload Plugins");
         }
     }
 }
