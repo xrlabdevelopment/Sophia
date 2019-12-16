@@ -17,13 +17,13 @@ ENDMACRO(GROUPSOURCES)
 ##########################################################################################################
 #  Macro to setup install directories
 ##########################################################################################################
-macro(SETUP_INSTALL_DIRECTORIES LIBNAME LIBEXPORTNAME)
+macro(SETUP_INSTALL_DIRECTORIES LIBNAME LIBEXPORTNAME UNITYVERSION)
 
 install(TARGETS ${LIBNAME} EXPORT ${LIBEXPORTNAME}
-    RUNTIME       DESTINATION ${REX_RUNTIME_INSTALL_DIR}
-    LIBRARY       DESTINATION ${REX_LIBRARY_INSTALL_DIR}
-    ARCHIVE       DESTINATION ${REX_ARCHIVE_INSTALL_DIR}
-    FRAMEWORK     DESTINATION ${REX_FRAMEWORK_INSTALL_DIR})
+    RUNTIME       DESTINATION "${SOPHIA_RUNTIME_INSTALL_DIR}/${UNITYVERSION}"
+    LIBRARY       DESTINATION "${SOPHIA_LIBRARY_INSTALL_DIR}/${UNITYVERSION}"
+    ARCHIVE       DESTINATION "${SOPHIA_ARCHIVE_INSTALL_DIR}/${UNITYVERSION}"
+    FRAMEWORK     DESTINATION "${SOPHIA_FRAMEWORK_INSTALL_DIR}/${UNITYVERSION}")
 
 endmacro(SETUP_INSTALL_DIRECTORIES)
 ##########################################################################################################
