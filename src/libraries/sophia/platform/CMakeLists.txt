@@ -38,6 +38,6 @@ target_link_libraries(${PLATFORM_LIBRARY_NAME} PUBLIC sophia_core)
 # --------------------------
 # Install.
 # --------------------------
-SETUP_INSTALL_DIRECTORIES(${PLATFORM_LIBRARY_NAME} sophia_platform_targets)
+SETUP_INSTALL_DIRECTORIES(${PLATFORM_LIBRARY_NAME} sophia_platform_targets ${SOPHIA_UNITY_VERSION})
 
 INSTALL_DIRECTORY("${CURRENT_PLATFORM_PATH}/src/" ${SOPHIA_INC_INSTALL_DIR})

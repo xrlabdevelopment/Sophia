@@ -39,6 +39,6 @@ target_link_libraries(${EDITOR_LIBRARY_NAME} PUBLIC sophia_core)
 # --------------------------
 # Install.
 # --------------------------
-SETUP_INSTALL_DIRECTORIES(${EDITOR_LIBRARY_NAME} sophia_editor_targets)
+SETUP_INSTALL_DIRECTORIES(${EDITOR_LIBRARY_NAME} sophia_editor_targets ${SOPHIA_UNITY_VERSION})
 
 INSTALL_DIRECTORY("${CURRENT_EDITOR_PATH}/src/" ${SOPHIA_INC_INSTALL_DIR})

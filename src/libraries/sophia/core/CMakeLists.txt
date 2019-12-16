@@ -42,7 +42,7 @@ set_property(TARGET ${CORE_LIBRARY_NAME} PROPERTY VS_DOTNET_REFERENCES
 # --------------------------
 # Install.
 # --------------------------
-SETUP_INSTALL_DIRECTORIES(${CORE_LIBRARY_NAME} sophia_core_targets)
+SETUP_INSTALL_DIRECTORIES(${CORE_LIBRARY_NAME} sophia_core_targets ${SOPHIA_UNITY_VERSION})
 
 INSTALL_DIRECTORY("${CURRENT_CORE_PATH}/src/" ${SOPHIA_INC_INSTALL_DIR})
 
