@@ -34,9 +34,16 @@ def get_drives():
     return drives
 
 # look for msbuild installed on this machine and return the location
+# retrieve the latest version
 def get_msbuild_dir(vs_version_years, vs_version_types):
+    msbuild_dirs = []
+    
     drives = get_drives()
     for drive in drives:
+        # when one install location is found on a specific drive we have enough
+        if len(msbuild_dirs) > 0 and parse_all == 0:
+            break
+        
         start = drive + ":\\"
         
         print("Looking for MSBuild.exe in: " + start)
@@ -45,8 +52,22 @@ def get_msbuild_dir(vs_version_years, vs_version_types):
                 if filename == "MSBuild.exe":
                     for vs_version_type in vs_version_types:
                         for vs_version_year in vs_version_years:
-                            if vs_version_type in root and vs_version_year in root:
-                                return root
+                            if vs_version_type in root and str(vs_version_year) in root and "amd" not in root:
+                                msbuild_dirs.append(root)
+                                
+    print("Found versions of MSBuild.exe: ")
+    for msbuild_dir in msbuild_dirs:
+        print("\t" + msbuild_dir)
+    
+    # sort on years, retrieve latest version
+    # 2019, 2017, 2015, ...
+    vs_version_years.sort(reverse = True)
+    for vs_version_year in vs_version_years:
+        for msbuild_dir in msbuild_dirs :
+            if str(vs_version_year) in msbuild_dir:
+                return msbuild_dir
+                
+    return ""
 
 # retrieve all supported unity versions
 # this is done by using the year a unity version was released
@@ -128,12 +149,19 @@ if __name__ == '__main__':
     parse_all = 0
     if "-parse_all" in sys.argv:
         parse_all = 1
-        print("Parsing all drives")
-        print("")
+        print("\tParsing all drives")
     if "-master" in sys.argv:
-        print("Checking out master, connecting to repository ...")
+        print("\tChecking out master, connecting to repository ...")
         os.system("git checkout master")
+    reload = 0
+    if "-reload" in sys.argv:
+        reload = 1
+        print("\tReloading all directories")
 
+    # this if check is only present to layout the terminal a bit more.
+    if len(sys.argv) > 1:
+        print("")
+        
     print("Pulling changes from repository ...")
     os.system("git pull")
 
@@ -148,8 +176,8 @@ if __name__ == '__main__':
     print("")
     
     # Supported VS versions
-    vs_version_years = ["2017", "2019"]
-    vs_version_types = ["Community","Professional","Enterprise"]
+    vs_version_years = [2019, 2017]
+    vs_version_types = ["Enterprise","Professional","Community"]
 
     print("Supported VS version years: " + str(vs_version_years))
     print("Supported VS version types: " + str(vs_version_types))
@@ -160,11 +188,11 @@ if __name__ == '__main__':
 
     # Load the directory from disk if present
     # Save the directory to disk otherwise
-    if os.path.isfile('msbuild_dir.txt'):
+    if os.path.isfile('msbuild_dir.txt') and reload == 0:
         file = open("msbuild_dir.txt", "r")
         msbuild_directory = file.read()
 
-        if not os.path.isdir(msbuild_directory):    # if the directory is not valid anymore, reload it
+        if not os.path.isdir(msbuild_directory) or msbuild_directory == "":    # if the directory is not valid anymore, reload it
             msbuild_directory = get_msbuild_dir(vs_version_years, vs_version_types)
             write_msbuild_dir("msbuild_dir.txt", msbuild_dir)
     else:
@@ -179,7 +207,7 @@ if __name__ == '__main__':
         os.system("exit")
     else:
         print("")
-        print("Found MSBuild.exe in: " + msbuild_directory)
+        print("We picked MSBuild.exe in: " + msbuild_directory)
     print("--------------------------------------------") 
     # ---------------------------------------------------
     
@@ -192,7 +220,7 @@ if __name__ == '__main__':
 
     print("Supported Unity years: " + str(supported_versions))
     
-    if os.path.isfile('installed_unity_version_directories.txt') and os.path.isfile('installed_unity_versions.txt'):
+    if os.path.isfile('installed_unity_version_directories.txt') and os.path.isfile('installed_unity_versions.txt') and reload == 0:
         dirty = 0
         
         directories_file = open("installed_unity_version_directories.txt", "r")
@@ -231,8 +259,12 @@ if __name__ == '__main__':
     if installed_unity_versions[-1] == "":
         installed_unity_versions.pop()
 
-    print("Unity version directories: \t" + str(installed_unity_version_directories))
-    print("Unity versions: \t" + str(installed_unity_versions))
+    print("Unity version directories:")
+    for installed_unity_version_directory in installed_unity_version_directories:
+        print("\t" + installed_unity_version_directory)
+    print("Unity versions:")
+    for installed_unity_version in installed_unity_versions:
+        print("\t" + installed_unity_version)
     
     if len(installed_unity_version_directories) != len(installed_unity_versions):
         logging.error("Size of unity directories and unity versions is not the same this cannot happen!")
