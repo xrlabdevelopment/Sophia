@@ -66,14 +66,14 @@ def get_supported_unity_version_years(supported_years):
 # when an executable named "Unity.exe" is found the directory is checked if it contains one of the supported versions + " Editor " 
 # eg.   2018.../Editor
 #       2019.../Editor        
-def get_installed_unity_version_directories(supported_versions):
+def get_installed_unity_version_directories(supported_versions, parse_all):
     installed_unity_versions = []
 
     drives = get_drives()
     for drive in drives:
 
-        # one one install location is found we have enough
-        if len(installed_unity_versions) > 0:
+        # when one install location is found on a specific drive we have enough
+        if len(installed_unity_versions) > 0 and parse_all == 0:
             return installed_unity_versions
 
 
@@ -121,6 +121,15 @@ if __name__ == '__main__':
            
     os.system("cls")
 
+    print("Argument List: \t" + str(sys.argv))
+
+    # Parse arguments
+    parse_all = 0
+    if "-parse_all" in sys.argv:
+        parse_all = 1
+        print("Parsing all drives")
+
+    print("")
     print("Source directory: \t" + dae_source)
     print("Build directory: \t" + dae_build)
     
@@ -152,7 +161,7 @@ if __name__ == '__main__':
             write_msbuild_dir("msbuild_dir.txt", msbuild_dir)
     else:
         msbuild_directory = get_msbuild_dir(vs_version_years, vs_version_types)
-        write_msbuild_dir("msbuild_dir.txt", msbuild_dir)
+        write_msbuild_dir("msbuild_dir.txt", msbuild_directory)
 
     msbuild_path = msbuild_directory + "\\MSBuild.exe"
     
@@ -195,7 +204,7 @@ if __name__ == '__main__':
         # when our installed unity version directory file is out of date
         # we write all versions found versions back to disk
         if dirty > 0:
-            installed_unity_version_directories = get_installed_unity_version_directories(supported_versions)
+            installed_unity_version_directories = get_installed_unity_version_directories(supported_versions, parse_all)
             installed_unity_versions = get_installed_unity_versions(installed_unity_version_directories)
             
             write_to_disk(installed_unity_version_directories, "installed_unity_version_directories.txt")
@@ -203,7 +212,7 @@ if __name__ == '__main__':
         else:
             installed_unity_versions = versions_content.split("\n")
     else:
-        installed_unity_version_directories = get_installed_unity_version_directories(supported_versions)
+        installed_unity_version_directories = get_installed_unity_version_directories(supported_versions, parse_all)
         installed_unity_versions = get_installed_unity_versions(installed_unity_version_directories)
 
         write_to_disk(installed_unity_version_directories, "installed_unity_version_directories.txt")
