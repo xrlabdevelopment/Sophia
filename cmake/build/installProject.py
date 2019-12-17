@@ -122,12 +122,20 @@ if __name__ == '__main__':
     os.system("cls")
 
     print("Argument List: \t" + str(sys.argv))
+    print("")
 
     # Parse arguments
     parse_all = 0
     if "-parse_all" in sys.argv:
         parse_all = 1
         print("Parsing all drives")
+        print("")
+    if "-master" in sys.argv:
+        print("Checking out master, connecting to repository ...")
+        os.system("git checkout master")
+
+    print("Pulling changes from repository ...")
+    os.system("git pull")
 
     print("")
     print("Source directory: \t" + dae_source)
