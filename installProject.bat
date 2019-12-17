@@ -1,0 +1,1 @@
+"%~dp0cmake\build\installProject.py" "%*"
