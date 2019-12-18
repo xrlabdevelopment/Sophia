@@ -10,8 +10,8 @@ namespace Sophia.Platform
         public abstract string Name { get; }
 
         //--------------------------------------------------------------------------------------
-        public abstract bool drop();
+        public abstract bool pickup(IActor actor);
         //--------------------------------------------------------------------------------------
-        public abstract bool pickup();
+        public abstract bool drop();
     }
 }

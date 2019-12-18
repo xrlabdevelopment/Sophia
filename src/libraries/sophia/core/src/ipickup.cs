@@ -4,7 +4,7 @@ namespace Sophia.Core
     {
         IActor Parent { get; }
 
-        bool pickup();
+        bool pickup(IActor actor);
         bool drop();
     }
 }
