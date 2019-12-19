@@ -37,7 +37,14 @@ install(DIRECTORY ${INSTALLDIRECTORY}
     DIRECTORY_PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
 
 endmacro(INSTALL_DIRECTORY)
+##########################################################################################################
+#  Macro to install pdb files
+##########################################################################################################
+macro(INSTALL_PDB LIBNAME UNITYVERSION)
 
+install(FILES $<TARGET_PDB_FILE:${LIBNAME}> DESTINATION ${SOPHIA_RUNTIME_INSTALL_DIR}/${UNITYVERSION} OPTIONAL)
+
+endmacro(INSTALL_PDB)
 ##########################################################################################################
 #  Macro to setup a library
 ##########################################################################################################
