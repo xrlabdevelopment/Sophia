@@ -12,9 +12,23 @@ namespace Sophia.Core
             }
         }
 
+        public bool IsMultifuntional
+        {
+            get
+            {
+                return is_multi_funtional;
+            }
+
+            set
+            {
+                is_multi_funtional = value;
+            }
+        }
+
         private KeyCode key_code;
         private KeyState key_state;
         private IInputManager input_manager;
+        private bool is_multi_funtional;
 
         //--------------------------------------------------------------------------------------
         /// <summary>
@@ -23,20 +37,20 @@ namespace Sophia.Core
         /// <param name="code">Key we need to check</param>
         /// <param name="state">State of the key we need to check</param>
         /// <param name="manager">Inputmanager to use</param>
-        public InputKeyCommand(KeyCode code, KeyState state, IInputManager manager)
+        public InputKeyCommand(KeyCode code, KeyState state, IInputManager manager, MultiFunctionalCommand multi)
         {
             key_code = code;
             key_state = state;
-
             input_manager = manager;
-        }
+            is_multi_funtional = multi == MultiFunctionalCommand.YES;
+    }
 
         //--------------------------------------------------------------------------------------
         /// <summary>
         /// Execute the input command
         /// </summary>
         /// <param name="receiver">The receiver of the input command</param>
-        public abstract void execute(ICommandReceiver receiver);
+        public abstract bool execute(ICommandReceiver receiver);
 
         //--------------------------------------------------------------------------------------
         /// <summary>

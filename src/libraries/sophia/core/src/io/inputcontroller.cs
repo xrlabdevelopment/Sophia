@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+
 namespace Sophia.Core
 {
     public abstract class InputController
@@ -37,13 +38,18 @@ namespace Sophia.Core
         private void processKeyCommands(List<InputKeyCommand> commands, ICommandReceiver receiver)
         {
             foreach (InputKeyCommand command in commands)
-                command.execute(receiver);
+            {
+                if (command.execute(receiver) && !command.IsMultifuntional) break;
+            }
+                
         }
         //--------------------------------------------------------------------------------------
         private void processAxisCommands(List<InputAxisCommand> commands, ICommandReceiver receiver)
         {
             foreach (InputAxisCommand command in commands)
-                command.execute(receiver);
+            {
+                if (command.execute(receiver) && !command.IsMultifuntional) break;
+            }
         }
     }
 }
