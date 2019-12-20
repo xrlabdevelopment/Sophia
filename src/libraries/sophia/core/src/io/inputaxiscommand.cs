@@ -6,6 +6,14 @@ namespace Sophia.Core
     {
         //--------------------------------------------------------------------------------------
         // Properties
+        public string AxisName
+        {
+            get { return input_axis_name; }
+        }
+        public float AxisValue
+        {
+            get { return input_axis_value; }
+        }
         public IInputManager InputManager
         {
             get
@@ -13,7 +21,6 @@ namespace Sophia.Core
                 return input_manager;
             }
         }
-
         public bool IsMultifuntional
         {
             get
