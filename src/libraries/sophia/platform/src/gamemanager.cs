@@ -1,28 +1,39 @@
+using UnityEngine;
+
 namespace Sophia.Platform
 {
-    public class GameManager : Singleton<GameManager>
+    public abstract class GameManager : BaseMonoBehaviour
     {
+        #region Unity Messages
+
         //--------------------------------------------------------------------------------------
-        protected override void onAwake()
+        private void Awake()
         {
-            // Nothing to implement
+            onAwake();
         }
         //--------------------------------------------------------------------------------------
-        protected override void onStart()
+        private void Start()
         {
-            // Nothing to implement
+            onStart();
         }
 
         //--------------------------------------------------------------------------------------
-        protected override void onUpdate(float dTime)
+        private void Update()
         {
-            // Nothing to implement
+            onUpdate(Time.deltaTime);
         }
 
         //--------------------------------------------------------------------------------------
-        protected override void onDestroy()
+        private void onDestroy()
         {
-            // Nothing to implement
+            onShutDown();
         }
+
+        #endregion
+
+        protected abstract void onAwake();
+        protected abstract void onStart();
+        protected abstract void onUpdate(float dTime);
+        protected abstract void onShutDown();
     }
 }
