@@ -18,6 +18,17 @@ namespace Sophia.Platform
         }
 
         //--------------------------------------------------------------------------------------
+        private void OnEnable()
+        {
+            onEnableAndActive();
+        }
+        //--------------------------------------------------------------------------------------
+        private void OnDisable()
+        {
+            onDisable();
+        }
+
+        //--------------------------------------------------------------------------------------
         private void Update()
         {
             onUpdate(Time.deltaTime);
@@ -33,6 +44,8 @@ namespace Sophia.Platform
 
         protected abstract void onAwake();
         protected abstract void onStart();
+        protected abstract void onEnableAndActive();
+        protected abstract void onDisable();
         protected abstract void onUpdate(float dTime);
         protected abstract void onShutDown();
     }
