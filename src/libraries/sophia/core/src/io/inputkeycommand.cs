@@ -80,22 +80,26 @@ namespace Sophia.Core
         //--------------------------------------------------------------------------------------
         private bool isDown()
         {
-            return input_manager.isDown(key_code);
+            IDesktopInputManager desktop_input_manager = input_manager as IDesktopInputManager;
+            return desktop_input_manager.isDown(key_code);
         }
         //--------------------------------------------------------------------------------------
         private bool isUp()
         {
-            return input_manager.isUp(key_code);
+            IDesktopInputManager desktop_input_manager = input_manager as IDesktopInputManager;
+            return desktop_input_manager.isUp(key_code);
         }
         //--------------------------------------------------------------------------------------
         private bool isPressed()
         {
-            return input_manager.isPressed(key_code);
+            IDesktopInputManager desktop_input_manager = input_manager as IDesktopInputManager;
+            return desktop_input_manager.isPressed(key_code);
         }
         //--------------------------------------------------------------------------------------
         private bool isReleased()
         {
-            return input_manager.isReleased(key_code);
+            IDesktopInputManager desktop_input_manager = input_manager as IDesktopInputManager;
+            return desktop_input_manager.isReleased(key_code);
         }
     }
 }
