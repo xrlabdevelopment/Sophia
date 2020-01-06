@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace Sophia.Platform
 {
-    public class DesktopInputManager : IInputManager
-    {
+    public class DesktopInputManager : IInputManager, IDesktopInputManager
+    {       
         //-------------------------------------------------------------------------------------
         public float getAxis(string axis)
         {
