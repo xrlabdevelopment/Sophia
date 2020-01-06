@@ -1,6 +1,7 @@
+using Sophia.Core;
 using System;
 
-namespace Sophia.Core
+namespace Sophia.Platform
 {
     public abstract class InputTouchCommand : IInputCommand
     {
@@ -59,7 +60,8 @@ namespace Sophia.Core
         /// <returns>True if the command is triggered, false if not</returns>
         public bool isTriggered()
         {
-            return false;
+            IMobileInputManager mobile_input_manager = input_manager as IMobileInputManager;
+            return mobile_input_manager.touchCount > 0;
         }
     }
 }
