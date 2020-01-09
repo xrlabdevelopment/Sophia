@@ -1,3 +1,0 @@
-[submodule "src/extern/json"]
-	path = src/extern/json
-	url = https://github.com/JamesNK/Newtonsoft.Json.git
