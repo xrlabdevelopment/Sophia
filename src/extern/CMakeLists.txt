@@ -1,4 +1,4 @@
 # --------------------------------
 # Add subdirectories
 # --------------------------------
-add_subdirectory(Json)
+add_subdirectory(json)
