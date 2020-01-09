@@ -11,9 +11,6 @@ namespace Sophia.Platform
         [Tooltip("Should the cursor be locked to the center of the screen")]
         private bool LockCursor = true;
         [SerializeField]
-        [Tooltip("Should we rotate the target with the camera")]
-        private bool RotateTargetTowardsLookingDirection = true;
-        [SerializeField]
         [Tooltip("Should we invert the camera")]
         private bool InvertedCamera = false;
 
