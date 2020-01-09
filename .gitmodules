@@ -1,0 +1,3 @@
+[submodule "src/extern/Json.Net"]
+	path = src/extern/Json.Net
+	url = ../../xrlabdevelopment/json.net.git
