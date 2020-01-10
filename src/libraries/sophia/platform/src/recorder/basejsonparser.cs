@@ -1,6 +1,7 @@
 using Sophia.Core;
 using System.IO;
 using UnityEngine;
+using Newtonsoft.Json;
 
 namespace Sophia.Platform
 {
@@ -22,13 +23,13 @@ namespace Sophia.Platform
                 return false;
 
             file_path += "/" + file_name + ".json";
-            //string output = JsonConvert.SerializeObject(toSaveClass);
+            string output = JsonConvert.SerializeObject(toSaveClass);
             Debug.Log("saved to: " + file_path);
 
             //Try to write to file
             using (StreamWriter file = File.AppendText(file_path))
             {
-              //  file.Write(output);
+                file.Write(output);
                 return true;
             }
 
@@ -45,7 +46,7 @@ namespace Sophia.Platform
             using (StreamReader reader = new StreamReader(file_path))
             {
                 output = reader.ReadToEnd();
-               //toLoadClass = JsonConvert.DeserializeObject<T>(output);
+               toLoadClass = JsonConvert.DeserializeObject<T>(output);
                 return true;
             }
 
