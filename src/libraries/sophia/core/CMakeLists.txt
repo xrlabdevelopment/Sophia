@@ -40,6 +40,8 @@ set_property(TARGET ${CORE_LIBRARY_NAME} PROPERTY VS_DOTNET_REFERENCES
                     "System"
                     "Newtonsoft.Json")
 
+target_link_libraries(${CORE_LIBRARY_NAME} PUBLIC "Newtonsoft.Json")
+
 # --------------------------
 # Install.
 # --------------------------
