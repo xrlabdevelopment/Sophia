@@ -28,7 +28,7 @@ SETUP_WORKING_DIRECTORY(${EDITOR_LIBRARY_NAME})
 # --------------------------
 # Target link libraries.
 # --------------------------
-set_property(TARGET ${EDITOR_LIBRARY_NAME} PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.0")
+set_property(TARGET ${EDITOR_LIBRARY_NAME} PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.5")
 set_property(TARGET ${EDITOR_LIBRARY_NAME} PROPERTY VS_DOTNET_REFERENCES 
                     "System"
                     "${UNITY_ENGINE_DLL}"
