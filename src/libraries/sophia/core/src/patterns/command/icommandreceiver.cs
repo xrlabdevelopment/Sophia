@@ -1,7 +1,4 @@
 namespace Sophia.Core
 {
-    public interface ICommandReceiver
-    {
-
-    }
+    public interface ICommandReceiver {}
 }
