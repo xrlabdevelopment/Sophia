@@ -1,44 +1,52 @@
+using Sophia.Core;
 using UnityEngine;
 
 namespace Sophia.Platform
 {
     class AssemblyManager
     {
-        private const float THRESHOLD = 0.2f;
+        //--------------------------------------------------------------------------------------
+        // Constants
+        private readonly float THRESHOLD = 0.2f;
 
-        public delegate int OnAssemble(GameObject assemble, int idAssemblePiece1, int idAssemblePiece2);
+        //--------------------------------------------------------------------------------------
+        // Delegates
+        public delegate int Assemble(ConnectionPoint connectionPoint1, AssemblyPiece assembly1, ConnectionPoint connectionPoint2, AssemblyPiece assembly2);
 
-        public bool DoAssemble(GameObject assemblePiece1, GameObject assemblePiece2)
+        public Assemble OnAssemble;
+
+        //--------------------------------------------------------------------------------------
+        public bool assemble(GameObject assemblePiece1, GameObject assemblePiece2)
         {
             if (assemblePiece1 == null || assemblePiece2 == null)
             {
-                var errorName = assemblePiece1 == null ? "first" : "second";
-                Debug.Log("NULL ERROR: the" + errorName + " assemblePiece passed to the DoAssemble(GameObject,GameObject) was NULL.");
+                Debug.Log(string.Format("The {0} assemblePiece passed to the assemble(GameObject,GameObject) was NULL.", assemblePiece1 == null ? "first" : "second"));
                 return false;
             }
 
-            var asPiece1 = assemblePiece1.GetComponent<BaseAssemblyPiece>();
-            var asPiece2 = assemblePiece2.GetComponent<BaseAssemblyPiece>();
+            AssemblyPiece as_piece1 = assemblePiece1.GetComponent<AssemblyPiece>();
+            AssemblyPiece as_piece2 = assemblePiece2.GetComponent<AssemblyPiece>();
 
-            if (asPiece1 == null || asPiece1 == null)
+            if (as_piece1 == null || as_piece1 == null)
             {
-                var errorName = asPiece1 == null ? assemblePiece1.name : assemblePiece2.name;
-                Debug.Log("NULL ERROR: " + errorName + " doesn't contain an IAssemblyPiece.");
+                Debug.Log(string.Format("{0} doesn't contain an IAssemblyPiece.", as_piece1 == null ? assemblePiece1.name : assemblePiece2.name));
                 return false;
             }
 
-
-            for (int i = 0; i < asPiece1.RequiredPoints.Count; i++)
+            foreach (ConnectionPoint cp1 in as_piece1.RequiredPoints)
             {
-                foreach (var cp2 in asPiece2.ConnectionPoints)
+                foreach (ConnectionPoint cp2 in as_piece2.ConnectionPoints)
                 {
-                    if (asPiece1.RequiredPoints[i] == cp2)
+                    if(cp1 != cp2)
+                        continue;
+                    
+                    if (Vector3.Distance(cp1.transform.position, cp2.transform.position) <= THRESHOLD)
                     {
-                        if (Vector3.Distance(asPiece1.ConnectionPoints[i].transform.position, cp2.transform.position) <= THRESHOLD)
-                        {
-                            cp2.transform.parent.parent = asPiece1.transform;
-                            return true;
-                        }
+                        cp2.transform.parent.parent = as_piece1.transform;
+                        if(OnAssemble != null)
+                            OnAssemble(cp1, as_piece1, cp2, as_piece2);
+
+                        return true;
                     }
                 }
             }
