@@ -1,4 +1,9 @@
+using System;
+
 namespace Sophia.Core
 {
-    public interface IAction{}
+    public interface IAction
+    {
+        Guid UUID { get; }
+    }
 }
