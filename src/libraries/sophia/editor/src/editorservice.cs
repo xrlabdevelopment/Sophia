@@ -54,7 +54,6 @@ namespace Sophia.Editor
             }
 
             //
-            // List that will store the files we need to copy
             // List that will store the threads who will copy the files
             //
             copy_tasks = new List<ITask>();
