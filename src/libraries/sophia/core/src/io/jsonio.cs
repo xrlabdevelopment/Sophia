@@ -1,9 +1,9 @@
 using Sophia.Core;
 using System.IO;
 using System.Diagnostics;
-//using Newtonsoft.Json;
+using Newtonsoft.Json;
 
-namespace Sophia.Platform
+namespace Sophia.Core
 {
     public static class JsonIO
     {
@@ -31,15 +31,13 @@ namespace Sophia.Platform
             //
             using (StreamWriter file = File.AppendText(filePath))
             {
-                //string output = JsonConvert.SerializeObject(toSaveClass);
-                //if (string.IsNullOrEmpty(output))
-                //    return string.Empty;
+                string output = JsonConvert.SerializeObject(toSaveClass);
+                if (string.IsNullOrEmpty(output))
+                    return string.Empty;
 
-                //file.Write(output);
-                //return output;
+                file.Write(output);
+                return output;
             }
-
-            return string.Empty;
         }
         //--------------------------------------------------------------------------------------
         public static T load<T>(string filePath, string fileName)
@@ -59,18 +57,16 @@ namespace Sophia.Platform
             //
             using (StreamReader reader = new StreamReader(filePath))
             {
-                //string input = reader.ReadToEnd();
-                //if (string.IsNullOrEmpty(input))
-                //    return default(T);
+                string input = reader.ReadToEnd();
+                if (string.IsNullOrEmpty(input))
+                    return default(T);
 
-                //T output = JsonConvert.DeserializeObject<T>(input);
-                //if (output == null)
-                //    return default(T);
+                T output = JsonConvert.DeserializeObject<T>(input);
+                if (output == null)
+                    return default(T);
 
-                //return output;
+                return output;
             }
-
-            return default(T);
         }
     }
 }
