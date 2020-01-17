@@ -22,5 +22,5 @@ endif()
 # --------------------------------
 # Add subdirectories
 # --------------------------------
-add_subdirectory(extern)
+#add_subdirectory(extern)
 add_subdirectory(libraries)
