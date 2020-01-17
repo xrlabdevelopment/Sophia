@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Sophia.Platform
 {
-    public class FPSCameraHandler : BaseMonoBehaviour, ICommandReceiver
+    public abstract class FPSCameraHandler : BaseMonoBehaviour, ICommandReceiver
     {
         //--------------------------------------------------------------------------------------
         // Inspector
@@ -40,7 +40,7 @@ namespace Sophia.Platform
         #region Unity Messages
 
         //--------------------------------------------------------------------------------------
-        private void Awake()
+        protected virtual void Awake()
         {
             Debug.Assert(Target != null, "No target was assigned.");
 
@@ -52,20 +52,31 @@ namespace Sophia.Platform
         }
 
         //--------------------------------------------------------------------------------------
-        private void Start()
+        protected virtual void Start()
         {
             if(LockCursor)
                 Cursor.lockState = CursorLockMode.Locked;
         }
 
         //--------------------------------------------------------------------------------------
-        private void LateUpdate()
+        protected virtual void LateUpdate()
         {
             transform.position = Target.position + CameraTargetOffset;
         }
 
         //--------------------------------------------------------------------------------------
-        private void OnDrawGizmos()
+        protected virtual void OnDestroy()
+        {
+            // Nothing to implement.
+        }
+        //--------------------------------------------------------------------------------------
+        protected virtual void OnApplicationQuit()
+        {
+            // Nothing to implement.
+        }
+
+        //--------------------------------------------------------------------------------------
+        protected virtual void OnDrawGizmos()
         {
             if (Target == null)
                 return;
