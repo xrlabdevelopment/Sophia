@@ -167,17 +167,17 @@ namespace Sophia.Editor
         }
 
         //--------------------------------------------------------------------------------------
-        private void checkSophiaDLLWriteTime(string pluginName)
+        private void checkSophiaDLLWriteTime(string path)
         {
-            string plugin_path = CURRENT_INSTALL_LOCATION + pluginName;
+            string plugin_path = path;
 
             if (File.Exists(plugin_path))
             {
                 DateTime time = File.GetLastWriteTime(plugin_path);
                 if (time_stamps[plugin_path] < time)
                 {
-                    scheduleCopy(plugin_path, Application.dataPath + "\\Plugins\\" + pluginName, true);
-                    Debug.Log(pluginName + " was scheduled to be copied");
+                    scheduleCopy(plugin_path, Application.dataPath + "\\Plugins\\" + Path.GetFileName(plugin_path), true);
+                    Debug.Log(plugin_path + " was scheduled to be copied");
 
                     time_stamps[plugin_path] = time;
                 }
