@@ -118,11 +118,61 @@ namespace Sophia.Editor
         //--------------------------------------------------------------------------------------
         private void update()
         {
+            checkSophiaDLLRemoval();
+            checkSophiaDLLCopy();
+        }
+        //--------------------------------------------------------------------------------------
+        private void stop()
+        {
+            if (!is_running)
+                return;
+
+            copy_tasks.Clear();
+
+            EditorApplication.quitting -= stop;
+            EditorApplication.update -= update;
+
+            is_running = false;
+        }
+
+        //--------------------------------------------------------------------------------------
+        private void checkSophiaDLLRemoval()
+        {
+            List<string> to_remove = new List<string>();
+            foreach (string file_path in Directory.GetFiles(CURRENT_INSTALL_LOCATION))
+            {
+                string unity_file_path = Application.dataPath + "\\Plugins\\" + Path.GetFileName(file_path);
+                if (!unity_file_path.Contains(DLL_EXTENTION))
+                    continue;
+
+#if !_DEBUG
+                
+                if (File.Exists(unity_file_path) && unity_file_path.Contains(DEBUG_POSTFIX + DLL_EXTENTION))
+                    to_remove.Add(unity_file_path);
+#else
+                string file_name = Application.dataPath + "\\Plugins\\" + Path.GetFileName(file_path);
+                if (!file_name.Contains(DEBUG_POSTFIX + DLL_EXTENTION))
+                    to_remove.Add(file_name);
+#endif
+            }
+
+            if (to_remove.Count == 0)
+                return;
+
+            foreach (string file_path in to_remove)
+            {
+                File.Delete(file_path);
+                Debug.Log("Removing: " + file_path);
+            }
+        }
+        //--------------------------------------------------------------------------------------
+        private void checkSophiaDLLCopy()
+        {
             // Do not check if files need to be copied when we alread have scheduled tasks.
             if (copy_tasks.Count != 0)
                 return;
 
-            if(is_ready_to_refresh)
+            if (is_ready_to_refresh)
             {
                 AssetDatabase.Refresh();
                 is_ready_to_refresh = false;
@@ -143,29 +193,15 @@ namespace Sophia.Editor
                 }
             }
 
-            if(copy_tasks.Count > 0)
+            if (copy_tasks.Count > 0)
             {
-                foreach(ITask task in copy_tasks)
+                foreach (ITask task in copy_tasks)
                 {
                     Thread thread = new Thread(new ThreadStart(task.execute));
                     thread.Start();
                 }
             }
         }
-        //--------------------------------------------------------------------------------------
-        private void stop()
-        {
-            if (!is_running)
-                return;
-
-            copy_tasks.Clear();
-
-            EditorApplication.quitting -= stop;
-            EditorApplication.update -= update;
-
-            is_running = false;
-        }
-
         //--------------------------------------------------------------------------------------
         private void checkSophiaDLLWriteTime(string path)
         {
