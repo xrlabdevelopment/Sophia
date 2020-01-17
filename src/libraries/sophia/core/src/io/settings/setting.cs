@@ -1,4 +1,4 @@
-//using Newtonsoft.Json;
+using Newtonsoft.Json;
 
 namespace Sophia.Core
 {
@@ -33,8 +33,7 @@ namespace Sophia.Core
         //-------------------------------------------------------------------------------------
         public string serialize()
         {
-            //return JsonConvert.SerializeObject(this);
-            return string.Empty;
+            return JsonConvert.SerializeObject(this);
         }
 
         //-------------------------------------------------------------------------------------
