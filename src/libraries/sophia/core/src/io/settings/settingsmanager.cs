@@ -1,28 +1,59 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Sophia.Core
 {
+
     public class SettingsManager
     {
+
         //-------------------------------------------------------------------------------------
         // Fields
-        private List<Setting> settings;
+        private Dictionary<string, Settings> cachedsettings;
+        private string datapath;
 
         //-------------------------------------------------------------------------------------
-        public SettingsManager()
+        public SettingsManager(string datapath)
         {
-            settings = new List<Setting>();
+            cachedsettings = new Dictionary<string, Settings>();
+            this.datapath = datapath;
         }
-
         //-------------------------------------------------------------------------------------
-        public bool load(string path)
+        public T load<T>()
         {
+            if (cachedsettings.ContainsKey(typeof(T).Name))
+            {
+                if (cachedsettings[typeof(T).Name] is T)
+                {
+                    return (T)(object)cachedsettings[typeof(T).Name];
+                }
+            }
+
+            string path = Path.Combine(datapath, typeof(T).Name + ".json");
+            if (!File.Exists(path))
+            {
+                return default(T);
+            }
+
+            string json = File.ReadAllText(path);
+            T result = JsonConvert.DeserializeObject<T>(json);
+            Settings loadedSettings = (Settings)(object)result;
+            loadedSettings.SettingsUpdated += updateCache;
+            cachedsettings.Add(typeof(T).Name, loadedSettings);
+            return result;
+        }
+        //-------------------------------------------------------------------------------------
+        public bool save<T>(Settings settings)
+        {
+            string path = Path.Combine(datapath, typeof(T).Name + ".json");
+            settings.save(path);
             return false;
         }
         //-------------------------------------------------------------------------------------
-        public bool save(string path)
+        public void updateCache(object changedSettings, System.EventArgs e)
         {
-            return false;
+            cachedsettings[e.ToString()] = (Settings)changedSettings;
         }
     }
 }
