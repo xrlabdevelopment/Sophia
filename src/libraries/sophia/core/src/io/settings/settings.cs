@@ -23,6 +23,11 @@ namespace Sophia.Core
         {
             return JsonConvert.SerializeObject(this);
         }
+
+        private void update()
+        {
+            //SettingsUpdated?.Invoke(this, new SettingEventArgs(GetType().Name)); //C# language version 6
+        }
     }
 
     public class SettingEventArgs : System.EventArgs

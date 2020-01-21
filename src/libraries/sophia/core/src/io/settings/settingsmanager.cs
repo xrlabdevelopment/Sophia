@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using Newtonsoft.Json;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace Sophia.Core
 {
@@ -49,6 +49,16 @@ namespace Sophia.Core
             string path = Path.Combine(datapath, typeof(T).Name + ".json");
             settings.save(path);
             return false;
+        }
+        //-------------------------------------------------------------------------------------
+        public void resetSettings()
+        {
+            cachedsettings.Clear();
+            string[] savefiles = Directory.GetFiles(datapath, "*.json");
+            foreach (string setting in savefiles)
+            {
+                File.Delete(setting);
+            }
         }
         //-------------------------------------------------------------------------------------
         public void updateCache(object changedSettings, System.EventArgs e)
