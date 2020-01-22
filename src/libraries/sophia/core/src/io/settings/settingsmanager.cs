@@ -7,12 +7,11 @@ namespace Sophia.Core
 
     public class SettingsManager
     {
-
         //-------------------------------------------------------------------------------------
         // Fields
-        private Dictionary<string, Settings> cachedsettings;
-        private string datapath;
-
+        private readonly Dictionary<string, Settings> cachedsettings;
+        private readonly string datapath;
+        private readonly string extention = ".json";
         //-------------------------------------------------------------------------------------
         public SettingsManager(string datapath)
         {
@@ -20,17 +19,18 @@ namespace Sophia.Core
             this.datapath = datapath;
         }
         //-------------------------------------------------------------------------------------
-        public T load<T>()
+        public T load<T>() where T : Setting
         {
-            if (cachedsettings.ContainsKey(typeof(T).Name))
+            string setting = typeof(T).Name;
+            if (cachedsettings.ContainsKey(setting))
             {
-                if (cachedsettings[typeof(T).Name] is T)
+                if (cachedsettings[setting] is T)
                 {
-                    return (T)(object)cachedsettings[typeof(T).Name];
+                    return cachedsettings[setting] as T;
                 }
             }
 
-            string path = Path.Combine(datapath, typeof(T).Name + ".json");
+            string path = Path.Combine(datapath, setting + extention);
             if (!File.Exists(path))
             {
                 return default(T);
@@ -38,32 +38,35 @@ namespace Sophia.Core
 
             string json = File.ReadAllText(path);
             T result = JsonConvert.DeserializeObject<T>(json);
-            Settings loadedSettings = (Settings)(object)result;
-            loadedSettings.SettingsUpdated += updateCache;
-            cachedsettings.Add(typeof(T).Name, loadedSettings);
+            Settings loaded_settings = result as Settings;
+            loaded_settings.SettingsUpdated += updateCache;
+            cachedsettings.Add(setting, loaded_settings);
             return result;
         }
         //-------------------------------------------------------------------------------------
-        public bool save<T>(Settings settings)
+        public bool save()
         {
-            string path = Path.Combine(datapath, typeof(T).Name + ".json");
-            settings.save(path);
+            foreach (KeyValuePair<string, Settings> settings in cachedsettings)
+            {
+                string path = Path.Combine(datapath, settings.Key + extention);
+                settings.Value.save(path);
+            }
             return false;
         }
         //-------------------------------------------------------------------------------------
         public void resetSettings()
         {
             cachedsettings.Clear();
-            string[] savefiles = Directory.GetFiles(datapath, "*.json");
+            string[] savefiles = Directory.GetFiles(datapath, "*" + extention);
             foreach (string setting in savefiles)
             {
                 File.Delete(setting);
             }
         }
         //-------------------------------------------------------------------------------------
-        public void updateCache(object changedSettings, System.EventArgs e)
+        public void updateCache(object changedSettings, SettingEventArgs e)
         {
-            cachedsettings[e.ToString()] = (Settings)changedSettings;
+            cachedsettings[e.SettingsType] = (Settings)changedSettings;
         }
     }
 }

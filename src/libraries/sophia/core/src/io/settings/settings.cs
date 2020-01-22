@@ -6,7 +6,7 @@ namespace Sophia.Core
 {
     public abstract class Settings
     {
-        public System.EventHandler SettingsUpdated;
+        public System.EventHandler<SettingEventArgs> SettingsUpdated;
         //-------------------------------------------------------------------------------------
         public Settings()
         {
