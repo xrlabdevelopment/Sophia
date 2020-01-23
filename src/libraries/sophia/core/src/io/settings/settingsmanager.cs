@@ -53,7 +53,8 @@ namespace Sophia.Core
             {
                 settings.Value.save(Path.Combine(data_path, settings.Key + extention));
             }
-            return false;
+
+            return true;
         }
 
         //-------------------------------------------------------------------------------------
