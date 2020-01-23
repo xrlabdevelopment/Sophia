@@ -1,28 +1,42 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Sophia.Core
 {
-    public class Settings
+    public abstract class Settings
     {
         //-------------------------------------------------------------------------------------
-        // Fields
-        private List<Setting> settings;
+        // Properties
+        public System.EventHandler<SettingEventArgs> SettingsUpdated;
 
         //-------------------------------------------------------------------------------------
-        public Settings()
+        internal void save(string path)
         {
-            settings = new List<Setting>();
+            File.WriteAllText(path, serialize());
         }
 
         //-------------------------------------------------------------------------------------
-        public bool load(string path)
+        private string serialize()
         {
-            return false;
+            return JsonConvert.SerializeObject(this);
         }
+    }
+
+    public class SettingEventArgs : System.EventArgs
+    {
         //-------------------------------------------------------------------------------------
-        public bool save(string path)
+        // Properties
+        public string SettingsType
         {
-            return false;
+            get;
+            set;
+        }
+
+        //-------------------------------------------------------------------------------------
+        public SettingEventArgs(string settings)
+        {
+            SettingsType = settings;
         }
     }
 }
