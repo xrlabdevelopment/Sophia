@@ -4,69 +4,74 @@ using Newtonsoft.Json;
 
 namespace Sophia.Core
 {
-
     public class SettingsManager
     {
         //-------------------------------------------------------------------------------------
         // Fields
-        private readonly Dictionary<string, Settings> cachedsettings;
-        private readonly string datapath;
+        private readonly Dictionary<string, Settings> cached_settings;
+        private readonly string data_path;
         private readonly string extention = ".json";
+
         //-------------------------------------------------------------------------------------
-        public SettingsManager(string datapath)
+        public SettingsManager(string data_path)
         {
-            cachedsettings = new Dictionary<string, Settings>();
-            this.datapath = datapath;
+            cached_settings = new Dictionary<string, Settings>();
+            this.data_path = data_path;
         }
+
         //-------------------------------------------------------------------------------------
         public T load<T>() where T : Setting
         {
             string setting = typeof(T).Name;
-            if (cachedsettings.ContainsKey(setting))
+            if (cached_settings.ContainsKey(setting))
             {
-                if (cachedsettings[setting] is T)
+                if (cached_settings[setting] is T)
                 {
-                    return cachedsettings[setting] as T;
+                    return cached_settings[setting] as T;
                 }
             }
 
-            string path = Path.Combine(datapath, setting + extention);
+            string path = Path.Combine(data_path, setting + extention);
             if (!File.Exists(path))
             {
                 return default(T);
             }
 
-            string json = File.ReadAllText(path);
-            T result = JsonConvert.DeserializeObject<T>(json);
+            T result = JsonConvert.DeserializeObject<T>(File.ReadAllText(path));
+
             Settings loaded_settings = result as Settings;
             loaded_settings.SettingsUpdated += updateCache;
-            cachedsettings.Add(setting, loaded_settings);
+
+            cached_settings.Add(setting, loaded_settings);
+
             return result;
         }
         //-------------------------------------------------------------------------------------
         public bool save()
         {
-            foreach (KeyValuePair<string, Settings> settings in cachedsettings)
+            foreach (KeyValuePair<string, Settings> settings in cached_settings)
             {
-                string path = Path.Combine(datapath, settings.Key + extention);
-                settings.Value.save(path);
+                settings.Value.save(Path.Combine(data_path, settings.Key + extention));
             }
             return false;
         }
+
         //-------------------------------------------------------------------------------------
         public void resetSettings()
         {
-            cachedsettings.Clear();
-            string[] savefiles = Directory.GetFiles(datapath, "*" + extention);
+            cached_settings.Clear();
+
+            string[] savefiles = Directory.GetFiles(data_path, "*" + extention);
             foreach (string setting in savefiles)
             {
                 File.Delete(setting);
             }
         }
+
         //-------------------------------------------------------------------------------------
         public void updateCache(object changedSettings, SettingEventArgs e)
         {
-            cachedsettings[e.SettingsType] = (Settings)changedSettings;
+            cached_settings[e.SettingsType] = (Settings)changedSettings;
         }
     }
 }

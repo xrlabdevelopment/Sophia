@@ -6,33 +6,34 @@ namespace Sophia.Core
 {
     public abstract class Settings
     {
-        public System.EventHandler<SettingEventArgs> SettingsUpdated;
         //-------------------------------------------------------------------------------------
-        public Settings()
-        {
-        }
+        // Properties
+        public System.EventHandler<SettingEventArgs> SettingsUpdated;
 
         //-------------------------------------------------------------------------------------
         internal void save(string path)
         {
-            string data = serialize();
-            File.WriteAllText(path, data);
+            File.WriteAllText(path, serialize());
         }
+
         //-------------------------------------------------------------------------------------
         private string serialize()
         {
             return JsonConvert.SerializeObject(this);
         }
-
-        private void update()
-        {
-            //SettingsUpdated?.Invoke(this, new SettingEventArgs(GetType().Name)); //C# language version 6
-        }
     }
 
     public class SettingEventArgs : System.EventArgs
     {
-        public string SettingsType { get; set; }
+        //-------------------------------------------------------------------------------------
+        // Properties
+        public string SettingsType
+        {
+            get;
+            set;
+        }
+
+        //-------------------------------------------------------------------------------------
         public SettingEventArgs(string settings)
         {
             SettingsType = settings;
