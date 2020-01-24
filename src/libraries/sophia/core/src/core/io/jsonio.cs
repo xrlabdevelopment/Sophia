@@ -2,7 +2,7 @@ using Sophia.Core;
 using System.IO;
 using System.Diagnostics;
 using Newtonsoft.Json;
-namespace Sophia.Platform
+namespace Sophia.Core
 {
     public static class JsonIO
     {

@@ -1,26 +1,11 @@
-using Sophia.Core;
 using System;
 
-namespace Sophia.Platform
+namespace Sophia.Core
 {
-    public enum JoyStickAxis
-    {
-        HORIZONTAL,
-        VERTICAL
-    }
-
-    public abstract class InputJoyStickCommand : IInputCommand
+    public abstract class InputTouchCommand : IInputCommand
     {
         //--------------------------------------------------------------------------------------
         // Properties
-        public string AxisName
-        {
-            get { return input_axis.ToString(); }
-        }
-        public float AxisValue
-        {
-            get { return input_axis_value; }
-        }
         public IInputManager InputManager
         {
             get
@@ -28,6 +13,7 @@ namespace Sophia.Platform
                 return input_manager;
             }
         }
+
         public bool IsMultifuntional
         {
             get
@@ -43,8 +29,6 @@ namespace Sophia.Platform
 
         //--------------------------------------------------------------------------------------
         // Fields
-        private JoyStickAxis input_axis;
-        private float input_axis_value;
         private IInputManager input_manager;
         private bool is_multi_funtional;
 
@@ -54,9 +38,8 @@ namespace Sophia.Platform
         /// </summary>
         /// <param name="axis">axis of the input command</param>
         /// <param name="manager">input manager to use</param>
-        public InputJoyStickCommand(JoyStickAxis axis, IInputManager manager, MultiFunctionalCommand multi)
+        public InputTouchCommand(IInputManager manager, MultiFunctionalCommand multi)
         {
-            input_axis = axis;
             input_manager = manager;
             is_multi_funtional = multi == MultiFunctionalCommand.YES;
         }
@@ -76,8 +59,8 @@ namespace Sophia.Platform
         /// <returns>True if the command is triggered, false if not</returns>
         public bool isTriggered()
         {
-            input_axis_value = input_manager.getAxis(AxisName);
-            return Math.Abs(input_axis_value) > float.Epsilon;
+            IMobileInputManager mobile_input_manager = input_manager as IMobileInputManager;
+            return mobile_input_manager.touchCount > 0;
         }
     }
 }

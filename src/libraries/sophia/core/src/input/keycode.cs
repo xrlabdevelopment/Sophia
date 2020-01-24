@@ -1,4 +1,4 @@
-// This is a copy of the UnityEngine.dll KeyCode.cs file.
+//  This is a copy of the UnityEngine.dll KeyCode.cs file.
 // 	I did not wanna introduce a dependency towards Unity just for using a key code.
 //	If for some reason in the future this list might change, it might be better to move to towards Sophia.Platform.
 

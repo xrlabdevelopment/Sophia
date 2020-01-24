@@ -59,30 +59,16 @@ namespace Sophia.Core
         /// Notify all observers something happend
         /// </summary>
         /// <param name="evt">The event that occured</param>
-        public virtual void notify(IObserverEvent evt)
+        public virtual void notify(IEvent evt)
         {
             if (observers.Count == 0)
                 return;
 
-            List<int> should_remove = new List<int>();
+            // Remove all null objects
+            observers.RemoveAll(o => o == null);
 
-            int i = 0;
             foreach(IObserver observer in observers)
-            {
-                if(observer != null)
-                {
-                    observer.notify(this, evt);
-                }
-                else
-                {
-                    should_remove.Add(i);
-                }
-
-                ++i;
-            }
-
-            foreach (int index in should_remove)
-                observers.RemoveAt(index);
+                observer.notify(this, evt);
         }
 
         //--------------------------------------------------------------------------------------
