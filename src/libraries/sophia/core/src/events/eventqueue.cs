@@ -43,11 +43,22 @@ namespace Sophia.Core
         //-------------------------------------------------------------------------------------
         public void push(IEvent evt)
         {
+            // When there are no handlers it is of no use to push any events.
+            if (handlers.Count == 0)
+                return;
+
             events.Enqueue(evt);
         }
         //-------------------------------------------------------------------------------------
         public void broadcast()
         {
+            // When nobody is handling our events ...
+            // When there are no events to handle ...
+            //      We do nothing.
+            if (handlers.Count == 0 || events.Count == 0)
+                return;
+
+
             if (!locked)
             {
                 Task task = tasks.Count == 0
