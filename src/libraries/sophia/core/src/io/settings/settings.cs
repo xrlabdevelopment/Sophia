@@ -1,42 +1,51 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.IO;
+using System.Diagnostics;
 
 namespace Sophia.Core
 {
-    public abstract class Settings
+    public abstract class Settings : Subject
     {
         //-------------------------------------------------------------------------------------
-        // Properties
-        public System.EventHandler<SettingEventArgs> SettingsUpdated;
+        // Fields
+        private List<Setting> settings;
 
         //-------------------------------------------------------------------------------------
-        internal void save(string path)
+        protected Settings()
         {
-            File.WriteAllText(path, serialize());
+            settings = new List<Setting>();
         }
 
         //-------------------------------------------------------------------------------------
-        private string serialize()
+        public void addSetting(Setting setting)
         {
-            return JsonConvert.SerializeObject(this);
-        }
-    }
+            Setting s = settings.Find(s => s.Key == setting.Key);
+            if (s != null)
+                return;
 
-    public class SettingEventArgs : System.EventArgs
-    {
-        //-------------------------------------------------------------------------------------
-        // Properties
-        public string SettingsType
-        {
-            get;
-            set;
+            setting.onChanged += onSettingChanged;
+            settings.Add(setting);
         }
 
         //-------------------------------------------------------------------------------------
-        public SettingEventArgs(string settings)
+        public string serialize()
         {
-            SettingsType = settings;
+            return JsonConvert.SerializeObject(settings);
+        }
+        //-------------------------------------------------------------------------------------
+        public void deserialize(string serializedData)
+        {
+            settings = JsonConvert.DeserializeObject<List<Setting>>(serializedData);
+        }
+
+        //-------------------------------------------------------------------------------------
+        private void onSettingChanged(string key, string value)
+        {
+            Debug.Assert(string.Empty == key, "Setting key is empty");
+            Debug.Assert(string.Empty == value, "Setting value is empty");
+
+            notify();
         }
     }
 }
