@@ -100,7 +100,7 @@ namespace Sophia.Core
         /// <summary>
         /// Constructor of the subject clas
         /// </summary>
-        public Subject()
+        public EventSubject()
         {
             observers = new List<IEventObserver>();
         }

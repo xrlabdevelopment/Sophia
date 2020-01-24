@@ -18,14 +18,14 @@ namespace Sophia.Core
         }
 
         //-------------------------------------------------------------------------------------
-        public void addSetting(Setting setting)
+        public void addSetting(Setting newSetting)
         {
-            Setting s = settings.Find(s => s.Key == setting.Key);
-            if (s != null)
+            Setting setting = settings.Find(s => s.Key == newSetting.Key);
+            if (setting != null)
                 return;
 
-            setting.onChanged += onSettingChanged;
-            settings.Add(setting);
+            newSetting.onChanged += onSettingChanged;
+            settings.Add(newSetting);
         }
 
         //-------------------------------------------------------------------------------------
