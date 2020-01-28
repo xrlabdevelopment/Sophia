@@ -31,7 +31,7 @@ namespace Sophia.Editor
         private bool is_running = false;
         
         private static Dictionary<string, DateTime> time_stamps;
-        private static List<ITask> copy_tasks;
+        private static List<Task> copy_tasks;
         private static bool is_ready_to_refresh = false;
 
         //--------------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ namespace Sophia.Editor
             //
             // List that will store the threads who will copy the files
             //
-            copy_tasks = new List<ITask>();
+            copy_tasks = new List<Task>();
 
             //
             // Store last write time stamp
@@ -195,7 +195,11 @@ namespace Sophia.Editor
 
             if (copy_tasks.Count > 0)
             {
+<<<<<<< HEAD
                 foreach (ITask task in copy_tasks)
+=======
+                foreach(Task task in copy_tasks)
+>>>>>>> bug/reorder_files
                 {
                     Thread thread = new Thread(new ThreadStart(task.execute));
                     thread.Start();
@@ -221,12 +225,12 @@ namespace Sophia.Editor
         }
 
         //--------------------------------------------------------------------------------------
-        private static void onStartedCopy(ITask task)
+        private static void onStartedCopy(Task task)
         {
             // Nothing to implement
         }
         //--------------------------------------------------------------------------------------
-        private static void onFinishedCopy(ITask task)
+        private static void onFinishedCopy(Task task)
         {
             if(copy_tasks.IndexOf(task) != -1)
                 copy_tasks.Remove(task);

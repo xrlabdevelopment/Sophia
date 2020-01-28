@@ -88,12 +88,12 @@ namespace Sophia.Core
         }
 
         //-------------------------------------------------------------------------------------
-        private void startedBroadCasting(ITask task)
+        private void startedBroadCasting(Task task)
         {
             locked = true;
         }
         //-------------------------------------------------------------------------------------
-        private void stoppedBroadCasting(ITask task)
+        private void stoppedBroadCasting(Task task)
         {
             locked = false;
         }

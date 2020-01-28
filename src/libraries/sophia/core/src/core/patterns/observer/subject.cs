@@ -59,17 +59,31 @@ namespace Sophia.Core
         /// Notify all observers something happend
         /// </summary>
         /// <param name="evt">The event that occured</param>
+<<<<<<< HEAD:src/libraries/sophia/core/src/patterns/observer/subject.cs
         public virtual bool notify()
+=======
+        public virtual void notify(IEvent evt)
+>>>>>>> bug/reorder_files:src/libraries/sophia/core/src/core/patterns/observer/subject.cs
         {
             observers.RemoveAll(o => o == null);
 
             if (observers.Count == 0)
+<<<<<<< HEAD:src/libraries/sophia/core/src/patterns/observer/subject.cs
                 return false;
 
             bool handled = false;
             foreach (IObserver observer in observers)
                 handled |= observer.notify(this);
             return handled;
+=======
+                return;
+
+            // Remove all null objects
+            observers.RemoveAll(o => o == null);
+
+            foreach(IObserver observer in observers)
+                observer.notify(this, evt);
+>>>>>>> bug/reorder_files:src/libraries/sophia/core/src/core/patterns/observer/subject.cs
         }
 
         //--------------------------------------------------------------------------------------
@@ -82,6 +96,7 @@ namespace Sophia.Core
             return observers;
         }
     }
+<<<<<<< HEAD:src/libraries/sophia/core/src/patterns/observer/subject.cs
 
     public class EventSubject
     {
@@ -163,4 +178,6 @@ namespace Sophia.Core
             return observers;
         }
     }
+=======
+>>>>>>> bug/reorder_files:src/libraries/sophia/core/src/core/patterns/observer/subject.cs
 }
