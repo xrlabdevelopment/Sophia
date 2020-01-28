@@ -27,6 +27,14 @@ namespace Sophia.Core
             newSetting.onChanged += onSettingChanged;
             settings.Add(newSetting);
         }
+        //-------------------------------------------------------------------------------------
+        public Setting getSetting(string name)
+        {
+            Setting setting = settings.Find(s => s.Key == name);
+            return setting != null
+                ? setting
+                : null;
+        }
 
         //-------------------------------------------------------------------------------------
         public string serialize()
