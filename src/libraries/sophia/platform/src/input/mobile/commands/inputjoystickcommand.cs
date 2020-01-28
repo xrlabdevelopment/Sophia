@@ -1,7 +1,7 @@
 using Sophia.Core;
 using System;
 
-namespace Sophia.Core
+namespace Sophia.Platform
 {
     public enum JoyStickAxis
     {

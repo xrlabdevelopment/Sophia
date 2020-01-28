@@ -195,11 +195,7 @@ namespace Sophia.Editor
 
             if (copy_tasks.Count > 0)
             {
-<<<<<<< HEAD
-                foreach (ITask task in copy_tasks)
-=======
                 foreach(Task task in copy_tasks)
->>>>>>> bug/reorder_files
                 {
                     Thread thread = new Thread(new ThreadStart(task.execute));
                     thread.Start();

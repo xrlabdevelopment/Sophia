@@ -2,10 +2,7 @@ using Sophia.Core;
 using System.IO;
 using System.Diagnostics;
 using Newtonsoft.Json;
-<<<<<<< HEAD:src/libraries/sophia/core/src/input/jsonio.cs
 
-=======
->>>>>>> bug/reorder_files:src/libraries/sophia/core/src/core/io/jsonio.cs
 namespace Sophia.Core
 {
     public static class JsonIO
