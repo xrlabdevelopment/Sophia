@@ -1,9 +1,9 @@
-using Sophia.Core;
-using UnityEngine;
-
 namespace Sophia.Platform
 {
-    class AssemblyManager
+    using Sophia.Core;
+    using UnityEngine;
+
+    public class AssemblyManager: MonoBehaviour
     {
         //--------------------------------------------------------------------------------------
         // Constants
@@ -11,7 +11,7 @@ namespace Sophia.Platform
 
         //--------------------------------------------------------------------------------------
         // Delegates
-        public delegate int Assemble(ConnectionPoint connectionPoint1, AssemblyPiece assembly1, ConnectionPoint connectionPoint2, AssemblyPiece assembly2);
+        public delegate void Assemble(ConnectionPoint connectionPoint1, AssemblyPiece assembly1, ConnectionPoint connectionPoint2, AssemblyPiece assembly2);
 
         public Assemble OnAssemble;
 
@@ -42,9 +42,9 @@ namespace Sophia.Platform
                     
                     if (Vector3.Distance(cp1.transform.position, cp2.transform.position) <= THRESHOLD)
                     {
-                        cp2.transform.parent.parent = as_piece1.transform;
+                       // cp2.transform.parent.parent = as_piece1.transform;
                         if(OnAssemble != null)
-                            OnAssemble(cp1, as_piece1, cp2, as_piece2);
+                            OnAssemble.Invoke(cp1, as_piece1, cp2, as_piece2);
 
                         return true;
                     }
