@@ -3,7 +3,6 @@ namespace Sophia.Platform
     using Sophia.Core;
     using UnityEngine;
 
-    [RequireComponent(typeof(AssemblyManager))]
     public abstract class BaseAssemble : BaseMonoBehaviour
     {
         //--------------------------------------------------------------------------------------
@@ -13,7 +12,7 @@ namespace Sophia.Platform
         //--------------------------------------------------------------------------------------
         private void Start()
         {
-            assembly_manager = this.GetComponent<AssemblyManager>();
+            assembly_manager = AssemblyManager.Instance;
             if (assembly_manager != null)
                 assembly_manager.OnAssemble += onAssemble;
             else
