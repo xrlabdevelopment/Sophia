@@ -53,20 +53,28 @@ namespace Sophia.Platform
             return false;
         }
 
+        //--------------------------------------------------------------------------------------
         protected override void onAwake()
         {
+            // Nothing to implement
         }
 
+        //--------------------------------------------------------------------------------------
         protected override void onStart()
         {
+            // Nothing to implement
         }
 
+        //--------------------------------------------------------------------------------------
         protected override void onUpdate(float dTime)
         {
+            // Nothing to implement
         }
 
+        //--------------------------------------------------------------------------------------
         protected override void onDestroy()
         {
+            // Nothing to implement
         }
     }
 }

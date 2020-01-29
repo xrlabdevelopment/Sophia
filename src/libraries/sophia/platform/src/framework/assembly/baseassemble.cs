@@ -7,7 +7,7 @@ namespace Sophia.Platform
     {
         //--------------------------------------------------------------------------------------
         // private variables
-        private AssemblyManager assembly_manager;
+        private AssemblyManager assembly_manager = null;
 
         //--------------------------------------------------------------------------------------
         private void Start()
@@ -19,6 +19,7 @@ namespace Sophia.Platform
                 Debug.Log(string.Format("The assemblePiece with name {0} doesn't have an assembly manager script", this.name));
         }
 
+        //--------------------------------------------------------------------------------------
         protected abstract void onAssemble(ConnectionPoint connectionPoint1, AssemblyPiece assembly1, ConnectionPoint connectionPoint2, AssemblyPiece assembly2);
     }
 }
