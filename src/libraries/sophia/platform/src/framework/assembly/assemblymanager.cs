@@ -3,7 +3,7 @@ namespace Sophia.Platform
     using Sophia.Core;
     using UnityEngine;
 
-    public class AssemblyManager: MonoBehaviour
+    public class AssemblyManager: Singleton<AssemblyManager>
     {
         //--------------------------------------------------------------------------------------
         // Constants
@@ -42,7 +42,6 @@ namespace Sophia.Platform
                     
                     if (Vector3.Distance(cp1.transform.position, cp2.transform.position) <= THRESHOLD)
                     {
-                       // cp2.transform.parent.parent = as_piece1.transform;
                         if(OnAssemble != null)
                             OnAssemble.Invoke(cp1, as_piece1, cp2, as_piece2);
 
@@ -52,6 +51,22 @@ namespace Sophia.Platform
             }
 
             return false;
+        }
+
+        protected override void onAwake()
+        {
+        }
+
+        protected override void onStart()
+        {
+        }
+
+        protected override void onUpdate(float dTime)
+        {
+        }
+
+        protected override void onDestroy()
+        {
         }
     }
 }
