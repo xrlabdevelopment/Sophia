@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Sophia.Platform
 {
-	public abstract class Singleton<T> : MonoBehaviour 
+	public abstract class Singleton<T> : BaseMonoBehaviour 
 		where T : Component
 	{
 		//--------------------------------------------------------------------------------------
