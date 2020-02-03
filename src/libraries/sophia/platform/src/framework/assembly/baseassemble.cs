@@ -6,7 +6,7 @@ namespace Sophia.Platform
     public abstract class BaseAssemble : BaseMonoBehaviour
     {
         //--------------------------------------------------------------------------------------
-        // private variables
+        // Fields
         private AssemblyManager assembly_manager = null;
 
         //--------------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ namespace Sophia.Platform
             if (assembly_manager != null)
                 assembly_manager.OnAssemble += onAssemble;
             else
-                Debug.Log(string.Format("The assemblePiece with name {0} doesn't have an assembly manager script", this.name));
+                Debug.Log(string.Format("The assemblePiece with name {0} doesn't have an assembly manager script", name));
         }
 
         //--------------------------------------------------------------------------------------
