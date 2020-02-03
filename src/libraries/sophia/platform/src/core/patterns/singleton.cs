@@ -15,11 +15,18 @@ namespace Sophia.Platform
 		{
 			get	{ return instance; }
 		}
-	
-		#region Unity Messages
-	
-		//--------------------------------------------------------------------------------------
-		private void Awake()
+
+        //--------------------------------------------------------------------------------------
+        public static U getAs<U>()
+            where U : BaseMonoBehaviour
+        {
+            return Singleton<T>.Instance as U;
+        }
+
+        #region Unity Messages
+
+        //--------------------------------------------------------------------------------------
+        private void Awake()
 		{
 			if (instance == null)
 			{
