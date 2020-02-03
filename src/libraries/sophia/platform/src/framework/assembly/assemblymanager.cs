@@ -3,7 +3,7 @@ namespace Sophia.Platform
     using Sophia.Core;
     using UnityEngine;
 
-    public class AssemblyManager: Singleton<AssemblyManager>
+    public class AssemblyManager : Singleton<AssemblyManager>
     {
         //--------------------------------------------------------------------------------------
         // Constants

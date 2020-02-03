@@ -3,7 +3,7 @@ namespace Sophia.Platform
     using Sophia.Core;
     using UnityEngine;
 
-    public class AssembleParent: BaseAssemble
+    public class AssembleParent : BaseAssemble
     {
 
     //--------------------------------------------------------------------------------------
