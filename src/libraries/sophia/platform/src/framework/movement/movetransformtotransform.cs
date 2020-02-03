@@ -20,19 +20,22 @@ namespace Sophia.Platform
         //--------------------------------------------------------------------------------------
         private void smoothDampToObject(float moveTime)
         {
-            var movement = Vector3.SmoothDamp(moving_object.position, object_to_move_to.position, ref current_velocity, moveTime);
-            moving_object.transform.position = movement;
+            if (moving_object != null && object_to_move_to != null)
+            {
+                var movement = Vector3.SmoothDamp(moving_object.position, object_to_move_to.position, ref current_velocity, moveTime);
+                moving_object.transform.position = movement;
+            }
         }
 
         //--------------------------------------------------------------------------------------
         private IEnumerator moveTransforms(float threshold, float moveTime)
         {
-            while (Vector3.Distance(moving_object.position, object_to_move_to.position) > threshold)
+            while (moving_object != null && object_to_move_to != null && (Vector3.Distance(moving_object.position, object_to_move_to.position) > threshold))
             {
                 yield return new WaitForEndOfFrame();
                 smoothDampToObject(moveTime);
             }
-            finished_lerp = true;
+            finished_lerp = moving_object != null && object_to_move_to != null;
         }
 
         //--------------------------------------------------------------------------------------

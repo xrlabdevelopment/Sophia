@@ -68,9 +68,9 @@ namespace Sophia.Platform
 
             if (component == null)
             {
-                Debug.LogWarning("Could not retrieve component of type: " + typeof(T).ToString() + ". Creating default ...");
-#if UNITY_EDITOR
+                Debug.LogWarning("Could not retrieve component of type: " + typeof(T).ToString() + ". Creating default ...", this);
                 component = gameObject.AddComponent<T>();
+#if UNITY_EDITOR
 #endif
             }
 
@@ -111,7 +111,7 @@ namespace Sophia.Platform
             T[] components = GetComponentsInChildren<T>();
 
             if (components.Length == 0)
-                Debug.LogWarning("Could not retrieve components of type: " + typeof(T).ToString() );
+                Debug.LogWarning("Could not retrieve components of type: " + typeof(T).ToString());
 
             return components;
         }
