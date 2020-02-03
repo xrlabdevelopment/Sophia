@@ -33,6 +33,14 @@ namespace Sophia.Platform
         private Transform Target = null;
 
         //--------------------------------------------------------------------------------------
+        // Properties
+        public Transform CameraTarget
+        {
+            get { return Target; }
+            set { Target = value; }
+        }
+
+        //--------------------------------------------------------------------------------------
         // Fields
         private float x_rotation = 0.0f;
         private float y_rotation = 0.0f;
