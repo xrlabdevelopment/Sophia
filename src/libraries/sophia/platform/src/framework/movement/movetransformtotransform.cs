@@ -7,23 +7,32 @@ namespace Sophia.Platform
     public class MoveTransformToTransform : MonoBehaviour
     {
         //--------------------------------------------------------------------------------------
+        //  protected variables
+        protected bool can_lerp_object = true;
+        protected bool finished_lerp = false;
+        protected Transform moving_object = null;
+        protected Transform object_to_move_to = null;
+
+        //--------------------------------------------------------------------------------------
         // private variables
         private Vector3 current_velocity = Vector3.zero;
 
         //--------------------------------------------------------------------------------------
-        private void smoothDampToObject(Transform movingObject, Transform objectToMoveTo, float moveTime)
+        private void smoothDampToObject(float moveTime)
         {
-            Vector3.SmoothDamp(movingObject.position, objectToMoveTo.position, ref current_velocity, moveTime);
+            var movement = Vector3.SmoothDamp(moving_object.position, object_to_move_to.position, ref current_velocity, moveTime);
+            moving_object.transform.position = movement;
         }
 
         //--------------------------------------------------------------------------------------
-        private IEnumerator moveTransforms(Transform movingObject, Transform objectToMoveTo, float threshold, float moveTime)
+        private IEnumerator moveTransforms(float threshold, float moveTime)
         {
-            while (Vector3.Distance(movingObject.position, objectToMoveTo.position) > threshold)
+            while (Vector3.Distance(moving_object.position, object_to_move_to.position) > threshold)
             {
                 yield return new WaitForEndOfFrame();
-                smoothDampToObject(movingObject, objectToMoveTo, moveTime);
+                smoothDampToObject(moveTime);
             }
+            finished_lerp = true;
         }
 
         //--------------------------------------------------------------------------------------
@@ -39,7 +48,16 @@ namespace Sophia.Platform
         /// <param name="moveTime">How fast should the smooth damp be.</param>
         public void moveTransformAutomatically(Transform movingObject, Transform objectToMoveTo, float threshold, float moveTime)
         {
-            StartCoroutine(moveTransforms(movingObject, objectToMoveTo, threshold, moveTime));
+            if (!can_lerp_object)
+                return;
+
+            Debug.Log(string.Format("moving == 0: {0}, object == 0 {1}", movingObject == null, objectToMoveTo == null));
+            Debug.Log("automatically called by: " + objectToMoveTo.name);
+            moving_object = movingObject;
+            object_to_move_to = objectToMoveTo;
+            finished_lerp = false;
+            can_lerp_object = false;
+            StartCoroutine(moveTransforms(threshold, moveTime));
         }
 
         //--------------------------------------------------------------------------------------
@@ -57,7 +75,14 @@ namespace Sophia.Platform
         /// <param name="moveTime"></param>
         public void moveTransform(Transform movingObject, Transform objectToMoveTo, float moveTime)
         {
-            smoothDampToObject(movingObject, objectToMoveTo, moveTime);
+            if (!can_lerp_object)
+                return;
+
+            moving_object = movingObject;
+            object_to_move_to = objectToMoveTo;
+            finished_lerp = false;
+            can_lerp_object = false;
+            smoothDampToObject(moveTime);
         }
     }
 }
