@@ -26,6 +26,13 @@ namespace Sophia.Platform
         public abstract EventDispatch EventDispatch { get; }
 
         //--------------------------------------------------------------------------------------
+        public static T getAs<T>()
+            where T : ApplicationManager
+        {
+            return (T)ApplicationManager.Instance;
+        }
+
+        //--------------------------------------------------------------------------------------
         public abstract void subscribeCommandReceiver(ICommandReceiver receiver);
         //--------------------------------------------------------------------------------------
         public abstract void unsubscribeCommandReceiver(ICommandReceiver receiver);
