@@ -69,8 +69,8 @@ namespace Sophia.Platform
             if (component == null)
             {
                 Debug.LogWarning("Could not retrieve component of type: " + typeof(T).ToString() + ". Creating default ...", this);
-                component = gameObject.AddComponent<T>();
 #if UNITY_EDITOR
+                component = gameObject.AddComponent<T>();
 #endif
             }
 
