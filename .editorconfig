@@ -149,7 +149,7 @@ csharp_style_throw_expression = true:warning
 csharp_style_conditional_delegate_call = true:warning
 # Code block preferences
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#code-block-preferences
-csharp_prefer_braces = true:warning
+csharp_prefer_braces = false:warning
 # Unused value preferences
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#unused-value-preferences
 csharp_style_unused_value_expression_statement_preference = discard_variable:suggestion
@@ -162,7 +162,7 @@ csharp_style_prefer_range_operator = true:warning
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#miscellaneous-preferences
 csharp_style_deconstructed_variable_declaration = true:warning
 csharp_style_pattern_local_over_anonymous_function = true:warning
-csharp_using_directive_placement = inside_namespace:warning
+csharp_using_directive_placement = outside_namespace:warning
 csharp_prefer_static_local_function = true:warning
 csharp_prefer_simple_using_statement = false:warning
 
