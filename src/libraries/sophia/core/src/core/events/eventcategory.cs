@@ -1,5 +1,8 @@
 namespace Sophia.Core
 {
+    /// <summary>
+    /// Category of an event
+    /// </summary>
     public enum EventCategory
     {
         NONE        = 0,

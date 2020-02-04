@@ -1,7 +1,21 @@
 namespace Sophia.Core
 {
+    /// <summary>
+    /// Interface of an event handler
+    /// </summary>
     public interface IEventHandler
     {
-        void handleEvent(IEvent evt);
+        /// <summary>
+        /// If the event that is fired is equal to the eventcategory of the handler
+        /// The event will be passed along, otherwise this handler will be skipped
+        /// </summary>
+        int EventCategory { get; }
+
+        /// <summary>
+        /// Function to be called when we process an event
+        /// </summary>
+        /// <param name="evt">The event being processed</param>
+        /// <returns>True if the event was handled, false if it wasn't handled</returns>
+        bool handleEvent(IEvent evt);
     }
 }
