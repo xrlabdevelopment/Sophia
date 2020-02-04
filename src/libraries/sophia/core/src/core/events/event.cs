@@ -5,6 +5,7 @@ namespace Sophia.Core
         //-------------------------------------------------------------------------------------
         // Properties
         public abstract int EventType { get; }
+
         public IEventSender Sender
         {
             get
