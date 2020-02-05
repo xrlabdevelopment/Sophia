@@ -29,6 +29,8 @@ namespace Sophia.Platform
         {
             connection_points = new List<ConnectionPoint>();
             required_points = new List<ConnectionPoint>();
+
+            AssemblyManager.Instance.RegisterAssemblyObject = this.gameObject;
         }
 
         #endregion
