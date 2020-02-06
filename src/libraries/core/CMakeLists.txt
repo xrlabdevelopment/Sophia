@@ -25,6 +25,11 @@ set_target_properties( ${CORE_LIBRARY_NAME}         PROPERTIES      VS_DEBUGGER_
 # --------------------------
 target_include_directories(${CORE_LIBRARY_NAME}     PUBLIC          $<BUILD_INTERFACE:${CURRENT_CORE_PATH}/src>
                                                                     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
+
+# --------------------------
+# Target compile options.
+# --------------------------
+target_compile_options(${CORE_LIBRARY_NAME} PRIVATE "/langversion:6")
                                            
 # --------------------------
 # Target link libraries.

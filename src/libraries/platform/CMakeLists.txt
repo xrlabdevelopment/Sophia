@@ -27,6 +27,11 @@ target_include_directories(${PLATFORM_LIBRARY_NAME} PUBLIC          $<BUILD_INTE
                                                                     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
 # --------------------------
+# Target compile options.
+# --------------------------
+target_compile_options(${PLATFORM_LIBRARY_NAME} PRIVATE "/langversion:6")
+
+# --------------------------
 # Target link libraries.
 # --------------------------
 set_property(TARGET ${PLATFORM_LIBRARY_NAME} PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.5")
