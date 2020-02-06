@@ -2,11 +2,14 @@ using System.Collections.Generic;
 
 namespace Sophia.Core
 {
+    /// <summary>
+    /// An event dispatcher
+    /// </summary>
     public class EventDispatch
     {
         //-------------------------------------------------------------------------------------
         // Fields
-        private readonly List<IEventHandler> handlers;
+        private readonly Dictionary<int, List<IEventHandler>> handlers;
 
         //-------------------------------------------------------------------------------------
         /// <summary>
@@ -14,7 +17,7 @@ namespace Sophia.Core
         /// </summary>
         public EventDispatch()
         {
-            handlers = new List<IEventHandler>();
+            handlers = new Dictionary<int, List<IEventHandler>>();
         }
 
         //-------------------------------------------------------------------------------------
@@ -25,10 +28,14 @@ namespace Sophia.Core
         /// <param name="handler">The event handler to be notified</param>
         public void subscribe(IEventHandler handler)
         {
-            if (handlers.Contains(handler))
-                return;
-
-            handlers.Add(handler);
+            if (handlers.ContainsKey(handler.EventCategory))
+            {
+                handlers[handler.EventCategory].Add(handler);
+            }
+            else
+            {
+                handlers.Add(handler.EventCategory, new List<IEventHandler>() { handler });
+            }
         }
         //-------------------------------------------------------------------------------------
         /// <summary>
@@ -38,10 +45,8 @@ namespace Sophia.Core
         /// <param name="handler">The handler to be unsubscribed</param>
         public void unsubscribe(IEventHandler handler)
         {
-            if (!handlers.Contains(handler))
-                return;
-
-            handlers.Remove(handler);
+            foreach(KeyValuePair<int, List<IEventHandler>> pair in handlers)
+                pair.Value.Remove(handler);
         }
 
         //-------------------------------------------------------------------------------------
@@ -53,10 +58,13 @@ namespace Sophia.Core
         public bool dispatch(IEvent evt)
         {
             bool handled = false;
-            foreach (IEventHandler handler in handlers)
+            foreach (KeyValuePair<int, List<IEventHandler>> pair in handlers)
             {
-                if((evt.EventCategory & handler.EventCategory) != 0)
-                    handled |= handler.handleEvent(evt);
+                if ((evt.EventCategory & pair.Key) != 0)
+                {
+                    foreach(IEventHandler handler in pair.Value)
+                        handled |= handler.handleEvent(evt);
+                }
             }
             return handled;
         }
