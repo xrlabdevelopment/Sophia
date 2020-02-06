@@ -12,6 +12,12 @@ namespace Sophia.Core
 
     public interface IEventObserver
     {
+        /// <summary>
+        /// If the event that is fired is equal to the eventcategory of the handler
+        /// The event will be passed along, otherwise this handler will be skipped
+        /// </summary>
+        int EventCategory { get; }
+
         //--------------------------------------------------------------------------------------
         /// <summary>
         /// Called when a subject is broadcasting an event.

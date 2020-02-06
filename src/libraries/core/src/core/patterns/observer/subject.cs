@@ -13,7 +13,7 @@ namespace Sophia.Core
 
         //--------------------------------------------------------------------------------------
         // Fields
-        private List<IObserver> observers;
+        private readonly List<IObserver> observers;
 
         //--------------------------------------------------------------------------------------
         /// <summary>
@@ -94,7 +94,7 @@ namespace Sophia.Core
 
         //--------------------------------------------------------------------------------------
         // Fields
-        private List<IEventObserver> observers;
+        private readonly List<IEventObserver> observers;
 
         //--------------------------------------------------------------------------------------
         /// <summary>
@@ -149,7 +149,10 @@ namespace Sophia.Core
 
             bool handled = false;
             foreach (IEventObserver observer in observers)
-                handled |= observer.notify(this, evt);
+            {
+                if((observer.EventCategory & evt.EventCategory) != 0)
+                    handled |= observer.notify(this, evt);
+            }
             return handled;
         }
 
