@@ -1,8 +1,10 @@
+#pragma warning disable 0649
+
 using UnityEngine;
 
-namespace Sophia.Platform
+namespace Sophia.Platform.Framework
 {
-    public class CharacterMovement : BaseMonoBehaviour
+    public class CharacterMovement : PhysxMonoBehaviour
     {
         //--------------------------------------------------------------------------------------
         // Inspector
@@ -17,20 +19,6 @@ namespace Sophia.Platform
         {
             get { return rigid.velocity.magnitude > 0; }
         }
-
-        //--------------------------------------------------------------------------------------
-        // Fields
-        private Rigidbody rigid = null;
-
-        #region Unity Messages
-
-        //--------------------------------------------------------------------------------------
-        private void Awake()
-        {
-            rigid = getRequiredComponent<Rigidbody>();
-        }
-
-        #endregion
 
         //-------------------------------------------------------------------------------------
         /// <summary>
@@ -48,7 +36,7 @@ namespace Sophia.Platform
 
             Vector3 desired = direction;
             desired.Normalize();
-            desired *= (MovementSpeed * axis) * Time.deltaTime;
+            desired *= MovementSpeed * axis * dTime;
 
             if (rigid.isKinematic)
             {

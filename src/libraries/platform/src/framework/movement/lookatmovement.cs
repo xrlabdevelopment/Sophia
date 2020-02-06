@@ -1,29 +1,22 @@
+#pragma warning disable 0649
+
 using Sophia.Core;
 using UnityEngine;
 
-namespace Sophia.Platform
+namespace Sophia.Platform.Framework
 {
-    [RequireComponent(typeof(Rigidbody))]
-    public class LookAtMovement : BaseMonoBehaviour
+    public class LookAtMovement : PhysxMonoBehaviour
     {
         //--------------------------------------------------------------------------------------
         // Inspector
         [SerializeField]
-        private float RotationSpeed = 10.0f;    
+        private float RotationSpeed = 10.0f;
 
         //--------------------------------------------------------------------------------------
         // Fields
-        private Rigidbody rigid = null;
-
         private Vector3 last_look_direction = Vector3.zero;
 
         #region Unity Messages
-
-        //--------------------------------------------------------------------------------------
-        private void Awake()
-        {
-            rigid = getRequiredComponent<Rigidbody>();
-        }
 
         //--------------------------------------------------------------------------------------
         private void Update()

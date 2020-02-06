@@ -2,9 +2,9 @@ using System.Collections;
 using Sophia.Core;
 using UnityEngine;
 
-namespace Sophia.Platform
+namespace Sophia.Platform.Framework
 {
-    public class MoveTransformToTransform : MonoBehaviour
+    public class MoveTransformToTransform : BaseMonoBehaviour
     {
         //--------------------------------------------------------------------------------------
         //  protected variables
