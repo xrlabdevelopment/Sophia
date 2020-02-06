@@ -4,6 +4,8 @@ namespace Sophia.Core
 {
     public abstract class InputController
     {
+        //-------------------------------------------------------------------------------------
+        // Fields
         private readonly Dictionary<string, List<IInputCommand>> input_command_lists = new Dictionary<string, List<IInputCommand>>();
 
         //--------------------------------------------------------------------------------------

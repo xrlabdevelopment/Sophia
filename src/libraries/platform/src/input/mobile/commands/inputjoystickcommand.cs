@@ -77,7 +77,7 @@ namespace Sophia.Platform
         public bool isTriggered()
         {
             input_axis_value = input_manager.getAxis(AxisName);
-            return Math.Abs(input_axis_value) > float.Epsilon;
+            return System.Math.Abs(input_axis_value) > float.Epsilon;
         }
     }
 }

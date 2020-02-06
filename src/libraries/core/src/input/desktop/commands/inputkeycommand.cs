@@ -4,6 +4,8 @@ namespace Sophia.Core
 {
     public abstract class InputKeyCommand : IInputCommand
     {
+        //-------------------------------------------------------------------------------------
+        // Properties
         public IInputManager InputManager
         {
             get
@@ -25,6 +27,8 @@ namespace Sophia.Core
             }
         }
 
+        //-------------------------------------------------------------------------------------
+        // Fields
         private KeyCode key_code;
         private KeyState key_state;
         private IInputManager input_manager;
