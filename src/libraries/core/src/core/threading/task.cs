@@ -1,6 +1,6 @@
 using System;
 
-namespace Sophia.Core
+namespace Sophia.Threading
 {
     public abstract class Task
     {

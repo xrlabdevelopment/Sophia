@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-namespace Sophia.Core
+namespace Sophia.Threading
 {
     public class CopyTask : Task
     {
