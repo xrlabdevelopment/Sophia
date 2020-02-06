@@ -8,7 +8,11 @@ namespace Sophia.Platform
         //--------------------------------------------------------------------------------------
         protected override void onAssemble(ConnectionPoint connectionPoint1, AssemblyPiece assembly1, ConnectionPoint connectionPoint2, AssemblyPiece assembly2)
         {
-            assembly2.transform.position = assembly1.transform.position;
+            if (!isMyObject(assembly2))
+                return;
+
+            var distanceToMove = connectionPoint2.transform.position - connectionPoint1.transform.position;
+            assembly2.transform.position += distanceToMove;
         }
     }
 }
