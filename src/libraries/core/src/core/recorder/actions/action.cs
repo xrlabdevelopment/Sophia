@@ -1,6 +1,8 @@
 using System.Xml;
+using Sophia.Core;
+using Sophia.Serialization;
 
-namespace Sophia.Core
+namespace Sophia.Serialization
 {
     public class SerializableAction : IAction, IXMLObject
     {
@@ -58,7 +60,10 @@ namespace Sophia.Core
             int.TryParse(type_element.InnerText.ToString(), out action_type);
         }
     }
+}
 
+namespace Sophia.Core
+{ 
     public abstract class BaseAction : IAction, ISerializable
     {
         //-------------------------------------------------------------------------------------

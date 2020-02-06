@@ -1,7 +1,9 @@
 using System.IO;
 using System.Xml;
+using Sophia.Core;
+using Sophia.Serialization;
 
-namespace Sophia.Core
+namespace Sophia.Serialization
 {
     internal class SerializableSetting : ISetting, IXMLObject
     {
@@ -74,7 +76,10 @@ namespace Sophia.Core
             setting_value = value_element.InnerText.ToString();
         }
     }
+}
 
+namespace Sophia.Core
+{
     public class Setting : ISetting, ISerializable
     {
         //-------------------------------------------------------------------------------------

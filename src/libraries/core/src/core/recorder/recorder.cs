@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Xml;
+using Sophia.Core;
+using Sophia.Serialization;
 
-namespace Sophia.Core
+namespace Sophia.Serialization
 {
     public class SerializableRecorder : IXMLObject
     {
@@ -66,7 +68,10 @@ namespace Sophia.Core
             }
         }
     }
+}
 
+namespace Sophia.Core
+{ 
     public abstract class Recorder : ISerializable
     {
         //-------------------------------------------------------------------------------------

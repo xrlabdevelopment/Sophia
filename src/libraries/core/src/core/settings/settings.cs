@@ -2,8 +2,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Diagnostics;
 using System.Xml;
+using Sophia.Serialization;
+using Sophia.Core;
 
-namespace Sophia.Core
+namespace Sophia.Serialization
 {
     public class SerializableSettings : ISettings, IXMLObject
     {
@@ -62,7 +64,7 @@ namespace Sophia.Core
         //-------------------------------------------------------------------------------------
         public void deserialize(XmlElement root)
         {
-            foreach(XmlElement element in root.GetElementsByTagName(SerializableSetting.SETTING_TAG))
+            foreach (XmlElement element in root.GetElementsByTagName(SerializableSetting.SETTING_TAG))
             {
                 SerializableSetting setting = new SerializableSetting();
                 setting.deserialize(element);
@@ -71,7 +73,10 @@ namespace Sophia.Core
             }
         }
     }
+}
 
+namespace Sophia.Core
+{
     /// <summary>
     /// Abstract class for all settings
     /// </summary>
