@@ -1,36 +1,37 @@
 using Sophia.Core;
+using Sophia.Core.Input;
 using UnityEngine;
 
-namespace Sophia.Platform
+namespace Sophia.Platform.Input
 {
     public class DesktopInputManager : IInputManager, IDesktopInputManager
     {       
         //-------------------------------------------------------------------------------------
         public float getAxis(string axis)
         {
-            return Input.GetAxis(axis);            
+            return UnityEngine.Input.GetAxis(axis);            
         }
 
         //-------------------------------------------------------------------------------------
-        public bool isDown(Sophia.Core.KeyCode code)
+        public bool isDown(Core.Input.KeyCode code)
         {
-            return Input.GetKey((UnityEngine.KeyCode)code);
+            return UnityEngine.Input.GetKey((UnityEngine.KeyCode)code);
         }
         //-------------------------------------------------------------------------------------
-        public bool isUp(Sophia.Core.KeyCode code)
+        public bool isUp(Core.Input.KeyCode code)
         {
-            return !Input.GetKey((UnityEngine.KeyCode)code);
+            return !UnityEngine.Input.GetKey((UnityEngine.KeyCode)code);
         }
 
         //-------------------------------------------------------------------------------------
-        public bool isPressed(Sophia.Core.KeyCode code)
+        public bool isPressed(Core.Input.KeyCode code)
         {
-            return Input.GetKeyDown((UnityEngine.KeyCode)code);
+            return UnityEngine.Input.GetKeyDown((UnityEngine.KeyCode)code);
         }
         //-------------------------------------------------------------------------------------
-        public bool isReleased(Sophia.Core.KeyCode code)
+        public bool isReleased(Core.Input.KeyCode code)
         {
-            return Input.GetKeyUp((UnityEngine.KeyCode)code);
+            return UnityEngine.Input.GetKeyUp((UnityEngine.KeyCode)code);
         }
     }
 }
