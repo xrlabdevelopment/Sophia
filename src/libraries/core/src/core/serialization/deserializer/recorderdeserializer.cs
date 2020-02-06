@@ -1,4 +1,6 @@
-namespace Sophia.Core
+using Sophia.Core;
+
+namespace Sophia.Serialization
 {
     public class RecorderDeserializer : Deserializer<SerializableRecorder>
     {

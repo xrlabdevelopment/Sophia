@@ -1,6 +1,6 @@
 using System.Xml;
 
-namespace Sophia.Core
+namespace Sophia.Serialization
 {
     public abstract class Deserializer<T>
         where T : IXMLObject

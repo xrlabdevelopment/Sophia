@@ -1,4 +1,4 @@
-namespace Sophia.Core
+namespace Sophia.Serialization
 {
     public interface ISerializable
     {
