@@ -1,3 +1,5 @@
+using Sophia.Events;
+
 namespace Sophia.Core
 {
     public interface IObserver

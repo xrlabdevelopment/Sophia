@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Sophia.Events;
 
 namespace Sophia.Core
 {
