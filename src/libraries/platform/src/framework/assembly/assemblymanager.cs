@@ -1,13 +1,13 @@
-namespace Sophia.Platform
-{
-    using Sophia.Core;
-    using UnityEngine;
+using Sophia.Core;
+using UnityEngine;
 
+namespace Sophia.Platform.Framework
+{
     public class AssemblyManager : Singleton<AssemblyManager>
     {
         //--------------------------------------------------------------------------------------
         // Constants
-        private readonly float THRESHOLD = 0.2f;
+        private const float THRESHOLD = 0.2f;
 
         //--------------------------------------------------------------------------------------
         // Delegates

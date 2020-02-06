@@ -1,8 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Sophia.Platform
+namespace Sophia.Platform.Framework
 {
     public class ConnectionPoint : BaseMonoBehaviour
     {

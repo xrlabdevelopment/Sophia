@@ -1,4 +1,4 @@
-namespace Sophia.Platform
+namespace Sophia.Platform.Framework
 {
     using Sophia.Core;
     using UnityEngine;

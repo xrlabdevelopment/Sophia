@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Sophia.Core;
 
-namespace Sophia.Platform
+namespace Sophia.Platform.Framework
 {
     public class AssemblyPiece : BaseMonoBehaviour
     {
