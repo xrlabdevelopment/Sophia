@@ -2,7 +2,7 @@ using System;
 
 namespace Sophia.Core
 {
-    public delegate void Finished(Guid timerID);                     // When timer reached 0
+    public delegate void Finished(Guid timerID);                    // When timer reached 0
     public delegate void Started(Guid timerID);                     // When timer is started
     public delegate void Stopped(Guid timerID);                     // When timer is stopped
     public delegate void Updated(Guid timerID, float time);         // Fired every update

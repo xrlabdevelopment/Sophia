@@ -7,6 +7,7 @@ namespace Sophia.Core
 {
     public enum TimerFinishedBehaviour
     {
+        NONE,
         RESET_ON_FINSHED,
         REMOVE_ON_FINISHED
     }
@@ -30,6 +31,7 @@ namespace Sophia.Core
         private Dictionary<Guid, ITimer>    timers_active;
         private List<Guid>                  timers_to_remove;
 
+        //--------------------------------------------------------------------------------------
         public TimerManager()
         {
             timers_active = new Dictionary<Guid, ITimer>();
@@ -47,6 +49,9 @@ namespace Sophia.Core
             {
                 case TimerFinishedBehaviour.REMOVE_ON_FINISHED: timer.onFinished += scheduleForRemove;  break;
                 case TimerFinishedBehaviour.RESET_ON_FINSHED:   timer.onFinished += scheduleForReset;   break;
+                default:
+                    timer.onFinished += scheduleForRemove;
+                    break;
             }
 
             if (createionInfo.finished_delegate != null)    timer.onFinished += createionInfo.finished_delegate;
@@ -120,13 +125,6 @@ namespace Sophia.Core
 
             timers_active[timerID].reset();
             timers_active[timerID].start();
-        }
-
-        //--------------------------------------------------------------------------------------
-        private ITimer createNewTimer<T>(TimerCreationInfo createionInfo)
-            where T : new()
-        {
-            return typeof(T).GetConstructor(new Type[] { createionInfo.start_time.GetType() }).Invoke(new object[] { createionInfo.start_time }) as ITimer;
         }
     }
 }
