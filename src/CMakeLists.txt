@@ -4,7 +4,7 @@
 SET(UNITY_INSTALL_LOCATION "C:/Program Files/Unity/Hub/Editor")
 SET(SOPHIA_UNITY_INSTALL_DIRECTORY ${UNITY_INSTALL_LOCATION} CACHE PATH "Setup Unity install directory")
 
-SET(UNITY_VERSION "2019.3.0f1")
+SET(UNITY_VERSION "2019.3.0f3")
 SET(SOPHIA_UNITY_VERSION ${UNITY_VERSION} CACHE STRING "Setup Unity version")
 
 SET(UNITY_ENGINE_DLL "${SOPHIA_UNITY_INSTALL_DIRECTORY}/${SOPHIA_UNITY_VERSION}/${UNITY_BINDIR}/UnityEngine.dll")
@@ -22,5 +22,5 @@ endif()
 # --------------------------------
 # Add subdirectories
 # --------------------------------
-add_subdirectory(extern)
+message(STATUS "#--------- Adding libraries ---------")
 add_subdirectory(libraries)

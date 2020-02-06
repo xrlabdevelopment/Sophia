@@ -31,7 +31,8 @@ target_include_directories(${CORE_LIBRARY_NAME}     PUBLIC          $<BUILD_INTE
 # --------------------------
 set_property(TARGET ${CORE_LIBRARY_NAME} PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.5")
 set_property(TARGET ${CORE_LIBRARY_NAME} PROPERTY VS_DOTNET_REFERENCES 
-                    "System")
+                    "System"
+                    "System.Xml")
 
 # --------------------------
 # Install.
