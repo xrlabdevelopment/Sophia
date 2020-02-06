@@ -5,9 +5,11 @@ namespace Sophia.Platform
     public class tempsettingsmenu : Singleton<tempsettingsmenu>
     {
         //--------------------------------------------------------------------------------------
-        // public variables
+        // Properties
         public bool SnapRotationSetting = true;
         public bool GravityObjectSetting = true;
+
+        //--------------------------------------------------------------------------------------
         protected override void onAwake()
         {
 
