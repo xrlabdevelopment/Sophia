@@ -1,7 +1,7 @@
 using Sophia.Core;
 using UnityEngine;
 
-namespace Sophia.Platform
+namespace Sophia.Platform.Framework
 {
     public abstract class FPSCameraHandler : BaseMonoBehaviour, ICommandReceiver
     {
