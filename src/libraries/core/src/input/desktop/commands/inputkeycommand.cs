@@ -1,6 +1,4 @@
-
-
-namespace Sophia.Core
+namespace Sophia.Core.Input
 {
     public abstract class InputKeyCommand : IInputCommand
     {
