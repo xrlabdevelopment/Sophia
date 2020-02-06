@@ -1,4 +1,4 @@
-namespace Sophia.Core
+namespace Sophia.Events
 {
     /// <summary>
     /// An interface for event instigators

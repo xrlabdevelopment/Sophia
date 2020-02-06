@@ -1,4 +1,4 @@
-namespace Sophia.Core
+namespace Sophia.Events
 {
     /// <summary>
     /// Inteface of what an event should look like

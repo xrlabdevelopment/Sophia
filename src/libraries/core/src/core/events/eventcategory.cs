@@ -1,4 +1,4 @@
-namespace Sophia.Core
+namespace Sophia.Events
 {
     /// <summary>
     /// Category of an event

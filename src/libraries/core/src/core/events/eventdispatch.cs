@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Sophia.Core
+namespace Sophia.Events
 {
     /// <summary>
     /// An event dispatcher
