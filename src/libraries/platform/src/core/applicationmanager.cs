@@ -22,7 +22,6 @@ namespace Sophia.Platform
         public abstract ManagerPlatform Platform { get; }
         public abstract ManagerPurpose Purpose { get; }
 
-        public abstract EventQueue EventQueue { get; }
         public abstract EventDispatch EventDispatch { get; }
 
         //--------------------------------------------------------------------------------------
