@@ -1,6 +1,6 @@
 using System;
 
-namespace Sophia.Core
+namespace Sophia.Core.Framework
 {
     /// <summary>
     /// An interface for an inventory item

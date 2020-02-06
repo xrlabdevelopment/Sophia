@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Sophia.Core
+namespace Sophia.Core.Framework
 {
     /// <summary>
     /// An inventory system

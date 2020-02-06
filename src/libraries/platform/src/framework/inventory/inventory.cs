@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using Sophia.Core;
+using Sophia.Core.Framework;
 using UnityEngine;
 
-namespace Sophia.Platform
+namespace Sophia.Platform.Framework
 {
     public class Inventory : BaseMonoBehaviour
     {
