@@ -4,8 +4,14 @@ using Sophia.Core;
 
 namespace Sophia.Platform
 {
-    public class AssemblyPiece : BaseMonoBehaviour
+    public abstract class AssemblyPiece : BaseMonoBehaviour
     {
+        //--------------------------------------------------------------------------------------
+        // Fields
+        [SerializeField] protected List<ConnectionPoint> connection_points;
+        [SerializeField] protected List<ConnectionPoint> required_points;
+        protected AssemblyManager assembly_manager;
+
         //--------------------------------------------------------------------------------------
         // Properties
         public List<ConnectionPoint> ConnectionPoints
@@ -16,23 +22,5 @@ namespace Sophia.Platform
         {
             get { return required_points; }
         }
-
-        //--------------------------------------------------------------------------------------
-        // Fields
-        private List<ConnectionPoint> connection_points;
-        private List<ConnectionPoint> required_points;
-
-        #region Unity Messages
-
-        //--------------------------------------------------------------------------------------
-        private void Awake()
-        {
-            connection_points = new List<ConnectionPoint>();
-            required_points = new List<ConnectionPoint>();
-
-            AssemblyManager.Instance.RegisterAssemblyObject = this.gameObject;
-        }
-
-        #endregion
     }
 }

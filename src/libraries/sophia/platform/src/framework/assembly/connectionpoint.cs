@@ -1,21 +1,24 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Sophia.Platform
 {
-    public class ConnectionPoint : BaseMonoBehaviour
+    public abstract class ConnectionPoint : BaseMonoBehaviour
     {
         //--------------------------------------------------------------------------------------
-        // Properties
-        private GameObject other_connection = null;
+        // Fields
+        [SerializeField] private GameObject other_connection = null;
+        protected ConnectionPointManager connection_point_manager = null;
+
+        //--------------------------------------------------------------------------------------
 
         #region Unity Messages
 
         //--------------------------------------------------------------------------------------
-        private void Awake()
+        protected void Awake()
         {
-            ConnectionPointManager.Instance.registerConnectionPoint(gameObject);
+            connection_point_manager.registerConnectionPoint(gameObject);
         }
 
         #endregion
@@ -23,7 +26,8 @@ namespace Sophia.Platform
         //--------------------------------------------------------------------------------------
         public void connectTo(GameObject connectionPoint)
         {
-            other_connection = connectionPoint;
+            if (other_connection == null)
+                other_connection = connectionPoint;
         }
     }
 }
