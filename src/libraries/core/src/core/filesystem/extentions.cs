@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Sophia.Core
+namespace Sophia.IO
 {
     public enum Extention
     {
