@@ -11,7 +11,7 @@ namespace Sophia.Core
         {
             get
             {
-                Debug.Assert(instance != null, "Instance not yet created!");
+                Debug.Assert(instance != null, "Instance not created!");
                 return instance;
             }
         }
@@ -21,6 +21,11 @@ namespace Sophia.Core
         private static T instance;
 
         //--------------------------------------------------------------------------------------
+        /// <summary>
+        /// Convert the singleton to an inherited type
+        /// </summary>
+        /// <typeparam name="U">The type we wanna retrieve</typeparam>
+        /// <returns>The requested object</returns>
         public static U getAs<U>()
             where U : class, new()
         {
@@ -28,11 +33,17 @@ namespace Sophia.Core
         }
 
         //--------------------------------------------------------------------------------------
+        /// <summary>
+        /// Create the singleton instance
+        /// </summary>
         public static void createInstance()
         {
             instance = new T();
         }
         //--------------------------------------------------------------------------------------
+        /// <summary>
+        /// Destroy the singleton instance
+        /// </summary>
         public static void destroyInstance()
         {
             instance = null;
