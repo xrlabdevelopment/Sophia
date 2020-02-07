@@ -11,17 +11,6 @@ namespace Sophia.Platform
         [SerializeField] private List<SceneObjectBase> prefab_list;
 
         //--------------------------------------------------------------------------------------
-        private void Awake()
-        {
-            var objects = this.GetComponentsInChildren<SceneObjectBase>(true);
-            prefab_list = new List<SceneObjectBase>(objects);
-
-
-            for (int i = 0; i < prefab_list.Count; i++)
-                prefab_list[i].PrefabId = i;
-        }
-
-        //--------------------------------------------------------------------------------------
         public GameObject getPrefab(int index)
         {
             return prefab_list[index].gameObject;
@@ -41,6 +30,18 @@ namespace Sophia.Platform
             obj.SetActive(enable);
             obj.name = prefab.name;
             return obj;
+        }
+
+        #region Unity Messages
+        //--------------------------------------------------------------------------------------
+        private void Awake()
+        {
+            var objects = this.GetComponentsInChildren<SceneObjectBase>(true);
+            prefab_list = new List<SceneObjectBase>(objects);
+
+
+            for (int i = 0; i < prefab_list.Count; i++)
+                prefab_list[i].PrefabId = i;
         }
 
         //--------------------------------------------------------------------------------------
@@ -66,5 +67,6 @@ namespace Sophia.Platform
         {
             //Nothing to implement
         }
+        #endregion
     }
 }

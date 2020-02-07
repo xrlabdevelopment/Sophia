@@ -15,11 +15,13 @@ namespace Sophia.Platform
 
         private SceneContainer save_load_container = new SceneContainer();
 
+        #region Unity Messages
         //--------------------------------------------------------------------------------------
         private void Awake()
         {
             ApplicationManager.Instance.SaveSceneObjectsManager.registerObjectToSave(this);
         }
+        #endregion
 
         //--------------------------------------------------------------------------------------
         public void updateData()
@@ -29,6 +31,7 @@ namespace Sophia.Platform
             Scale = this.gameObject.transform.localScale;
         }
 
+        //--------------------------------------------------------------------------------------
         public SceneContainer GetContainer
         {
             get

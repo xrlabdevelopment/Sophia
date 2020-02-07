@@ -8,9 +8,11 @@ namespace Sophia.Platform
     {
         //--------------------------------------------------------------------------------------
         // Fields
-        [SerializeField] protected List<ConnectionPoint> connection_points;
-        [SerializeField] protected List<ConnectionPoint> required_points;
-        protected AssemblyManager assembly_manager;
+        [SerializeField]
+        private List<ConnectionPoint> connection_points;
+        [SerializeField]
+        private List<ConnectionPoint> required_points;
+        private AssemblyManager assembly_manager;
 
 
         //--------------------------------------------------------------------------------------
@@ -18,10 +20,17 @@ namespace Sophia.Platform
         public List<ConnectionPoint> ConnectionPoints
         {
             get { return connection_points; }
+            protected set { connection_points = value; }
         }
         public List<ConnectionPoint> RequiredPoints
         {
             get { return required_points; }
+            protected set { required_points = value; }
+        }
+        protected AssemblyManager AssemblyManager
+        {
+            get { return assembly_manager; }
+            set { assembly_manager = value; }
         }
     }
 }

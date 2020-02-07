@@ -23,7 +23,7 @@ namespace Sophia.Platform
         public abstract ManagerPurpose Purpose { get; }
         public abstract EventQueue EventQueue { get; }
         public abstract EventDispatch EventDispatch { get; }
-        public abstract AssemblyManager AssemManager { get; }
+        public abstract AssemblyManager AssemblyManager { get; }
         public abstract ConnectionPointManager ConnectionPointManager { get; }
         public abstract SaveLoadSceneObjects SaveSceneObjectsManager { get; }
         public abstract PrefabIndexer PrefabIndexManager { get; }

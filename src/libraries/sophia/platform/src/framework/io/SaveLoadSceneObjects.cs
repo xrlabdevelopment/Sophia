@@ -26,25 +26,25 @@ namespace Sophia.Platform
         //--------------------------------------------------------------------------------------
         public void saveScene()
         {
-            SaveLoadObjectContainer saveFile = new SaveLoadObjectContainer();
-            saveFile.SavedObjects = new SceneContainer[objects_to_save.Count];
+            SaveLoadObjectContainer save_file = new SaveLoadObjectContainer();
+            save_file.SavedObjects = new SceneContainer[objects_to_save.Count];
 
             for (int i = 0; i < objects_to_save.Count; i++)
             {
                 objects_to_save[i].updateData();
-                saveFile.SavedObjects[i] = objects_to_save[i].GetContainer;
+                save_file.SavedObjects[i] = objects_to_save[i].GetContainer;
             }
 
-            JsonIO.save<SaveLoadObjectContainer>(SaveLocation, SaveName, saveFile);
+            JsonIO.save<SaveLoadObjectContainer>(SaveLocation, SaveName, save_file);
         }
 
         //--------------------------------------------------------------------------------------
         public void loadScene()
         {
-            SaveLoadObjectContainer saveFile = new SaveLoadObjectContainer();
-            saveFile = JsonIO.load<SaveLoadObjectContainer>(SaveLocation, SaveName);
+            SaveLoadObjectContainer save_file = new SaveLoadObjectContainer();
+            save_file = JsonIO.load<SaveLoadObjectContainer>(SaveLocation, SaveName);
 
-            foreach (var savedObject in saveFile.SavedObjects)
+            foreach (var savedObject in save_file.SavedObjects)
             {
                 var to_load_object = new SceneObjectBase();
                 to_load_object.PrefabId = savedObject.PrefabId;
@@ -68,6 +68,7 @@ namespace Sophia.Platform
             }
         }
 
+        #region Unity Messages
         //--------------------------------------------------------------------------------------
         protected override void onAwake()
         {
@@ -91,5 +92,6 @@ namespace Sophia.Platform
         {
             //Nothing to implement
         }
+        #endregion
     }
 }
