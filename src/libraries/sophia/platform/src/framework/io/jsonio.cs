@@ -1,9 +1,9 @@
 using Sophia.Core;
 using System.IO;
-using System.Diagnostics;
 using Newtonsoft.Json;
+using UnityEngine;
 
-namespace Sophia.Core
+namespace Sophia.Platform
 {
     public static class JsonIO
     {
@@ -14,7 +14,8 @@ namespace Sophia.Core
         //--------------------------------------------------------------------------------------
         public static string save<T>(string filePath, string fileName, T toSaveClass)
         {
-            Debug.Assert(string.IsNullOrEmpty(filePath) || string.IsNullOrEmpty(fileName), "File path and file name needs to be filled in.");
+            //Debug.Assert(string.IsNullOrEmpty(filePath) || string.IsNullOrEmpty(fileName), "File path and file name needs to be filled in.");
+
 
             if (toSaveClass == null)
                 return string.Empty;
@@ -26,18 +27,20 @@ namespace Sophia.Core
             if (!File.Exists(path))
                 return string.Empty;
 
+
             //
             // Write file to disk
             //
-            using (StreamWriter file = File.AppendText(filePath))
+            using (StreamWriter file = File.AppendText(path))
             {
-                string output = JsonConvert.SerializeObject(toSaveClass);
-                if (string.IsNullOrEmpty(output))
-                    return string.Empty;
+                string output = JsonConvert.SerializeObject(toSaveClass, Formatting.Indented);
+                //if (string.IsNullOrEmpty(output))
+                //    return string.Empty;
 
                 file.Write(output);
-                return output;
+                //return output;
             }
+            return string.Empty;
         }
         //--------------------------------------------------------------------------------------
         public static T load<T>(string filePath, string fileName)
@@ -55,7 +58,7 @@ namespace Sophia.Core
             //
             // Read file from disk
             //
-            using (StreamReader reader = new StreamReader(filePath))
+            using (StreamReader reader = new StreamReader(path))
             {
                 string input = reader.ReadToEnd();
                 if (string.IsNullOrEmpty(input))
