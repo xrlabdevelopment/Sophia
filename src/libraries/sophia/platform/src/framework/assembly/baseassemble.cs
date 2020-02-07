@@ -26,17 +26,7 @@ namespace Sophia.Platform
         //--------------------------------------------------------------------------------------
         protected bool isMyObject(AssemblyPiece assembly2)
         {
-            var assembly_script = this.GetComponent<AssemblyPiece>();
-            if (assembly_script == null)
-                assembly_script = this.GetComponentInChildren<AssemblyPiece>();
-
-            if (assembly_script != null)
-            {
-                if (assembly2 == assembly_script)
-                    return true;
-            }
-
-            return false;
+            return true;
         }
         //--------------------------------------------------------------------------------------
         protected abstract void onAssemble(ConnectionPoint connectionPoint1, AssemblyPiece assembly1, ConnectionPoint connectionPoint2, AssemblyPiece assembly2);

@@ -12,6 +12,7 @@ namespace Sophia.Platform
         [SerializeField] protected List<ConnectionPoint> required_points;
         protected AssemblyManager assembly_manager;
 
+
         //--------------------------------------------------------------------------------------
         // Properties
         public List<ConnectionPoint> ConnectionPoints

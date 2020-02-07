@@ -25,6 +25,8 @@ namespace Sophia.Platform
         public abstract EventDispatch EventDispatch { get; }
         public abstract AssemblyManager AssemManager { get; }
         public abstract ConnectionPointManager ConnectionPointManager { get; }
+        public abstract SaveLoadSceneObjects SaveSceneObjectsManager { get; }
+        public abstract PrefabIndexer PrefabIndexManager { get; }
 
         //--------------------------------------------------------------------------------------
         public abstract void subscribeCommandReceiver(ICommandReceiver receiver);

@@ -10,6 +10,7 @@ namespace Sophia.Platform
         // Fields
         [SerializeField] private GameObject other_connection = null;
         protected ConnectionPointManager connection_point_manager = null;
+        public string TypeId = "";
 
         //--------------------------------------------------------------------------------------
 
