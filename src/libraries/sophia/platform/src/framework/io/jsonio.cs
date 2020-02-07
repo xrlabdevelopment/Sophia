@@ -25,7 +25,9 @@ namespace Sophia.Platform
             //
             string path = Path.Combine(filePath, fileName + JSON_EXTENTION);
             if (!File.Exists(path))
-                return string.Empty;
+                File.Create(path);
+            else
+                File.Delete(path);
 
 
             //
@@ -34,11 +36,7 @@ namespace Sophia.Platform
             using (StreamWriter file = File.AppendText(path))
             {
                 string output = JsonConvert.SerializeObject(toSaveClass, Formatting.Indented);
-                //if (string.IsNullOrEmpty(output))
-                //    return string.Empty;
-
                 file.Write(output);
-                //return output;
             }
             return string.Empty;
         }
@@ -54,6 +52,7 @@ namespace Sophia.Platform
 
             if (!File.Exists(path))
                 return default(T);
+
 
             //
             // Read file from disk
