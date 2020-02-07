@@ -28,12 +28,12 @@ namespace Sophia.Core
         }
 
         //--------------------------------------------------------------------------------------
-        public void createInstance()
+        public static void createInstance()
         {
             instance = new T();
         }
         //--------------------------------------------------------------------------------------
-        public void destroyInstance()
+        public static void destroyInstance()
         {
             instance = null;
         }
