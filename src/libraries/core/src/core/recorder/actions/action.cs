@@ -28,6 +28,7 @@ namespace Sophia.Serialization
         private int action_type;
         private string action_name;
 
+        //-------------------------------------------------------------------------------------
         public SerializableAction()
         { }
         //-------------------------------------------------------------------------------------

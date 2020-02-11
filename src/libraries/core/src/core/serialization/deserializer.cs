@@ -27,6 +27,7 @@ namespace Sophia.Serialization
             return obj;
         }
 
+        //-------------------------------------------------------------------------------------
         protected abstract T create();
     }
 }
