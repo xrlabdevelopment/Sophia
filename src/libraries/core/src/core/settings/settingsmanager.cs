@@ -64,7 +64,7 @@ namespace Sophia.Core
             //
             // Check if a file exists for there settings
             //
-            string path = Path.Combine(data_path, setting_name + Extentions.getExtention(Extention.XML));
+            string path = Path.Combine(data_path, setting_name + Extentions.toString(Extention.XML));
             if (!File.Exists(path))
                 return settings;
 
@@ -133,7 +133,7 @@ namespace Sophia.Core
         {
             cached_settings.Clear();
 
-            string[] savefiles = Directory.GetFiles(data_path, "*" + Extentions.getExtention(Extention.XML));
+            string[] savefiles = Directory.GetFiles(data_path, "*" + Extentions.toString(Extention.XML));
             foreach (string setting in savefiles)
                 File.Delete(setting);
         }
@@ -163,7 +163,7 @@ namespace Sophia.Core
             Debug.Assert(cached_settings.ContainsKey(settingName), "Setting should be available here!");
 
             Serializer serializer = new Serializer(cached_settings[settingName].XMLObject);
-            using (StreamWriter file_writer = new StreamWriter(Path.Combine(data_path, settingName + Extentions.getExtention(Extention.XML))))
+            using (StreamWriter file_writer = new StreamWriter(Path.Combine(data_path, settingName + Extentions.toString(Extention.XML))))
             {
                 serializer.serialize(file_writer);
             }
