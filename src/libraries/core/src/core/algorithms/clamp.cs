@@ -1,6 +1,6 @@
 namespace Sophia.Core
 {
-    public static class Math
+    public static partial class Algorithms
     {
         /// <summary>
         /// Clamp a value between a min an a max value

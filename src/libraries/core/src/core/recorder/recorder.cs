@@ -130,7 +130,7 @@ namespace Sophia.Core
                 BaseAction r = records[recording_index];
                 r.unexecute();
 
-                recording_index = Math.clamp(recording_index - 1, BeginRecordingIndex, EndRecordingIndex);
+                recording_index = Algorithms.clamp(recording_index - 1, BeginRecordingIndex, EndRecordingIndex);
             }
         }
         //-------------------------------------------------------------------------------------
@@ -138,7 +138,7 @@ namespace Sophia.Core
         {
             if (recording_index < EndRecordingIndex)
             {
-                recording_index = Math.clamp(recording_index + 1, BeginRecordingIndex, EndRecordingIndex);
+                recording_index = Algorithms.clamp(recording_index + 1, BeginRecordingIndex, EndRecordingIndex);
 
                 BaseAction r = records[recording_index];
                 r.execute();
