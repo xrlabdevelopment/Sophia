@@ -14,7 +14,8 @@ namespace Sophia.Core
 
     public struct TimerCreationInfo
     {
-        public float start_time;
+        public float    start_time;
+        public bool     start_on_creation;
 
         public TimerFinishedBehaviour finish_behaviour;
 
@@ -60,6 +61,9 @@ namespace Sophia.Core
             if (createionInfo.updated_delegate != null)     timer.onUpdate += createionInfo.updated_delegate;
 
             timers_active.Add(timer.TimerID, timer);
+
+            if (createionInfo.start_on_creation)
+                timer.start();
 
             return timer.TimerID;
         }
