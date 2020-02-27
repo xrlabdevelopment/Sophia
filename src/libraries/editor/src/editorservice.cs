@@ -13,10 +13,7 @@ namespace Sophia.Editor
     {
         //--------------------------------------------------------------------------------------
         // Constants
-        public static readonly string PROJECTSOPHIA_INSTALL_LOCATION = "C:\\DAE\\bin\\" + Application.unityVersion + "\\";
-        public static readonly string DEBUG_POSTFIX = "_d";
-        public static readonly string DLL_EXTENTION = ".dll";
-        public static readonly string CURRENT_INSTALL_LOCATION = PROJECTSOPHIA_INSTALL_LOCATION;
+        private static readonly string SOPHIA_INSTALL_LOCATION = "C:\\DAE\\bin\\" + Application.unityVersion + "\\";
 
         //--------------------------------------------------------------------------------------
         // Properties
@@ -27,50 +24,21 @@ namespace Sophia.Editor
 
         //--------------------------------------------------------------------------------------
         // Fields
-        private bool is_running = false;
-        
-        private static Dictionary<string, DateTime> time_stamps;
-        private static List<Task> copy_tasks;
-        private static bool is_ready_to_refresh = false;
+        private bool is_running;
+
+        private PluginHandler plugin_handler;
+
+        //--------------------------------------------------------------------------------------
+        public EditorService()
+        {
+            is_running = false;
+
+            plugin_handler = new PluginHandler();
+        }
 
         //--------------------------------------------------------------------------------------
         public void run()
         {
-            if (!Directory.Exists(PROJECTSOPHIA_INSTALL_LOCATION))
-            {
-                Debug.LogWarning("Install location not found: " + PROJECTSOPHIA_INSTALL_LOCATION);
-                return;
-            }
-
-            //
-            // List that will store the threads who will copy the files
-            //
-            copy_tasks = new List<Task>();
-
-            //
-            // Store last write time stamp
-            //
-            time_stamps = new Dictionary<string, DateTime>();
-            foreach (string file_path in Directory.GetFiles(CURRENT_INSTALL_LOCATION))
-            {
-                if (file_path.Contains(DLL_EXTENTION))
-                {
-#if !_DEBUG
-                    if(file_path.Contains(DEBUG_POSTFIX + DLL_EXTENTION))
-                        continue;
-#else
-                    if(!file_path.Contains(DEBUG_POSTFIX + DLL_EXTENTION))
-                        continue;
-#endif
-                    Debug.Log("tracking: " + file_path);
-                    time_stamps.Add(file_path, File.GetLastWriteTime(file_path));
-                }
-                else
-                {
-                    Debug.Log("file path is no dynamic lib: " + file_path);
-                }
-            }
-
             //
             // Subscribe to update and quit event
             //
@@ -80,45 +48,16 @@ namespace Sophia.Editor
             //
             // Flag that we are running the application
             //
-            is_running = true;
-        }
-
-        //--------------------------------------------------------------------------------------
-        public static bool forceCopy(string from, string to, bool overwrite)
-        {
-            if (File.Exists(from))
-            {
-                File.Copy(from, to, overwrite);
-                Debug.Log("File was copied to: " + to);
-
-                return true;
-            }
-
-            return false;
-        }
-        //--------------------------------------------------------------------------------------
-        public static bool scheduleCopy(string from, string to, bool overwrite)
-        {
-            if (File.Exists(from))
-            {
-                Task task = new CopyTask(from, to, overwrite);
-
-                task.onStarted += onStartedCopy;
-                task.onFinished += onFinishedCopy;
-
-                copy_tasks.Add(task);
-
-                return true;
-            }
-
-            return false;
+            is_running = plugin_handler.initialize(SOPHIA_INSTALL_LOCATION);
         }
 
         //--------------------------------------------------------------------------------------
         private void update()
         {
-            checkSophiaDLLRemoval();
-            checkSophiaDLLCopy();
+            if (!is_running)
+                return;
+
+            plugin_handler.update(Time.deltaTime);
         }
         //--------------------------------------------------------------------------------------
         private void stop()
@@ -126,111 +65,12 @@ namespace Sophia.Editor
             if (!is_running)
                 return;
 
-            copy_tasks.Clear();
+            plugin_handler.stop();
 
             EditorApplication.quitting -= stop;
             EditorApplication.update -= update;
 
             is_running = false;
-        }
-
-        //--------------------------------------------------------------------------------------
-        private void checkSophiaDLLRemoval()
-        {
-            List<string> to_remove = new List<string>();
-            foreach (string file_path in Directory.GetFiles(CURRENT_INSTALL_LOCATION))
-            {
-                string unity_file_path = Application.dataPath + "\\Plugins\\" + Path.GetFileName(file_path);
-                if (!unity_file_path.Contains(DLL_EXTENTION))
-                    continue;
-
-#if !_DEBUG
-                
-                if (File.Exists(unity_file_path) && unity_file_path.Contains(DEBUG_POSTFIX + DLL_EXTENTION))
-                    to_remove.Add(unity_file_path);
-#else
-                string file_name = Application.dataPath + "\\Plugins\\" + Path.GetFileName(file_path);
-                if (!file_name.Contains(DEBUG_POSTFIX + DLL_EXTENTION))
-                    to_remove.Add(file_name);
-#endif
-            }
-
-            if (to_remove.Count == 0)
-                return;
-
-            foreach (string file_path in to_remove)
-            {
-                File.Delete(file_path);
-                Debug.Log("Removing: " + file_path);
-            }
-        }
-        //--------------------------------------------------------------------------------------
-        private void checkSophiaDLLCopy()
-        {
-            // Do not check if files need to be copied when we alread have scheduled tasks.
-            if (copy_tasks.Count != 0)
-                return;
-
-            if (is_ready_to_refresh)
-            {
-                AssetDatabase.Refresh();
-                is_ready_to_refresh = false;
-            }
-
-            foreach (string file_path in Directory.GetFiles(CURRENT_INSTALL_LOCATION))
-            {
-                if (file_path.Contains(DLL_EXTENTION))
-                {
-#if !_DEBUG
-                    if (file_path.Contains(DEBUG_POSTFIX + DLL_EXTENTION))
-                        continue;
-#else
-                    if(!file_path.Contains(DEBUG_POSTFIX + DLL_EXTENTION))
-                        continue;
-#endif
-                    checkSophiaDLLWriteTime(file_path);
-                }
-            }
-
-            if (copy_tasks.Count > 0)
-            {
-                foreach(Task task in copy_tasks)
-                {
-                    Thread thread = new Thread(new ThreadStart(task.execute));
-                    thread.Start();
-                }
-            }
-        }
-        //--------------------------------------------------------------------------------------
-        private void checkSophiaDLLWriteTime(string path)
-        {
-            string plugin_path = path;
-
-            if (File.Exists(plugin_path))
-            {
-                DateTime time = File.GetLastWriteTime(plugin_path);
-                if (time_stamps[plugin_path] < time)
-                {
-                    scheduleCopy(plugin_path, Application.dataPath + "\\Plugins\\" + Path.GetFileName(plugin_path), true);
-                    Debug.Log(plugin_path + " was scheduled to be copied");
-
-                    time_stamps[plugin_path] = time;
-                }
-            }
-        }
-
-        //--------------------------------------------------------------------------------------
-        private static void onStartedCopy(Task task)
-        {
-            // Nothing to implement
-        }
-        //--------------------------------------------------------------------------------------
-        private static void onFinishedCopy(Task task)
-        {
-            if(copy_tasks.IndexOf(task) != -1)
-                copy_tasks.Remove(task);
-
-            is_ready_to_refresh = copy_tasks.Count == 0;
         }
     }
 }
