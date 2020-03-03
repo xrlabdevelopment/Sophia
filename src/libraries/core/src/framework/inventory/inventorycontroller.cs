@@ -26,6 +26,13 @@ namespace Sophia.Core.Framework
         public Removed OnItemRemoved;
 
         //--------------------------------------------------------------------------------------
+        // Properties
+        public int Count
+        {
+            get { return inventory_items.Count; }
+        }
+
+        //--------------------------------------------------------------------------------------
         // Fields
         private readonly List<IInventoryItem> inventory_items = null;
 
@@ -34,7 +41,7 @@ namespace Sophia.Core.Framework
         /// Constructor for the inventory controller
         /// </summary>
         /// <param name="items">Initial items present in the inventory</param>
-        public InventoryController(IInventoryItem[] initialItems)
+        public InventoryController(IInventoryItem[] initialItems = null)
         {
             inventory_items = initialItems != null
                 ? new List<IInventoryItem>(initialItems)
@@ -119,6 +126,21 @@ namespace Sophia.Core.Framework
             where T : class, IInventoryItem
         {
             return inventory_items.FindAll(i => (i as T) != null).ToList();
+        }
+
+        //--------------------------------------------------------------------------------------
+        /// <summary>
+        /// Remove all items from the inventory
+        /// </summary>
+        public void clear()
+        {
+            foreach(IInventoryItem item in inventory_items)
+            {
+                if (OnItemRemoved != null)
+                    OnItemRemoved(item);
+            }
+
+            inventory_items.Clear();
         }
     }
 }
