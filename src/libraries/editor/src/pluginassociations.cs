@@ -16,8 +16,8 @@ namespace Sophia.Editor
         // Fields
         private readonly Dictionary<PluginType, List<Extention>> extention_associations = new Dictionary<PluginType, List<Extention>>()
         {
-            { PluginType.DEBUG,   new List<Extention>() { Extention.DLL, Extention.PDB} },
-            { PluginType.RELEASE, new List<Extention>() { Extention.DLL} }
+            { PluginType.DEBUG,   new List<Extention>() { Extention.DLL, Extention.PDB, Extention.META} },
+            { PluginType.RELEASE, new List<Extention>() { Extention.DLL, Extention.META } }
         };
 
         //--------------------------------------------------------------------------------------
