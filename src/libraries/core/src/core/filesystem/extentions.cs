@@ -11,7 +11,8 @@ namespace Sophia.IO
         TXT,
         INI,
         DLL,
-        PDB
+        PDB,
+        META
     }
 
     public static class Extentions
@@ -25,6 +26,7 @@ namespace Sophia.IO
         private static readonly string INI_EXTENTION        = ".ini";
         private static readonly string DLL_EXTENTION        = ".dll";
         private static readonly string PDB_EXTENTION        = ".pdb";
+        private static readonly string META_EXTENTION       = ".meta";
 
         private static readonly string NONE_DISPLAY_STRING  = "Invalid";
         private static readonly string XML_DISPLAY_STRING   = "Extensible Markup Language";
@@ -33,16 +35,18 @@ namespace Sophia.IO
         private static readonly string INI_DISPLAY_STRING   = "Informal Standard for Configuration Files";
         private static readonly string DLL_DISPLAY_STRING   = "Dynamic Link Library";
         private static readonly string PDB_DISPLAY_STRING   = "Program Database";
+        private static readonly string META_DISPLAY_STRING  = "Unity Engine Meta Data";
 
         private static readonly Dictionary<Extention, string> EXTENTIONS = new Dictionary<Extention, string>()
         {
             { Extention.NONE,   NONE_EXTENTION },
-            { Extention.XML,    XML_EXTENTION },
+            { Extention.XML,    XML_EXTENTION  },
             { Extention.JSON,   JSON_EXTENTION },
-            { Extention.TXT,    TXT_EXTENTION },
-            { Extention.INI,    INI_EXTENTION },
-            { Extention.DLL,    DLL_EXTENTION },
-            { Extention.PDB,    PDB_EXTENTION }
+            { Extention.TXT,    TXT_EXTENTION  },
+            { Extention.INI,    INI_EXTENTION  },
+            { Extention.DLL,    DLL_EXTENTION  },
+            { Extention.PDB,    PDB_EXTENTION  },
+            { Extention.META,   META_EXTENTION }
         };
 
         private static readonly Dictionary<Extention, string> EXTENTION_DISPLAY_STRINGS = new Dictionary<Extention, string>()
@@ -53,7 +57,8 @@ namespace Sophia.IO
             { Extention.TXT,    TXT_DISPLAY_STRING  },
             { Extention.INI,    INI_DISPLAY_STRING  },
             { Extention.DLL,    DLL_DISPLAY_STRING  },
-            { Extention.PDB,    PDB_DISPLAY_STRING  }
+            { Extention.PDB,    PDB_DISPLAY_STRING  },
+            { Extention.META,   META_DISPLAY_STRING }
         };
 
         //-------------------------------------------------------------------------------------
