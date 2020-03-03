@@ -46,7 +46,7 @@ namespace Sophia.Editor
                 return false;
             }
 
-#if _DEBUG
+#if DEBUG
             PluginType plugin_type = PluginType.DEBUG;
 #else
             PluginType plugin_type = PluginType.RELEASE;

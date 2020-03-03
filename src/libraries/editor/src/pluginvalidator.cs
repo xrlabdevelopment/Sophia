@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using Sophia.IO;
+using UnityEngine;
 
 namespace Sophia.Editor
 {
@@ -31,6 +31,12 @@ namespace Sophia.Editor
             //
             List<Extention> extentions = plugin_associations.Extentions[plugin_type];
 
+            List<string> string_list = new List<string>();
+            foreach (Extention extention in extentions)
+                string_list.Add(extention.ToString());
+
+            Debug.Log(string.Format("Allowed extentions: {0}", extentions));
+
             //
             // Calculate what files should be removed from the plugin folder
             //
@@ -43,7 +49,7 @@ namespace Sophia.Editor
                 // Unsupported file format, should be removed.
                 //
                 Extention extention = extentions.Find(ex => full_file_path.Contains(Extentions.toString(ex)));
-                if (extention == null || extention == Extention.NONE)
+                if (extention == Extention.NONE)
                 {
                     to_remove.Add(full_file_path);
                     continue;

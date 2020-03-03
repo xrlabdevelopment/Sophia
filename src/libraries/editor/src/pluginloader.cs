@@ -167,7 +167,7 @@ namespace Sophia.Editor
             // We only want to work with supported files.
             //
             IO.Extention extention = plugin_associations.Extentions[plugin_type].Find(ex => fullPath.Contains(IO.Extentions.toString(ex)));
-            if (extention == null || extention == IO.Extention.NONE)
+            if (extention == IO.Extention.NONE)
                 return false;
 
             //
