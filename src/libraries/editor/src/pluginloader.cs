@@ -30,7 +30,7 @@ namespace Sophia.Editor
         // Properties
         public bool IsDirty
         {
-            get { return copy_tasks.Count > 0; }
+            get { return copy_data.Count > 0; }
         }
 
         //--------------------------------------------------------------------------------------
@@ -39,7 +39,8 @@ namespace Sophia.Editor
         private string                  destination_directory;
         private PluginType              plugin_type;
         private IO.FileSystemWatcher    file_system_watcher;
-        private List<Task>              copy_tasks;
+        private List<CopyData>          copy_data;
+        private CopyTask                copy_task;
         private PluginAssociations      plugin_associations;
 
         //--------------------------------------------------------------------------------------
@@ -48,7 +49,7 @@ namespace Sophia.Editor
             source_directory        = source;
             destination_directory   = dest;
             plugin_type             = type;
-            copy_tasks              = new List<Task>();
+            copy_data               = new List<CopyData>();
             plugin_associations     = new PluginAssociations();
 
             try
@@ -80,11 +81,13 @@ namespace Sophia.Editor
         //--------------------------------------------------------------------------------------
         public void flush()
         {
-            foreach (Task task in copy_tasks)
-            {
-                Thread thread = new Thread(new ThreadStart(task.execute));
-                thread.Start();
-            }
+            copy_task = new CopyTask(copy_data.ToArray());
+
+            copy_task.onStarted += onStartedCopy;
+            copy_task.onFinished += onFinishedCopy;
+
+            Thread thread = new Thread(new ThreadStart(copy_task.execute));
+            thread.Start();
         }
 
         //-------------------------------------------------------------------------------------
@@ -187,12 +190,13 @@ namespace Sophia.Editor
         {
             if (File.Exists(from))
             {
-                Task task = new CopyTask(from, to, overwrite);
+                CopyData data = new CopyData();
 
-                task.onStarted  += onStartedCopy;
-                task.onFinished += onFinishedCopy;
+                data.from = from;
+                data.to = to;
+                data.overwrite = overwrite;
 
-                copy_tasks.Add(task);
+                copy_data.Add(data);
 
                 return true;
             }
@@ -208,13 +212,12 @@ namespace Sophia.Editor
         //--------------------------------------------------------------------------------------
         private void onFinishedCopy(Task task)
         {
-            if (copy_tasks.IndexOf(task) != -1)
-            {
-                copy_tasks.Remove(task);
+            if (onFinishedLoading != null)
+                onFinishedLoading();
 
-                if (copy_tasks.Count == 0 && onFinishedLoading != null)
-                    onFinishedLoading();
-            }
+            // Clear copy members
+            copy_task = null;
+            copy_data.Clear();
         }
     }
 }

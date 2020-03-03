@@ -31,11 +31,17 @@ namespace Sophia.Editor
             //
             List<Extention> extentions = plugin_associations.Extentions[plugin_type];
 
-            List<string> string_list = new List<string>();
-            foreach (Extention extention in extentions)
-                string_list.Add(extention.ToString());
+            //
+            // We should only print this information in DEBUG mode.
+            //
+            if (plugin_type == PluginType.DEBUG)
+            {
+                List<string> string_list = new List<string>();
+                foreach (Extention extention in extentions)
+                    string_list.Add(extention.ToString());
 
-            Debug.Log(string.Format("Allowed extentions: {0}", extentions));
+                Debug.Log(string.Format("Allowed extentions: {0}", string.Join(", ", string_list.ToArray())));
+            }
 
             //
             // Calculate what files should be removed from the plugin folder

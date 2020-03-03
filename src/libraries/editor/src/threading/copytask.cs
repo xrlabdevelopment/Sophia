@@ -4,29 +4,30 @@ using System.IO;
 
 namespace Sophia.Threading
 {
+    public class CopyData
+    {
+        public string from;
+        public string to;
+        public bool overwrite;
+    }
+
     public class CopyTask : Task
     {
         //--------------------------------------------------------------------------------------
         // Fields
-        private string copy_from;
-        private string copy_to;
-        private bool should_overwrite;
+        private CopyData[] copy_data;
 
         //--------------------------------------------------------------------------------------
-        public CopyTask(string from, string to, bool overwrite)
+        public CopyTask(CopyData[] copyData)
             :base()
         {
-            copy_from = from;
-            copy_to = to;
-            should_overwrite = overwrite;
+            copy_data = copyData;
         }
         //--------------------------------------------------------------------------------------
-        public CopyTask(string from, string to, bool overwrite, Action<string> log)
+        public CopyTask(CopyData[] copyData, Action<string> log)
             :base(log)
         {
-            copy_from = from;
-            copy_to = to;
-            should_overwrite = overwrite;
+            copy_data = copyData;
         }
 
         //--------------------------------------------------------------------------------------
@@ -35,14 +36,18 @@ namespace Sophia.Threading
             if (onStarted != null)
                 onStarted(this);
 
-            if (File.Exists(copy_from))
+            foreach(CopyData data in copy_data)
             {
-                File.Copy(copy_from, copy_to, should_overwrite);
+                if (File.Exists(data.from))
+                {
+                    File.Copy(data.from, data.to, data.overwrite);
 
-                if(LogFnc != null)
-                    LogFnc("File was copied to: " + copy_to);
+                    if (LogFnc != null)
+                        LogFnc("File was copied to: " + data.to);
+                }
+                else if (LogFnc != null)
+                    LogFnc("Cannot copy file from: " + data.from + " to: " + data.to + ". No such file directory");
             }
-            else if(LogFnc != null) LogFnc("Cannot copy file from: " + copy_from + " to: " + copy_to + ". No such file directory");
 
             if (onFinished != null)
                 onFinished(this);
