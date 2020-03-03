@@ -54,8 +54,6 @@ namespace Sophia.Platform.Framework
             if (!can_lerp_object)
                 return;
 
-            Debug.Log(string.Format("moving == 0: {0}, object == 0 {1}", movingObject == null, objectToMoveTo == null));
-            Debug.Log("automatically called by: " + objectToMoveTo.name);
             moving_object = movingObject;
             object_to_move_to = objectToMoveTo;
             finished_lerp = false;
