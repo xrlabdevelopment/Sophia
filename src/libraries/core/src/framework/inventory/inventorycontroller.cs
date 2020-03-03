@@ -56,7 +56,7 @@ namespace Sophia.Core.Framework
         /// <returns>Returns true when it was added, false if not</returns>
         public bool add(IInventoryItem item)
         {
-            if (inventory_items.Find(i => i.ID == item.ID) == null)
+            if (inventory_items.Find(i => i.ID == item.ID) != null)
                 return false;
 
             inventory_items.Add(item);
