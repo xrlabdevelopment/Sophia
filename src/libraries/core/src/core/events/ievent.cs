@@ -3,7 +3,7 @@ namespace Sophia
     namespace Events
     {
         /// <summary>
-        /// Inteface of what an event should look like
+        /// Interface of what an event should look like
         /// </summary>
         public interface IEvent
         {

@@ -31,7 +31,7 @@ namespace Sophia
 
             //-------------------------------------------------------------------------------------
             // Fields
-            private IEventSender sender;
+            private readonly IEventSender sender;
 
             //-------------------------------------------------------------------------------------
             /// <summary>

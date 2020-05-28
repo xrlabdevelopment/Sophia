@@ -8,7 +8,7 @@ namespace Sophia
         public interface IEventHandler
         {
             /// <summary>
-            /// If the event that is fired is equal to the eventcategory of the handler
+            /// If the event that is fired is equal to the event category of the handler
             /// The event will be passed along, otherwise this handler will be skipped
             /// </summary>
             int EventCategory { get; }

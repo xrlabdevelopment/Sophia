@@ -1,9 +1,12 @@
-namespace Sophia.IO
+namespace Sophia
 {
-    public static class PostFix
+    namespace IO
     {
-        //--------------------------------------------------------------------------------------
-        // Constants
-        public static readonly string DEBUG_POSTFIX = "_d";
+        public static class PostFix
+        {
+            //--------------------------------------------------------------------------------------
+            // Constants
+            public static readonly string DEBUG_POSTFIX = "_d";
+        }
     }
 }

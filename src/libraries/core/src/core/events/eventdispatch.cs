@@ -24,7 +24,7 @@ namespace Sophia
 
             //-------------------------------------------------------------------------------------
             /// <summary>
-            /// Subscribe ourselfs to the event dispatcher
+            /// Subscribe ourself to the event dispatcher
             /// This will make sure the handler is notified when an event is fired
             /// </summary>
             /// <param name="handler">The event handler to be notified</param>
@@ -41,7 +41,7 @@ namespace Sophia
             }
             //-------------------------------------------------------------------------------------
             /// <summary>
-            /// Unsubscribe ourselfs from this event dispatcher
+            /// Un-subscribe ourself from this event dispatcher
             /// This will remove the handler from being notified when an event is fired
             /// </summary>
             /// <param name="handler">The handler to be unsubscribed</param>
