@@ -9,14 +9,14 @@ namespace Sophia.Editor
     {
         //--------------------------------------------------------------------------------------
         // Fields
-        private PluginType plugin_type;
-        private string source_directory;
-        private PluginAssociations plugin_associations;
+        private readonly PluginType plugin_type;
+        private readonly string source_directory;
+        private readonly PluginAssociations plugin_associations;
 
         //--------------------------------------------------------------------------------------
         public PluginValidator(string source, PluginType type)
         {
-            Debug.Assert(Directory.Exists(source), "Path does not represent a directory");
+            UnityEngine.Debug.Assert(Directory.Exists(source), "Path does not represent a directory");
 
             source_directory = source;
             plugin_type = type;
@@ -27,9 +27,9 @@ namespace Sophia.Editor
         public void validate()
         {
             //
-            //  Cache plugin configuration extentions
+            //  Cache plugin configuration FileExtensions
             //
-            List<Extention> extentions = plugin_associations.Extentions[plugin_type];
+            List<FileExtension> FileExtensions = plugin_associations.Extensions[plugin_type];
 
             //
             // We should only print this information in DEBUG mode.
@@ -37,10 +37,10 @@ namespace Sophia.Editor
             if (plugin_type == PluginType.DEBUG)
             {
                 List<string> string_list = new List<string>();
-                foreach (Extention extention in extentions)
-                    string_list.Add(extention.ToString());
+                foreach (FileExtension FileExtension in FileExtensions)
+                    string_list.Add(FileExtension.ToString());
 
-                Debug.Log(string.Format("Allowed extentions: {0}", string.Join(", ", string_list.ToArray())));
+                UnityEngine.Debug.Log(string.Format("Allowed FileExtensions: {0}", string.Join(", ", string_list.ToArray())));
             }
 
             //
@@ -54,8 +54,8 @@ namespace Sophia.Editor
                 //
                 // Unsupported file format, should be removed.
                 //
-                Extention extention = extentions.Find(ex => full_file_path.Contains(Extentions.toString(ex)));
-                if (extention == Extention.NONE)
+                FileExtension file_extionsion = FileExtensions.Find(ex => full_file_path.Contains(IO.FileExtensions.toString(ex)));
+                if (file_extionsion == FileExtension.NONE)
                 {
                     to_remove.Add(full_file_path);
                     continue;
@@ -93,7 +93,7 @@ namespace Sophia.Editor
             // We are a DLL and do not have the debugging postfix.
             // File should be removed.
             //
-            return fullFilePath.Contains(Extentions.toString(Extention.DLL)) && !fullFilePath.Contains(PostFix.DEBUG_POSTFIX)
+            return fullFilePath.Contains(FileExtensions.toString(FileExtension.DLL)) && !fullFilePath.Contains(PostFix.DEBUG_POSTFIX)
                 ? fullFilePath
                 : string.Empty;
         }
@@ -104,7 +104,7 @@ namespace Sophia.Editor
             // We are a DLL and have the debugging postfix.
             // File should be removed.
             //
-            return fullFilePath.Contains(Extentions.toString(Extention.DLL)) && fullFilePath.Contains(PostFix.DEBUG_POSTFIX)
+            return fullFilePath.Contains(FileExtensions.toString(FileExtension.DLL)) && fullFilePath.Contains(PostFix.DEBUG_POSTFIX)
                 ? fullFilePath
                 : string.Empty;
         }

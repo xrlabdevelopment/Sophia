@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using Sophia.Core;
 using UnityEditor;
 using UnityEngine;
 
@@ -11,6 +10,7 @@ namespace Sophia.Editor
         //--------------------------------------------------------------------------------------
         // Constants
         public static readonly string UNITY_PLUGIN_LOCATION = Application.dataPath + "\\Plugins\\";
+        public static readonly string SOPHIA_PLUGIN_LOCATION = "sophia\\";
 
         private static readonly float PLUGIN_FLUSH_INTERVAL = 4.0f;
         private static readonly float PLUGIN_VALIDATE_INTERVAL = 3600.0f;
@@ -38,21 +38,56 @@ namespace Sophia.Editor
         //--------------------------------------------------------------------------------------
         public bool initialize(string installLocation)
         {
-            install_location = installLocation;
-
-            if (!Directory.Exists(install_location))
+            if(!Directory.Exists(UNITY_PLUGIN_LOCATION + SOPHIA_PLUGIN_LOCATION))
             {
-                Debug.LogWarning("Install location not found: " + install_location);
+                Debug.LogError("Please move \"Sophia\" plugins inside a \"Sophia\" subdirectory folder. eg: \"Assets/Plugins/sophia/sophia_core.dll\"");
                 return false;
             }
+
+            install_location = installLocation;
 
 #if DEBUG
             PluginType plugin_type = PluginType.DEBUG;
 #else
             PluginType plugin_type = PluginType.RELEASE;
 #endif
-            plugin_validator = new PluginValidator(UNITY_PLUGIN_LOCATION, plugin_type);
-            plugin_loader = new PluginLoader(install_location, UNITY_PLUGIN_LOCATION, plugin_type);
+
+            if (!Directory.Exists(install_location))
+            {
+                UnityEngine.Debug.LogWarning("Install location not found: " + install_location);
+                UnityEngine.Debug.Log("Installing loaded plugins ...");
+
+                Directory.CreateDirectory(install_location);
+
+                foreach (string file_path in Directory.GetFiles(UNITY_PLUGIN_LOCATION + SOPHIA_PLUGIN_LOCATION))
+                {
+                    if (plugin_type == PluginType.DEBUG)
+                    {
+                        if (!file_path.Contains(IO.PostFix.DEBUG_POSTFIX))
+                            continue;
+                    }
+
+                    Debug.Log("SOURCE: " + file_path);
+                    Debug.Log("DEST: " + Path.Combine(installLocation, System.IO.Path.GetFileName(file_path)));
+
+                    File.Copy(file_path, Path.Combine(installLocation, System.IO.Path.GetFileName(file_path)));
+                }
+
+                UnityEngine.Debug.Log("Installation finished!");
+                foreach (string file_path in Directory.GetFiles(installLocation))
+                {
+                    if (plugin_type == PluginType.DEBUG)
+                    {
+                        if (!file_path.Contains(IO.PostFix.DEBUG_POSTFIX))
+                            continue;
+
+                        UnityEngine.Debug.Log("Installed file: " + file_path);
+                    }
+                }
+            }
+
+            plugin_validator = new PluginValidator(UNITY_PLUGIN_LOCATION + SOPHIA_PLUGIN_LOCATION, plugin_type);
+            plugin_loader = new PluginLoader(install_location, UNITY_PLUGIN_LOCATION + SOPHIA_PLUGIN_LOCATION, plugin_type);
             plugin_loader.onFinishedLoading += onPluginsLoaded;
             plugin_loader.onFileDeleted += onPluginRemoved;
 
@@ -99,7 +134,7 @@ namespace Sophia.Editor
 
             plugin_loader.flush();
 
-            Debug.Log("Flushing plugins ...");
+            UnityEngine.Debug.Log("Flushing plugins ...");
         }
         //--------------------------------------------------------------------------------------
         private void validatePluginValidator(Guid timerId)
@@ -109,7 +144,7 @@ namespace Sophia.Editor
 
             plugin_validator.validate();
 
-            Debug.Log("Validating plugins ...");
+            UnityEngine.Debug.Log("Validating plugins ...");
         }
 
         //--------------------------------------------------------------------------------------
@@ -117,14 +152,14 @@ namespace Sophia.Editor
         {
             refresh_assets = true;
 
-            Debug.Log("Plugins Loaded!");
+            UnityEngine.Debug.Log("Plugins Loaded!");
         }
         //--------------------------------------------------------------------------------------
         private void onPluginRemoved()
         {
             refresh_assets = true;
 
-            Debug.Log("Plugin Removed!");
+            UnityEngine.Debug.Log("Plugin Removed!");
         }
 
         //--------------------------------------------------------------------------------------

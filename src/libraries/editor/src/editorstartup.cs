@@ -18,7 +18,7 @@ namespace Sophia.Editor
         {
             initialize();
 
-            Debug.Log("Engine up and running!");
+            UnityEngine.Debug.Log("Engine up and running!");
         }
 
         //---------------------------------------------------------------------------------------
