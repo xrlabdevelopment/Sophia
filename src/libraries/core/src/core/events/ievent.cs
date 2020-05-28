@@ -1,23 +1,26 @@
-namespace Sophia.Events
+namespace Sophia
 {
-    /// <summary>
-    /// Inteface of what an event should look like
-    /// </summary>
-    public interface IEvent
+    namespace Events
     {
         /// <summary>
-        /// The type of the event
+        /// Inteface of what an event should look like
         /// </summary>
-        int EventType { get; }
+        public interface IEvent
+        {
+            /// <summary>
+            /// The type of the event
+            /// </summary>
+            int EventType { get; }
 
-        /// <summary>
-        /// The category of the event
-        /// </summary>
-        int EventCategory { get; }
-        
-        /// <summary>
-        /// The instigator of the event
-        /// </summary>
-        IEventSender Sender { get; }
+            /// <summary>
+            /// The category of the event
+            /// </summary>
+            int EventCategory { get; }
+
+            /// <summary>
+            /// The instigator of the event
+            /// </summary>
+            IEventSender Sender { get; }
+        }
     }
 }
