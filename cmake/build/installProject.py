@@ -135,10 +135,10 @@ if __name__ == '__main__':
     dae_source = os.getcwd() + "\\"
     dae_build = dae_source + "..\\VC2019_x64\\"
     
-    sophia_libraries = dae_build + "src\\libraries\\sophia\\"
+    sophia_libraries = dae_build + "src\\libraries\\"
     sophia_core = sophia_libraries + "core\\"
     sophia_editor = sophia_libraries + "editor\\"
-    sophia_platform = sophia_libraries + "platform\\"   
+    sophia_platform = sophia_libraries + "backup\\"   
            
     os.system("cls")
 
@@ -332,8 +332,8 @@ if __name__ == '__main__':
         os.system("\"\"" + msbuild_path + "\" " + sophia_core + "sophia_core.csproj /p:Configuration=Release /p:Platform=\"x64\"")
         os.system("\"\"" + msbuild_path + "\" " + sophia_editor + "sophia_editor.csproj /p:Configuration=Debug /p:Platform=\"x64\"")
         os.system("\"\"" + msbuild_path + "\" " + sophia_editor + "sophia_editor.csproj /p:Configuration=Release /p:Platform=\"x64\"")
-        os.system("\"\"" + msbuild_path + "\" " + sophia_platform + "sophia_platform.csproj /p:Configuration=Debug /p:Platform=\"x64\"")
-        os.system("\"\"" + msbuild_path + "\" " + sophia_platform + "sophia_platform.csproj /p:Configuration=Release /p:Platform=\"x64\"")
+        os.system("\"\"" + msbuild_path + "\" " + sophia_platform + "sophia_deprecated.csproj /p:Configuration=Debug /p:Platform=\"x64\"")
+        os.system("\"\"" + msbuild_path + "\" " + sophia_platform + "sophia_deprecated.csproj /p:Configuration=Release /p:Platform=\"x64\"")
 
         os.system("\"\"" + msbuild_path + "\" " + sophia_libraries + "INSTALL.vcxproj /p:Configuration=Debug /p:Platform=\"x64\"")
         os.system("\"\"" + msbuild_path + "\" " + sophia_libraries + "INSTALL.vcxproj /p:Configuration=Release /p:Platform=\"x64\"")
