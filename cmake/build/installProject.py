@@ -164,6 +164,12 @@ if __name__ == '__main__':
 	if "-reload" in sys.argv:
 		reload = 1
 		print("\tReloading all directories")
+	if "-latest" in sys.argv:
+		# del *.txt is NEVER a good idea.
+		print("Searching for latest versions of Unity and VS")
+		os.system("del installed_unity_version_directories.txt")
+		os.system("del installed_unity_versions.txt")
+		os.system("del msbuild_dir.txt")
 
 	# this if check is only present to layout the terminal a bit more.
 	if len(sys.argv) > 1:
