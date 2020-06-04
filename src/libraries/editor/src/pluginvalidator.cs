@@ -58,6 +58,7 @@ namespace Sophia.Editor
                 if (file_extionsion == FileExtension.NONE)
                 {
                     to_remove.Add(full_file_path);
+                    UnityEngine.Debug.Log("FileExtension is NONE, marking for deletion: " + full_file_path);
                     continue;
                 }
 
@@ -83,6 +84,7 @@ namespace Sophia.Editor
             foreach (string file_path in to_remove)
             {
                 File.Delete(file_path);
+                UnityEngine.Debug.Log("Deleted: " + file_path);
             }
         }
 

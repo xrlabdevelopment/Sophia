@@ -6,7 +6,7 @@ namespace Sophia
         {
             //--------------------------------------------------------------------------------------
             // Constants
-            public static readonly string DEBUG_POSTFIX = "_d";
+            public static readonly string DEBUG_POSTFIX = "_d.";
         }
     }
 }
