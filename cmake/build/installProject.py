@@ -42,7 +42,7 @@ def get_msbuild_dir(vs_version_years, vs_version_types):
 	drives = get_drives()
 	for drive in drives:
 		# when one install location is found on a specific drive we have enough
-		if len(msbuild_dirs) > 0 and parse_all == 0:
+		if len(msbuild_dirs) > 0 and not parse_all:
 			break
 		
 		start = drive + ":\\"
@@ -95,7 +95,7 @@ def get_installed_unity_version_directories(supported_versions, parse_all):
 	for drive in drives:
 
 		# when one install location is found on a specific drive we have enough
-		if len(installed_unity_versions) > 0 and parse_all == 0:
+		if len(installed_unity_versions) > 0 and not parse_all:
 			return installed_unity_versions
 
 
@@ -133,6 +133,7 @@ def get_installed_unity_versions(installed_unity_version_directories):
 
 # main function - entry point of the python script
 if __name__ == '__main__':
+	# Warning: this only works when the script is called from the sophia root dir; e.g. through a .bat file
 	dae_source = os.getcwd() + "\\"
 	dae_build = dae_source + "..\\VC2019_x64\\"
 	
@@ -149,27 +150,27 @@ if __name__ == '__main__':
 		   
 	os.system("cls")
 
-	print("Argument List: \t" + str(sys.argv))
-	print("")
+	print(f"Argument List: \t{str(sys.argv)}\n")
 
 	# Parse arguments
-	parse_all = 0
+	parse_all = False
+	latest = False
 	if "-parse_all" in sys.argv:
-		parse_all = 1
+		parse_all = True
 		print("\tParsing all drives")
 	if "-master" in sys.argv:
 		print("\tChecking out master, connecting to repository ...")
 		os.system("git checkout master")
-	reload = 0
 	if "-reload" in sys.argv:
-		reload = 1
 		print("\tReloading all directories")
-	if "-latest" in sys.argv:
-		# del *.txt is NEVER a good idea.
-		print("Searching for latest versions of Unity and VS")
 		os.system("del installed_unity_version_directories.txt")
 		os.system("del installed_unity_versions.txt")
 		os.system("del msbuild_dir.txt")
+	if "-latest" in sys.argv:
+		print("Searching for latest versions of Unity and VS")
+		latest = True
+		parse_all = True # If we don't parse all versions we won't know whether the last one has been selected 
+
 
 	# this if check is only present to layout the terminal a bit more.
 	if len(sys.argv) > 1:
@@ -192,6 +193,9 @@ if __name__ == '__main__':
 	vs_version_years = [2019, 2017]
 	vs_version_types = ["Enterprise","Professional","Community"]
 
+	if latest:
+		vs_version_years = vs_version_years[0]
+
 	print("Supported VS version years: " + str(vs_version_years))
 	print("Supported VS version types: " + str(vs_version_types))
 	
@@ -201,7 +205,7 @@ if __name__ == '__main__':
 
 	# Load the directory from disk if present
 	# Save the directory to disk otherwise
-	if os.path.isfile('msbuild_dir.txt') and reload == 0:
+	if os.path.isfile('msbuild_dir.txt'):
 		file = open("msbuild_dir.txt", "r")
 		msbuild_directory = file.read()
 
@@ -233,7 +237,7 @@ if __name__ == '__main__':
 
 	print("Supported Unity years: " + str(supported_versions))
 	
-	if os.path.isfile('installed_unity_version_directories.txt') and os.path.isfile('installed_unity_versions.txt') and reload == 0:
+	if os.path.isfile('installed_unity_version_directories.txt') and os.path.isfile('installed_unity_versions.txt'):
 		dirty = 0
 		
 		directories_file = open("installed_unity_version_directories.txt", "r")
@@ -271,6 +275,11 @@ if __name__ == '__main__':
 		installed_unity_version_directories.pop()
 	if installed_unity_versions[-1] == "":
 		installed_unity_versions.pop()
+
+	if latest:
+		print("Latest Unity version selected - ignoring other versions")
+		installed_unity_versions = installed_unity_versions[:-1]
+		installed_unity_version_directories = installed_unity_version_directories[-1]
 
 	print("Unity version directories:")
 	for installed_unity_version_directory in installed_unity_version_directories:
