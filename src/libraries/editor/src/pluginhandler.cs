@@ -63,7 +63,7 @@ namespace Sophia.Editor
                 {
                     if (plugin_type == PluginType.DEBUG)
                     {
-                        if (!file_path.Contains(IO.PostFix.DEBUG_POSTFIX))
+                        if (!IO.Helpers.isDebugFile(file_path))
                             continue;
                     }
 
@@ -78,7 +78,7 @@ namespace Sophia.Editor
                 {
                     if (plugin_type == PluginType.DEBUG)
                     {
-                        if (!file_path.Contains(IO.PostFix.DEBUG_POSTFIX))
+                        if (!IO.Helpers.isDebugFile(file_path))
                             continue;
 
                         UnityEngine.Debug.Log("Installed file: " + file_path);

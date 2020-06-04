@@ -58,7 +58,6 @@ namespace Sophia.Editor
                 if (file_extionsion == FileExtension.NONE)
                 {
                     to_remove.Add(full_file_path);
-                    UnityEngine.Debug.Log("FileExtension is NONE, marking for deletion: " + full_file_path);
                     continue;
                 }
 
@@ -84,7 +83,6 @@ namespace Sophia.Editor
             foreach (string file_path in to_remove)
             {
                 File.Delete(file_path);
-                UnityEngine.Debug.Log("Deleted: " + file_path);
             }
         }
 
@@ -95,7 +93,7 @@ namespace Sophia.Editor
             // We are a DLL and do not have the debugging postfix.
             // File should be removed.
             //
-            return fullFilePath.Contains(FileExtensions.toString(FileExtension.DLL)) && !fullFilePath.Contains(PostFix.DEBUG_POSTFIX)
+            return fullFilePath.Contains(FileExtensions.toString(FileExtension.DLL)) && !IO.Helpers.isDebugFile(fullFilePath)
                 ? fullFilePath
                 : string.Empty;
         }
@@ -106,7 +104,7 @@ namespace Sophia.Editor
             // We are a DLL and have the debugging postfix.
             // File should be removed.
             //
-            return fullFilePath.Contains(FileExtensions.toString(FileExtension.DLL)) && fullFilePath.Contains(PostFix.DEBUG_POSTFIX)
+            return fullFilePath.Contains(FileExtensions.toString(FileExtension.DLL)) && IO.Helpers.isDebugFile(fullFilePath)
                 ? fullFilePath
                 : string.Empty;
         }
