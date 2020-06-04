@@ -330,7 +330,7 @@ if __name__ == '__main__':
 		if os.path.isfile(dae_build + "CMakeCache.txt"):
 			os.remove(dae_build + "CMakeCache.txt")
 
-		os.system(project_generation_script + argument_string)
+		os.system("python " + project_generation_script + argument_string)
 
 		print("")
 		print("CMAKE project generation complete")
