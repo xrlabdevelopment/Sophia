@@ -66,7 +66,7 @@ namespace Sophia.Editor
                 {
                     if (plugin_type == PluginType.DEBUG)
                     {
-                        if (!file_path.Contains(IO.PostFix.DEBUG_POSTFIX))
+                        if (!IO.Helpers.isDebugFile(file_path))
                             continue;
                     }
 
@@ -180,7 +180,7 @@ namespace Sophia.Editor
             //
             if (plugin_type == PluginType.DEBUG)
             {
-                if (!name.Contains(Sophia.IO.PostFix.DEBUG_POSTFIX))
+                if (!IO.Helpers.isDebugFile(name))
                     return false;
             }
 

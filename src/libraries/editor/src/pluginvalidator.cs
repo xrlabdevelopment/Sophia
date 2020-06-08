@@ -93,7 +93,7 @@ namespace Sophia.Editor
             // We are a DLL and do not have the debugging postfix.
             // File should be removed.
             //
-            return fullFilePath.Contains(FileExtensions.toString(FileExtension.DLL)) && !fullFilePath.Contains(PostFix.DEBUG_POSTFIX)
+            return fullFilePath.Contains(FileExtensions.toString(FileExtension.DLL)) && !IO.Helpers.isDebugFile(fullFilePath)
                 ? fullFilePath
                 : string.Empty;
         }
@@ -104,7 +104,7 @@ namespace Sophia.Editor
             // We are a DLL and have the debugging postfix.
             // File should be removed.
             //
-            return fullFilePath.Contains(FileExtensions.toString(FileExtension.DLL)) && fullFilePath.Contains(PostFix.DEBUG_POSTFIX)
+            return fullFilePath.Contains(FileExtensions.toString(FileExtension.DLL)) && IO.Helpers.isDebugFile(fullFilePath)
                 ? fullFilePath
                 : string.Empty;
         }

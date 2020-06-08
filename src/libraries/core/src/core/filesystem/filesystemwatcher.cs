@@ -215,7 +215,7 @@ namespace Sophia
                 // Convert the given event filter to an integer.
                 // This makes it possible to execute bitwise operations on it.
                 // 
-                int incomming_event_filter = (int)eventFilters;
+                int incoming_event_filter = (int)eventFilters;
                 for (int i = 0; i < Enum.GetNames(typeof(EventFilters)).Length; ++i)
                 {
                     //
@@ -226,7 +226,7 @@ namespace Sophia
                     //
                     // Check if the event filter was installed.
                     //
-                    bool has_event_filter_installed = (incomming_event_filter & current_event_filter) > 0;
+                    bool has_event_filter_installed = (incoming_event_filter & current_event_filter) > 0;
                     if (has_event_filter_installed)
                     {
                         switch ((EventFilters)current_event_filter)
