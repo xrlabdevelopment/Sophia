@@ -278,8 +278,8 @@ if __name__ == '__main__':
 
 	if latest:
 		print("Latest Unity version selected - ignoring other versions")
-		installed_unity_versions = installed_unity_versions[:-1]
-		installed_unity_version_directories = installed_unity_version_directories[-1]
+		installed_unity_versions = [installed_unity_versions[-1]]
+		installed_unity_version_directories = [installed_unity_version_directories[-1]]
 
 	print("Unity version directories:")
 	for installed_unity_version_directory in installed_unity_version_directories:
