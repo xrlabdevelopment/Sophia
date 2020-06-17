@@ -41,6 +41,7 @@ set_property(TARGET ${EDITOR_LIBRARY_NAME} PROPERTY VS_DOTNET_REFERENCES
                     "${UNITY_EDITOR_DLL}")
 
 target_link_libraries(${EDITOR_LIBRARY_NAME} PUBLIC sophia_core)
+target_link_libraries(${EDITOR_LIBRARY_NAME} PUBLIC sophia_platform)
 
 # --------------------------
 # Install.

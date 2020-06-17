@@ -32,8 +32,17 @@ SET(CURRENT_EDITOR_PATH ${CMAKE_CURRENT_LIST_DIR}/${EDITOR_FOLDER})
 VALIDATE_DIRECTORY(${CURRENT_EDITOR_PATH})
 
 # --------------------------------
+# Setup platform path
+# --------------------------------
+SET(PLATFORM_FOLDER "platform")
+SET(CURRENT_PLATFORM_PATH ${CMAKE_CURRENT_LIST_DIR}/${PLATFORM_FOLDER})
+
+VALIDATE_DIRECTORY(${CURRENT_PLATFORM_PATH})
+
+# --------------------------------
 # Add subdirectories
 # --------------------------------
 add_subdirectory(backup)
 add_subdirectory(core)
+add_subdirectory(platform)
 add_subdirectory(editor)
