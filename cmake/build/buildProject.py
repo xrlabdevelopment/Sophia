@@ -54,36 +54,43 @@ def get_unity_dirs(args):
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
-	parser.add_argument("-m", "--master", help="Checkout master repository", action="store_true")
+	parser.add_argument("-m", "--master", help="Checkout master repository, will trigger update", action="store_true")
 	parser.add_argument("-r", "--reload", help="Purge cache and locate VS and Unity installations ", action="store_true")
 	parser.add_argument("-l", "--latest", help="Install only for the latest version of Unity and Visual Studio", action="store_true")
+	parser.add_argument("-c", "--clear", help="Clear CMake cache from the shadow build", action="store_true")
+	parser.add_argument("-u", "--update", help="Pull from repository before building", action="store_true")
 	parser.add_argument("--vs_dir", help="Root directory to search for Visual Studio installation", default="C:\\*\\Microsoft Visual Studio\\*\\*\\MSBuild\\Current\\Bin")
 	parser.add_argument("--unity_dir", help="Root directory to search for Unity installation", default="C:\\Program Files\\Unity\\Hub\\Editor")
 
-	cache_file = "build_cache.json"
-	args = parser.parse_args()
-	if(args.master): 
-		print("Checking out master, connecting to repository...")
-		os.system("git checkout master")
-	if(args.reload): 
-		print("Reloading all directories")
-		os.system(f"del {cache_file}")
-	if(args.latest):
-		print("Searching for latest versions of Unity and VS")
-
-	# Find root dir of git repo
+	# Find root dir and shadow build of git repo
 	root_dir = os.path.dirname(os.path.abspath(__file__))
 	while not os.path.isdir(os.path.join(root_dir, ".git")):
 		root_dir = os.path.dirname(root_dir)
 		if not root_dir:
 			sys.exit("Please place this script in the sophia git repo.")
-	
-	os.system("git pull")
-
 	print("ROOT: " + root_dir)
+	
+	cache_file = "build_cache.json"
 	project_name = "VC2019_x64"
-	dae_build = os.path.normpath(os.path.join(root_dir, f"..\\{project_name}\\"))
-	print("DAE_BUILD: " + dae_build)
+	shadow_build = os.path.normpath(os.path.join(root_dir, f"..\\{project_name}\\"))
+	print("shadow_build: " + shadow_build)
+			
+	# Check parse args 
+	args = parser.parse_args()
+	if args.master: 
+		print("Checking out master, connecting to repository...")
+		os.system("git checkout master")
+		args.update = True
+	if args.reload: 
+		print("Reloading all directories")
+		os.system(f"del {cache_file}")
+	if args.latest:
+		print("Searching for latest versions of Unity and VS")
+	if args.update:
+		os.system("git pull")
+	if args.clear:
+		os.system(f"del /f /s /q {shadow_build}\\CMakeFiles")
+		os.system(f"del /f /s /q {shadow_build}\\CMakeCache.txt")
 
 	# Find MSBuild.exe and Unity version(s) on cache or on disk
 	cache_data = None
@@ -114,8 +121,8 @@ if __name__ == '__main__':
 	cmake_make_arguments = "-A"
 	cmake_build_target = "x64"
 
-	if not os.path.exists(dae_build):
-		os.mkdir(dae_build)
+	if not os.path.exists(shadow_build):
+		os.mkdir(shadow_build)
 
 	for unity_dir in unity_dirs:
 		if "Unity.exe" in unity_dir:
@@ -128,8 +135,8 @@ if __name__ == '__main__':
 	# Build the project
 	# check if \\sophia\\ subdir is required
 	# optionally filter on all keywords such as 'backup' or 'deprecated'
-	csprojects = glob.glob(dae_build + "\\src\\libraries\\sophia\\**\\*.csproj", recursive=True)
-	install = glob.glob(dae_build + "\\src\\libraries\\INSTALL.vcxproj")
+	csprojects = glob.glob(shadow_build + "\\src\\libraries\\sophia\\**\\*.csproj", recursive=True)
+	install = glob.glob(shadow_build + "\\src\\libraries\\INSTALL.vcxproj")
 
 	for project in list(csprojects + install):
 		os.system(f"\"\"{msbuild_dir}\" \"{project}\" /p:Configuration=Debug /p:Platform=\"x64\"\"")
