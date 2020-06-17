@@ -89,8 +89,7 @@ if __name__ == '__main__':
 	if args.update:
 		os.system("git pull")
 	if args.clear:
-		os.system(f"del /f /s /q {shadow_build}\\CMakeFiles")
-		os.system(f"del /f /s /q {shadow_build}\\CMakeCache.txt")
+		os.system(f"rd /S /Q {shadow_build}")
 
 	# Find MSBuild.exe and Unity version(s) on cache or on disk
 	cache_data = None
@@ -123,6 +122,7 @@ if __name__ == '__main__':
 
 	if not os.path.exists(shadow_build):
 		os.mkdir(shadow_build)
+	os.chdir(shadow_build)
 
 	for unity_dir in unity_dirs:
 		if "Unity.exe" in unity_dir:
