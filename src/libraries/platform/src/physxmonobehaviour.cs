@@ -1,11 +1,12 @@
 using UnityEngine;
 
-namespace Sophia.Deprecated
+namespace Sophia
 {
     [RequireComponent(typeof(Rigidbody))]
     public class PhysxMonoBehaviour : BaseMonoBehaviour
     {
         //-------------------------------------------------------------------------------------
+        // Properties
         public new Rigidbody rigid
         {
             get
@@ -17,6 +18,7 @@ namespace Sophia.Deprecated
         }
 
         //-------------------------------------------------------------------------------------
+        // Fields
         private Rigidbody cached_rigid;
     }
 }

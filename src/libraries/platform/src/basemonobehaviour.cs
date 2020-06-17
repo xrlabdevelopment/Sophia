@@ -1,7 +1,15 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Sophia.Extensions;
 using UnityEngine;
 
-namespace Sophia.Deprecated
+namespace Sophia
 {
+    /// <summary>
+    /// Provides some additional functions for MonoBehaviour.
+    /// </summary>
+    [AddComponentMenu("Sophia/BaseMonobehaviour")]
     public class BaseMonoBehaviour : MonoBehaviour
     {
         //-------------------------------------------------------------------------------------
@@ -52,6 +60,125 @@ namespace Sophia.Deprecated
             trans.gameObject.layer = layer;
             foreach (Transform child in trans)
                 changeLayersRecursively(child, layer);
+        }
+
+        //-------------------------------------------------------------------------------------
+        /// <summary>
+        /// Instantiates a prefab and attaches it to the given root. 
+        /// </summary>
+        public static T instantiate<T>(T prefab, GameObject root)
+            where T : Component
+        {
+            T new_object = Instantiate(prefab);
+
+            new_object.transform.SetParent(root.transform, false);
+            new_object.transform.ResetLocal();
+
+            return new_object;
+        }
+
+        //-------------------------------------------------------------------------------------
+        /// <summary>
+        /// Instantiates a prefab, attaches it to the given root, and
+        /// sets the local position and rotation.
+        /// </summary>
+        public static T instantiate<T>(T prefab, GameObject root, Vector3 localPosition, Quaternion localRotation)
+            where T : Component
+        {
+            T new_object = Instantiate<T>(prefab);
+
+            new_object.transform.parent = root.transform;
+
+            new_object.transform.localPosition = localPosition;
+            new_object.transform.localRotation = localRotation;
+            new_object.transform.ResetScale();
+
+            return new_object;
+        }
+
+        //-------------------------------------------------------------------------------------
+        /// <summary>
+        /// Instantiates a prefab.
+        /// </summary>
+        /// <param name="prefab">The object.</param>
+        /// <returns>GameObject.</returns>
+        public static GameObject instantiate(GameObject prefab)
+        {
+            return UnityEngine.Object.Instantiate(prefab);
+        }
+
+        //-------------------------------------------------------------------------------------
+        /// <summary>
+        /// Instantiates the specified prefab.
+        /// </summary>
+        public static GameObject instantiate(GameObject prefab, Vector3 position, Quaternion rotation)
+        {
+            GameObject new_object = UnityEngine.Object.Instantiate(prefab, position, rotation);
+
+            return new_object;
+        }
+
+        //-------------------------------------------------------------------------------------
+        /// <summary>
+        /// Instantiates a prefab and parents it to the root.
+        /// </summary>
+        /// <param name="prefab">The prefab.</param>
+        /// <param name="root">The root.</param>
+        /// <param name="isCanvas">To know if it is instantiate in a canvas or not</param>
+        /// <returns>GameObject.</returns>
+        public static GameObject instantiate(GameObject prefab, GameObject root)
+        {
+            GameObject new_object = UnityEngine.Object.Instantiate(prefab);
+
+            new_object.transform.parent = root.transform;
+
+            new_object.transform.ResetLocal();
+
+            return new_object;
+        }
+
+        //-------------------------------------------------------------------------------------
+        /// <summary>
+        /// Similar to FindObjectsOfType, except that it looks for components
+        /// that implement a specific interface.
+        /// </summary>
+        public static List<I> findObjectsOfInterface<I>()
+            where I : class
+        {
+            MonoBehaviour[] monoBehaviours = FindObjectsOfType<MonoBehaviour>();
+
+            return monoBehaviours.Select(behaviour => behaviour.GetComponent(typeof(I))).OfType<I>().ToList();
+        }
+
+        //-------------------------------------------------------------------------------------
+        public Coroutine Invoke(Action action, float time)
+        {
+            return MonoBehaviourExtensions.Invoke(this, action, time);
+        }
+
+        //-------------------------------------------------------------------------------------
+        public Coroutine InvokeRepeating(Action action, float time, float repeatTime)
+        {
+            return MonoBehaviourExtensions.InvokeRepeating(this, action, time, repeatTime);
+        }
+
+        //-------------------------------------------------------------------------------------
+        /// <summary>
+        /// Destroys given object using either Object.Destroy, or Object.DestroyImmediate,
+        /// depending on whether Application.isPlaying is true or not. This is useful when 
+        /// writing methods that is used by both editor tools and the game itself.
+        /// </summary>
+        /// <param name="obj">The object to destroy.</param>
+        public static void DestroyUniversal(UnityEngine.Object obj)
+        {
+            if (Application.isPlaying)
+            {
+                Destroy(obj);
+            }
+            else
+            {
+                DestroyImmediate(obj);
+            }
         }
 
         //-------------------------------------------------------------------------------------
