@@ -13,8 +13,7 @@ def getUnityVersions(cache_file):
 	if os.path.isfile(cache_file):
 		with open(cache_file,) as f:
 			cache_data = json.load(f)
-		for unity_dir in cache_data["unity_dirs"]:
-			unity_versions.extend(re.findall(r"\d{4}.*?(?=\\)", unity_dir))
+		unity_versions = cache_data["unity_versions"]
 
 	if not unity_versions:
 		# call other script to generate this file
@@ -37,14 +36,7 @@ def getUnityVersions(cache_file):
 			print("Invalid input. Ciao bye.")
 			exit()
 
-	# Sort Unity versions from oldest to most recent
-	if len(unity_versions) > 1:	
-		unity_dict = {}
-		for v in unity_versions:
-			m = re.match(r"(\d{4})\.(\d+)\.(\d+)(?=f)", v)
-			unity_dict[m.groups()] = v
-		unity_versions = list(dict(sorted(unity_dict.items(), reverse=args.latest)).values())		
-
+	unity_versions = sorted(unity_versions, reverse=args.latest)
 
 	minVersion = unity_versions[0].split(".") 						# split in three parts
 	versionMajor = ".".join(minVersion[0:-1])
