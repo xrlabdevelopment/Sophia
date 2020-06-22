@@ -40,7 +40,7 @@ namespace Sophia.Editor
         {
             if(!Directory.Exists(UNITY_PLUGIN_LOCATION + SOPHIA_PLUGIN_LOCATION))
             {
-                Debug.LogError("Please move \"Sophia\" plugins inside a \"Sophia\" subdirectory folder. eg: \"Assets/Plugins/sophia/sophia_core.dll\"");
+                Debug.LogWarning("Please move \"Sophia\" plugins inside a \"Sophia\" subdirectory folder. eg: \"Assets/Plugins/sophia/sophia_core.dll\"");
                 return false;
             }
 
@@ -167,7 +167,7 @@ namespace Sophia.Editor
         {
             TimerCreationInfo info = new TimerCreationInfo();
             info.finished_delegate += flushPluginLoader;
-            info.finish_behaviour = TimerFinishedBehaviour.RESET_ON_FINSHED;
+            info.finish_behaviour = TimerFinishedBehaviour.RESET_START_ON_FINSHED;
             info.start_on_creation = true;
             info.start_time = PLUGIN_FLUSH_INTERVAL;
 
@@ -178,7 +178,7 @@ namespace Sophia.Editor
         {
             TimerCreationInfo info = new TimerCreationInfo();
             info.finished_delegate += validatePluginValidator;
-            info.finish_behaviour = TimerFinishedBehaviour.RESET_ON_FINSHED;
+            info.finish_behaviour = TimerFinishedBehaviour.RESET_START_ON_FINSHED;
             info.start_on_creation = true;
             info.start_time = PLUGIN_VALIDATE_INTERVAL;
 

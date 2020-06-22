@@ -21,7 +21,7 @@ namespace Sophia
 
         public float StartTime
         {
-            get { return StartTime; }
+            get { return start_time; }
         }
         public float CurrentTime
         {
@@ -66,7 +66,7 @@ namespace Sophia
         //--------------------------------------------------------------------------------------
         public void start()
         {
-            System.Diagnostics.Debug.Assert(is_initialized, "Initialize timer before using it");
+            Debug.Assert(is_initialized, "Initialize timer before using it");
 
             is_running = true;
             is_paused = false;
@@ -77,7 +77,7 @@ namespace Sophia
         //--------------------------------------------------------------------------------------
         public void stop()
         {
-            System.Diagnostics.Debug.Assert(is_initialized, "Initialize timer before using it");
+            Debug.Assert(is_initialized, "Initialize timer before using it");
 
             is_running = false;
             is_paused = false;
@@ -91,7 +91,7 @@ namespace Sophia
         //--------------------------------------------------------------------------------------
         public void togglePause()
         {
-            System.Diagnostics.Debug.Assert(is_initialized, "Initialize timer before using it");
+            Debug.Assert(is_initialized, "Initialize timer before using it");
 
             is_paused = !is_paused;
         }
@@ -123,7 +123,7 @@ namespace Sophia
         //--------------------------------------------------------------------------------------
         public void update(float dTime)
         {
-            System.Diagnostics.Debug.Assert(is_initialized, "Initialize timer before using it");
+            Debug.Assert(is_initialized, "Initialize timer before using it");
 
             if (is_paused || !is_running)
                 return;
@@ -136,11 +136,20 @@ namespace Sophia
                 stop();
 
                 if (onFinished != null)
+                {
                     onFinished(timer_id);
+                    return;
+                }
             }
 
             if (onUpdate != null)
                 onUpdate(timer_id, curr_time);
+        }
+
+        //--------------------------------------------------------------------------------------
+        public void addTime(float time)
+        {
+            curr_time += time;
         }
     }
 }
