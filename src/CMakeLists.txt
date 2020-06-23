@@ -19,6 +19,8 @@ if(NOT EXISTS "${SOPHIA_UNITY_INSTALL_DIRECTORY}/${SOPHIA_UNITY_VERSION}")
     message(FATAL_ERROR "Could not find Unity version")
 endif()
 
+message(STATUS "Generation started with Unity version: ${SOPHIA_UNITY_VERSION}")
+
 # --------------------------------
 # Add subdirectories
 # --------------------------------
