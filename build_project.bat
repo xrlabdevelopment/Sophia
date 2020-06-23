@@ -16,8 +16,7 @@ if not defined python3_dir (
 )
 
 cd build
-start "Project generation" "%python3_dir%\python.exe" buildProject.py "%*"
+"%python3_dir%\python.exe" buildProject.py %*
 cd ..
 
 popd
-cls
