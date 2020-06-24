@@ -510,3 +510,39 @@ private int SomeOtherValue;
 ```
 
 ***Why: Always shield you code.***
+
+#### 31. Keep the order of variables the same in all files
+
+```csharp 
+//--------------------------------------------------------------------------------------
+// Delegates
+public delegate void MyPublicEvent();
+private delegate void MyPrivateEvent();
+
+public MyPublicEvent OnPublicEvent;
+private MyPrivateEvent OnPrivateEvent;
+
+//--------------------------------------------------------------------------------------
+// Inspector
+[SerializeField]
+private int MyInspectorValue;
+
+//--------------------------------------------------------------------------------------
+// Properties
+public float MyPropertyValue
+{
+  get;
+  set;
+}
+
+//--------------------------------------------------------------------------------------
+// Fields
+private bool my_field_value
+
+//--------------------------------------------------------------------------------------
+// Constants
+private const string MY_CONSTANT_VALUE;
+
+```
+
+***Why: Readability.***
