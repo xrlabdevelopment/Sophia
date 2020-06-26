@@ -2,6 +2,7 @@
 import sys
 import os
 
+import re
 import argparse
 import glob
 import json
@@ -59,6 +60,7 @@ if __name__ == '__main__':
 	parser.add_argument("-l", "--latest", help="Install only for the latest version of Unity and Visual Studio", action="store_true")
 	parser.add_argument("-c", "--clear", help="Clear CMake cache from the shadow build", action="store_true")
 	parser.add_argument("-u", "--update", help="Pull from repository before building", action="store_true")
+	parser.add_argument("-i", "--install", help="Install the project after generating", action="store_true")
 	parser.add_argument("--vs_dir", help="Root directory to search for Visual Studio installation", default="C:\\*\\Microsoft Visual Studio\\*\\*\\MSBuild\\Current\\Bin")
 	parser.add_argument("--unity_dir", help="Root directory to search for Unity installation", default="C:\\Program Files\\Unity\\Hub\\Editor")
 
@@ -70,11 +72,11 @@ if __name__ == '__main__':
 			sys.exit("Please place this script in the sophia git repo.")
 	print("ROOT: " + root_dir)
 	
-	cache_file = "build_cache.json"
 	project_name = "VC2019_x64"
+	cache_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "build_cache.json")
 	shadow_build = os.path.normpath(os.path.join(root_dir, f"..\\{project_name}\\"))
 	print("shadow_build: " + shadow_build)
-			
+	
 	# Check parse args 
 	args = parser.parse_args()
 	if args.master: 
@@ -87,6 +89,7 @@ if __name__ == '__main__':
 	if args.latest:
 		print("Searching for latest versions of Unity and VS")
 	if args.update:
+		print("Pulling from repository...")
 		os.system("git pull")
 	if args.clear:
 		os.system(f"rd /S /Q {shadow_build}")
@@ -96,27 +99,43 @@ if __name__ == '__main__':
 	if os.path.isfile(cache_file) and os.stat(cache_file).st_size > 0:
 		print("Using information from cache. Use --reload to purge cache.")
 		with open(cache_file,) as f:
-			cache_data = json.load(f)	
+			cache_data = json.load(f)
 
 	msbuild_dir, unity_dirs = [], []
 	if cache_data:
 		msbuild_dir = cache_data["msbuild_dir"]
 		unity_dirs = cache_data["unity_dirs"]
+		unity_versions = cache_data["unity_versions"]
+	# Generate cache data
 	if not msbuild_dir or not unity_dirs:	
 		msbuild_dir = get_msbuild_dir(args) 	
 		unity_dirs = get_unity_dirs(args) 
+
+		unity_versions = []
+		unity_dict = {}
+		for unity_dir in unity_dirs:
+			unity_versions.extend(re.findall(r"\d{4}.*?(?=\\)", unity_dir))
+		for v in unity_versions:
+			m = re.match(r"(\d{4})\.(\d+)\.(\d+)(?=f)", v)
+			unity_dict[m.groups()] = v
+		unity_versions = list(dict(sorted(unity_dict.items())).values())
+
 		with open(cache_file, "w+") as f:
-			json.dump({"msbuild_dir": msbuild_dir, "unity_dirs": unity_dirs}, f, indent=4)
+			json.dump({"msbuild_dir": msbuild_dir, "unity_dirs": unity_dirs, "unity_versions": unity_versions}, f, indent=4)
 			print(f"Saved data to {cache_file}.")
-	if args.latest:
-		unity_dirs = [unity_dirs[-1]]
+	if args.latest:		
+		unity_dirs = [ud for ud in unity_dirs if unity_versions[-1] in ud]
 
 	print("MSBUILD_DIR: " + msbuild_dir)
 	print("UNITY_DIR(S): " + ", ".join(unity_dirs))
 
 	# Generate project
+	vs_version = "16" if "2019" in msbuild_dir else "15" if "2017" in msbuild_dir else ""
+	if not vs_version:
+		print("Unsupported VS version. Use 2017 or 2019.")
+		exit()
 	cmake_shadow_build = project_name
-	cmake_IDE = "Visual Studio 16"
+	cmake_IDE = f"Visual Studio {vs_version}" #if 2019 then 16, 2017 is 15; otherwise: exit
 	cmake_make_arguments = "-A"
 	cmake_build_target = "x64"
 
@@ -124,6 +143,7 @@ if __name__ == '__main__':
 		os.mkdir(shadow_build)
 	os.chdir(shadow_build)
 
+	unity_dirs = [ud for ud in unity_dirs if unity_versions[-1] in ud]	## We only need to generate our project once
 	for unity_dir in unity_dirs:
 		if "Unity.exe" in unity_dir:
 			unity_dir = unity_dir[:-len("Unity.exe")]
@@ -132,6 +152,10 @@ if __name__ == '__main__':
 		cmd = f"cmake {root_dir} -G \"{cmake_IDE}\" \"{cmake_make_arguments}\" \"{cmake_build_target}\" \"{cmake_unity_dir}\" \"{cmake_unity_ver}\""
 		os.system(cmd)
 
+	if not args.install:
+		print("Succesfully generated project at " + shadow_build + "\nUse the --install parameter to install the project.")
+		os.startfile(shadow_build)
+		exit()
 	# Build the project
 	# check if \\sophia\\ subdir is required
 	# optionally filter on all keywords such as 'backup' or 'deprecated'
@@ -141,3 +165,6 @@ if __name__ == '__main__':
 	for project in list(csprojects + install):
 		os.system(f"\"\"{msbuild_dir}\" \"{project}\" /p:Configuration=Debug /p:Platform=\"x64\"\"")
 		os.system(f"\"\"{msbuild_dir}\" \"{project}\" /p:Configuration=Release /p:Platform=\"x64\"\"")
+
+	print("Succesfully generated and installed project at " + shadow_build)
+	os.startfile(shadow_build)
