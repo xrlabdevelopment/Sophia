@@ -5,7 +5,7 @@ import shutil
 import re
 import argparse
 
-cache_file = "build\\build_cache.json"
+cache_file = glob.glob("build_cache.json")[0]
 
 def getUnityVersions(cache_file):
 	# load cache file or force update
@@ -93,8 +93,8 @@ if __name__ == '__main__':
 	
 	## Find files
 	dir_path = os.path.dirname(os.path.realpath(__file__))
-	editor_path = os.path.normpath(dir_path + "/src/libraries/editor/src/")
-	runtime_path = os.path.normpath(dir_path + "/src/libraries/core/src/")
+	editor_path = os.path.normpath(dir_path + "/../src/libraries/editor/src/")
+	runtime_path = os.path.normpath(dir_path + "/../src/libraries/core/src/")
 
 	## Cleanup and copy
 	dst_editor = args.out_dir + "Editor\\"
