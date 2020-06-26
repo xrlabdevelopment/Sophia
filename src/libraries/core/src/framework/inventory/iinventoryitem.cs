@@ -1,6 +1,6 @@
 using System;
 
-namespace Sophia.Core.Framework
+namespace Sophia
 {
     //-------------------------------------------------------------------------------------
     /// <summary>

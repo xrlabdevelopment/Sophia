@@ -1,4 +1,4 @@
-namespace Sophia.Core
+namespace Sophia
 {
     public static partial class Algorithms
     {

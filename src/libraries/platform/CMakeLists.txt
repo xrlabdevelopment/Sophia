@@ -17,13 +17,13 @@ SETUP_LIBRARY(${PLATFORM_LIBRARY_NAME})
 # --------------------------
 # Target properties
 # --------------------------
-set_target_properties(${PLATFORM_LIBRARY_NAME}      PROPERTIES      VS_DEBUGGER_WORKING_DIRECTORY   "${OUTPUT_BINDIR}"  # Working directory
+set_target_properties( ${PLATFORM_LIBRARY_NAME}       PROPERTIES    VS_DEBUGGER_WORKING_DIRECTORY   "${OUTPUT_BINDIR}"  # Working directory
                                                                     FOLDER                          "1. Libraries"      # Project filter location
-                                                                    DEFINE_SYMBOL                   "" )                # Default library symbol can be empty ( already set )
+                                                                    DEFINE_SYMBOL                   "" )                # Default library symbol can be empty ( already set )                                   
 # --------------------------
 # Target include directories.
 # --------------------------
-target_include_directories(${PLATFORM_LIBRARY_NAME} PUBLIC          $<BUILD_INTERFACE:${CURRENT_PLATFORM_PATH}/src>
+target_include_directories(${PLATFORM_LIBRARY_NAME}   PUBLIC        $<BUILD_INTERFACE:${CURRENT_PLATFORM_PATH}/src>
                                                                     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
 # --------------------------

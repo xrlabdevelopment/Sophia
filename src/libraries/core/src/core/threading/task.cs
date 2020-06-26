@@ -1,37 +1,41 @@
 using System;
+using Sophia.Diagnostics;
 
-namespace Sophia.Threading
+namespace Sophia
 {
-    public abstract class Task
+    namespace Threading
     {
-        //--------------------------------------------------------------------------------------
-        // Delegates
-        public delegate void Finished(Task task);
-        public delegate void Started(Task task);
-
-        public Finished onFinished;
-        public Started onStarted;
-
-        //--------------------------------------------------------------------------------------
-        // Properties
-        protected Action<string> LogFnc
+        public abstract class Task
         {
-            get;
-            private set;
-        }
+            //--------------------------------------------------------------------------------------
+            // Delegates
+            public delegate void Finished(Task task);
+            public delegate void Started(Task task);
 
-        //--------------------------------------------------------------------------------------
-        protected Task()
-        {
-            LogFnc = null;
-        }
-        //--------------------------------------------------------------------------------------
-        protected Task(Action<string> log)
-        {
-            LogFnc = log;
-        }
+            public Finished onFinished;
+            public Started onStarted;
 
-        //--------------------------------------------------------------------------------------
-        public abstract void execute();
+            //--------------------------------------------------------------------------------------
+            // Properties
+            protected Logger Logger
+            {
+                get;
+                private set;
+            }
+
+            //--------------------------------------------------------------------------------------
+            protected Task()
+            {
+                Logger = null;
+            }
+            //--------------------------------------------------------------------------------------
+            protected Task(Logger logger)
+            {
+                Logger = logger;
+            }
+
+            //--------------------------------------------------------------------------------------
+            public abstract void execute();
+        }
     }
 }

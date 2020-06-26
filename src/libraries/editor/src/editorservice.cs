@@ -1,4 +1,3 @@
-using Sophia.Core;
 using Sophia.Threading;
 using System;
 using System.Collections.Generic;
@@ -19,19 +18,16 @@ namespace Sophia.Editor
         // Properties
         public bool IsRunning
         {
-            get { return is_running; }
+            get;
+            private set;
         }
 
-        //--------------------------------------------------------------------------------------
-        // Fields
-        private bool is_running;
-
-        private PluginHandler plugin_handler;
+        private readonly PluginHandler plugin_handler;
 
         //--------------------------------------------------------------------------------------
         public EditorService()
         {
-            is_running = false;
+            IsRunning = false;
 
             plugin_handler = new PluginHandler();
         }
@@ -48,13 +44,13 @@ namespace Sophia.Editor
             //
             // Flag that we are running the application
             //
-            is_running = plugin_handler.initialize(SOPHIA_INSTALL_LOCATION);
+            IsRunning = plugin_handler.initialize(SOPHIA_INSTALL_LOCATION);
         }
 
         //--------------------------------------------------------------------------------------
         private void update()
         {
-            if (!is_running)
+            if (!IsRunning)
                 return;
 
             plugin_handler.update(Time.deltaTime);
@@ -62,7 +58,7 @@ namespace Sophia.Editor
         //--------------------------------------------------------------------------------------
         private void stop()
         {
-            if (!is_running)
+            if (!IsRunning)
                 return;
 
             plugin_handler.stop();
@@ -70,7 +66,7 @@ namespace Sophia.Editor
             EditorApplication.quitting -= stop;
             EditorApplication.update -= update;
 
-            is_running = false;
+            IsRunning = false;
         }
     }
 }

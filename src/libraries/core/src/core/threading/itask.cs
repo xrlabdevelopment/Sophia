@@ -1,7 +1,10 @@
-namespace Sophia.Threading
+namespace Sophia
 {
-    public interface ITask
+    namespace Threading
     {
-        void execute();
+        public interface ITask
+        {
+            void execute();
+        }
     }
 }

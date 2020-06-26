@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using Sophia.Threading;
+using Sophia.Diagnostics;
 using UnityEngine;
 
 namespace Sophia.Editor
@@ -35,26 +36,26 @@ namespace Sophia.Editor
 
         //--------------------------------------------------------------------------------------
         // Fields
-        private string                  source_directory;
-        private string                  destination_directory;
-        private PluginType              plugin_type;
-        private IO.FileSystemWatcher    file_system_watcher;
-        private List<CopyData>          copy_data;
+        private readonly string                  source_directory;
+        private readonly string                  destination_directory;
+        private readonly PluginType              plugin_type;
+        private readonly IO.FileSystemWatcher    file_system_watcher;
+        private readonly List<CopyData>          copy_data;
         private CopyTask                copy_task;
-        private PluginAssociations      plugin_associations;
+        private readonly PluginAssociations      plugin_associations;
 
         //--------------------------------------------------------------------------------------
         public PluginLoader(string source, string dest, PluginType type)
         {
-            source_directory        = source;
-            destination_directory   = dest;
-            plugin_type             = type;
-            copy_data               = new List<CopyData>();
-            plugin_associations     = new PluginAssociations();
+            source_directory = source;
+            destination_directory = dest;
+            plugin_type = type;
+            copy_data = new List<CopyData>();
+            plugin_associations = new PluginAssociations();
 
             try
             {
-                file_system_watcher = new IO.FileSystemWatcher();
+                file_system_watcher = new IO.FileSystemWatcher(createLogger());
                 file_system_watcher.subscribe(source_directory, IO.FileSystemWatcher.DEFAULT_CREATION_INFO);
                 file_system_watcher.onFileChanged += fileChanged;
                 file_system_watcher.onFileCreated += fileCreated;
@@ -65,7 +66,7 @@ namespace Sophia.Editor
                 {
                     if (plugin_type == PluginType.DEBUG)
                     {
-                        if (!file_path.Contains(IO.PostFix.DEBUG_POSTFIX))
+                        if (!IO.Helpers.isDebugFile(file_path))
                             continue;
                     }
 
@@ -74,14 +75,14 @@ namespace Sophia.Editor
             }
             catch(Exception e)
             {
-                Debug.Log(e.Message);
+                UnityEngine.Debug.Log(e.Message);
             }
         }
 
         //--------------------------------------------------------------------------------------
         public void flush()
         {
-            copy_task = new CopyTask(copy_data.ToArray());
+            copy_task = new CopyTask(copy_data.ToArray(), createLogger());
 
             copy_task.onStarted += onStartedCopy;
             copy_task.onFinished += onFinishedCopy;
@@ -103,7 +104,7 @@ namespace Sophia.Editor
             }
             else
             {
-                Debug.Log("Failed to schedule plugin copy task when file was CHANGED.");
+                UnityEngine.Debug.Log("Failed to schedule plugin copy task when file was CHANGED.");
             }
         }
         //-------------------------------------------------------------------------------------
@@ -119,7 +120,7 @@ namespace Sophia.Editor
             }
             else
             {
-                Debug.Log("Failed to schedule plugin copy task when file was CREATED.");
+                UnityEngine.Debug.Log("Failed to schedule plugin copy task when file was CREATED.");
             }
         }
         //-------------------------------------------------------------------------------------
@@ -143,7 +144,7 @@ namespace Sophia.Editor
             }
             else
             {
-                Debug.Log("Failed to schedule plugin copy task when file was RENAMED.");
+                UnityEngine.Debug.Log("Failed to schedule plugin copy task when file was RENAMED.");
             }
         }
         //-------------------------------------------------------------------------------------
@@ -160,7 +161,7 @@ namespace Sophia.Editor
             if (onFileDeleted != null)
                 onFileDeleted();
 
-            Debug.Log("File Deleted");
+            UnityEngine.Debug.Log("File Deleted");
         }
 
         //--------------------------------------------------------------------------------------
@@ -169,8 +170,8 @@ namespace Sophia.Editor
             //
             // We only want to work with supported files.
             //
-            IO.Extention extention = plugin_associations.Extentions[plugin_type].Find(ex => fullPath.Contains(IO.Extentions.toString(ex)));
-            if (extention == IO.Extention.NONE)
+            IO.FileExtension file_extionsion = plugin_associations.Extensions[plugin_type].Find(ex => fullPath.Contains(IO.FileExtensions.toString(ex)));
+            if (file_extionsion == IO.FileExtension.NONE)
                 return false;
 
             //
@@ -179,7 +180,7 @@ namespace Sophia.Editor
             //
             if (plugin_type == PluginType.DEBUG)
             {
-                if (!name.Contains(Sophia.IO.PostFix.DEBUG_POSTFIX))
+                if (!IO.Helpers.isDebugFile(name))
                     return false;
             }
 
@@ -190,11 +191,12 @@ namespace Sophia.Editor
         {
             if (File.Exists(from))
             {
-                CopyData data = new CopyData();
-
-                data.from = from;
-                data.to = to;
-                data.overwrite = overwrite;
+                CopyData data = new CopyData
+                {
+                    from = from,
+                    to = to,
+                    overwrite = overwrite
+                };
 
                 copy_data.Add(data);
 
@@ -218,6 +220,19 @@ namespace Sophia.Editor
             // Clear copy members
             copy_task = null;
             copy_data.Clear();
+        }
+
+        //--------------------------------------------------------------------------------------
+        private Sophia.Diagnostics.Logger createLogger()
+        {
+            Sophia.Diagnostics.LoggerCreationInfo logger_creation_info = new Sophia.Diagnostics.LoggerCreationInfo
+            {
+                log_function = UnityEngine.Debug.Log,
+                warn_function = UnityEngine.Debug.LogWarning,
+                error_function = UnityEngine.Debug.LogError
+            };
+
+            return new Sophia.Diagnostics.Logger(logger_creation_info);
         }
     }
 }
