@@ -62,6 +62,10 @@ namespace Sophia
                 bool handled = false;
                 foreach (KeyValuePair<int, List<IEventHandler>> pair in handlers)
                 {
+                    // TODO:
+                    //
+                    // make sure we check on something different that 0.
+                    // It's not clear to the user that an EventCategory should start from 1 instead of 0.
                     if ((evt.EventCategory & pair.Key) != 0)
                     {
                         foreach (IEventHandler handler in pair.Value)

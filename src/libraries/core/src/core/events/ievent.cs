@@ -7,6 +7,8 @@ namespace Sophia
         /// </summary>
         public interface IEvent
         {
+            //-------------------------------------------------------------------------------------
+            // Properties
             /// <summary>
             /// The type of the event
             /// </summary>

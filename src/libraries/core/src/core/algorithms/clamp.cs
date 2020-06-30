@@ -2,6 +2,7 @@ namespace Sophia
 {
     public static partial class Algorithms
     {
+        //-------------------------------------------------------------------------------------
         /// <summary>
         /// Clamp a value between a min an a max value
         /// </summary>
@@ -13,6 +14,7 @@ namespace Sophia
         {
             return value < min ? min : value > max ? max : value;
         }
+        //-------------------------------------------------------------------------------------
         /// <summary>
         /// Clamp a value between a min an a max value
         /// </summary>
@@ -24,6 +26,7 @@ namespace Sophia
         {
             return value < min ? min : value > max ? max : value;
         }
+        //-------------------------------------------------------------------------------------
         /// <summary>
         /// Clamp a value between a min an a max value
         /// </summary>
