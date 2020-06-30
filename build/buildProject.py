@@ -143,6 +143,7 @@ if __name__ == '__main__':
 		os.mkdir(shadow_build)
 	os.chdir(shadow_build)
 
+	unity_dirs = [ud for ud in unity_dirs if unity_versions[-1] in ud]	## We only need to generate our project once
 	for unity_dir in unity_dirs:
 		if "Unity.exe" in unity_dir:
 			unity_dir = unity_dir[:-len("Unity.exe")]
