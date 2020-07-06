@@ -523,6 +523,22 @@ public MyPublicEvent OnPublicEvent;
 private MyPrivateEvent OnPrivateEvent;
 
 //--------------------------------------------------------------------------------------
+// Enumarations
+public Enum Color
+{
+  RED,
+  GREEN,
+  BLUE
+}
+
+//--------------------------------------------------------------------------------------
+// Structs
+public struct MyStruct
+{
+  public int MyValue;
+}
+
+//--------------------------------------------------------------------------------------
 // Inspector
 [SerializeField]
 private int MyInspectorValue;
