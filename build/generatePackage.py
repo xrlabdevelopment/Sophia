@@ -11,12 +11,12 @@ def getUnityVersions(cache_file):
 	# load cache file or force update
 	unity_versions = []
 	if os.path.isfile(cache_file):
-		with open(cache_file,) as f:
+		with open(cache_file) as f:
 			cache_data = json.load(f)
 		unity_versions = cache_data["unity_versions"]
 
 	if not unity_versions:
-		# call other script to generate this file
+		# call other script to generate cache
 		print("No cached Unity version(s) found.")
 		print("Enter '1' to generate and install the project from the master branch.")
 		print("Enter '2' to generate and install the project.")
@@ -54,17 +54,12 @@ def createManifest(args):
 	packageData["unity"] 		= args.unity 						# min Unity version
 	if args.unity_release:
 		packageData["unityRelease"] = args.unity_release 						# optional
-	packageData["keywords"] 	= args.keywords
-	packageData["author"] 		= { 	
-									"name": args.author_name,
-									"email": args.author_email,
-									"url": args.author_url
-								  }
+
 						
 	if not os.path.isdir(args.out_dir):
 		os.mkdir(args.out_dir)
 
-	with open(args.out_dir + "package.json", "w+", encoding="utf-16") as file:
+	with open(args.out_dir + "package.json", "w+", encoding="utf-8") as file:
 			json.dump(packageData, file, indent=4, ensure_ascii=False)
 
 if __name__ == '__main__':
@@ -78,10 +73,6 @@ if __name__ == '__main__':
 	parser.add_argument("-e", "--description", help="Description of the package", default="Sophia is an early-stage library used by the research team of Digital Arts and Entertainment.")
 	parser.add_argument("-u", "--unity", help="Major version of Unity, e.g. 2019.2")
 	parser.add_argument("-r", "--unity_release", help="Minor version of Unity, e.g. 10f1")
-	parser.add_argument("-k", "--keywords", help="Keywords", default=["sophia", "xrlab", "dae"])
-	parser.add_argument("--author_name", help="Author name", default="XR LAB")
-	parser.add_argument("--author_email", help="Author email", default="xrlab@howest.be")
-	parser.add_argument("--author_url", help="Author url", default="http://www.digitalartsandentertainment.be/page/133/Research")
 	args = parser.parse_args()
 
 	## Get unity versions
@@ -110,5 +101,3 @@ if __name__ == '__main__':
 
 	print("Succesfully generated package at " + args.out_dir)
 	os.startfile(args.out_dir)
-
-
