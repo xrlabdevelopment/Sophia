@@ -1,13 +1,21 @@
-# DAE Research
+# Sophia
 
-![DAE](/resources/branding/logo_DAEResearch.png?raw=true "DAE")
+Sophia is an early-stage library used by the research team of [Digital Arts and Entertainment](https://www.digitalartsandentertainment.be/page/133/Research). 
 
-Sophia is an early-stage library used by the research team of Digital Arts and Entertainment. found at [digitalartsandentertainment/research](https://www.digitalartsandentertainment.be/page/133/Research). 
+### Getting Started
 
+Simply download the latest .unitypackage from [here](https://github.com/xrlabdevelopment/Sophia/releases) and double click it to import it into Unity.
 
+### Compatibility
 
-To generate the project files execute the "_generate_project.bat" script. Files will be generated in the following folder: ../VC2019_x64
+Make sure to check the release notes regarding breaking changes in backwards combability.
 
-To install the project files execute the "_install_project.bat" script. Files will be installed in the following folder: C:/DAE/bin/unity_version
+Although the packages have been build for Unity 2019, it is possible that it may work with older versions.
 
-To generate a unity package file execute the "_generate_package.bat" script. Files will be generated in the following folder: C:/DAE/sophia_package
+### Issues and missing features
+
+If there are any issues, bugs or features that are missing. Please open an issue on the GitHub [issues page](https://github.com/MidLevel/MLAPI/issues).
+
+### Special thanks
+
+This repository structure has heavily been inspired by the [MLAPI](https://github.com/MidLevel/MLAPI) repository maintained by [TwoTenPvP](https://github.com/TwoTenPvP).
