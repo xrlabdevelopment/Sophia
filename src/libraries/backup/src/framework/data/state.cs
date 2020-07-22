@@ -64,12 +64,48 @@ namespace Sophia.Deprecated
         public abstract bool onGuard(FSMEvent trigger, FSMState state);
 
         //--------------------------------------------------------------------------------
-        public static State create<T>(List<Transition> transitions = null)
+        public bool addTransition(Transition transition)
+        {
+            if (Transitions.Find(t => t.GetInstanceID() == transition.GetInstanceID()) != null)
+            {
+                Debug.Log("Transition with name: " + transition.name + "was already added");
+                return false;
+            }
+
+            Transitions.Add(transition);
+            return true;
+        }
+        //--------------------------------------------------------------------------------
+        public bool addTransitions(List<Transition> transitions)
+        {
+            bool success = true;
+            foreach (Transition t in transitions)
+            {
+                success &= addTransition(t);
+            }
+
+            return success;
+        }
+
+        //--------------------------------------------------------------------------------
+        public static State create<T>()
             where T : State
         {
             State state = ScriptableObject.CreateInstance<T>();
 
-            state.Transitions = transitions == null ? new List<Transition>() : transitions;
+            state.Transitions = new List<Transition>();
+
+            return state;
+        }
+        //--------------------------------------------------------------------------------
+        public static State create<T>(List<Transition> transitions)
+            where T : State
+        {
+            State state = ScriptableObject.CreateInstance<T>();
+
+            state.Transitions = transitions == null
+                ? new List<Transition>()
+                : transitions;
 
             return state;
         }
