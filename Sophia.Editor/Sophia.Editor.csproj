@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+            <HintPath>..\Libraries\Unity\UnityEditor.dll</HintPath>
+            <SpecificVersion>False</SpecificVersion>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+            <HintPath>..\Libraries\Unity\UnityEngine.dll</HintPath>
+            <SpecificVersion>False</SpecificVersion>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Sophia.Core\Sophia.Core.csproj" />
+        <ProjectReference Include="..\Sophia.Platform\Sophia.Platform.csproj" />
+    </ItemGroup>
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(OS)' == 'Windows_NT' ">  <Exec Command="if $(ConfigurationName) == Release (&#xD;&#xA;    if not exist &quot;$(ProjectDir)..\lib&quot; mkdir &quot;$(ProjectDir)..\lib&quot;&#xD;&#xA;    copy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;$(ProjectDir)..\lib\$(TargetName).dll&quot;&#xD;&#xA;)" />
+    </Target>
+</Project>
