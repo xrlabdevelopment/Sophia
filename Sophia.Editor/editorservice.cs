@@ -11,10 +11,6 @@ namespace Sophia.Editor
     internal class EditorService
     {
         //--------------------------------------------------------------------------------------
-        // Constants
-        private static readonly string SOPHIA_INSTALL_LOCATION = "C:\\DAE\\bin\\" + Application.unityVersion + "\\";
-
-        //--------------------------------------------------------------------------------------
         // Properties
         public bool IsRunning
         {
@@ -22,14 +18,10 @@ namespace Sophia.Editor
             private set;
         }
 
-        private readonly PluginHandler plugin_handler;
-
         //--------------------------------------------------------------------------------------
         public EditorService()
         {
             IsRunning = false;
-
-            plugin_handler = new PluginHandler();
         }
 
         //--------------------------------------------------------------------------------------
@@ -40,11 +32,6 @@ namespace Sophia.Editor
             //
             EditorApplication.update += update;
             EditorApplication.quitting += stop;
-
-            //
-            // Flag that we are running the application
-            //
-            IsRunning = plugin_handler.initialize(SOPHIA_INSTALL_LOCATION);
         }
 
         //--------------------------------------------------------------------------------------
@@ -52,16 +39,12 @@ namespace Sophia.Editor
         {
             if (!IsRunning)
                 return;
-
-            plugin_handler.update(Time.deltaTime);
         }
         //--------------------------------------------------------------------------------------
         private void stop()
         {
             if (!IsRunning)
                 return;
-
-            plugin_handler.stop();
 
             EditorApplication.quitting -= stop;
             EditorApplication.update -= update;
