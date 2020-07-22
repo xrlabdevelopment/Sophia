@@ -1,4 +1,4 @@
-$libraryFiles = @("Sophia.Core.dll", "Sophia.Platform.dll") #"Sophia.Editor.dll",
+$libraryFiles = @("Sophia.Core.dll", "Sophia.Editor.dll", "Sophia.Platform.dll")
 
 $myPath = (Get-Item -Path ".\").FullName;
 $myPath = $myPath.Replace("\", "/")
