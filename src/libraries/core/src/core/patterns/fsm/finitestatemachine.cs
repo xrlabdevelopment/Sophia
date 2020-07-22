@@ -58,7 +58,7 @@ namespace Sophia
             public FSMEvent registerEvent(string name)
             {
                 if (registered_events.ContainsKey(name))
-                    throw new ArgumentException("Event '" + name + "' already registered");
+                    return registered_events[name];
 
                 FSMEvent newEvent = new FSMEvent(next_event++, name);
                 registered_events[name] = newEvent;
