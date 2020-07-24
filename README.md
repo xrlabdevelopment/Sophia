@@ -1,5 +1,10 @@
 # Sophia
 
+[![GitHub Release](https://img.shields.io/github/release/xrlabdevelopment/Sophia.svg?logo=github)](https://github.com/xrlabdevelopment/Sophia/releases)
+[![Build Status](https://img.shields.io/appveyor/ci/xrlabdevelopment/Sophia/master.svg?logo=appveyor)](https://ci.appveyor.com/project/xrlabdevelopment/Sophia/branch/master)
+[![Github All Releases](https://img.shields.io/github/downloads/xrlabdevelopment/Sophia/total.svg?logo=github&color=informational)](https://github.com/xrlabdevelopment/Sophia/releases)
+[![Licence](https://img.shields.io/github/license/xrlabdevelopment/Sophia.svg?color=informational)](https://github.com/xrlabdevelopment/Sophia/blob/master/LICENCE)
+
 Sophia is an early-stage library used by the research team of [Digital Arts and Entertainment](https://www.digitalartsandentertainment.be/page/133/Research). 
 
 ### Getting Started
