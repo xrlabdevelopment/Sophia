@@ -14,7 +14,8 @@ skip_commits:
   files:
     - '.gitignore'
     - '*.md'
-
+    - 'docs/*'
+    
 before_build:
   - nuget restore
 build:
@@ -26,12 +27,6 @@ before_package:
 
 artifacts:
 - path: '*.unitypackage'
-
-deploy:
-  description: 'Release'
-  provider: GitHub
-  auth_token:
-    secure: LoVmzGA7T3XhMSo95dA8juWRXXkBB7wvqCt0PwlXQM1f3dCdkTnHO18Ax42eUgex
 
 cache: '%APPDATA%\npm'
 
