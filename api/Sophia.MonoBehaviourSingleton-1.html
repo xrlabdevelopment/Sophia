@@ -1,0 +1,737 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MonoBehaviourSingleton&lt;T&gt;
+   | Sophia </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MonoBehaviourSingleton&lt;T&gt;
+   | Sophia ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="">
+                <img id="logo" class="svg" style="vertical-align: middle;" src="../logo.svg" alt="">
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sophia.MonoBehaviourSingleton`1">
+  
+  
+  <h1 id="Sophia_MonoBehaviourSingleton_1" data-uid="Sophia.MonoBehaviourSingleton`1" class="text-break">Class MonoBehaviourSingleton&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+    <div class="level5"><a class="xref" href="Sophia.BaseMonoBehaviour.html">BaseMonoBehaviour</a></div>
+    <div class="level6"><span class="xref">MonoBehaviourSingleton&lt;T&gt;</span></div>
+      <div class="level7"><a class="xref" href="Sophia.ScreenshotTaker.html">ScreenshotTaker</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_transform">BaseMonoBehaviour.transform</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_gameObject">BaseMonoBehaviour.gameObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_changeLayersRecursively_UnityEngine_Transform_System_String_">BaseMonoBehaviour.changeLayersRecursively(Transform, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_changeLayersRecursively_UnityEngine_Transform_System_Int32_">BaseMonoBehaviour.changeLayersRecursively(Transform, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_instantiate__1___0_UnityEngine_GameObject_">BaseMonoBehaviour.instantiate&lt;T&gt;(T, GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_instantiate__1___0_UnityEngine_GameObject_UnityEngine_Vector3_UnityEngine_Quaternion_">BaseMonoBehaviour.instantiate&lt;T&gt;(T, GameObject, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_instantiate_UnityEngine_GameObject_">BaseMonoBehaviour.instantiate(GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_instantiate_UnityEngine_GameObject_UnityEngine_Vector3_UnityEngine_Quaternion_">BaseMonoBehaviour.instantiate(GameObject, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_instantiate_UnityEngine_GameObject_UnityEngine_GameObject_">BaseMonoBehaviour.instantiate(GameObject, GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_findObjectsOfInterface__1">BaseMonoBehaviour.findObjectsOfInterface&lt;I&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_Invoke_Action_System_Single_">BaseMonoBehaviour.Invoke(Action, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_InvokeRepeating_Action_System_Single_System_Single_">BaseMonoBehaviour.InvokeRepeating(Action, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_DestroyUniversal_UnityEngine_Object_">BaseMonoBehaviour.DestroyUniversal(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_getRequiredComponent__1">BaseMonoBehaviour.getRequiredComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_getRequiredComponentInChilderen__1">BaseMonoBehaviour.getRequiredComponentInChilderen&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_getRequiredComponentsInChilderen__1">BaseMonoBehaviour.getRequiredComponentsInChilderen&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.BaseMonoBehaviour.html#Sophia_BaseMonoBehaviour_getRequiredComponentInParent__1">BaseMonoBehaviour.getRequiredComponentInParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.IsInvoking.html">MonoBehaviour.IsInvoking()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.CancelInvoke.html">MonoBehaviour.CancelInvoke()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.Invoke.html">MonoBehaviour.Invoke(String, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.InvokeRepeating.html">MonoBehaviour.InvokeRepeating(String, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.CancelInvoke.html">MonoBehaviour.CancelInvoke(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.IsInvoking.html">MonoBehaviour.IsInvoking(String)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html">MonoBehaviour.StartCoroutine(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine_Auto.html">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopCoroutine.html">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopCoroutine.html">MonoBehaviour.StopCoroutine(Coroutine)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopCoroutine.html">MonoBehaviour.StopCoroutine(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopAllCoroutines.html">MonoBehaviour.StopAllCoroutines()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour-print.html">MonoBehaviour.print(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour-useGUILayout.html">MonoBehaviour.useGUILayout</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour-runInEditMode.html">MonoBehaviour.runInEditMode</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour-enabled.html">Behaviour.enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour-isActiveAndEnabled.html">Behaviour.isActiveAndEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponent.html">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponent.html">Component.GetComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.TryGetComponent.html">Component.TryGetComponent(Type, Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.TryGetComponent.html">Component.TryGetComponent&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponent.html">Component.GetComponent(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentInChildren.html">Component.GetComponentInChildren(Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentInChildren.html">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentInChildren.html">Component.GetComponentInChildren&lt;T&gt;(Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html">Component.GetComponentsInChildren(Type, Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html">Component.GetComponentsInChildren&lt;T&gt;(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html">Component.GetComponentsInChildren&lt;T&gt;(Boolean, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html">Component.GetComponentsInChildren&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentInParent.html">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentInParent.html">Component.GetComponentInParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInParent.html">Component.GetComponentsInParent(Type, Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInParent.html">Component.GetComponentsInParent&lt;T&gt;(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInParent.html">Component.GetComponentsInParent&lt;T&gt;(Boolean, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInParent.html">Component.GetComponentsInParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponents.html">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponents.html">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponents.html">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponents.html">Component.GetComponents&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.CompareTag.html">Component.CompareTag(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessageUpwards.html">Component.SendMessageUpwards(String, Object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessageUpwards.html">Component.SendMessageUpwards(String, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessage.html">Component.SendMessage(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessage.html">Component.SendMessage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessage.html">Component.SendMessage(String, Object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessage.html">Component.SendMessage(String, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.BroadcastMessage.html">Component.BroadcastMessage(String, Object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.BroadcastMessage.html">Component.BroadcastMessage(String, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component-tag.html">Component.tag</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.rigidbody</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.rigidbody2D</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.camera</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.light</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.animation</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.constantForce</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.renderer</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.audio</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.networkView</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.collider</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.collider2D</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.hingeJoint</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.particleSystem</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.GetInstanceID.html">Object.GetInstanceID()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.GetHashCode.html">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Equals.html">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate(Object, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate(Object, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate(Object, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate(Object, Transform, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate&lt;T&gt;(T, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate&lt;T&gt;(T, Transform, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Destroy.html">Object.Destroy(Object, Single)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.DestroyImmediate.html">Object.DestroyImmediate(Object, Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html">Object.DontDestroyOnLoad(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.DestroyObject.html">Object.DestroyObject(Object, Single)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindSceneObjectsOfType.html">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfTypeIncludingAssets.html">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html">Object.FindObjectsOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectOfType.html">Object.FindObjectOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfTypeAll.html">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectOfType.html">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.ToString.html">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object-name.html">Object.name</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object-hideFlags.html">Object.hideFlags</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sophia.html">Sophia</a></h6>
+  <h6><strong>Assembly</strong>: Sophia.Platform.dll</h6>
+  <h5 id="Sophia_MonoBehaviourSingleton_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class MonoBehaviourSingleton&lt;T&gt; : BaseMonoBehaviour where T : Component</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/apiSpec/new?filename=Sophia_MonoBehaviourSingleton_1_Instance.md&amp;value=---%0Auid%3A%20Sophia.MonoBehaviourSingleton%601.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/Sophia.Platform/utilities/singleton.cs/#L10">View Source</a>
+  </span>
+  <a id="Sophia_MonoBehaviourSingleton_1_Instance_" data-uid="Sophia.MonoBehaviourSingleton`1.Instance*"></a>
+  <h4 id="Sophia_MonoBehaviourSingleton_1_Instance" data-uid="Sophia.MonoBehaviourSingleton`1.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/apiSpec/new?filename=Sophia_MonoBehaviourSingleton_1_ShouldDestroyOnLoad.md&amp;value=---%0Auid%3A%20Sophia.MonoBehaviourSingleton%601.ShouldDestroyOnLoad%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/Sophia.Platform/utilities/singleton.cs/#L15">View Source</a>
+  </span>
+  <a id="Sophia_MonoBehaviourSingleton_1_ShouldDestroyOnLoad_" data-uid="Sophia.MonoBehaviourSingleton`1.ShouldDestroyOnLoad*"></a>
+  <h4 id="Sophia_MonoBehaviourSingleton_1_ShouldDestroyOnLoad" data-uid="Sophia.MonoBehaviourSingleton`1.ShouldDestroyOnLoad">ShouldDestroyOnLoad</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool ShouldDestroyOnLoad { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/apiSpec/new?filename=Sophia_MonoBehaviourSingleton_1_getAs__1.md&amp;value=---%0Auid%3A%20Sophia.MonoBehaviourSingleton%601.getAs%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/Sophia.Platform/utilities/singleton.cs/#L22">View Source</a>
+  </span>
+  <a id="Sophia_MonoBehaviourSingleton_1_getAs_" data-uid="Sophia.MonoBehaviourSingleton`1.getAs*"></a>
+  <h4 id="Sophia_MonoBehaviourSingleton_1_getAs__1" data-uid="Sophia.MonoBehaviourSingleton`1.getAs``1">getAs&lt;U&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static U getAs&lt;U&gt;()
+    where U : BaseMonoBehaviour</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/apiSpec/new?filename=Sophia_MonoBehaviourSingleton_1_onAwake.md&amp;value=---%0Auid%3A%20Sophia.MonoBehaviourSingleton%601.onAwake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/Sophia.Platform/utilities/singleton.cs/#L68">View Source</a>
+  </span>
+  <a id="Sophia_MonoBehaviourSingleton_1_onAwake_" data-uid="Sophia.MonoBehaviourSingleton`1.onAwake*"></a>
+  <h4 id="Sophia_MonoBehaviourSingleton_1_onAwake" data-uid="Sophia.MonoBehaviourSingleton`1.onAwake">onAwake()</h4>
+  <div class="markdown level1 summary"><p>onAwake is called when the script instance is being loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void onAwake()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/apiSpec/new?filename=Sophia_MonoBehaviourSingleton_1_onDestroy.md&amp;value=---%0Auid%3A%20Sophia.MonoBehaviourSingleton%601.onDestroy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/Sophia.Platform/utilities/singleton.cs/#L84">View Source</a>
+  </span>
+  <a id="Sophia_MonoBehaviourSingleton_1_onDestroy_" data-uid="Sophia.MonoBehaviourSingleton`1.onDestroy*"></a>
+  <h4 id="Sophia_MonoBehaviourSingleton_1_onDestroy" data-uid="Sophia.MonoBehaviourSingleton`1.onDestroy">onDestroy()</h4>
+  <div class="markdown level1 summary"><p>Destroying the attached Behaviour will result in the game or Scene receiving OnDestroy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void onDestroy()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/apiSpec/new?filename=Sophia_MonoBehaviourSingleton_1_onStart.md&amp;value=---%0Auid%3A%20Sophia.MonoBehaviourSingleton%601.onStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/Sophia.Platform/utilities/singleton.cs/#L73">View Source</a>
+  </span>
+  <a id="Sophia_MonoBehaviourSingleton_1_onStart_" data-uid="Sophia.MonoBehaviourSingleton`1.onStart*"></a>
+  <h4 id="Sophia_MonoBehaviourSingleton_1_onStart" data-uid="Sophia.MonoBehaviourSingleton`1.onStart">onStart()</h4>
+  <div class="markdown level1 summary"><p>Start is called on the frame when a script is enabled just before any of the Update methods are called the first time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void onStart()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/apiSpec/new?filename=Sophia_MonoBehaviourSingleton_1_onUpdate_System_Single_.md&amp;value=---%0Auid%3A%20Sophia.MonoBehaviourSingleton%601.onUpdate(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/Sophia.Platform/utilities/singleton.cs/#L79">View Source</a>
+  </span>
+  <a id="Sophia_MonoBehaviourSingleton_1_onUpdate_" data-uid="Sophia.MonoBehaviourSingleton`1.onUpdate*"></a>
+  <h4 id="Sophia_MonoBehaviourSingleton_1_onUpdate_System_Single_" data-uid="Sophia.MonoBehaviourSingleton`1.onUpdate(System.Single)">onUpdate(Single)</h4>
+  <div class="markdown level1 summary"><p>Update is called every frame, if the MonoBehaviour is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void onUpdate(float dTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">dTime</span></td>
+        <td><p>The completion time in seconds since the last frame.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Sophia.Extensions.MonoBehaviourExtensions.html#Sophia_Extensions_MonoBehaviourExtensions_Clone__1___0_">MonoBehaviourExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Extensions.MonoBehaviourExtensions.html#Sophia_Extensions_MonoBehaviourExtensions_Clone__1___0_System_Int32_">MonoBehaviourExtensions.Clone&lt;T&gt;(T, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Extensions.MonoBehaviourExtensions.html#Sophia_Extensions_MonoBehaviourExtensions_FindChild_UnityEngine_Component_System_String_">MonoBehaviourExtensions.FindChild(Component, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Extensions.MonoBehaviourExtensions.html#Sophia_Extensions_MonoBehaviourExtensions_FindChildRecursively_UnityEngine_Component_System_String_">MonoBehaviourExtensions.FindChildRecursively(Component, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Extensions.MonoBehaviourExtensions.html#Sophia_Extensions_MonoBehaviourExtensions_GetInterfaceComponent__1_UnityEngine_Component_">MonoBehaviourExtensions.GetInterfaceComponent&lt;TInterface&gt;(Component)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Extensions.MonoBehaviourExtensions.html#Sophia_Extensions_MonoBehaviourExtensions_Invoke_UnityEngine_MonoBehaviour_Action_System_Single_">MonoBehaviourExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Extensions.MonoBehaviourExtensions.html#Sophia_Extensions_MonoBehaviourExtensions_InvokeRepeating_UnityEngine_MonoBehaviour_Action_System_Single_System_Single_">MonoBehaviourExtensions.InvokeRepeating(MonoBehaviour, Action, Single, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Extensions.ObjectExtensions.html#Sophia_Extensions_ObjectExtensions_ThrowIfNull_System_Object_System_String_">ObjectExtensions.ThrowIfNull(Object, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xrlabdevelopment/Sophia/new/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/apiSpec/new?filename=Sophia_MonoBehaviourSingleton_1.md&amp;value=---%0Auid%3A%20Sophia.MonoBehaviourSingleton%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xrlabdevelopment/Sophia/blob/ee88f78e5c4cd4f0bb67e6d06fa524b4782afb6b/Sophia.Platform/utilities/singleton.cs/#L5" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Library provided by <a href="https://www.digitalartsandentertainment.be/page/133/Research">DAE Research</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
