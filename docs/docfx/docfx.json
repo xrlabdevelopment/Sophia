@@ -1,0 +1,55 @@
+{
+    "metadata": [
+        {
+            "src": [
+                {
+                    "src": "../../",
+                    "files": [
+                        "Sophia.sln"
+                    ],
+                }
+            ],
+            "dest": "obj"
+        }
+    ],
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "*.yml"
+                ],
+                "src": "obj",
+                "dest": "api"
+            },
+            {
+                "files": [
+                 "index.md",
+                 "toc.yml"
+                ]
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "**.svg"
+                ]
+            }
+        ],
+        "sitemap": {
+            "baseUrl": "https://xrlabdevelopment.github.io/Sophia",
+        },
+        "globalMetadata": {
+            "_appTitle": "Sophia",
+            "_appFooter": "Library provided by <a href=\"https://www.digitalartsandentertainment.be/page/133/Research\">DAE Research</a>",
+            "_enableSearch": true
+        },
+        "template": [
+            "default",
+            "templates/material"
+        ],
+        "markdownEngineName": "markdig",
+        "dest": "_site",
+        "xref": [ "https://normanderwan.github.io/DocFxForUnity/Unity/xrefmap.yml" ],
+        "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}"]
+    }
+}
