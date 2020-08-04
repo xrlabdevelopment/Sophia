@@ -110,7 +110,7 @@ namespace Sophia
         /// <typeparam name="T">Type of the item to be retrieved</typeparam>
         /// <param name="identifier">Identifier of the item to be retrieved</param>
         /// <returns>The requested item, null otherwise</returns>
-        public T get<T>(Guid identifier)
+        public T getAs<T>(Guid identifier)
             where T : class, IInventoryItem
         {
             return inventory_items.Find(i => i.ID == identifier) as T;
