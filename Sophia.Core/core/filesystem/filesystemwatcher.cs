@@ -105,10 +105,11 @@ namespace Sophia
 
                 try
                 {
-                    System.IO.FileSystemWatcher watcher = new System.IO.FileSystemWatcher(path);
-
-                    watcher.EnableRaisingEvents = info.watch_on_creation;
-                    watcher.NotifyFilter = info.notification_filters;
+                    System.IO.FileSystemWatcher watcher = new System.IO.FileSystemWatcher(path)
+                    {
+                        EnableRaisingEvents = info.watch_on_creation,
+                        NotifyFilter = info.notification_filters
+                    };
 
                     watcher = installFileSystemEvents(watcher, info.event_filters);
 
@@ -168,8 +169,7 @@ namespace Sophia
                 if (!(source is System.IO.FileSystemWatcher))
                     return;
 
-                if (onFileChanged != null)
-                    onFileChanged(source as System.IO.FileSystemWatcher, args);
+                onFileChanged?.Invoke(source as System.IO.FileSystemWatcher, args);
             }
             //-------------------------------------------------------------------------------------
             private void fileCreated(object source, FileSystemEventArgs args)
@@ -177,8 +177,7 @@ namespace Sophia
                 if (!(source is System.IO.FileSystemWatcher))
                     return;
 
-                if (onFileCreated != null)
-                    onFileCreated(source as System.IO.FileSystemWatcher, args);
+                onFileCreated?.Invoke(source as System.IO.FileSystemWatcher, args);
             }
             ///-------------------------------------------------------------------------------------
             private void fileRenamed(object source, RenamedEventArgs args)
@@ -186,8 +185,7 @@ namespace Sophia
                 if (!(source is System.IO.FileSystemWatcher))
                     return;
 
-                if (onFileRenamed != null)
-                    onFileRenamed(source as System.IO.FileSystemWatcher, args);
+                onFileRenamed?.Invoke(source as System.IO.FileSystemWatcher, args);
             }
             //-------------------------------------------------------------------------------------
             private void fileDeleted(object source, FileSystemEventArgs args)
@@ -195,8 +193,7 @@ namespace Sophia
                 if (!(source is System.IO.FileSystemWatcher))
                     return;
 
-                if (onFileDeleted != null)
-                    onFileDeleted(source as System.IO.FileSystemWatcher, args);
+                onFileDeleted?.Invoke(source as System.IO.FileSystemWatcher, args);
             }
             //-------------------------------------------------------------------------------------
             private void errorOccured(object source, ErrorEventArgs args)
@@ -204,8 +201,7 @@ namespace Sophia
                 if (!(source is System.IO.FileSystemWatcher))
                     return;
 
-                if (onErrorOccured != null)
-                    onErrorOccured(source as System.IO.FileSystemWatcher, args);
+                onErrorOccured?.Invoke(source as System.IO.FileSystemWatcher, args);
             }
 
             //-------------------------------------------------------------------------------------
