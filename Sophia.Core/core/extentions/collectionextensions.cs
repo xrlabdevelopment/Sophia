@@ -176,7 +176,7 @@ namespace Sophia
             /// <returns>A item ramdonly selected from the source.</returns>
             public static T randomItem<T>(this IEnumerable<T> source)
             {
-                return randomItem(source, SophiaRandom.GlobalRandom);
+                return randomItem(source, Random.g_Random);
             }
             //-------------------------------------------------------------------------------------
             /// <summary>
@@ -201,7 +201,7 @@ namespace Sophia
             /// <returns>Generates a ransom subset from a given source.</returns>
             public static IEnumerable<T> sampleRandom<T>(this IEnumerable<T> source, int sampleCount)
             {
-                return sampleRandom(source, sampleCount, SophiaRandom.GlobalRandom);
+                return sampleRandom(source, sampleCount, Random.g_Random);
             }
             //-------------------------------------------------------------------------------------
             /// <summary>
@@ -239,7 +239,7 @@ namespace Sophia
                     else
                     {
                         // Randomly replace elements in the reservoir with a decreasing probability.
-                        int r = random.Next(i);
+                        int r = random.next(i);
 
                         if (r < sampleCount)
                         {
@@ -261,7 +261,7 @@ namespace Sophia
             /// <param name="list">The list to shuffle.</param>
             public static void shuffle<T>(this IList<T> list)
             {
-                list.shuffle(SophiaRandom.GlobalRandom);
+                list.shuffle(Random.g_Random);
             }
             //-------------------------------------------------------------------------------------
             /// <summary>
@@ -277,7 +277,7 @@ namespace Sophia
                 while (n > 1)
                 {
                     n--;
-                    int k = random.Next(0, n + 1);
+                    int k = random.next(0, n + 1);
                     T value = list[k];
                     list[k] = list[n];
                     list[n] = value;

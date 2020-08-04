@@ -1,47 +1,50 @@
-using System;
-
 namespace Sophia
 {
 	/// <summary>
-	/// Some convenience functions for random bools and integers.
+	/// Some convenience functions for random booleans and integers.
 	/// </summary>
-	public static class SophiaRandom
+	public static class Random
 	{
 		private class RandomImpl : IRandom
         {
             //--------------------------------------------------------------------------------------
             // Fields
-            private readonly Random random;
+            private readonly System.Random random;
 
             //--------------------------------------------------------------------------------------
             public RandomImpl()
 			{
-				random = new Random();
+				random = new System.Random();
 			}
             //--------------------------------------------------------------------------------------
             public RandomImpl(int seed)
 			{
-				random = new Random(seed);
+				random = new System.Random(seed);
 			}
 
             //--------------------------------------------------------------------------------------
-            public double NextDouble()
+            public double nextDouble()
 			{
 				return random.NextDouble();
 			}
+            //--------------------------------------------------------------------------------------
+            public void nextBytes(byte[] bytes)
+            {
+                random.NextBytes(bytes);
+            }
 
             //--------------------------------------------------------------------------------------
-            public int Next()
+            public int next()
 			{
 				return random.Next();
 			}
             //--------------------------------------------------------------------------------------
-            public int Next(int maxValue)
+            public int next(int maxValue)
 			{
 				return random.Next(maxValue);
 			}
             //--------------------------------------------------------------------------------------
-            public int Next(int minValue, int maxValue)
+            public int next(int minValue, int maxValue)
 			{
 				return random.Next(minValue, maxValue);
 			}
@@ -51,28 +54,22 @@ namespace Sophia
 			{
 				return random.ToString();
 			}
-
-            //--------------------------------------------------------------------------------------
-            public void NextBytes(byte[] bytes)
-			{
-				random.NextBytes(bytes);
-			}
 		}
 
         //--------------------------------------------------------------------------------------
         /// <summary>
         /// Globally accessible <see cref="System.Random"/> object for random calls
         /// </summary>
-        public static readonly IRandom GlobalRandom = new RandomImpl();
+        public static readonly IRandom g_Random = new RandomImpl();
 
         //--------------------------------------------------------------------------------------
         /// <summary>
         /// Generates either -1.0f or 1.0f randomly.
         /// </summary>
         /// <returns></returns>
-        public static float Sign()
+        public static float sign()
 		{
-			return Bool(0.5f) ? -1.0f : 1.0f;
+			return boolean(0.5f) ? -1.0f : 1.0f;
 		}
 
         //--------------------------------------------------------------------------------------
@@ -81,9 +78,9 @@ namespace Sophia
         /// </summary>
         /// <param name="probability"></param>
         /// <returns></returns>
-        public static bool Bool(float probability)
+        public static bool boolean(float probability)
 		{
-			return GlobalRandom.NextDouble() < probability;
+			return g_Random.nextDouble() < probability;
 		}
 
         //--------------------------------------------------------------------------------------
@@ -92,9 +89,9 @@ namespace Sophia
         /// </summary>
         /// <param name="max"></param>
         /// <returns></returns>
-        public static int Range(int max)
+        public static int range(int max)
 		{
-			return GlobalRandom.Next(max);
+			return g_Random.next(max);
 		}
 
         //--------------------------------------------------------------------------------------
@@ -104,9 +101,9 @@ namespace Sophia
         /// <param name="min"></param>
         /// <param name="max"></param>
         /// <returns></returns>
-        public static int Range(int min, int max)
+        public static int range(int min, int max)
 		{
-			return GlobalRandom.Next(min, max);
+			return g_Random.next(min, max);
 		}
 
         //--------------------------------------------------------------------------------------
@@ -115,9 +112,9 @@ namespace Sophia
         /// </summary>
         /// <param name="max"></param>
         /// <returns></returns>
-        public static float Range(float max)
+        public static float range(float max)
 		{
-			return (float)GlobalRandom.NextDouble() * max;
+			return (float)g_Random.nextDouble() * max;
 		}
 
         //--------------------------------------------------------------------------------------
@@ -127,9 +124,9 @@ namespace Sophia
         /// <param name="min"></param>
         /// <param name="max"></param>
         /// <returns></returns>
-        public static float Range(float min, float max)
+        public static float range(float min, float max)
 		{
-			return Range(max - min) + min;
+			return range(max - min) + min;
 		}
 
         //--------------------------------------------------------------------------------------
@@ -139,9 +136,9 @@ namespace Sophia
         /// <param name="value">The value around which the random values will be centered.</param>
         /// <param name="range">The range of the returned value.</param>
         /// <returns>A random value between value - range/2 and value + range/2.</returns>
-        public static float RandomOffset(float value, float range)
+        public static float randomOffset(float value, float range)
 		{
-            double offset = GlobalRandom.NextDouble()*range - range/2;
+            double offset = g_Random.nextDouble()*range - range/2;
 			return (float) (value + offset);
 		}
 
@@ -150,7 +147,7 @@ namespace Sophia
         /// Gets a new random generator.
         /// </summary>
         /// <returns>A new random generator</returns>
-        public static IRandom GetRandom()
+        public static IRandom getRandom()
 		{
 			return new RandomImpl();
 		}
@@ -161,7 +158,7 @@ namespace Sophia
         /// </summary>
         /// <param name="seed">The seed to instantiate the generator with.</param>
         /// <returns>A seeded instance of a random generator.</returns>
-        public static IRandom GetRandom(int seed)
+        public static IRandom getRandom(int seed)
 		{
 			return new RandomImpl(seed);
 		}
@@ -175,27 +172,27 @@ namespace Sophia
 		/// <summary>
 		/// Gets the next the random double value.
 		/// </summary>
-		double NextDouble();
+		double nextDouble();
 
-		/// <summary>
-		/// Gets the next the random integer value.
-		/// </summary>
-		int Next();
+        /// <summary>
+        /// Fills the given array with random bytes.
+        /// </summary>
+        void nextBytes(byte[] bytes);
+
+        /// <summary>
+        /// Gets the next the random integer value.
+        /// </summary>
+        int next();
 
 		/// <summary>
 		/// Gets the next the random integer value below the given maximum.
 		/// </summary>
-		int Next(int maxValue);
+		int next(int maxValue);
 
 		/// <summary>
 		/// Gets the next the random integer value greater than or equal to the minimum 
 		/// and below the given maximum.
 		/// </summary>
-		int Next(int minValue, int maxValue);
-
-		/// <summary>
-		/// Fills the given array with random bytes.
-		/// </summary>
-		void NextBytes(byte[] bytes);
+		int next(int minValue, int maxValue);
 	}
 }
