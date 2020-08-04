@@ -597,6 +597,12 @@ references:
   commentId: F:Sophia.Diagnostics.LoggerCreationInfo.log_function
   fullName: Sophia.Diagnostics.LoggerCreationInfo.log_function
   nameWithType: LoggerCreationInfo.log_function
+- uid: Sophia.Diagnostics.LoggerCreationInfo.print_to_diagnostic_listeners
+  name: print_to_diagnostic_listeners
+  href: api/Sophia.Diagnostics.LoggerCreationInfo.html#Sophia_Diagnostics_LoggerCreationInfo_print_to_diagnostic_listeners
+  commentId: F:Sophia.Diagnostics.LoggerCreationInfo.print_to_diagnostic_listeners
+  fullName: Sophia.Diagnostics.LoggerCreationInfo.print_to_diagnostic_listeners
+  nameWithType: LoggerCreationInfo.print_to_diagnostic_listeners
 - uid: Sophia.Diagnostics.LoggerCreationInfo.warn_function
   name: warn_function
   href: api/Sophia.Diagnostics.LoggerCreationInfo.html#Sophia_Diagnostics_LoggerCreationInfo_warn_function
@@ -624,143 +630,143 @@ references:
   fullName.vb: Sophia.Editor.BaseEditor(Of T)
   nameWithType: BaseEditor<T>
   nameWithType.vb: BaseEditor(Of T)
-- uid: Sophia.Editor.BaseEditor`1.AddCombo(System.String[],System.Int32)
-  name: AddCombo(String[], Int32)
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_AddCombo_System_String___System_Int32_
-  commentId: M:Sophia.Editor.BaseEditor`1.AddCombo(System.String[],System.Int32)
-  name.vb: AddCombo(String(), Int32)
-  fullName: Sophia.Editor.BaseEditor<T>.AddCombo(System.String[], System.Int32)
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).AddCombo(System.String(), System.Int32)
-  nameWithType: BaseEditor<T>.AddCombo(String[], Int32)
-  nameWithType.vb: BaseEditor(Of T).AddCombo(String(), Int32)
-- uid: Sophia.Editor.BaseEditor`1.AddCombo*
-  name: AddCombo
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_AddCombo_
-  commentId: Overload:Sophia.Editor.BaseEditor`1.AddCombo
+- uid: Sophia.Editor.BaseEditor`1.addCombo(System.String[],System.Int32)
+  name: addCombo(String[], Int32)
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_addCombo_System_String___System_Int32_
+  commentId: M:Sophia.Editor.BaseEditor`1.addCombo(System.String[],System.Int32)
+  name.vb: addCombo(String(), Int32)
+  fullName: Sophia.Editor.BaseEditor<T>.addCombo(System.String[], System.Int32)
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).addCombo(System.String(), System.Int32)
+  nameWithType: BaseEditor<T>.addCombo(String[], Int32)
+  nameWithType.vb: BaseEditor(Of T).addCombo(String(), Int32)
+- uid: Sophia.Editor.BaseEditor`1.addCombo*
+  name: addCombo
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_addCombo_
+  commentId: Overload:Sophia.Editor.BaseEditor`1.addCombo
   isSpec: "True"
-  fullName: Sophia.Editor.BaseEditor<T>.AddCombo
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).AddCombo
-  nameWithType: BaseEditor<T>.AddCombo
-  nameWithType.vb: BaseEditor(Of T).AddCombo
-- uid: Sophia.Editor.BaseEditor`1.AddField(UnityEditor.SerializedProperty)
-  name: AddField(SerializedProperty)
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_AddField_UnityEditor_SerializedProperty_
-  commentId: M:Sophia.Editor.BaseEditor`1.AddField(UnityEditor.SerializedProperty)
-  fullName: Sophia.Editor.BaseEditor<T>.AddField(UnityEditor.SerializedProperty)
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).AddField(UnityEditor.SerializedProperty)
-  nameWithType: BaseEditor<T>.AddField(SerializedProperty)
-  nameWithType.vb: BaseEditor(Of T).AddField(SerializedProperty)
-- uid: Sophia.Editor.BaseEditor`1.AddField*
-  name: AddField
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_AddField_
-  commentId: Overload:Sophia.Editor.BaseEditor`1.AddField
+  fullName: Sophia.Editor.BaseEditor<T>.addCombo
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).addCombo
+  nameWithType: BaseEditor<T>.addCombo
+  nameWithType.vb: BaseEditor(Of T).addCombo
+- uid: Sophia.Editor.BaseEditor`1.addField(UnityEditor.SerializedProperty)
+  name: addField(SerializedProperty)
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_addField_UnityEditor_SerializedProperty_
+  commentId: M:Sophia.Editor.BaseEditor`1.addField(UnityEditor.SerializedProperty)
+  fullName: Sophia.Editor.BaseEditor<T>.addField(UnityEditor.SerializedProperty)
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).addField(UnityEditor.SerializedProperty)
+  nameWithType: BaseEditor<T>.addField(SerializedProperty)
+  nameWithType.vb: BaseEditor(Of T).addField(SerializedProperty)
+- uid: Sophia.Editor.BaseEditor`1.addField*
+  name: addField
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_addField_
+  commentId: Overload:Sophia.Editor.BaseEditor`1.addField
   isSpec: "True"
-  fullName: Sophia.Editor.BaseEditor<T>.AddField
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).AddField
-  nameWithType: BaseEditor<T>.AddField
-  nameWithType.vb: BaseEditor(Of T).AddField
-- uid: Sophia.Editor.BaseEditor`1.AddLabel(System.String,System.String)
-  name: AddLabel(String, String)
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_AddLabel_System_String_System_String_
-  commentId: M:Sophia.Editor.BaseEditor`1.AddLabel(System.String,System.String)
-  fullName: Sophia.Editor.BaseEditor<T>.AddLabel(System.String, System.String)
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).AddLabel(System.String, System.String)
-  nameWithType: BaseEditor<T>.AddLabel(String, String)
-  nameWithType.vb: BaseEditor(Of T).AddLabel(String, String)
-- uid: Sophia.Editor.BaseEditor`1.AddLabel*
-  name: AddLabel
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_AddLabel_
-  commentId: Overload:Sophia.Editor.BaseEditor`1.AddLabel
+  fullName: Sophia.Editor.BaseEditor<T>.addField
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).addField
+  nameWithType: BaseEditor<T>.addField
+  nameWithType.vb: BaseEditor(Of T).addField
+- uid: Sophia.Editor.BaseEditor`1.addLabel(System.String,System.String)
+  name: addLabel(String, String)
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_addLabel_System_String_System_String_
+  commentId: M:Sophia.Editor.BaseEditor`1.addLabel(System.String,System.String)
+  fullName: Sophia.Editor.BaseEditor<T>.addLabel(System.String, System.String)
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).addLabel(System.String, System.String)
+  nameWithType: BaseEditor<T>.addLabel(String, String)
+  nameWithType.vb: BaseEditor(Of T).addLabel(String, String)
+- uid: Sophia.Editor.BaseEditor`1.addLabel*
+  name: addLabel
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_addLabel_
+  commentId: Overload:Sophia.Editor.BaseEditor`1.addLabel
   isSpec: "True"
-  fullName: Sophia.Editor.BaseEditor<T>.AddLabel
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).AddLabel
-  nameWithType: BaseEditor<T>.AddLabel
-  nameWithType.vb: BaseEditor(Of T).AddLabel
-- uid: Sophia.Editor.BaseEditor`1.AddSplitter
-  name: AddSplitter()
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_AddSplitter
-  commentId: M:Sophia.Editor.BaseEditor`1.AddSplitter
-  fullName: Sophia.Editor.BaseEditor<T>.AddSplitter()
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).AddSplitter()
-  nameWithType: BaseEditor<T>.AddSplitter()
-  nameWithType.vb: BaseEditor(Of T).AddSplitter()
-- uid: Sophia.Editor.BaseEditor`1.AddSplitter*
-  name: AddSplitter
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_AddSplitter_
-  commentId: Overload:Sophia.Editor.BaseEditor`1.AddSplitter
+  fullName: Sophia.Editor.BaseEditor<T>.addLabel
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).addLabel
+  nameWithType: BaseEditor<T>.addLabel
+  nameWithType.vb: BaseEditor(Of T).addLabel
+- uid: Sophia.Editor.BaseEditor`1.addSplitter
+  name: addSplitter()
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_addSplitter
+  commentId: M:Sophia.Editor.BaseEditor`1.addSplitter
+  fullName: Sophia.Editor.BaseEditor<T>.addSplitter()
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).addSplitter()
+  nameWithType: BaseEditor<T>.addSplitter()
+  nameWithType.vb: BaseEditor(Of T).addSplitter()
+- uid: Sophia.Editor.BaseEditor`1.addSplitter*
+  name: addSplitter
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_addSplitter_
+  commentId: Overload:Sophia.Editor.BaseEditor`1.addSplitter
   isSpec: "True"
-  fullName: Sophia.Editor.BaseEditor<T>.AddSplitter
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).AddSplitter
-  nameWithType: BaseEditor<T>.AddSplitter
-  nameWithType.vb: BaseEditor(Of T).AddSplitter
-- uid: Sophia.Editor.BaseEditor`1.AddTextAndButton(System.String,System.String,Action)
-  name: AddTextAndButton(String, String, Action)
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_AddTextAndButton_System_String_System_String_Action_
-  commentId: M:Sophia.Editor.BaseEditor`1.AddTextAndButton(System.String,System.String,Action)
-  fullName: Sophia.Editor.BaseEditor<T>.AddTextAndButton(System.String, System.String, Action)
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).AddTextAndButton(System.String, System.String, Action)
-  nameWithType: BaseEditor<T>.AddTextAndButton(String, String, Action)
-  nameWithType.vb: BaseEditor(Of T).AddTextAndButton(String, String, Action)
-- uid: Sophia.Editor.BaseEditor`1.AddTextAndButton*
-  name: AddTextAndButton
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_AddTextAndButton_
-  commentId: Overload:Sophia.Editor.BaseEditor`1.AddTextAndButton
+  fullName: Sophia.Editor.BaseEditor<T>.addSplitter
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).addSplitter
+  nameWithType: BaseEditor<T>.addSplitter
+  nameWithType.vb: BaseEditor(Of T).addSplitter
+- uid: Sophia.Editor.BaseEditor`1.addTextAndButton(System.String,System.String,Action)
+  name: addTextAndButton(String, String, Action)
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_addTextAndButton_System_String_System_String_Action_
+  commentId: M:Sophia.Editor.BaseEditor`1.addTextAndButton(System.String,System.String,Action)
+  fullName: Sophia.Editor.BaseEditor<T>.addTextAndButton(System.String, System.String, Action)
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).addTextAndButton(System.String, System.String, Action)
+  nameWithType: BaseEditor<T>.addTextAndButton(String, String, Action)
+  nameWithType.vb: BaseEditor(Of T).addTextAndButton(String, String, Action)
+- uid: Sophia.Editor.BaseEditor`1.addTextAndButton*
+  name: addTextAndButton
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_addTextAndButton_
+  commentId: Overload:Sophia.Editor.BaseEditor`1.addTextAndButton
   isSpec: "True"
-  fullName: Sophia.Editor.BaseEditor<T>.AddTextAndButton
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).AddTextAndButton
-  nameWithType: BaseEditor<T>.AddTextAndButton
-  nameWithType.vb: BaseEditor(Of T).AddTextAndButton
-- uid: Sophia.Editor.BaseEditor`1.ArrayGUI(UnityEditor.SerializedObject,UnityEditor.SerializedProperty)
-  name: ArrayGUI(SerializedObject, SerializedProperty)
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_ArrayGUI_UnityEditor_SerializedObject_UnityEditor_SerializedProperty_
-  commentId: M:Sophia.Editor.BaseEditor`1.ArrayGUI(UnityEditor.SerializedObject,UnityEditor.SerializedProperty)
-  fullName: Sophia.Editor.BaseEditor<T>.ArrayGUI(UnityEditor.SerializedObject, UnityEditor.SerializedProperty)
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).ArrayGUI(UnityEditor.SerializedObject, UnityEditor.SerializedProperty)
-  nameWithType: BaseEditor<T>.ArrayGUI(SerializedObject, SerializedProperty)
-  nameWithType.vb: BaseEditor(Of T).ArrayGUI(SerializedObject, SerializedProperty)
-- uid: Sophia.Editor.BaseEditor`1.ArrayGUI*
-  name: ArrayGUI
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_ArrayGUI_
-  commentId: Overload:Sophia.Editor.BaseEditor`1.ArrayGUI
+  fullName: Sophia.Editor.BaseEditor<T>.addTextAndButton
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).addTextAndButton
+  nameWithType: BaseEditor<T>.addTextAndButton
+  nameWithType.vb: BaseEditor(Of T).addTextAndButton
+- uid: Sophia.Editor.BaseEditor`1.arrayGUI(UnityEditor.SerializedObject,UnityEditor.SerializedProperty)
+  name: arrayGUI(SerializedObject, SerializedProperty)
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_arrayGUI_UnityEditor_SerializedObject_UnityEditor_SerializedProperty_
+  commentId: M:Sophia.Editor.BaseEditor`1.arrayGUI(UnityEditor.SerializedObject,UnityEditor.SerializedProperty)
+  fullName: Sophia.Editor.BaseEditor<T>.arrayGUI(UnityEditor.SerializedObject, UnityEditor.SerializedProperty)
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).arrayGUI(UnityEditor.SerializedObject, UnityEditor.SerializedProperty)
+  nameWithType: BaseEditor<T>.arrayGUI(SerializedObject, SerializedProperty)
+  nameWithType.vb: BaseEditor(Of T).arrayGUI(SerializedObject, SerializedProperty)
+- uid: Sophia.Editor.BaseEditor`1.arrayGUI*
+  name: arrayGUI
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_arrayGUI_
+  commentId: Overload:Sophia.Editor.BaseEditor`1.arrayGUI
   isSpec: "True"
-  fullName: Sophia.Editor.BaseEditor<T>.ArrayGUI
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).ArrayGUI
-  nameWithType: BaseEditor<T>.ArrayGUI
-  nameWithType.vb: BaseEditor(Of T).ArrayGUI
-- uid: Sophia.Editor.BaseEditor`1.DrawInspectorButtons(System.Int32)
-  name: DrawInspectorButtons(Int32)
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_DrawInspectorButtons_System_Int32_
-  commentId: M:Sophia.Editor.BaseEditor`1.DrawInspectorButtons(System.Int32)
-  fullName: Sophia.Editor.BaseEditor<T>.DrawInspectorButtons(System.Int32)
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).DrawInspectorButtons(System.Int32)
-  nameWithType: BaseEditor<T>.DrawInspectorButtons(Int32)
-  nameWithType.vb: BaseEditor(Of T).DrawInspectorButtons(Int32)
-- uid: Sophia.Editor.BaseEditor`1.DrawInspectorButtons*
-  name: DrawInspectorButtons
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_DrawInspectorButtons_
-  commentId: Overload:Sophia.Editor.BaseEditor`1.DrawInspectorButtons
+  fullName: Sophia.Editor.BaseEditor<T>.arrayGUI
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).arrayGUI
+  nameWithType: BaseEditor<T>.arrayGUI
+  nameWithType.vb: BaseEditor(Of T).arrayGUI
+- uid: Sophia.Editor.BaseEditor`1.drawInspectorButtons(System.Int32)
+  name: drawInspectorButtons(Int32)
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_drawInspectorButtons_System_Int32_
+  commentId: M:Sophia.Editor.BaseEditor`1.drawInspectorButtons(System.Int32)
+  fullName: Sophia.Editor.BaseEditor<T>.drawInspectorButtons(System.Int32)
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).drawInspectorButtons(System.Int32)
+  nameWithType: BaseEditor<T>.drawInspectorButtons(Int32)
+  nameWithType.vb: BaseEditor(Of T).drawInspectorButtons(Int32)
+- uid: Sophia.Editor.BaseEditor`1.drawInspectorButtons*
+  name: drawInspectorButtons
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_drawInspectorButtons_
+  commentId: Overload:Sophia.Editor.BaseEditor`1.drawInspectorButtons
   isSpec: "True"
-  fullName: Sophia.Editor.BaseEditor<T>.DrawInspectorButtons
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).DrawInspectorButtons
-  nameWithType: BaseEditor<T>.DrawInspectorButtons
-  nameWithType.vb: BaseEditor(Of T).DrawInspectorButtons
-- uid: Sophia.Editor.BaseEditor`1.HasProperty(System.String)
-  name: HasProperty(String)
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_HasProperty_System_String_
-  commentId: M:Sophia.Editor.BaseEditor`1.HasProperty(System.String)
-  fullName: Sophia.Editor.BaseEditor<T>.HasProperty(System.String)
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).HasProperty(System.String)
-  nameWithType: BaseEditor<T>.HasProperty(String)
-  nameWithType.vb: BaseEditor(Of T).HasProperty(String)
-- uid: Sophia.Editor.BaseEditor`1.HasProperty*
-  name: HasProperty
-  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_HasProperty_
-  commentId: Overload:Sophia.Editor.BaseEditor`1.HasProperty
+  fullName: Sophia.Editor.BaseEditor<T>.drawInspectorButtons
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).drawInspectorButtons
+  nameWithType: BaseEditor<T>.drawInspectorButtons
+  nameWithType.vb: BaseEditor(Of T).drawInspectorButtons
+- uid: Sophia.Editor.BaseEditor`1.hasProperty(System.String)
+  name: hasProperty(String)
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_hasProperty_System_String_
+  commentId: M:Sophia.Editor.BaseEditor`1.hasProperty(System.String)
+  fullName: Sophia.Editor.BaseEditor<T>.hasProperty(System.String)
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).hasProperty(System.String)
+  nameWithType: BaseEditor<T>.hasProperty(String)
+  nameWithType.vb: BaseEditor(Of T).hasProperty(String)
+- uid: Sophia.Editor.BaseEditor`1.hasProperty*
+  name: hasProperty
+  href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_hasProperty_
+  commentId: Overload:Sophia.Editor.BaseEditor`1.hasProperty
   isSpec: "True"
-  fullName: Sophia.Editor.BaseEditor<T>.HasProperty
-  fullName.vb: Sophia.Editor.BaseEditor(Of T).HasProperty
-  nameWithType: BaseEditor<T>.HasProperty
-  nameWithType.vb: BaseEditor(Of T).HasProperty
+  fullName: Sophia.Editor.BaseEditor<T>.hasProperty
+  fullName.vb: Sophia.Editor.BaseEditor(Of T).hasProperty
+  nameWithType: BaseEditor<T>.hasProperty
+  nameWithType.vb: BaseEditor(Of T).hasProperty
 - uid: Sophia.Editor.BaseEditor`1.Target
   name: Target
   href: api/Sophia.Editor.BaseEditor-1.html#Sophia_Editor_BaseEditor_1_Target
@@ -807,68 +813,68 @@ references:
   commentId: F:Sophia.Editor.BaseEditorHelpers.LineStyle
   fullName: Sophia.Editor.BaseEditorHelpers.LineStyle
   nameWithType: BaseEditorHelpers.LineStyle
-- uid: Sophia.Editor.BaseEditorHelpers.Splitter(System.Single)
-  name: Splitter(Single)
-  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_Splitter_System_Single_
-  commentId: M:Sophia.Editor.BaseEditorHelpers.Splitter(System.Single)
-  fullName: Sophia.Editor.BaseEditorHelpers.Splitter(System.Single)
-  nameWithType: BaseEditorHelpers.Splitter(Single)
-- uid: Sophia.Editor.BaseEditorHelpers.Splitter(System.Single,UnityEngine.GUIStyle)
-  name: Splitter(Single, GUIStyle)
-  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_Splitter_System_Single_UnityEngine_GUIStyle_
-  commentId: M:Sophia.Editor.BaseEditorHelpers.Splitter(System.Single,UnityEngine.GUIStyle)
-  fullName: Sophia.Editor.BaseEditorHelpers.Splitter(System.Single, UnityEngine.GUIStyle)
-  nameWithType: BaseEditorHelpers.Splitter(Single, GUIStyle)
-- uid: Sophia.Editor.BaseEditorHelpers.Splitter(UnityEngine.Color,System.Single)
-  name: Splitter(Color, Single)
-  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_Splitter_UnityEngine_Color_System_Single_
-  commentId: M:Sophia.Editor.BaseEditorHelpers.Splitter(UnityEngine.Color,System.Single)
-  fullName: Sophia.Editor.BaseEditorHelpers.Splitter(UnityEngine.Color, System.Single)
-  nameWithType: BaseEditorHelpers.Splitter(Color, Single)
-- uid: Sophia.Editor.BaseEditorHelpers.Splitter(UnityEngine.Rect)
-  name: Splitter(Rect)
-  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_Splitter_UnityEngine_Rect_
-  commentId: M:Sophia.Editor.BaseEditorHelpers.Splitter(UnityEngine.Rect)
-  fullName: Sophia.Editor.BaseEditorHelpers.Splitter(UnityEngine.Rect)
-  nameWithType: BaseEditorHelpers.Splitter(Rect)
-- uid: Sophia.Editor.BaseEditorHelpers.Splitter*
-  name: Splitter
-  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_Splitter_
-  commentId: Overload:Sophia.Editor.BaseEditorHelpers.Splitter
+- uid: Sophia.Editor.BaseEditorHelpers.splitter(System.Single)
+  name: splitter(Single)
+  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_splitter_System_Single_
+  commentId: M:Sophia.Editor.BaseEditorHelpers.splitter(System.Single)
+  fullName: Sophia.Editor.BaseEditorHelpers.splitter(System.Single)
+  nameWithType: BaseEditorHelpers.splitter(Single)
+- uid: Sophia.Editor.BaseEditorHelpers.splitter(System.Single,UnityEngine.GUIStyle)
+  name: splitter(Single, GUIStyle)
+  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_splitter_System_Single_UnityEngine_GUIStyle_
+  commentId: M:Sophia.Editor.BaseEditorHelpers.splitter(System.Single,UnityEngine.GUIStyle)
+  fullName: Sophia.Editor.BaseEditorHelpers.splitter(System.Single, UnityEngine.GUIStyle)
+  nameWithType: BaseEditorHelpers.splitter(Single, GUIStyle)
+- uid: Sophia.Editor.BaseEditorHelpers.splitter(UnityEngine.Color,System.Single)
+  name: splitter(Color, Single)
+  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_splitter_UnityEngine_Color_System_Single_
+  commentId: M:Sophia.Editor.BaseEditorHelpers.splitter(UnityEngine.Color,System.Single)
+  fullName: Sophia.Editor.BaseEditorHelpers.splitter(UnityEngine.Color, System.Single)
+  nameWithType: BaseEditorHelpers.splitter(Color, Single)
+- uid: Sophia.Editor.BaseEditorHelpers.splitter(UnityEngine.Rect)
+  name: splitter(Rect)
+  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_splitter_UnityEngine_Rect_
+  commentId: M:Sophia.Editor.BaseEditorHelpers.splitter(UnityEngine.Rect)
+  fullName: Sophia.Editor.BaseEditorHelpers.splitter(UnityEngine.Rect)
+  nameWithType: BaseEditorHelpers.splitter(Rect)
+- uid: Sophia.Editor.BaseEditorHelpers.splitter*
+  name: splitter
+  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_splitter_
+  commentId: Overload:Sophia.Editor.BaseEditorHelpers.splitter
   isSpec: "True"
-  fullName: Sophia.Editor.BaseEditorHelpers.Splitter
-  nameWithType: BaseEditorHelpers.Splitter
+  fullName: Sophia.Editor.BaseEditorHelpers.splitter
+  nameWithType: BaseEditorHelpers.splitter
 - uid: Sophia.Editor.BaseEditorHelpers.SplitterStyle
   name: SplitterStyle
   href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_SplitterStyle
   commentId: F:Sophia.Editor.BaseEditorHelpers.SplitterStyle
   fullName: Sophia.Editor.BaseEditorHelpers.SplitterStyle
   nameWithType: BaseEditorHelpers.SplitterStyle
-- uid: Sophia.Editor.BaseEditorHelpers.VerticalLine
-  name: VerticalLine()
-  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_VerticalLine
-  commentId: M:Sophia.Editor.BaseEditorHelpers.VerticalLine
-  fullName: Sophia.Editor.BaseEditorHelpers.VerticalLine()
-  nameWithType: BaseEditorHelpers.VerticalLine()
-- uid: Sophia.Editor.BaseEditorHelpers.VerticalLine(System.Single,UnityEngine.GUIStyle)
-  name: VerticalLine(Single, GUIStyle)
-  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_VerticalLine_System_Single_UnityEngine_GUIStyle_
-  commentId: M:Sophia.Editor.BaseEditorHelpers.VerticalLine(System.Single,UnityEngine.GUIStyle)
-  fullName: Sophia.Editor.BaseEditorHelpers.VerticalLine(System.Single, UnityEngine.GUIStyle)
-  nameWithType: BaseEditorHelpers.VerticalLine(Single, GUIStyle)
-- uid: Sophia.Editor.BaseEditorHelpers.VerticalLine(UnityEngine.Color,System.Single)
-  name: VerticalLine(Color, Single)
-  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_VerticalLine_UnityEngine_Color_System_Single_
-  commentId: M:Sophia.Editor.BaseEditorHelpers.VerticalLine(UnityEngine.Color,System.Single)
-  fullName: Sophia.Editor.BaseEditorHelpers.VerticalLine(UnityEngine.Color, System.Single)
-  nameWithType: BaseEditorHelpers.VerticalLine(Color, Single)
-- uid: Sophia.Editor.BaseEditorHelpers.VerticalLine*
-  name: VerticalLine
-  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_VerticalLine_
-  commentId: Overload:Sophia.Editor.BaseEditorHelpers.VerticalLine
+- uid: Sophia.Editor.BaseEditorHelpers.verticalLine
+  name: verticalLine()
+  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_verticalLine
+  commentId: M:Sophia.Editor.BaseEditorHelpers.verticalLine
+  fullName: Sophia.Editor.BaseEditorHelpers.verticalLine()
+  nameWithType: BaseEditorHelpers.verticalLine()
+- uid: Sophia.Editor.BaseEditorHelpers.verticalLine(System.Single,UnityEngine.GUIStyle)
+  name: verticalLine(Single, GUIStyle)
+  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_verticalLine_System_Single_UnityEngine_GUIStyle_
+  commentId: M:Sophia.Editor.BaseEditorHelpers.verticalLine(System.Single,UnityEngine.GUIStyle)
+  fullName: Sophia.Editor.BaseEditorHelpers.verticalLine(System.Single, UnityEngine.GUIStyle)
+  nameWithType: BaseEditorHelpers.verticalLine(Single, GUIStyle)
+- uid: Sophia.Editor.BaseEditorHelpers.verticalLine(UnityEngine.Color,System.Single)
+  name: verticalLine(Color, Single)
+  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_verticalLine_UnityEngine_Color_System_Single_
+  commentId: M:Sophia.Editor.BaseEditorHelpers.verticalLine(UnityEngine.Color,System.Single)
+  fullName: Sophia.Editor.BaseEditorHelpers.verticalLine(UnityEngine.Color, System.Single)
+  nameWithType: BaseEditorHelpers.verticalLine(Color, Single)
+- uid: Sophia.Editor.BaseEditorHelpers.verticalLine*
+  name: verticalLine
+  href: api/Sophia.Editor.BaseEditorHelpers.html#Sophia_Editor_BaseEditorHelpers_verticalLine_
+  commentId: Overload:Sophia.Editor.BaseEditorHelpers.verticalLine
   isSpec: "True"
-  fullName: Sophia.Editor.BaseEditorHelpers.VerticalLine
-  nameWithType: BaseEditorHelpers.VerticalLine
+  fullName: Sophia.Editor.BaseEditorHelpers.verticalLine
+  nameWithType: BaseEditorHelpers.verticalLine
 - uid: Sophia.Editor.BaseMonoBehaviourEditor
   name: BaseMonoBehaviourEditor
   href: api/Sophia.Editor.BaseMonoBehaviourEditor.html
@@ -3837,15 +3843,22 @@ references:
   isSpec: "True"
   fullName: Sophia.InventoryController.get
   nameWithType: InventoryController.get
-- uid: Sophia.InventoryController.get``1(Guid)
-  name: get<T>(Guid)
-  href: api/Sophia.InventoryController.html#Sophia_InventoryController_get__1_Guid_
-  commentId: M:Sophia.InventoryController.get``1(Guid)
-  name.vb: get(Of T)(Guid)
-  fullName: Sophia.InventoryController.get<T>(Guid)
-  fullName.vb: Sophia.InventoryController.get(Of T)(Guid)
-  nameWithType: InventoryController.get<T>(Guid)
-  nameWithType.vb: InventoryController.get(Of T)(Guid)
+- uid: Sophia.InventoryController.getAs*
+  name: getAs
+  href: api/Sophia.InventoryController.html#Sophia_InventoryController_getAs_
+  commentId: Overload:Sophia.InventoryController.getAs
+  isSpec: "True"
+  fullName: Sophia.InventoryController.getAs
+  nameWithType: InventoryController.getAs
+- uid: Sophia.InventoryController.getAs``1(Guid)
+  name: getAs<T>(Guid)
+  href: api/Sophia.InventoryController.html#Sophia_InventoryController_getAs__1_Guid_
+  commentId: M:Sophia.InventoryController.getAs``1(Guid)
+  name.vb: getAs(Of T)(Guid)
+  fullName: Sophia.InventoryController.getAs<T>(Guid)
+  fullName.vb: Sophia.InventoryController.getAs(Of T)(Guid)
+  nameWithType: InventoryController.getAs<T>(Guid)
+  nameWithType.vb: InventoryController.getAs(Of T)(Guid)
 - uid: Sophia.InventoryController.getItemsOfType*
   name: getItemsOfType
   href: api/Sophia.InventoryController.html#Sophia_InventoryController_getItemsOfType_
@@ -3941,92 +3954,6 @@ references:
   commentId: F:Sophia.IO.EventFilters.RENAMED
   fullName: Sophia.IO.EventFilters.RENAMED
   nameWithType: EventFilters.RENAMED
-- uid: Sophia.IO.FileExtension
-  name: FileExtension
-  href: api/Sophia.IO.FileExtension.html
-  commentId: T:Sophia.IO.FileExtension
-  fullName: Sophia.IO.FileExtension
-  nameWithType: FileExtension
-- uid: Sophia.IO.FileExtension.DLL
-  name: DLL
-  href: api/Sophia.IO.FileExtension.html#Sophia_IO_FileExtension_DLL
-  commentId: F:Sophia.IO.FileExtension.DLL
-  fullName: Sophia.IO.FileExtension.DLL
-  nameWithType: FileExtension.DLL
-- uid: Sophia.IO.FileExtension.INI
-  name: INI
-  href: api/Sophia.IO.FileExtension.html#Sophia_IO_FileExtension_INI
-  commentId: F:Sophia.IO.FileExtension.INI
-  fullName: Sophia.IO.FileExtension.INI
-  nameWithType: FileExtension.INI
-- uid: Sophia.IO.FileExtension.JSON
-  name: JSON
-  href: api/Sophia.IO.FileExtension.html#Sophia_IO_FileExtension_JSON
-  commentId: F:Sophia.IO.FileExtension.JSON
-  fullName: Sophia.IO.FileExtension.JSON
-  nameWithType: FileExtension.JSON
-- uid: Sophia.IO.FileExtension.META
-  name: META
-  href: api/Sophia.IO.FileExtension.html#Sophia_IO_FileExtension_META
-  commentId: F:Sophia.IO.FileExtension.META
-  fullName: Sophia.IO.FileExtension.META
-  nameWithType: FileExtension.META
-- uid: Sophia.IO.FileExtension.NONE
-  name: NONE
-  href: api/Sophia.IO.FileExtension.html#Sophia_IO_FileExtension_NONE
-  commentId: F:Sophia.IO.FileExtension.NONE
-  fullName: Sophia.IO.FileExtension.NONE
-  nameWithType: FileExtension.NONE
-- uid: Sophia.IO.FileExtension.PDB
-  name: PDB
-  href: api/Sophia.IO.FileExtension.html#Sophia_IO_FileExtension_PDB
-  commentId: F:Sophia.IO.FileExtension.PDB
-  fullName: Sophia.IO.FileExtension.PDB
-  nameWithType: FileExtension.PDB
-- uid: Sophia.IO.FileExtension.TXT
-  name: TXT
-  href: api/Sophia.IO.FileExtension.html#Sophia_IO_FileExtension_TXT
-  commentId: F:Sophia.IO.FileExtension.TXT
-  fullName: Sophia.IO.FileExtension.TXT
-  nameWithType: FileExtension.TXT
-- uid: Sophia.IO.FileExtension.XML
-  name: XML
-  href: api/Sophia.IO.FileExtension.html#Sophia_IO_FileExtension_XML
-  commentId: F:Sophia.IO.FileExtension.XML
-  fullName: Sophia.IO.FileExtension.XML
-  nameWithType: FileExtension.XML
-- uid: Sophia.IO.FileExtensions
-  name: FileExtensions
-  href: api/Sophia.IO.FileExtensions.html
-  commentId: T:Sophia.IO.FileExtensions
-  fullName: Sophia.IO.FileExtensions
-  nameWithType: FileExtensions
-- uid: Sophia.IO.FileExtensions.toDisplayString(Sophia.IO.FileExtension)
-  name: toDisplayString(FileExtension)
-  href: api/Sophia.IO.FileExtensions.html#Sophia_IO_FileExtensions_toDisplayString_Sophia_IO_FileExtension_
-  commentId: M:Sophia.IO.FileExtensions.toDisplayString(Sophia.IO.FileExtension)
-  fullName: Sophia.IO.FileExtensions.toDisplayString(Sophia.IO.FileExtension)
-  nameWithType: FileExtensions.toDisplayString(FileExtension)
-- uid: Sophia.IO.FileExtensions.toDisplayString*
-  name: toDisplayString
-  href: api/Sophia.IO.FileExtensions.html#Sophia_IO_FileExtensions_toDisplayString_
-  commentId: Overload:Sophia.IO.FileExtensions.toDisplayString
-  isSpec: "True"
-  fullName: Sophia.IO.FileExtensions.toDisplayString
-  nameWithType: FileExtensions.toDisplayString
-- uid: Sophia.IO.FileExtensions.toString(Sophia.IO.FileExtension)
-  name: toString(FileExtension)
-  href: api/Sophia.IO.FileExtensions.html#Sophia_IO_FileExtensions_toString_Sophia_IO_FileExtension_
-  commentId: M:Sophia.IO.FileExtensions.toString(Sophia.IO.FileExtension)
-  fullName: Sophia.IO.FileExtensions.toString(Sophia.IO.FileExtension)
-  nameWithType: FileExtensions.toString(FileExtension)
-- uid: Sophia.IO.FileExtensions.toString*
-  name: toString
-  href: api/Sophia.IO.FileExtensions.html#Sophia_IO_FileExtensions_toString_
-  commentId: Overload:Sophia.IO.FileExtensions.toString
-  isSpec: "True"
-  fullName: Sophia.IO.FileExtensions.toString
-  nameWithType: FileExtensions.toString
 - uid: Sophia.IO.FileSystemWatcher
   name: FileSystemWatcher
   href: api/Sophia.IO.FileSystemWatcher.html
@@ -4176,97 +4103,66 @@ references:
   commentId: F:Sophia.IO.FileWatcherCreationInfo.watch_on_creation
   fullName: Sophia.IO.FileWatcherCreationInfo.watch_on_creation
   nameWithType: FileWatcherCreationInfo.watch_on_creation
-- uid: Sophia.IO.Helpers
-  name: Helpers
-  href: api/Sophia.IO.Helpers.html
-  commentId: T:Sophia.IO.Helpers
-  fullName: Sophia.IO.Helpers
-  nameWithType: Helpers
-- uid: Sophia.IO.Helpers.isDebugFile(System.String)
-  name: isDebugFile(String)
-  href: api/Sophia.IO.Helpers.html#Sophia_IO_Helpers_isDebugFile_System_String_
-  commentId: M:Sophia.IO.Helpers.isDebugFile(System.String)
-  fullName: Sophia.IO.Helpers.isDebugFile(System.String)
-  nameWithType: Helpers.isDebugFile(String)
-- uid: Sophia.IO.Helpers.isDebugFile*
-  name: isDebugFile
-  href: api/Sophia.IO.Helpers.html#Sophia_IO_Helpers_isDebugFile_
-  commentId: Overload:Sophia.IO.Helpers.isDebugFile
-  isSpec: "True"
-  fullName: Sophia.IO.Helpers.isDebugFile
-  nameWithType: Helpers.isDebugFile
-- uid: Sophia.IO.PostFix
-  name: PostFix
-  href: api/Sophia.IO.PostFix.html
-  commentId: T:Sophia.IO.PostFix
-  fullName: Sophia.IO.PostFix
-  nameWithType: PostFix
-- uid: Sophia.IO.PostFix.DEBUG_POSTFIX
-  name: DEBUG_POSTFIX
-  href: api/Sophia.IO.PostFix.html#Sophia_IO_PostFix_DEBUG_POSTFIX
-  commentId: F:Sophia.IO.PostFix.DEBUG_POSTFIX
-  fullName: Sophia.IO.PostFix.DEBUG_POSTFIX
-  nameWithType: PostFix.DEBUG_POSTFIX
 - uid: Sophia.IRandom
   name: IRandom
   href: api/Sophia.IRandom.html
   commentId: T:Sophia.IRandom
   fullName: Sophia.IRandom
   nameWithType: IRandom
-- uid: Sophia.IRandom.Next
-  name: Next()
-  href: api/Sophia.IRandom.html#Sophia_IRandom_Next
-  commentId: M:Sophia.IRandom.Next
-  fullName: Sophia.IRandom.Next()
-  nameWithType: IRandom.Next()
-- uid: Sophia.IRandom.Next(System.Int32)
-  name: Next(Int32)
-  href: api/Sophia.IRandom.html#Sophia_IRandom_Next_System_Int32_
-  commentId: M:Sophia.IRandom.Next(System.Int32)
-  fullName: Sophia.IRandom.Next(System.Int32)
-  nameWithType: IRandom.Next(Int32)
-- uid: Sophia.IRandom.Next(System.Int32,System.Int32)
-  name: Next(Int32, Int32)
-  href: api/Sophia.IRandom.html#Sophia_IRandom_Next_System_Int32_System_Int32_
-  commentId: M:Sophia.IRandom.Next(System.Int32,System.Int32)
-  fullName: Sophia.IRandom.Next(System.Int32, System.Int32)
-  nameWithType: IRandom.Next(Int32, Int32)
-- uid: Sophia.IRandom.Next*
-  name: Next
-  href: api/Sophia.IRandom.html#Sophia_IRandom_Next_
-  commentId: Overload:Sophia.IRandom.Next
+- uid: Sophia.IRandom.next
+  name: next()
+  href: api/Sophia.IRandom.html#Sophia_IRandom_next
+  commentId: M:Sophia.IRandom.next
+  fullName: Sophia.IRandom.next()
+  nameWithType: IRandom.next()
+- uid: Sophia.IRandom.next(System.Int32)
+  name: next(Int32)
+  href: api/Sophia.IRandom.html#Sophia_IRandom_next_System_Int32_
+  commentId: M:Sophia.IRandom.next(System.Int32)
+  fullName: Sophia.IRandom.next(System.Int32)
+  nameWithType: IRandom.next(Int32)
+- uid: Sophia.IRandom.next(System.Int32,System.Int32)
+  name: next(Int32, Int32)
+  href: api/Sophia.IRandom.html#Sophia_IRandom_next_System_Int32_System_Int32_
+  commentId: M:Sophia.IRandom.next(System.Int32,System.Int32)
+  fullName: Sophia.IRandom.next(System.Int32, System.Int32)
+  nameWithType: IRandom.next(Int32, Int32)
+- uid: Sophia.IRandom.next*
+  name: next
+  href: api/Sophia.IRandom.html#Sophia_IRandom_next_
+  commentId: Overload:Sophia.IRandom.next
   isSpec: "True"
-  fullName: Sophia.IRandom.Next
-  nameWithType: IRandom.Next
-- uid: Sophia.IRandom.NextBytes(System.Byte[])
-  name: NextBytes(Byte[])
-  href: api/Sophia.IRandom.html#Sophia_IRandom_NextBytes_System_Byte___
-  commentId: M:Sophia.IRandom.NextBytes(System.Byte[])
-  name.vb: NextBytes(Byte())
-  fullName: Sophia.IRandom.NextBytes(System.Byte[])
-  fullName.vb: Sophia.IRandom.NextBytes(System.Byte())
-  nameWithType: IRandom.NextBytes(Byte[])
-  nameWithType.vb: IRandom.NextBytes(Byte())
-- uid: Sophia.IRandom.NextBytes*
-  name: NextBytes
-  href: api/Sophia.IRandom.html#Sophia_IRandom_NextBytes_
-  commentId: Overload:Sophia.IRandom.NextBytes
+  fullName: Sophia.IRandom.next
+  nameWithType: IRandom.next
+- uid: Sophia.IRandom.nextBytes(System.Byte[])
+  name: nextBytes(Byte[])
+  href: api/Sophia.IRandom.html#Sophia_IRandom_nextBytes_System_Byte___
+  commentId: M:Sophia.IRandom.nextBytes(System.Byte[])
+  name.vb: nextBytes(Byte())
+  fullName: Sophia.IRandom.nextBytes(System.Byte[])
+  fullName.vb: Sophia.IRandom.nextBytes(System.Byte())
+  nameWithType: IRandom.nextBytes(Byte[])
+  nameWithType.vb: IRandom.nextBytes(Byte())
+- uid: Sophia.IRandom.nextBytes*
+  name: nextBytes
+  href: api/Sophia.IRandom.html#Sophia_IRandom_nextBytes_
+  commentId: Overload:Sophia.IRandom.nextBytes
   isSpec: "True"
-  fullName: Sophia.IRandom.NextBytes
-  nameWithType: IRandom.NextBytes
-- uid: Sophia.IRandom.NextDouble
-  name: NextDouble()
-  href: api/Sophia.IRandom.html#Sophia_IRandom_NextDouble
-  commentId: M:Sophia.IRandom.NextDouble
-  fullName: Sophia.IRandom.NextDouble()
-  nameWithType: IRandom.NextDouble()
-- uid: Sophia.IRandom.NextDouble*
-  name: NextDouble
-  href: api/Sophia.IRandom.html#Sophia_IRandom_NextDouble_
-  commentId: Overload:Sophia.IRandom.NextDouble
+  fullName: Sophia.IRandom.nextBytes
+  nameWithType: IRandom.nextBytes
+- uid: Sophia.IRandom.nextDouble
+  name: nextDouble()
+  href: api/Sophia.IRandom.html#Sophia_IRandom_nextDouble
+  commentId: M:Sophia.IRandom.nextDouble
+  fullName: Sophia.IRandom.nextDouble()
+  nameWithType: IRandom.nextDouble()
+- uid: Sophia.IRandom.nextDouble*
+  name: nextDouble
+  href: api/Sophia.IRandom.html#Sophia_IRandom_nextDouble_
+  commentId: Overload:Sophia.IRandom.nextDouble
   isSpec: "True"
-  fullName: Sophia.IRandom.NextDouble
-  nameWithType: IRandom.NextDouble
+  fullName: Sophia.IRandom.nextDouble
+  nameWithType: IRandom.nextDouble
 - uid: Sophia.ITimer
   name: ITimer
   href: api/Sophia.ITimer.html
@@ -6898,103 +6794,161 @@ references:
   commentId: N:Sophia.Patterns
   fullName: Sophia.Patterns
   nameWithType: Sophia.Patterns
-- uid: Sophia.Patterns.EventSubject
-  name: EventSubject
-  href: api/Sophia.Patterns.EventSubject.html
-  commentId: T:Sophia.Patterns.EventSubject
-  fullName: Sophia.Patterns.EventSubject
-  nameWithType: EventSubject
-- uid: Sophia.Patterns.EventSubject.#ctor
-  name: EventSubject()
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject__ctor
-  commentId: M:Sophia.Patterns.EventSubject.#ctor
-  fullName: Sophia.Patterns.EventSubject.EventSubject()
-  nameWithType: EventSubject.EventSubject()
-- uid: Sophia.Patterns.EventSubject.#ctor*
-  name: EventSubject
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject__ctor_
-  commentId: Overload:Sophia.Patterns.EventSubject.#ctor
+- uid: Sophia.Patterns.BaseSubject`1
+  name: BaseSubject<T>
+  href: api/Sophia.Patterns.BaseSubject-1.html
+  commentId: T:Sophia.Patterns.BaseSubject`1
+  name.vb: BaseSubject(Of T)
+  fullName: Sophia.Patterns.BaseSubject<T>
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T)
+  nameWithType: BaseSubject<T>
+  nameWithType.vb: BaseSubject(Of T)
+- uid: Sophia.Patterns.BaseSubject`1.#ctor
+  name: BaseSubject()
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1__ctor
+  commentId: M:Sophia.Patterns.BaseSubject`1.#ctor
+  fullName: Sophia.Patterns.BaseSubject<T>.BaseSubject()
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).BaseSubject()
+  nameWithType: BaseSubject<T>.BaseSubject()
+  nameWithType.vb: BaseSubject(Of T).BaseSubject()
+- uid: Sophia.Patterns.BaseSubject`1.#ctor*
+  name: BaseSubject
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1__ctor_
+  commentId: Overload:Sophia.Patterns.BaseSubject`1.#ctor
   isSpec: "True"
-  fullName: Sophia.Patterns.EventSubject.EventSubject
-  nameWithType: EventSubject.EventSubject
-- uid: Sophia.Patterns.EventSubject.attach(Sophia.Patterns.IEventObserver)
-  name: attach(IEventObserver)
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_attach_Sophia_Patterns_IEventObserver_
-  commentId: M:Sophia.Patterns.EventSubject.attach(Sophia.Patterns.IEventObserver)
-  fullName: Sophia.Patterns.EventSubject.attach(Sophia.Patterns.IEventObserver)
-  nameWithType: EventSubject.attach(IEventObserver)
-- uid: Sophia.Patterns.EventSubject.attach*
+  fullName: Sophia.Patterns.BaseSubject<T>.BaseSubject
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).BaseSubject
+  nameWithType: BaseSubject<T>.BaseSubject
+  nameWithType.vb: BaseSubject(Of T).BaseSubject
+- uid: Sophia.Patterns.BaseSubject`1.attach(`0)
+  name: attach(T)
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_attach__0_
+  commentId: M:Sophia.Patterns.BaseSubject`1.attach(`0)
+  fullName: Sophia.Patterns.BaseSubject<T>.attach(T)
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).attach(T)
+  nameWithType: BaseSubject<T>.attach(T)
+  nameWithType.vb: BaseSubject(Of T).attach(T)
+- uid: Sophia.Patterns.BaseSubject`1.attach*
   name: attach
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_attach_
-  commentId: Overload:Sophia.Patterns.EventSubject.attach
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_attach_
+  commentId: Overload:Sophia.Patterns.BaseSubject`1.attach
   isSpec: "True"
-  fullName: Sophia.Patterns.EventSubject.attach
-  nameWithType: EventSubject.attach
-- uid: Sophia.Patterns.EventSubject.detach(Sophia.Patterns.IEventObserver)
-  name: detach(IEventObserver)
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_detach_Sophia_Patterns_IEventObserver_
-  commentId: M:Sophia.Patterns.EventSubject.detach(Sophia.Patterns.IEventObserver)
-  fullName: Sophia.Patterns.EventSubject.detach(Sophia.Patterns.IEventObserver)
-  nameWithType: EventSubject.detach(IEventObserver)
-- uid: Sophia.Patterns.EventSubject.detach*
+  fullName: Sophia.Patterns.BaseSubject<T>.attach
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).attach
+  nameWithType: BaseSubject<T>.attach
+  nameWithType.vb: BaseSubject(Of T).attach
+- uid: Sophia.Patterns.BaseSubject`1.detach(`0)
+  name: detach(T)
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_detach__0_
+  commentId: M:Sophia.Patterns.BaseSubject`1.detach(`0)
+  fullName: Sophia.Patterns.BaseSubject<T>.detach(T)
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).detach(T)
+  nameWithType: BaseSubject<T>.detach(T)
+  nameWithType.vb: BaseSubject(Of T).detach(T)
+- uid: Sophia.Patterns.BaseSubject`1.detach*
   name: detach
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_detach_
-  commentId: Overload:Sophia.Patterns.EventSubject.detach
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_detach_
+  commentId: Overload:Sophia.Patterns.BaseSubject`1.detach
   isSpec: "True"
-  fullName: Sophia.Patterns.EventSubject.detach
-  nameWithType: EventSubject.detach
-- uid: Sophia.Patterns.EventSubject.detachAll
+  fullName: Sophia.Patterns.BaseSubject<T>.detach
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).detach
+  nameWithType: BaseSubject<T>.detach
+  nameWithType.vb: BaseSubject(Of T).detach
+- uid: Sophia.Patterns.BaseSubject`1.detachAll
   name: detachAll()
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_detachAll
-  commentId: M:Sophia.Patterns.EventSubject.detachAll
-  fullName: Sophia.Patterns.EventSubject.detachAll()
-  nameWithType: EventSubject.detachAll()
-- uid: Sophia.Patterns.EventSubject.detachAll*
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_detachAll
+  commentId: M:Sophia.Patterns.BaseSubject`1.detachAll
+  fullName: Sophia.Patterns.BaseSubject<T>.detachAll()
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).detachAll()
+  nameWithType: BaseSubject<T>.detachAll()
+  nameWithType.vb: BaseSubject(Of T).detachAll()
+- uid: Sophia.Patterns.BaseSubject`1.detachAll*
   name: detachAll
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_detachAll_
-  commentId: Overload:Sophia.Patterns.EventSubject.detachAll
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_detachAll_
+  commentId: Overload:Sophia.Patterns.BaseSubject`1.detachAll
   isSpec: "True"
-  fullName: Sophia.Patterns.EventSubject.detachAll
-  nameWithType: EventSubject.detachAll
-- uid: Sophia.Patterns.EventSubject.getObservers
+  fullName: Sophia.Patterns.BaseSubject<T>.detachAll
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).detachAll
+  nameWithType: BaseSubject<T>.detachAll
+  nameWithType.vb: BaseSubject(Of T).detachAll
+- uid: Sophia.Patterns.BaseSubject`1.getAs*
+  name: getAs
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_getAs_
+  commentId: Overload:Sophia.Patterns.BaseSubject`1.getAs
+  isSpec: "True"
+  fullName: Sophia.Patterns.BaseSubject<T>.getAs
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).getAs
+  nameWithType: BaseSubject<T>.getAs
+  nameWithType.vb: BaseSubject(Of T).getAs
+- uid: Sophia.Patterns.BaseSubject`1.getAs``1
+  name: getAs<TSubjectType>()
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_getAs__1
+  commentId: M:Sophia.Patterns.BaseSubject`1.getAs``1
+  name.vb: getAs(Of TSubjectType)()
+  fullName: Sophia.Patterns.BaseSubject<T>.getAs<TSubjectType>()
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).getAs(Of TSubjectType)()
+  nameWithType: BaseSubject<T>.getAs<TSubjectType>()
+  nameWithType.vb: BaseSubject(Of T).getAs(Of TSubjectType)()
+- uid: Sophia.Patterns.BaseSubject`1.getObservers
   name: getObservers()
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_getObservers
-  commentId: M:Sophia.Patterns.EventSubject.getObservers
-  fullName: Sophia.Patterns.EventSubject.getObservers()
-  nameWithType: EventSubject.getObservers()
-- uid: Sophia.Patterns.EventSubject.getObservers*
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_getObservers
+  commentId: M:Sophia.Patterns.BaseSubject`1.getObservers
+  fullName: Sophia.Patterns.BaseSubject<T>.getObservers()
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).getObservers()
+  nameWithType: BaseSubject<T>.getObservers()
+  nameWithType.vb: BaseSubject(Of T).getObservers()
+- uid: Sophia.Patterns.BaseSubject`1.getObservers*
   name: getObservers
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_getObservers_
-  commentId: Overload:Sophia.Patterns.EventSubject.getObservers
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_getObservers_
+  commentId: Overload:Sophia.Patterns.BaseSubject`1.getObservers
   isSpec: "True"
-  fullName: Sophia.Patterns.EventSubject.getObservers
-  nameWithType: EventSubject.getObservers
-- uid: Sophia.Patterns.EventSubject.notify(Sophia.Events.IEvent)
+  fullName: Sophia.Patterns.BaseSubject<T>.getObservers
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).getObservers
+  nameWithType: BaseSubject<T>.getObservers
+  nameWithType.vb: BaseSubject(Of T).getObservers
+- uid: Sophia.Patterns.BaseSubject`1.ObserverCount
+  name: ObserverCount
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_ObserverCount
+  commentId: P:Sophia.Patterns.BaseSubject`1.ObserverCount
+  fullName: Sophia.Patterns.BaseSubject<T>.ObserverCount
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).ObserverCount
+  nameWithType: BaseSubject<T>.ObserverCount
+  nameWithType.vb: BaseSubject(Of T).ObserverCount
+- uid: Sophia.Patterns.BaseSubject`1.ObserverCount*
+  name: ObserverCount
+  href: api/Sophia.Patterns.BaseSubject-1.html#Sophia_Patterns_BaseSubject_1_ObserverCount_
+  commentId: Overload:Sophia.Patterns.BaseSubject`1.ObserverCount
+  isSpec: "True"
+  fullName: Sophia.Patterns.BaseSubject<T>.ObserverCount
+  fullName.vb: Sophia.Patterns.BaseSubject(Of T).ObserverCount
+  nameWithType: BaseSubject<T>.ObserverCount
+  nameWithType.vb: BaseSubject(Of T).ObserverCount
+- uid: Sophia.Patterns.EventSubject`1
+  name: EventSubject<T>
+  href: api/Sophia.Patterns.EventSubject-1.html
+  commentId: T:Sophia.Patterns.EventSubject`1
+  name.vb: EventSubject(Of T)
+  fullName: Sophia.Patterns.EventSubject<T>
+  fullName.vb: Sophia.Patterns.EventSubject(Of T)
+  nameWithType: EventSubject<T>
+  nameWithType.vb: EventSubject(Of T)
+- uid: Sophia.Patterns.EventSubject`1.notify(Sophia.Events.IEvent)
   name: notify(IEvent)
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_notify_Sophia_Events_IEvent_
-  commentId: M:Sophia.Patterns.EventSubject.notify(Sophia.Events.IEvent)
-  fullName: Sophia.Patterns.EventSubject.notify(Sophia.Events.IEvent)
-  nameWithType: EventSubject.notify(IEvent)
-- uid: Sophia.Patterns.EventSubject.notify*
+  href: api/Sophia.Patterns.EventSubject-1.html#Sophia_Patterns_EventSubject_1_notify_Sophia_Events_IEvent_
+  commentId: M:Sophia.Patterns.EventSubject`1.notify(Sophia.Events.IEvent)
+  fullName: Sophia.Patterns.EventSubject<T>.notify(Sophia.Events.IEvent)
+  fullName.vb: Sophia.Patterns.EventSubject(Of T).notify(Sophia.Events.IEvent)
+  nameWithType: EventSubject<T>.notify(IEvent)
+  nameWithType.vb: EventSubject(Of T).notify(IEvent)
+- uid: Sophia.Patterns.EventSubject`1.notify*
   name: notify
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_notify_
-  commentId: Overload:Sophia.Patterns.EventSubject.notify
+  href: api/Sophia.Patterns.EventSubject-1.html#Sophia_Patterns_EventSubject_1_notify_
+  commentId: Overload:Sophia.Patterns.EventSubject`1.notify
   isSpec: "True"
-  fullName: Sophia.Patterns.EventSubject.notify
-  nameWithType: EventSubject.notify
-- uid: Sophia.Patterns.EventSubject.ObserverCount
-  name: ObserverCount
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_ObserverCount
-  commentId: P:Sophia.Patterns.EventSubject.ObserverCount
-  fullName: Sophia.Patterns.EventSubject.ObserverCount
-  nameWithType: EventSubject.ObserverCount
-- uid: Sophia.Patterns.EventSubject.ObserverCount*
-  name: ObserverCount
-  href: api/Sophia.Patterns.EventSubject.html#Sophia_Patterns_EventSubject_ObserverCount_
-  commentId: Overload:Sophia.Patterns.EventSubject.ObserverCount
-  isSpec: "True"
-  fullName: Sophia.Patterns.EventSubject.ObserverCount
-  nameWithType: EventSubject.ObserverCount
+  fullName: Sophia.Patterns.EventSubject<T>.notify
+  fullName.vb: Sophia.Patterns.EventSubject(Of T).notify
+  nameWithType: EventSubject<T>.notify
+  nameWithType.vb: EventSubject(Of T).notify
 - uid: Sophia.Patterns.FiniteStateMachine
   name: FiniteStateMachine
   href: api/Sophia.Patterns.FiniteStateMachine.html
@@ -7453,12 +7407,12 @@ references:
   isSpec: "True"
   fullName: Sophia.Patterns.IEventObserver.EventCategory
   nameWithType: IEventObserver.EventCategory
-- uid: Sophia.Patterns.IEventObserver.notify(Sophia.Patterns.EventSubject,Sophia.Events.IEvent)
-  name: notify(EventSubject, IEvent)
-  href: api/Sophia.Patterns.IEventObserver.html#Sophia_Patterns_IEventObserver_notify_Sophia_Patterns_EventSubject_Sophia_Events_IEvent_
-  commentId: M:Sophia.Patterns.IEventObserver.notify(Sophia.Patterns.EventSubject,Sophia.Events.IEvent)
-  fullName: Sophia.Patterns.IEventObserver.notify(Sophia.Patterns.EventSubject, Sophia.Events.IEvent)
-  nameWithType: IEventObserver.notify(EventSubject, IEvent)
+- uid: Sophia.Patterns.IEventObserver.notify(Sophia.Patterns.ISubject,Sophia.Events.IEvent)
+  name: notify(ISubject, IEvent)
+  href: api/Sophia.Patterns.IEventObserver.html#Sophia_Patterns_IEventObserver_notify_Sophia_Patterns_ISubject_Sophia_Events_IEvent_
+  commentId: M:Sophia.Patterns.IEventObserver.notify(Sophia.Patterns.ISubject,Sophia.Events.IEvent)
+  fullName: Sophia.Patterns.IEventObserver.notify(Sophia.Patterns.ISubject, Sophia.Events.IEvent)
+  nameWithType: IEventObserver.notify(ISubject, IEvent)
 - uid: Sophia.Patterns.IEventObserver.notify*
   name: notify
   href: api/Sophia.Patterns.IEventObserver.html#Sophia_Patterns_IEventObserver_notify_
@@ -7472,12 +7426,12 @@ references:
   commentId: T:Sophia.Patterns.IObserver
   fullName: Sophia.Patterns.IObserver
   nameWithType: IObserver
-- uid: Sophia.Patterns.IObserver.notify(Sophia.Patterns.Subject)
-  name: notify(Subject)
-  href: api/Sophia.Patterns.IObserver.html#Sophia_Patterns_IObserver_notify_Sophia_Patterns_Subject_
-  commentId: M:Sophia.Patterns.IObserver.notify(Sophia.Patterns.Subject)
-  fullName: Sophia.Patterns.IObserver.notify(Sophia.Patterns.Subject)
-  nameWithType: IObserver.notify(Subject)
+- uid: Sophia.Patterns.IObserver.notify(Sophia.Patterns.ISubject)
+  name: notify(ISubject)
+  href: api/Sophia.Patterns.IObserver.html#Sophia_Patterns_IObserver_notify_Sophia_Patterns_ISubject_
+  commentId: M:Sophia.Patterns.IObserver.notify(Sophia.Patterns.ISubject)
+  fullName: Sophia.Patterns.IObserver.notify(Sophia.Patterns.ISubject)
+  nameWithType: IObserver.notify(ISubject)
 - uid: Sophia.Patterns.IObserver.notify*
   name: notify
   href: api/Sophia.Patterns.IObserver.html#Sophia_Patterns_IObserver_notify_
@@ -7543,6 +7497,54 @@ references:
   isSpec: "True"
   fullName: Sophia.Patterns.IStateMachine.update
   nameWithType: IStateMachine.update
+- uid: Sophia.Patterns.ISubject
+  name: ISubject
+  href: api/Sophia.Patterns.ISubject.html
+  commentId: T:Sophia.Patterns.ISubject
+  fullName: Sophia.Patterns.ISubject
+  nameWithType: ISubject
+- uid: Sophia.Patterns.ISubject.detachAll
+  name: detachAll()
+  href: api/Sophia.Patterns.ISubject.html#Sophia_Patterns_ISubject_detachAll
+  commentId: M:Sophia.Patterns.ISubject.detachAll
+  fullName: Sophia.Patterns.ISubject.detachAll()
+  nameWithType: ISubject.detachAll()
+- uid: Sophia.Patterns.ISubject.detachAll*
+  name: detachAll
+  href: api/Sophia.Patterns.ISubject.html#Sophia_Patterns_ISubject_detachAll_
+  commentId: Overload:Sophia.Patterns.ISubject.detachAll
+  isSpec: "True"
+  fullName: Sophia.Patterns.ISubject.detachAll
+  nameWithType: ISubject.detachAll
+- uid: Sophia.Patterns.ISubject.getAs*
+  name: getAs
+  href: api/Sophia.Patterns.ISubject.html#Sophia_Patterns_ISubject_getAs_
+  commentId: Overload:Sophia.Patterns.ISubject.getAs
+  isSpec: "True"
+  fullName: Sophia.Patterns.ISubject.getAs
+  nameWithType: ISubject.getAs
+- uid: Sophia.Patterns.ISubject.getAs``1
+  name: getAs<TSubjectType>()
+  href: api/Sophia.Patterns.ISubject.html#Sophia_Patterns_ISubject_getAs__1
+  commentId: M:Sophia.Patterns.ISubject.getAs``1
+  name.vb: getAs(Of TSubjectType)()
+  fullName: Sophia.Patterns.ISubject.getAs<TSubjectType>()
+  fullName.vb: Sophia.Patterns.ISubject.getAs(Of TSubjectType)()
+  nameWithType: ISubject.getAs<TSubjectType>()
+  nameWithType.vb: ISubject.getAs(Of TSubjectType)()
+- uid: Sophia.Patterns.ISubject.ObserverCount
+  name: ObserverCount
+  href: api/Sophia.Patterns.ISubject.html#Sophia_Patterns_ISubject_ObserverCount
+  commentId: P:Sophia.Patterns.ISubject.ObserverCount
+  fullName: Sophia.Patterns.ISubject.ObserverCount
+  nameWithType: ISubject.ObserverCount
+- uid: Sophia.Patterns.ISubject.ObserverCount*
+  name: ObserverCount
+  href: api/Sophia.Patterns.ISubject.html#Sophia_Patterns_ISubject_ObserverCount_
+  commentId: Overload:Sophia.Patterns.ISubject.ObserverCount
+  isSpec: "True"
+  fullName: Sophia.Patterns.ISubject.ObserverCount
+  nameWithType: ISubject.ObserverCount
 - uid: Sophia.Patterns.Singleton`1
   name: Singleton<T>
   href: api/Sophia.Patterns.Singleton-1.html
@@ -7621,122 +7623,152 @@ references:
   fullName.vb: Sophia.Patterns.Singleton(Of T).Instance
   nameWithType: Singleton<T>.Instance
   nameWithType.vb: Singleton(Of T).Instance
-- uid: Sophia.Patterns.Subject
-  name: Subject
-  href: api/Sophia.Patterns.Subject.html
-  commentId: T:Sophia.Patterns.Subject
-  fullName: Sophia.Patterns.Subject
-  nameWithType: Subject
-- uid: Sophia.Patterns.Subject.#ctor
-  name: Subject()
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject__ctor
-  commentId: M:Sophia.Patterns.Subject.#ctor
-  fullName: Sophia.Patterns.Subject.Subject()
-  nameWithType: Subject.Subject()
-- uid: Sophia.Patterns.Subject.#ctor*
-  name: Subject
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject__ctor_
-  commentId: Overload:Sophia.Patterns.Subject.#ctor
-  isSpec: "True"
-  fullName: Sophia.Patterns.Subject.Subject
-  nameWithType: Subject.Subject
-- uid: Sophia.Patterns.Subject.attach(Sophia.Patterns.IObserver)
-  name: attach(IObserver)
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_attach_Sophia_Patterns_IObserver_
-  commentId: M:Sophia.Patterns.Subject.attach(Sophia.Patterns.IObserver)
-  fullName: Sophia.Patterns.Subject.attach(Sophia.Patterns.IObserver)
-  nameWithType: Subject.attach(IObserver)
-- uid: Sophia.Patterns.Subject.attach*
-  name: attach
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_attach_
-  commentId: Overload:Sophia.Patterns.Subject.attach
-  isSpec: "True"
-  fullName: Sophia.Patterns.Subject.attach
-  nameWithType: Subject.attach
-- uid: Sophia.Patterns.Subject.detach(Sophia.Patterns.IObserver)
-  name: detach(IObserver)
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_detach_Sophia_Patterns_IObserver_
-  commentId: M:Sophia.Patterns.Subject.detach(Sophia.Patterns.IObserver)
-  fullName: Sophia.Patterns.Subject.detach(Sophia.Patterns.IObserver)
-  nameWithType: Subject.detach(IObserver)
-- uid: Sophia.Patterns.Subject.detach*
-  name: detach
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_detach_
-  commentId: Overload:Sophia.Patterns.Subject.detach
-  isSpec: "True"
-  fullName: Sophia.Patterns.Subject.detach
-  nameWithType: Subject.detach
-- uid: Sophia.Patterns.Subject.detachAll
-  name: detachAll()
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_detachAll
-  commentId: M:Sophia.Patterns.Subject.detachAll
-  fullName: Sophia.Patterns.Subject.detachAll()
-  nameWithType: Subject.detachAll()
-- uid: Sophia.Patterns.Subject.detachAll*
-  name: detachAll
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_detachAll_
-  commentId: Overload:Sophia.Patterns.Subject.detachAll
-  isSpec: "True"
-  fullName: Sophia.Patterns.Subject.detachAll
-  nameWithType: Subject.detachAll
-- uid: Sophia.Patterns.Subject.getObservers
-  name: getObservers()
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_getObservers
-  commentId: M:Sophia.Patterns.Subject.getObservers
-  fullName: Sophia.Patterns.Subject.getObservers()
-  nameWithType: Subject.getObservers()
-- uid: Sophia.Patterns.Subject.getObservers*
-  name: getObservers
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_getObservers_
-  commentId: Overload:Sophia.Patterns.Subject.getObservers
-  isSpec: "True"
-  fullName: Sophia.Patterns.Subject.getObservers
-  nameWithType: Subject.getObservers
-- uid: Sophia.Patterns.Subject.notify
+- uid: Sophia.Patterns.Subject`1
+  name: Subject<T>
+  href: api/Sophia.Patterns.Subject-1.html
+  commentId: T:Sophia.Patterns.Subject`1
+  name.vb: Subject(Of T)
+  fullName: Sophia.Patterns.Subject<T>
+  fullName.vb: Sophia.Patterns.Subject(Of T)
+  nameWithType: Subject<T>
+  nameWithType.vb: Subject(Of T)
+- uid: Sophia.Patterns.Subject`1.notify
   name: notify()
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_notify
-  commentId: M:Sophia.Patterns.Subject.notify
-  fullName: Sophia.Patterns.Subject.notify()
-  nameWithType: Subject.notify()
-- uid: Sophia.Patterns.Subject.notify*
+  href: api/Sophia.Patterns.Subject-1.html#Sophia_Patterns_Subject_1_notify
+  commentId: M:Sophia.Patterns.Subject`1.notify
+  fullName: Sophia.Patterns.Subject<T>.notify()
+  fullName.vb: Sophia.Patterns.Subject(Of T).notify()
+  nameWithType: Subject<T>.notify()
+  nameWithType.vb: Subject(Of T).notify()
+- uid: Sophia.Patterns.Subject`1.notify*
   name: notify
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_notify_
-  commentId: Overload:Sophia.Patterns.Subject.notify
+  href: api/Sophia.Patterns.Subject-1.html#Sophia_Patterns_Subject_1_notify_
+  commentId: Overload:Sophia.Patterns.Subject`1.notify
   isSpec: "True"
-  fullName: Sophia.Patterns.Subject.notify
-  nameWithType: Subject.notify
-- uid: Sophia.Patterns.Subject.ObserverCount
-  name: ObserverCount
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_ObserverCount
-  commentId: P:Sophia.Patterns.Subject.ObserverCount
-  fullName: Sophia.Patterns.Subject.ObserverCount
-  nameWithType: Subject.ObserverCount
-- uid: Sophia.Patterns.Subject.ObserverCount*
-  name: ObserverCount
-  href: api/Sophia.Patterns.Subject.html#Sophia_Patterns_Subject_ObserverCount_
-  commentId: Overload:Sophia.Patterns.Subject.ObserverCount
-  isSpec: "True"
-  fullName: Sophia.Patterns.Subject.ObserverCount
-  nameWithType: Subject.ObserverCount
+  fullName: Sophia.Patterns.Subject<T>.notify
+  fullName.vb: Sophia.Patterns.Subject(Of T).notify
+  nameWithType: Subject<T>.notify
+  nameWithType.vb: Subject(Of T).notify
 - uid: Sophia.PhysxMonoBehaviour
   name: PhysxMonoBehaviour
   href: api/Sophia.PhysxMonoBehaviour.html
   commentId: T:Sophia.PhysxMonoBehaviour
   fullName: Sophia.PhysxMonoBehaviour
   nameWithType: PhysxMonoBehaviour
-- uid: Sophia.PhysxMonoBehaviour.rigid
-  name: rigid
-  href: api/Sophia.PhysxMonoBehaviour.html#Sophia_PhysxMonoBehaviour_rigid
-  commentId: P:Sophia.PhysxMonoBehaviour.rigid
-  fullName: Sophia.PhysxMonoBehaviour.rigid
-  nameWithType: PhysxMonoBehaviour.rigid
-- uid: Sophia.PhysxMonoBehaviour.rigid*
-  name: rigid
-  href: api/Sophia.PhysxMonoBehaviour.html#Sophia_PhysxMonoBehaviour_rigid_
-  commentId: Overload:Sophia.PhysxMonoBehaviour.rigid
+- uid: Sophia.PhysxMonoBehaviour.rigidbody
+  name: rigidbody
+  href: api/Sophia.PhysxMonoBehaviour.html#Sophia_PhysxMonoBehaviour_rigidbody
+  commentId: P:Sophia.PhysxMonoBehaviour.rigidbody
+  fullName: Sophia.PhysxMonoBehaviour.rigidbody
+  nameWithType: PhysxMonoBehaviour.rigidbody
+- uid: Sophia.PhysxMonoBehaviour.rigidbody*
+  name: rigidbody
+  href: api/Sophia.PhysxMonoBehaviour.html#Sophia_PhysxMonoBehaviour_rigidbody_
+  commentId: Overload:Sophia.PhysxMonoBehaviour.rigidbody
   isSpec: "True"
-  fullName: Sophia.PhysxMonoBehaviour.rigid
-  nameWithType: PhysxMonoBehaviour.rigid
+  fullName: Sophia.PhysxMonoBehaviour.rigidbody
+  nameWithType: PhysxMonoBehaviour.rigidbody
+- uid: Sophia.Random
+  name: Random
+  href: api/Sophia.Random.html
+  commentId: T:Sophia.Random
+  fullName: Sophia.Random
+  nameWithType: Random
+- uid: Sophia.Random.boolean(System.Single)
+  name: boolean(Single)
+  href: api/Sophia.Random.html#Sophia_Random_boolean_System_Single_
+  commentId: M:Sophia.Random.boolean(System.Single)
+  fullName: Sophia.Random.boolean(System.Single)
+  nameWithType: Random.boolean(Single)
+- uid: Sophia.Random.boolean*
+  name: boolean
+  href: api/Sophia.Random.html#Sophia_Random_boolean_
+  commentId: Overload:Sophia.Random.boolean
+  isSpec: "True"
+  fullName: Sophia.Random.boolean
+  nameWithType: Random.boolean
+- uid: Sophia.Random.g_Random
+  name: g_Random
+  href: api/Sophia.Random.html#Sophia_Random_g_Random
+  commentId: F:Sophia.Random.g_Random
+  fullName: Sophia.Random.g_Random
+  nameWithType: Random.g_Random
+- uid: Sophia.Random.getRandom
+  name: getRandom()
+  href: api/Sophia.Random.html#Sophia_Random_getRandom
+  commentId: M:Sophia.Random.getRandom
+  fullName: Sophia.Random.getRandom()
+  nameWithType: Random.getRandom()
+- uid: Sophia.Random.getRandom(System.Int32)
+  name: getRandom(Int32)
+  href: api/Sophia.Random.html#Sophia_Random_getRandom_System_Int32_
+  commentId: M:Sophia.Random.getRandom(System.Int32)
+  fullName: Sophia.Random.getRandom(System.Int32)
+  nameWithType: Random.getRandom(Int32)
+- uid: Sophia.Random.getRandom*
+  name: getRandom
+  href: api/Sophia.Random.html#Sophia_Random_getRandom_
+  commentId: Overload:Sophia.Random.getRandom
+  isSpec: "True"
+  fullName: Sophia.Random.getRandom
+  nameWithType: Random.getRandom
+- uid: Sophia.Random.randomOffset(System.Single,System.Single)
+  name: randomOffset(Single, Single)
+  href: api/Sophia.Random.html#Sophia_Random_randomOffset_System_Single_System_Single_
+  commentId: M:Sophia.Random.randomOffset(System.Single,System.Single)
+  fullName: Sophia.Random.randomOffset(System.Single, System.Single)
+  nameWithType: Random.randomOffset(Single, Single)
+- uid: Sophia.Random.randomOffset*
+  name: randomOffset
+  href: api/Sophia.Random.html#Sophia_Random_randomOffset_
+  commentId: Overload:Sophia.Random.randomOffset
+  isSpec: "True"
+  fullName: Sophia.Random.randomOffset
+  nameWithType: Random.randomOffset
+- uid: Sophia.Random.range(System.Int32)
+  name: range(Int32)
+  href: api/Sophia.Random.html#Sophia_Random_range_System_Int32_
+  commentId: M:Sophia.Random.range(System.Int32)
+  fullName: Sophia.Random.range(System.Int32)
+  nameWithType: Random.range(Int32)
+- uid: Sophia.Random.range(System.Int32,System.Int32)
+  name: range(Int32, Int32)
+  href: api/Sophia.Random.html#Sophia_Random_range_System_Int32_System_Int32_
+  commentId: M:Sophia.Random.range(System.Int32,System.Int32)
+  fullName: Sophia.Random.range(System.Int32, System.Int32)
+  nameWithType: Random.range(Int32, Int32)
+- uid: Sophia.Random.range(System.Single)
+  name: range(Single)
+  href: api/Sophia.Random.html#Sophia_Random_range_System_Single_
+  commentId: M:Sophia.Random.range(System.Single)
+  fullName: Sophia.Random.range(System.Single)
+  nameWithType: Random.range(Single)
+- uid: Sophia.Random.range(System.Single,System.Single)
+  name: range(Single, Single)
+  href: api/Sophia.Random.html#Sophia_Random_range_System_Single_System_Single_
+  commentId: M:Sophia.Random.range(System.Single,System.Single)
+  fullName: Sophia.Random.range(System.Single, System.Single)
+  nameWithType: Random.range(Single, Single)
+- uid: Sophia.Random.range*
+  name: range
+  href: api/Sophia.Random.html#Sophia_Random_range_
+  commentId: Overload:Sophia.Random.range
+  isSpec: "True"
+  fullName: Sophia.Random.range
+  nameWithType: Random.range
+- uid: Sophia.Random.sign
+  name: sign()
+  href: api/Sophia.Random.html#Sophia_Random_sign
+  commentId: M:Sophia.Random.sign
+  fullName: Sophia.Random.sign()
+  nameWithType: Random.sign()
+- uid: Sophia.Random.sign*
+  name: sign
+  href: api/Sophia.Random.html#Sophia_Random_sign_
+  commentId: Overload:Sophia.Random.sign
+  isSpec: "True"
+  fullName: Sophia.Random.sign
+  nameWithType: Random.sign
 - uid: Sophia.ReadOnlyAttribute
   name: ReadOnlyAttribute
   href: api/Sophia.ReadOnlyAttribute.html
@@ -7840,107 +7872,6 @@ references:
   isSpec: "True"
   fullName: Sophia.ScreenshotTaker.TakeClean
   nameWithType: ScreenshotTaker.TakeClean
-- uid: Sophia.SophiaRandom
-  name: SophiaRandom
-  href: api/Sophia.SophiaRandom.html
-  commentId: T:Sophia.SophiaRandom
-  fullName: Sophia.SophiaRandom
-  nameWithType: SophiaRandom
-- uid: Sophia.SophiaRandom.Bool(System.Single)
-  name: Bool(Single)
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_Bool_System_Single_
-  commentId: M:Sophia.SophiaRandom.Bool(System.Single)
-  fullName: Sophia.SophiaRandom.Bool(System.Single)
-  nameWithType: SophiaRandom.Bool(Single)
-- uid: Sophia.SophiaRandom.Bool*
-  name: Bool
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_Bool_
-  commentId: Overload:Sophia.SophiaRandom.Bool
-  isSpec: "True"
-  fullName: Sophia.SophiaRandom.Bool
-  nameWithType: SophiaRandom.Bool
-- uid: Sophia.SophiaRandom.GetRandom
-  name: GetRandom()
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_GetRandom
-  commentId: M:Sophia.SophiaRandom.GetRandom
-  fullName: Sophia.SophiaRandom.GetRandom()
-  nameWithType: SophiaRandom.GetRandom()
-- uid: Sophia.SophiaRandom.GetRandom(System.Int32)
-  name: GetRandom(Int32)
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_GetRandom_System_Int32_
-  commentId: M:Sophia.SophiaRandom.GetRandom(System.Int32)
-  fullName: Sophia.SophiaRandom.GetRandom(System.Int32)
-  nameWithType: SophiaRandom.GetRandom(Int32)
-- uid: Sophia.SophiaRandom.GetRandom*
-  name: GetRandom
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_GetRandom_
-  commentId: Overload:Sophia.SophiaRandom.GetRandom
-  isSpec: "True"
-  fullName: Sophia.SophiaRandom.GetRandom
-  nameWithType: SophiaRandom.GetRandom
-- uid: Sophia.SophiaRandom.GlobalRandom
-  name: GlobalRandom
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_GlobalRandom
-  commentId: F:Sophia.SophiaRandom.GlobalRandom
-  fullName: Sophia.SophiaRandom.GlobalRandom
-  nameWithType: SophiaRandom.GlobalRandom
-- uid: Sophia.SophiaRandom.RandomOffset(System.Single,System.Single)
-  name: RandomOffset(Single, Single)
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_RandomOffset_System_Single_System_Single_
-  commentId: M:Sophia.SophiaRandom.RandomOffset(System.Single,System.Single)
-  fullName: Sophia.SophiaRandom.RandomOffset(System.Single, System.Single)
-  nameWithType: SophiaRandom.RandomOffset(Single, Single)
-- uid: Sophia.SophiaRandom.RandomOffset*
-  name: RandomOffset
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_RandomOffset_
-  commentId: Overload:Sophia.SophiaRandom.RandomOffset
-  isSpec: "True"
-  fullName: Sophia.SophiaRandom.RandomOffset
-  nameWithType: SophiaRandom.RandomOffset
-- uid: Sophia.SophiaRandom.Range(System.Int32)
-  name: Range(Int32)
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_Range_System_Int32_
-  commentId: M:Sophia.SophiaRandom.Range(System.Int32)
-  fullName: Sophia.SophiaRandom.Range(System.Int32)
-  nameWithType: SophiaRandom.Range(Int32)
-- uid: Sophia.SophiaRandom.Range(System.Int32,System.Int32)
-  name: Range(Int32, Int32)
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_Range_System_Int32_System_Int32_
-  commentId: M:Sophia.SophiaRandom.Range(System.Int32,System.Int32)
-  fullName: Sophia.SophiaRandom.Range(System.Int32, System.Int32)
-  nameWithType: SophiaRandom.Range(Int32, Int32)
-- uid: Sophia.SophiaRandom.Range(System.Single)
-  name: Range(Single)
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_Range_System_Single_
-  commentId: M:Sophia.SophiaRandom.Range(System.Single)
-  fullName: Sophia.SophiaRandom.Range(System.Single)
-  nameWithType: SophiaRandom.Range(Single)
-- uid: Sophia.SophiaRandom.Range(System.Single,System.Single)
-  name: Range(Single, Single)
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_Range_System_Single_System_Single_
-  commentId: M:Sophia.SophiaRandom.Range(System.Single,System.Single)
-  fullName: Sophia.SophiaRandom.Range(System.Single, System.Single)
-  nameWithType: SophiaRandom.Range(Single, Single)
-- uid: Sophia.SophiaRandom.Range*
-  name: Range
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_Range_
-  commentId: Overload:Sophia.SophiaRandom.Range
-  isSpec: "True"
-  fullName: Sophia.SophiaRandom.Range
-  nameWithType: SophiaRandom.Range
-- uid: Sophia.SophiaRandom.Sign
-  name: Sign()
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_Sign
-  commentId: M:Sophia.SophiaRandom.Sign
-  fullName: Sophia.SophiaRandom.Sign()
-  nameWithType: SophiaRandom.Sign()
-- uid: Sophia.SophiaRandom.Sign*
-  name: Sign
-  href: api/Sophia.SophiaRandom.html#Sophia_SophiaRandom_Sign_
-  commentId: Overload:Sophia.SophiaRandom.Sign
-  isSpec: "True"
-  fullName: Sophia.SophiaRandom.Sign
-  nameWithType: SophiaRandom.Sign
 - uid: Sophia.Started
   name: Started
   href: api/Sophia.Started.html
@@ -7965,74 +7896,6 @@ references:
   commentId: N:Sophia.Threading
   fullName: Sophia.Threading
   nameWithType: Sophia.Threading
-- uid: Sophia.Threading.CopyData
-  name: CopyData
-  href: api/Sophia.Threading.CopyData.html
-  commentId: T:Sophia.Threading.CopyData
-  fullName: Sophia.Threading.CopyData
-  nameWithType: CopyData
-- uid: Sophia.Threading.CopyData.from
-  name: from
-  href: api/Sophia.Threading.CopyData.html#Sophia_Threading_CopyData_from
-  commentId: F:Sophia.Threading.CopyData.from
-  fullName: Sophia.Threading.CopyData.from
-  nameWithType: CopyData.from
-- uid: Sophia.Threading.CopyData.overwrite
-  name: overwrite
-  href: api/Sophia.Threading.CopyData.html#Sophia_Threading_CopyData_overwrite
-  commentId: F:Sophia.Threading.CopyData.overwrite
-  fullName: Sophia.Threading.CopyData.overwrite
-  nameWithType: CopyData.overwrite
-- uid: Sophia.Threading.CopyData.to
-  name: to
-  href: api/Sophia.Threading.CopyData.html#Sophia_Threading_CopyData_to
-  commentId: F:Sophia.Threading.CopyData.to
-  fullName: Sophia.Threading.CopyData.to
-  nameWithType: CopyData.to
-- uid: Sophia.Threading.CopyTask
-  name: CopyTask
-  href: api/Sophia.Threading.CopyTask.html
-  commentId: T:Sophia.Threading.CopyTask
-  fullName: Sophia.Threading.CopyTask
-  nameWithType: CopyTask
-- uid: Sophia.Threading.CopyTask.#ctor(Sophia.Threading.CopyData[])
-  name: CopyTask(CopyData[])
-  href: api/Sophia.Threading.CopyTask.html#Sophia_Threading_CopyTask__ctor_Sophia_Threading_CopyData___
-  commentId: M:Sophia.Threading.CopyTask.#ctor(Sophia.Threading.CopyData[])
-  name.vb: CopyTask(CopyData())
-  fullName: Sophia.Threading.CopyTask.CopyTask(Sophia.Threading.CopyData[])
-  fullName.vb: Sophia.Threading.CopyTask.CopyTask(Sophia.Threading.CopyData())
-  nameWithType: CopyTask.CopyTask(CopyData[])
-  nameWithType.vb: CopyTask.CopyTask(CopyData())
-- uid: Sophia.Threading.CopyTask.#ctor(Sophia.Threading.CopyData[],Sophia.Diagnostics.Logger)
-  name: CopyTask(CopyData[], Logger)
-  href: api/Sophia.Threading.CopyTask.html#Sophia_Threading_CopyTask__ctor_Sophia_Threading_CopyData___Sophia_Diagnostics_Logger_
-  commentId: M:Sophia.Threading.CopyTask.#ctor(Sophia.Threading.CopyData[],Sophia.Diagnostics.Logger)
-  name.vb: CopyTask(CopyData(), Logger)
-  fullName: Sophia.Threading.CopyTask.CopyTask(Sophia.Threading.CopyData[], Sophia.Diagnostics.Logger)
-  fullName.vb: Sophia.Threading.CopyTask.CopyTask(Sophia.Threading.CopyData(), Sophia.Diagnostics.Logger)
-  nameWithType: CopyTask.CopyTask(CopyData[], Logger)
-  nameWithType.vb: CopyTask.CopyTask(CopyData(), Logger)
-- uid: Sophia.Threading.CopyTask.#ctor*
-  name: CopyTask
-  href: api/Sophia.Threading.CopyTask.html#Sophia_Threading_CopyTask__ctor_
-  commentId: Overload:Sophia.Threading.CopyTask.#ctor
-  isSpec: "True"
-  fullName: Sophia.Threading.CopyTask.CopyTask
-  nameWithType: CopyTask.CopyTask
-- uid: Sophia.Threading.CopyTask.execute
-  name: execute()
-  href: api/Sophia.Threading.CopyTask.html#Sophia_Threading_CopyTask_execute
-  commentId: M:Sophia.Threading.CopyTask.execute
-  fullName: Sophia.Threading.CopyTask.execute()
-  nameWithType: CopyTask.execute()
-- uid: Sophia.Threading.CopyTask.execute*
-  name: execute
-  href: api/Sophia.Threading.CopyTask.html#Sophia_Threading_CopyTask_execute_
-  commentId: Overload:Sophia.Threading.CopyTask.execute
-  isSpec: "True"
-  fullName: Sophia.Threading.CopyTask.execute
-  nameWithType: CopyTask.execute
 - uid: Sophia.Threading.ITask
   name: ITask
   href: api/Sophia.Threading.ITask.html
