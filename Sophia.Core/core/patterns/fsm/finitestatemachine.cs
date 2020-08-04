@@ -21,18 +21,6 @@ namespace Sophia
             }
 
             //--------------------------------------------------------------------------------
-            // Fields
-            private readonly Dictionary<string, FSMState> states = new Dictionary<string, FSMState>();
-
-            private FSMState start_state;
-            private FSMState current_state;
-
-            private int next_event = 0;
-            private bool running = false;
-
-            private readonly Dictionary<string, FSMEvent> registered_events = new Dictionary<string, FSMEvent>();
-
-            //--------------------------------------------------------------------------------
             /// <summary>
             /// The current state.
             /// </summary>
@@ -42,13 +30,25 @@ namespace Sophia
             }
 
             //--------------------------------------------------------------------------------
+            // Fields
+            private readonly Dictionary<string, FSMState> states = new Dictionary<string, FSMState>();
+            private readonly Dictionary<string, FSMEvent> registered_events = new Dictionary<string, FSMEvent>();
+
+            private FSMState start_state;
+            private FSMState current_state;
+
+            private int next_event = 0;
+
+            private bool running = false;
+
+
+            //--------------------------------------------------------------------------------
             /// <summary>
             /// Create a finite state machine.
             /// </summary>
             /// <param name="data">The data used for predicate guard checks</param>
             public FiniteStateMachine()
-            {
-            }
+            {}
 
             //--------------------------------------------------------------------------------
             /// <summary>
