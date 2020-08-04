@@ -1,15 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace Sophia.Extensions
 {
-	///<summary>
-	/// Provides useful extension methods for MonoBehaviours.
-	/// </summary>
-	public static class MonoBehaviourExtensions
+    ///<summary>
+    /// Provides useful extension methods for MonoBehaviours.
+    /// </summary>
+    public static class MonoBehaviourExtensions
 	{
         //-------------------------------------------------------------------------------------
         /// <summary>

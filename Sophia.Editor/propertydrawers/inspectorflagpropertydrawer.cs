@@ -1,13 +1,12 @@
-using Sophia;
 using UnityEditor;
 using UnityEngine;
 
 namespace Sophia.Editor.PropertyDrawers
 {
-	/// <summary>
-	/// A property drawer for fields marked with the InspectorFlags Attribute.
-	/// </summary>
-	[CustomPropertyDrawer(typeof(InspectorFlagsAttribute))]
+    /// <summary>
+    /// A property drawer for fields marked with the InspectorFlags Attribute.
+    /// </summary>
+    [CustomPropertyDrawer(typeof(InspectorFlagsAttribute))]
 	public class InspectorFlagsPropertyDrawer : PropertyDrawer
 	{
         #region Unity Messages

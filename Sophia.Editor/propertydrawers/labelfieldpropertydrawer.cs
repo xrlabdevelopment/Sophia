@@ -1,15 +1,14 @@
-using Sophia;
 using System;
 using UnityEngine;
 using UnityEditor;
 
 namespace Sophia.Editor.PropertyDrawers
 {
-	/// <summary>
-	/// Property drawer for the label field attribute.
-	/// </summary>
-	/// <seealso cref="UnityEditor.PropertyDrawer" />
-	[CustomPropertyDrawer(typeof (LabelFieldAttribute))]
+    /// <summary>
+    /// Property drawer for the label field attribute.
+    /// </summary>
+    /// <seealso cref="UnityEditor.PropertyDrawer" />
+    [CustomPropertyDrawer(typeof (LabelFieldAttribute))]
 	public class LabelFieldPropertyDrawer : PropertyDrawer
     {
         #region Unity Messages

@@ -1,13 +1,12 @@
-using Sophia;
 using UnityEditor;
 using UnityEngine;
 
 namespace Sophia.Editor.PropertyDrawers
 {
-	/// <summary>
-	/// A property drawer for the MinMaxFloat class.
-	/// </summary>
-	[CustomPropertyDrawer(typeof (MinMaxFloat))]
+    /// <summary>
+    /// A property drawer for the MinMaxFloat class.
+    /// </summary>
+    [CustomPropertyDrawer(typeof (MinMaxFloat))]
 	public class MinMaxFloatPropertyDrawer : PropertyDrawer
 	{
         #region Unity Messages

@@ -1,14 +1,13 @@
-using Sophia;
 using UnityEditor;
 using UnityEngine;
 
 namespace Sophia.Editor.PropertyDrawers
 {
-	/// <summary>
-	/// Property drawer for fields marked with the WarnIfNull.
-	/// </summary>
-	/// <seealso cref="UnityEditor.PropertyDrawer" />
-	[CustomPropertyDrawer(typeof(WarningIfNullAttribute))]
+    /// <summary>
+    /// Property drawer for fields marked with the WarnIfNull.
+    /// </summary>
+    /// <seealso cref="UnityEditor.PropertyDrawer" />
+    [CustomPropertyDrawer(typeof(WarningIfNullAttribute))]
 	public class WarningIfNullPropertyDrawer : PropertyDrawer
 	{
         #region Unity Messages

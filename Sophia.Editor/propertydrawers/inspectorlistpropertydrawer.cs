@@ -1,14 +1,13 @@
-using Sophia;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
 namespace Sophia.Editor.PropertyDrawers
 {
-	/// <summary>
-	/// A property drawer for type InspectorList.
-	/// </summary>
-	[CustomPropertyDrawer(typeof (InspectorList), true)]
+    /// <summary>
+    /// A property drawer for type InspectorList.
+    /// </summary>
+    [CustomPropertyDrawer(typeof (InspectorList), true)]
 	public class InspectorListPropertyDrawer : PropertyDrawer
 	{
         //-------------------------------------------------------------------------------------

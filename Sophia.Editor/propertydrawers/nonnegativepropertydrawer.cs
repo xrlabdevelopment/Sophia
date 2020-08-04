@@ -1,13 +1,12 @@
-using Sophia;
 using UnityEditor;
 using UnityEngine;
 
 namespace Sophia.Editor.PropertyDrawers
 {
-	/// <summary>
-	/// A property drawer for fields marked with the NonNegative Attribute.
-	/// </summary>
-	[CustomPropertyDrawer(typeof(NonNegativeAttribute))]
+    /// <summary>
+    /// A property drawer for fields marked with the NonNegative Attribute.
+    /// </summary>
+    [CustomPropertyDrawer(typeof(NonNegativeAttribute))]
 	public class NonNegativePropertyDrawer : PropertyDrawer
 	{
         #region Unity Messages

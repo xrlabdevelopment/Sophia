@@ -1,14 +1,13 @@
 using UnityEngine;
 using UnityEditor;
-using Sophia;
 
 namespace Sophia.Editor
 {
-	/// <summary>
-	/// A property drawer for fields marked with the CommentAttribute. Similar to Header, but useful
-	/// for longer descriptions.
-	/// </summary>
-	[CustomPropertyDrawer(typeof(CommentAttribute), useForChildren: true)]
+    /// <summary>
+    /// A property drawer for fields marked with the CommentAttribute. Similar to Header, but useful
+    /// for longer descriptions.
+    /// </summary>
+    [CustomPropertyDrawer(typeof(CommentAttribute), useForChildren: true)]
 	public class CommentPropertyDrawer : DecoratorDrawer
 	{
         #region Unity Messages

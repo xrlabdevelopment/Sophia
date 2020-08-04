@@ -1,15 +1,13 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
 namespace Sophia.Extensions
 {
-	/// <summary>
-	/// Contains useful extensions for Select.
-	/// </summary>
-	public static class TransformExtensions
+    /// <summary>
+    /// Contains useful extensions for Select.
+    /// </summary>
+    public static class TransformExtensions
 	{
         //-------------------------------------------------------------------------------------
         /// <summary>

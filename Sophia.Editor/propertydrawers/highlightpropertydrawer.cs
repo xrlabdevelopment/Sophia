@@ -1,13 +1,12 @@
-using Sophia;
 using UnityEditor;
 using UnityEngine;
 
 namespace Sophia.Editor.PropertyDrawers
 {
-	/// <summary>
-	/// A property drawer for fields marked with the Highlight Attribute.
-	/// </summary>
-	[CustomPropertyDrawer(typeof(HighlightAttribute))]
+    /// <summary>
+    /// A property drawer for fields marked with the Highlight Attribute.
+    /// </summary>
+    [CustomPropertyDrawer(typeof(HighlightAttribute))]
 	public class HighlightPropertyDrawer : PropertyDrawer
 	{
         #region Unity Messages

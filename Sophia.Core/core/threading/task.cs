@@ -1,4 +1,3 @@
-using System;
 using Sophia.Diagnostics;
 
 namespace Sophia

@@ -1,14 +1,13 @@
-using Sophia;
 using UnityEditor;
 using UnityEngine;
 
 namespace Sophia.Editor.PropertyDrawers
 {
-	/// <summary>
-	/// A property drawer that can be used for read-only fields in the inspector. 
-	/// </summary>
-	/// <seealso cref="UnityEditor.PropertyDrawer" />
-	[CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
+    /// <summary>
+    /// A property drawer that can be used for read-only fields in the inspector. 
+    /// </summary>
+    /// <seealso cref="UnityEditor.PropertyDrawer" />
+    [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
 	public class ReadOnlyPropertyDrawer : PropertyDrawer
 	{
         #region Unity Messages

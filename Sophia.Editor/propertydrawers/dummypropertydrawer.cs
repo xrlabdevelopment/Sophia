@@ -1,13 +1,12 @@
-using Sophia;
 using UnityEditor;
 using UnityEngine;
 
 namespace Sophia.Editor
 {
-	/// <summary>
-	/// Draws a property marked with the Dummy attribute (that is, does not draw it).
-	/// </summary>
-	[CustomPropertyDrawer(typeof(DummyAttribute))]
+    /// <summary>
+    /// Draws a property marked with the Dummy attribute (that is, does not draw it).
+    /// </summary>
+    [CustomPropertyDrawer(typeof(DummyAttribute))]
 	public class DummyPorpertyDrawer : PropertyDrawer
 	{
         #region Unity Messages
