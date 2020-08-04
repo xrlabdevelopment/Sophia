@@ -62,11 +62,18 @@ namespace Sophia
                 bool handled = false;
                 foreach (KeyValuePair<int, List<IEventHandler>> pair in handlers)
                 {
-                    // TODO:
                     //
-                    // make sure we check on something different that 0.
-                    // It's not clear to the user that an EventCategory should start from 1 instead of 0.
-                    if ((evt.EventCategory & pair.Key) != 0)
+                    // We are required to add 1 to our category because using the AND operator on a category that is already zero,
+                    //  will end up in not handling the event. ( event_category & handler_category )
+                    //
+                    // It will be very confusing from a client perspective to instantiate event categories starting from 1.
+                    //
+                    // Hence we resolve the issue here by adding one to the category before testing it.
+                    //
+                    int event_category      = evt.EventCategory + 1;
+                    int handler_category    = pair.Key + 1;
+
+                    if ((event_category & handler_category) != 0)
                     {
                         foreach (IEventHandler handler in pair.Value)
                             handled |= handler.handleEvent(evt);
