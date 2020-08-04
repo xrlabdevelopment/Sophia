@@ -36,7 +36,7 @@ namespace Sophia.Editor
 		}
 
         //--------------------------------------------------------------------------------------
-        public static void Splitter(Color rgb, float thickness = 1)
+        public static void splitter(Color rgb, float thickness = 1)
 		{
 			Rect position = GUILayoutUtility.GetRect(GUIContent.none, SplitterStyle, GUILayout.Height(thickness));
 
@@ -49,7 +49,7 @@ namespace Sophia.Editor
 			}
 		}
         //--------------------------------------------------------------------------------------
-        public static void Splitter(float thickness, GUIStyle splitterStyle)
+        public static void splitter(float thickness, GUIStyle splitterStyle)
 		{
 			Rect position = GUILayoutUtility.GetRect(GUIContent.none, splitterStyle, GUILayout.Height(thickness));
 
@@ -62,12 +62,12 @@ namespace Sophia.Editor
 			}
 		}
         //--------------------------------------------------------------------------------------
-        public static void Splitter(float thickness = 1)
+        public static void splitter(float thickness = 1)
         {
-            Splitter(thickness, SplitterStyle);
+            splitter(thickness, SplitterStyle);
         }
         //--------------------------------------------------------------------------------------
-        public static void Splitter(Rect position)
+        public static void splitter(Rect position)
         {
             if (Event.current.type == EventType.Repaint)
             {
@@ -79,12 +79,12 @@ namespace Sophia.Editor
         }
 
         //--------------------------------------------------------------------------------------
-        public static void VerticalLine()
+        public static void verticalLine()
 		{
-			VerticalLine(SplitterColor, 2);
+			verticalLine(SplitterColor, 2);
 		}
         //--------------------------------------------------------------------------------------
-        public static void VerticalLine(Color color, float thickness = 1)
+        public static void verticalLine(Color color, float thickness = 1)
 		{
 			Rect position = GUILayoutUtility.GetRect(
 				GUIContent.none,
@@ -101,7 +101,7 @@ namespace Sophia.Editor
 			}
 		}
         //--------------------------------------------------------------------------------------
-        public static void VerticalLine(float thickness, GUIStyle splitterStyle)
+        public static void verticalLine(float thickness, GUIStyle splitterStyle)
 		{
 			Rect position = GUILayoutUtility.GetRect(GUIContent.none, splitterStyle, GUILayout.Width(thickness));
 

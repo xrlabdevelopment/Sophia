@@ -33,7 +33,7 @@ namespace Sophia.Editor
 		}
 
         //--------------------------------------------------------------------------------------
-        public bool HasProperty(string propertyName)
+        public bool hasProperty(string propertyName)
         {
             return serializedObject.FindProperty(propertyName) != null;
         }
@@ -42,30 +42,30 @@ namespace Sophia.Editor
         /// <summary>
         /// Draws a line as a separator in the inspector.
         /// </summary>
-        public void AddSplitter()
+        public void addSplitter()
 		{
-			BaseEditorHelpers.Splitter();
+			BaseEditorHelpers.splitter();
 		}
 
         //--------------------------------------------------------------------------------------
-        public static int AddCombo(string[] options, int selectedIndex)
+        public static int addCombo(string[] options, int selectedIndex)
 		{
 			return EditorGUILayout.Popup(selectedIndex, options);
 		}
         //--------------------------------------------------------------------------------------
-        protected void AddField(SerializedProperty prop)
+        protected void addField(SerializedProperty prop)
 		{
 			EditorGUILayout.BeginHorizontal();
 			EditorGUILayout.PropertyField(prop, true);
 			EditorGUILayout.EndHorizontal();
 		}
         //--------------------------------------------------------------------------------------
-        protected void AddLabel(string title, string text)
+        protected void addLabel(string title, string text)
 		{
 			EditorGUILayout.LabelField(title, text);
 		}
         //--------------------------------------------------------------------------------------
-        protected void AddTextAndButton(string text, string buttonLabel, Action buttonAction)
+        protected void addTextAndButton(string text, string buttonLabel, Action buttonAction)
         {
             EditorGUILayout.BeginHorizontal();
 
@@ -80,7 +80,7 @@ namespace Sophia.Editor
             EditorGUILayout.EndHorizontal();
         }
         //--------------------------------------------------------------------------------------
-        protected void ArrayGUI(SerializedObject obj, SerializedProperty property)
+        protected void arrayGUI(SerializedObject obj, SerializedProperty property)
         {
             int size = property.arraySize;
             int new_size = EditorGUILayout.IntField(property.name + " Size", size);
@@ -105,9 +105,9 @@ namespace Sophia.Editor
         /// that are marked with the InspectorButtonAttribute.
         /// </summary>
         /// <param name="columnCount">The number of columns to draw the buttons in.</param>
-        protected void DrawInspectorButtons(int columnCount)
+        protected void drawInspectorButtons(int columnCount)
 		{
-			MethodInfo[] methods =  GetParentTypes(Target.GetType())
+			MethodInfo[] methods =  getParentTypes(Target.GetType())
 							.SelectMany(type => type.GetMethods(BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static))
 							.Where(m => m.GetCustomAttributes(typeof(InspectorButtonAttribute), false).Length > 0)
 							.ToArray();
@@ -141,7 +141,7 @@ namespace Sophia.Editor
 		}
 
         //--------------------------------------------------------------------------------------
-        private static IEnumerable<Type> GetParentTypes(Type type)
+        private static IEnumerable<Type> getParentTypes(Type type)
 		{
 			Type current_base_type = type;
 
