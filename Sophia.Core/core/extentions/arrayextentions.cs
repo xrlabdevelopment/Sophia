@@ -18,7 +18,7 @@ namespace Sophia
             {
                 int original_size = array.Length;
 
-                Array.Resize<T>(ref array, array.Length + other.Length);
+                Array.Resize(ref array, array.Length + other.Length);
                 Array.Copy(other, 0, array, original_size, other.Length);
 
                 return array;

@@ -53,7 +53,7 @@ namespace Sophia
             /// </summary>
             public static void addRange<T>(this ICollection<T> collection, IEnumerable<T> other)
             {
-                if (other == null)//nothing to add
+                if (other == null) //nothing to add
                 {
                     return;
                 }
@@ -97,14 +97,12 @@ namespace Sophia
             //-------------------------------------------------------------------------------------
             private static string listToString(this object obj)
             {
-                string objAsString = obj as string;
-
-                if (objAsString != null)
+                if (obj is string objAsString)
                     return objAsString;
 
-                var objAsList = obj as IEnumerable;
-
-                return objAsList == null ? obj.ToString() : objAsList.Cast<object>().listToString();
+                return !(obj is IEnumerable objAsList)
+                    ? obj.ToString()
+                    : objAsList.Cast<object>().listToString();
             }
 
             //-------------------------------------------------------------------------------------

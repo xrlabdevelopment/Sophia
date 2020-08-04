@@ -16,7 +16,7 @@ namespace Sophia
             public static T front<T>(this IList<T> list)
             {
                 if (list.Count == 0)
-                    return default(T);
+                    return default;
 
                 return list[0];
             }
@@ -30,7 +30,7 @@ namespace Sophia
             public static T back<T>(this IList<T> list)
             {
                 if (list.Count == 0)
-                    return default(T);
+                    return default;
 
                 return list[list.Count - 1];
             }
