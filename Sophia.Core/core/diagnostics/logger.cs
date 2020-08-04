@@ -1,10 +1,12 @@
 using System;
-using System.Diagnostics;
 
 namespace Sophia
 {
     namespace Diagnostics
     {
+        /// <summary>
+        /// Function callbacks provided to " log " certain events.
+        /// </summary>
         public struct LoggerCreationInfo
         {
             public Action<string> log_function;
@@ -14,6 +16,7 @@ namespace Sophia
 
         /// <summary>
         /// A class that will handle logging functionality inside Sophia
+        /// This will handle support for externally generated loggers ( e.g.: UnityEngine.Debug )
         /// </summary>
         public class Logger
         {
@@ -57,7 +60,7 @@ namespace Sophia
             }
             //-------------------------------------------------------------------------------------
             /// <summary>
-            /// Pritn an error
+            /// Print an error
             /// </summary>
             /// <param name="message">Message we would like to print</param>
             public void error(string message)
