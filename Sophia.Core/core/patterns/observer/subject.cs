@@ -5,7 +5,16 @@ namespace Sophia
 {
     namespace Patterns
     {
-        public class Subject
+        public interface ISubject
+        {
+            int ObserverCount { get; }
+
+            void detachAll();
+
+            TSubjectType getAs<TSubjectType>() where TSubjectType : class, ISubject;
+        }
+
+        public abstract class BaseSubject<T> : ISubject
         {
             //--------------------------------------------------------------------------------------
             // Properties
@@ -16,15 +25,15 @@ namespace Sophia
 
             //--------------------------------------------------------------------------------------
             // Fields
-            private readonly List<IObserver> observers;
+            private readonly List<T> observers;
 
             //--------------------------------------------------------------------------------------
             /// <summary>
             /// Constructor of the subject clas
             /// </summary>
-            public Subject()
+            public BaseSubject()
             {
-                observers = new List<IObserver>();
+                observers = new List<T>();
             }
 
             //--------------------------------------------------------------------------------------
@@ -32,7 +41,7 @@ namespace Sophia
             /// Attach a new observer to this subject
             /// </summary>
             /// <param name="observer">Observer to be attached</param>
-            public virtual void attach(IObserver observer)
+            public virtual void attach(T observer)
             {
                 if (!observers.Contains(observer))
                     observers.Add(observer);
@@ -42,7 +51,7 @@ namespace Sophia
             /// Detach a specific observer from this subject
             /// </summary>
             /// <param name="observer">Observer to be detached</param>
-            public virtual void detach(IObserver observer)
+            public virtual void detach(T observer)
             {
                 if (observers.Contains(observer))
                     observers.Remove(observer);
@@ -59,20 +68,14 @@ namespace Sophia
 
             //--------------------------------------------------------------------------------------
             /// <summary>
-            /// Notify all observers something happend
+            /// Convert this subject to another type
             /// </summary>
-            /// <param name="evt">The event that occured</param>
-            public virtual bool notify()
+            /// <typeparam name="TSubjectType">The subject type we would like to retrieve.</typeparam>
+            /// <returns>The requested subject type if convertible otherwise null.</returns>
+            public TSubjectType getAs<TSubjectType>()
+                where TSubjectType : class, ISubject
             {
-                observers.RemoveAll(o => o == null);
-
-                if (observers.Count == 0)
-                    return false;
-
-                bool handled = false;
-                foreach (IObserver observer in observers)
-                    handled |= observer.notify(this);
-                return handled;
+                return this as TSubjectType;
             }
 
             //--------------------------------------------------------------------------------------
@@ -80,93 +83,56 @@ namespace Sophia
             /// A list of all observers
             /// </summary>
             /// <returns>The list of containing all observers</returns>
-            protected List<IObserver> getObservers()
+            protected List<T> getObservers()
             {
                 return observers;
             }
         }
 
-        public class EventSubject
+        public class Subject<T> : BaseSubject<T>
+            where T : IObserver
         {
             //--------------------------------------------------------------------------------------
-            // Properties
-            public int ObserverCount
-            {
-                get { return observers.Count; }
-            }
-
-            //--------------------------------------------------------------------------------------
-            // Fields
-            private readonly List<IEventObserver> observers;
-
-            //--------------------------------------------------------------------------------------
             /// <summary>
-            /// Constructor of the subject clas
+            /// Notify all observers something happened
             /// </summary>
-            public EventSubject()
+            /// <param name="evt">The event that occured</param>
+            public virtual bool notify()
             {
-                observers = new List<IEventObserver>();
-            }
+                getObservers().RemoveAll(o => o == null);
 
-            //--------------------------------------------------------------------------------------
-            /// <summary>
-            /// Attach a new observer to this subject
-            /// </summary>
-            /// <param name="observer">Observer to be attached</param>
-            public virtual void attach(IEventObserver observer)
-            {
-                if (!observers.Contains(observer))
-                    observers.Add(observer);
-            }
-            //--------------------------------------------------------------------------------------
-            /// <summary>
-            /// Detach a specific observer from this subject
-            /// </summary>
-            /// <param name="observer">Observer to be detached</param>
-            public virtual void detach(IEventObserver observer)
-            {
-                if (observers.Contains(observer))
-                    observers.Remove(observer);
-            }
+                if (ObserverCount == 0)
+                    return false;
 
-            //--------------------------------------------------------------------------------------
-            /// <summary>
-            /// Detach all observers from this subject
-            /// </summary>
-            public void detachAll()
-            {
-                observers.Clear();
+                bool handled = false;
+                foreach (IObserver observer in getObservers())
+                    handled |= observer.notify(this);
+                return handled;
             }
+        }
 
+        public class EventSubject<T> : BaseSubject<T>
+            where T : IEventObserver
+        {
             //--------------------------------------------------------------------------------------
             /// <summary>
-            /// Notify all observers something happend
+            /// Notify all observers something happened
             /// </summary>
             /// <param name="evt">The event that occured</param>
             public virtual bool notify(IEvent evt)
             {
-                observers.RemoveAll(o => o == null);
+                getObservers().RemoveAll(o => o == null);
 
-                if (observers.Count == 0)
+                if (ObserverCount == 0)
                     return false;
 
                 bool handled = false;
-                foreach (IEventObserver observer in observers)
+                foreach (IEventObserver observer in getObservers())
                 {
                     if ((observer.EventCategory & evt.EventCategory) != 0)
                         handled |= observer.notify(this, evt);
                 }
                 return handled;
-            }
-
-            //--------------------------------------------------------------------------------------
-            /// <summary>
-            /// A list of all observers
-            /// </summary>
-            /// <returns>The list of containing all observers</returns>
-            protected List<IEventObserver> getObservers()
-            {
-                return observers;
             }
         }
     }
