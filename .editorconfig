@@ -59,6 +59,22 @@ end_of_line = crlf
 [*.sh]
 end_of_line = lf
 
+# Makefiles
+[Makefile]
+indent_style = tab
+
+##########################################
+# File Header (Uncomment to support file headers)
+# https://docs.microsoft.com/en-us/visualstudio/ide/reference/add-file-header
+##########################################
+
+# [*.{cs,csx,cake,vb,vbx}]
+# file_header_template = <copyright file="{fileName}" company="PROJECT-AUTHOR">\nCopyright (Â©) PROJECT-AUTHOR. All Rights Reserved\n</copyright>
+
+# SA1636: File header copyright text should match
+# Justification: .editorconfig supports file headers, so specifying a stylecop.json file with the file header is not needed.
+# dotnet_diagnostic.SA1636.severity = none
+
 ##########################################
 # .NET Language Conventions
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions
@@ -66,7 +82,7 @@ end_of_line = lf
 
 # .NET Code Style Settings
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#net-code-style-settings
-[*.{cs,csx,cake,vb}]
+[*.{cs,csx,cake,vb, vbx}]
 # "this." and "Me." qualifiers
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#this-and-me
 dotnet_style_qualification_for_field = false:suggestion
@@ -111,6 +127,8 @@ dotnet_code_quality_unused_parameters = all:warning
 # More style options (Undocumented)
 # https://github.com/MicrosoftDocs/visualstudio-docs/issues/3641
 dotnet_style_operator_placement_when_wrapping = end_of_line
+# https://github.com/dotnet/roslyn/pull/40070
+dotnet_style_prefer_simplified_interpolation = true:warning
 
 # C# Code Style Settings
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#c-code-style-settings
