@@ -30,6 +30,14 @@ namespace Sophia
             /// <param name="handler">The event handler to be notified</param>
             public void subscribe(IEventHandler handler)
             {
+                // We should not handle negative event categories
+                System.Diagnostics.Debug.Assert(handler.EventCategory >= 0, "An event category cannot be smaller than 0");
+                if(handler.EventCategory < 0)
+                {
+                    System.Diagnostics.Debug.WriteLine("Event category smaller than zero, this hander will not be added");
+                    return;
+                }
+
                 if (handlers.ContainsKey(handler.EventCategory))
                 {
                     handlers[handler.EventCategory].Add(handler);
@@ -59,6 +67,14 @@ namespace Sophia
             /// <returns>If the event was handled by one of the handlers this will return true, otherwise it will return false</returns>
             public bool dispatch(IEvent evt)
             {
+                // We should not handle negative event categories
+                System.Diagnostics.Debug.Assert(evt.EventCategory >= 0, "An event category cannot be smaller than 0");
+                if (evt.EventCategory < 0)
+                {
+                    System.Diagnostics.Debug.WriteLine("Event category smaller than zero, this event will not be handled");
+                    return false;
+                }
+
                 bool handled = false;
                 foreach (KeyValuePair<int, List<IEventHandler>> pair in handlers)
                 {
