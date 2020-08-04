@@ -7,7 +7,7 @@ namespace Sophia
     {
         //-------------------------------------------------------------------------------------
         // Properties
-        public new Rigidbody rigid
+        public new Rigidbody rigidbody
         {
             get
             {
