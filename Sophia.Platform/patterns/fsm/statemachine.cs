@@ -2,10 +2,10 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using Sophia.Patterns;
+using Sophia.Core.Patterns;
 using UnityEngine;
 
-namespace Sophia.Deprecated
+namespace Sophia.Platform.Patterns
 {
     public class StateMachine : IStateMachine
     {

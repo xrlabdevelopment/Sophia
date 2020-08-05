@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Sophia.Extensions
+namespace Sophia.Platform.Extension
 {
     ///<summary>
     /// Provides useful extension methods for MonoBehaviours.

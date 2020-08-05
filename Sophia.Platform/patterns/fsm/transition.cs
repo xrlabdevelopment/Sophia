@@ -2,7 +2,7 @@
 
 using UnityEngine;
 
-namespace Sophia.Deprecated
+namespace Sophia.Platform.Patterns
 {
     [CreateAssetMenu(menuName = "ScriptableObjects/Transition")]
     public class Transition : ScriptableObject

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform.Attributes
 {
 	/// <summary>
 	/// Used to mark the last field in a MonoBehaviour

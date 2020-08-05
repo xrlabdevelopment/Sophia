@@ -1,6 +1,6 @@
-using UnityEngine;
+using Sophia.Core.Gameplay.Input;
 
-namespace Sophia.Deprecated.Input
+namespace Sophia.Platform.Gameplay.Input
 {
     public class DesktopInputManager : IInputManager, IDesktopInputManager
     {       

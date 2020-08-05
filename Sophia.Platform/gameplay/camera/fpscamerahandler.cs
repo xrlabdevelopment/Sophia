@@ -1,7 +1,7 @@
-using Sophia.Patterns;
+using Sophia.Core.Patterns;
 using UnityEngine;
 
-namespace Sophia.Deprecated
+namespace Sophia.Platform.Gameplay
 {
     public abstract class FPSCameraHandler : BaseMonoBehaviour, ICommandReceiver
     {

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform.Attributes
 {
 	/// <summary>
 	/// Mark fields in a MonoBehaviour with this attribute to give a specific warning 

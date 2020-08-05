@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Sophia.Extensions;
+using Sophia.Platform.Extension;
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform
 {
     /// <summary>
     /// Provides some additional functions for MonoBehaviour.

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sophia.Extensions
+namespace Sophia.Platform.Extension
 {
 	/// <summary>
 	/// Contains useful extension methods for vectors.

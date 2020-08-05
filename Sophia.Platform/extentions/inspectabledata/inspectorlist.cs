@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform.Extension
 {
 	/// <summary>
 	/// The base class for the generic InspectorList. This class exists so that 

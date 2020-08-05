@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform.Attributes
 {
 	/// <summary>
 	/// Used to mark a field to add a comment above the field in the inspector.

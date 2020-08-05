@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform.Attributes
 {
     /// <summary>
     /// Used to mark inspectable fields as read-only (that is, making them uneditable, even if they are visible).

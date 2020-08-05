@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sophia.Platform.Attributes;
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform.Utilities
 {
 	/// <summary>
 	/// A component that makes it easy to take screenshots, usually for development purposes.
@@ -89,7 +90,7 @@ namespace Sophia
         //-------------------------------------------------------------------------------------
         protected override void onUpdate(float dTime)
         {
-            if (Input.GetKeyDown(ScreenshotKey))
+            if (UnityEngine.Input.GetKeyDown(ScreenshotKey))
             {
                 if (DirtyObjects.Length > 0)
                 {

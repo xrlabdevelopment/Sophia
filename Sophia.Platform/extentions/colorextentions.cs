@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sophia.Extensions
+namespace Sophia.Platform.Extension
 {
 	/// <summary>
 	/// Provides some utility functions for Colors.

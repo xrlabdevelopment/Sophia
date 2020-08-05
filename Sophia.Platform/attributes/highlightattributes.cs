@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform.Attributes
 {
 	/// <summary>
 	/// Mark simple types to be highligted in the inspector.

@@ -1,6 +1,6 @@
 using System;
 
-namespace Sophia
+namespace Sophia.Platform.Attributes
 {
     /// <summary>
     /// Make an inspector button

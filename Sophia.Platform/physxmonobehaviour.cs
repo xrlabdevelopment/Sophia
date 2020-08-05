@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform
 {
     [RequireComponent(typeof(Rigidbody))]
     public class PhysxMonoBehaviour : BaseMonoBehaviour

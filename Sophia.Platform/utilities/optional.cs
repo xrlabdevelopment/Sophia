@@ -1,7 +1,7 @@
  using System;
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform.Utilities
 {
 	/// <summary>
 	/// The base class of the generic Optional class.

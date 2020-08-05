@@ -1,6 +1,6 @@
 using System;
 
-namespace Sophia
+namespace Sophia.Platform.Extension
 {
 	/// <summary>
 	/// Class for representing a bounded range.

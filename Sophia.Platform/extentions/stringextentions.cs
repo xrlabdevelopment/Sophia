@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace Sophia.Extensions
+namespace Sophia.Platform.Extension
 {
     /// <summary>
     /// Class for string extensions.

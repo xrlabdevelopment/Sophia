@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Sophia.Extensions
+namespace Sophia.Platform.Extension
 {
     /// <summary>
     /// Contains useful extensions for Select.

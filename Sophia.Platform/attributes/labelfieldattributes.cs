@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform.Attributes
 {
 	/// <summary>
 	/// Specifies a field to use as label for an item in the inspector. This is especially useful for arrays of compound types.

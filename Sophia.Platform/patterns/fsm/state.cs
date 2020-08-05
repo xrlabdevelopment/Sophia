@@ -1,10 +1,10 @@
 #pragma warning disable 0649
 
 using System.Collections.Generic;
-using Sophia.Patterns;
+using Sophia.Core.Patterns;
 using UnityEngine;
 
-namespace Sophia.Deprecated
+namespace Sophia.Platform.Patterns
 {
     public abstract class State : ScriptableObject
     {

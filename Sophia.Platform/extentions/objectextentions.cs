@@ -1,6 +1,6 @@
 using System;
 
-namespace Sophia.Extensions
+namespace Sophia.Platform.Extension
 {
 	/// <summary>
 	/// Provides extensions for objects.
