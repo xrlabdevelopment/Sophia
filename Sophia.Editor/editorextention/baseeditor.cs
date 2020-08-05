@@ -118,7 +118,7 @@ namespace Sophia.Editor
 			{
 				MethodInfo method = methods[i];
 
-				if (GUILayout.Button(method.Name.SplitCamelCase()))
+				if (GUILayout.Button(method.Name.splitCamelCase()))
 				{
 					if (method.ReturnType == typeof(IEnumerator))
 					{
