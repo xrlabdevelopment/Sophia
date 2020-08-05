@@ -1,7 +1,6 @@
-using Sophia.Platform;
 using UnityEngine;
 
-namespace Sophia
+namespace Sophia.Platform.Patterns
 {
 	public abstract class MonoBehaviourSingleton<T> : BaseMonoBehaviour 
 		where T : Component

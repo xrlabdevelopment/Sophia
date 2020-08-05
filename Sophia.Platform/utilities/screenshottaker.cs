@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Sophia.Platform.Attributes;
+using Sophia.Platform.Patterns;
 using UnityEngine;
 
 namespace Sophia.Platform.Utilities
