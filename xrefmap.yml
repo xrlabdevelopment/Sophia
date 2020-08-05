@@ -1,12 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: Sophia
-  name: Sophia
-  href: api/Sophia.html
-  commentId: N:Sophia
-  fullName: Sophia
-  nameWithType: Sophia
 - uid: Sophia.Core.Algorithms
   name: Sophia.Core.Algorithms
   href: api/Sophia.Core.Algorithms.html
@@ -5889,135 +5883,6 @@ references:
   isSpec: "True"
   fullName: Sophia.Editor.PropertyDrawers.WarningIfNullPropertyDrawer.OnGUI
   nameWithType: WarningIfNullPropertyDrawer.OnGUI
-- uid: Sophia.MonoBehaviourSingleton`1
-  name: MonoBehaviourSingleton<T>
-  href: api/Sophia.MonoBehaviourSingleton-1.html
-  commentId: T:Sophia.MonoBehaviourSingleton`1
-  name.vb: MonoBehaviourSingleton(Of T)
-  fullName: Sophia.MonoBehaviourSingleton<T>
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T)
-  nameWithType: MonoBehaviourSingleton<T>
-  nameWithType.vb: MonoBehaviourSingleton(Of T)
-- uid: Sophia.MonoBehaviourSingleton`1.getAs*
-  name: getAs
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_getAs_
-  commentId: Overload:Sophia.MonoBehaviourSingleton`1.getAs
-  isSpec: "True"
-  fullName: Sophia.MonoBehaviourSingleton<T>.getAs
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).getAs
-  nameWithType: MonoBehaviourSingleton<T>.getAs
-  nameWithType.vb: MonoBehaviourSingleton(Of T).getAs
-- uid: Sophia.MonoBehaviourSingleton`1.getAs``1
-  name: getAs<U>()
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_getAs__1
-  commentId: M:Sophia.MonoBehaviourSingleton`1.getAs``1
-  name.vb: getAs(Of U)()
-  fullName: Sophia.MonoBehaviourSingleton<T>.getAs<U>()
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).getAs(Of U)()
-  nameWithType: MonoBehaviourSingleton<T>.getAs<U>()
-  nameWithType.vb: MonoBehaviourSingleton(Of T).getAs(Of U)()
-- uid: Sophia.MonoBehaviourSingleton`1.Instance
-  name: Instance
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_Instance
-  commentId: P:Sophia.MonoBehaviourSingleton`1.Instance
-  fullName: Sophia.MonoBehaviourSingleton<T>.Instance
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).Instance
-  nameWithType: MonoBehaviourSingleton<T>.Instance
-  nameWithType.vb: MonoBehaviourSingleton(Of T).Instance
-- uid: Sophia.MonoBehaviourSingleton`1.Instance*
-  name: Instance
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_Instance_
-  commentId: Overload:Sophia.MonoBehaviourSingleton`1.Instance
-  isSpec: "True"
-  fullName: Sophia.MonoBehaviourSingleton<T>.Instance
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).Instance
-  nameWithType: MonoBehaviourSingleton<T>.Instance
-  nameWithType.vb: MonoBehaviourSingleton(Of T).Instance
-- uid: Sophia.MonoBehaviourSingleton`1.onAwake
-  name: onAwake()
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_onAwake
-  commentId: M:Sophia.MonoBehaviourSingleton`1.onAwake
-  fullName: Sophia.MonoBehaviourSingleton<T>.onAwake()
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).onAwake()
-  nameWithType: MonoBehaviourSingleton<T>.onAwake()
-  nameWithType.vb: MonoBehaviourSingleton(Of T).onAwake()
-- uid: Sophia.MonoBehaviourSingleton`1.onAwake*
-  name: onAwake
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_onAwake_
-  commentId: Overload:Sophia.MonoBehaviourSingleton`1.onAwake
-  isSpec: "True"
-  fullName: Sophia.MonoBehaviourSingleton<T>.onAwake
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).onAwake
-  nameWithType: MonoBehaviourSingleton<T>.onAwake
-  nameWithType.vb: MonoBehaviourSingleton(Of T).onAwake
-- uid: Sophia.MonoBehaviourSingleton`1.onDestroy
-  name: onDestroy()
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_onDestroy
-  commentId: M:Sophia.MonoBehaviourSingleton`1.onDestroy
-  fullName: Sophia.MonoBehaviourSingleton<T>.onDestroy()
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).onDestroy()
-  nameWithType: MonoBehaviourSingleton<T>.onDestroy()
-  nameWithType.vb: MonoBehaviourSingleton(Of T).onDestroy()
-- uid: Sophia.MonoBehaviourSingleton`1.onDestroy*
-  name: onDestroy
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_onDestroy_
-  commentId: Overload:Sophia.MonoBehaviourSingleton`1.onDestroy
-  isSpec: "True"
-  fullName: Sophia.MonoBehaviourSingleton<T>.onDestroy
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).onDestroy
-  nameWithType: MonoBehaviourSingleton<T>.onDestroy
-  nameWithType.vb: MonoBehaviourSingleton(Of T).onDestroy
-- uid: Sophia.MonoBehaviourSingleton`1.onStart
-  name: onStart()
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_onStart
-  commentId: M:Sophia.MonoBehaviourSingleton`1.onStart
-  fullName: Sophia.MonoBehaviourSingleton<T>.onStart()
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).onStart()
-  nameWithType: MonoBehaviourSingleton<T>.onStart()
-  nameWithType.vb: MonoBehaviourSingleton(Of T).onStart()
-- uid: Sophia.MonoBehaviourSingleton`1.onStart*
-  name: onStart
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_onStart_
-  commentId: Overload:Sophia.MonoBehaviourSingleton`1.onStart
-  isSpec: "True"
-  fullName: Sophia.MonoBehaviourSingleton<T>.onStart
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).onStart
-  nameWithType: MonoBehaviourSingleton<T>.onStart
-  nameWithType.vb: MonoBehaviourSingleton(Of T).onStart
-- uid: Sophia.MonoBehaviourSingleton`1.onUpdate(System.Single)
-  name: onUpdate(Single)
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_onUpdate_System_Single_
-  commentId: M:Sophia.MonoBehaviourSingleton`1.onUpdate(System.Single)
-  fullName: Sophia.MonoBehaviourSingleton<T>.onUpdate(System.Single)
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).onUpdate(System.Single)
-  nameWithType: MonoBehaviourSingleton<T>.onUpdate(Single)
-  nameWithType.vb: MonoBehaviourSingleton(Of T).onUpdate(Single)
-- uid: Sophia.MonoBehaviourSingleton`1.onUpdate*
-  name: onUpdate
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_onUpdate_
-  commentId: Overload:Sophia.MonoBehaviourSingleton`1.onUpdate
-  isSpec: "True"
-  fullName: Sophia.MonoBehaviourSingleton<T>.onUpdate
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).onUpdate
-  nameWithType: MonoBehaviourSingleton<T>.onUpdate
-  nameWithType.vb: MonoBehaviourSingleton(Of T).onUpdate
-- uid: Sophia.MonoBehaviourSingleton`1.ShouldDestroyOnLoad
-  name: ShouldDestroyOnLoad
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_ShouldDestroyOnLoad
-  commentId: P:Sophia.MonoBehaviourSingleton`1.ShouldDestroyOnLoad
-  fullName: Sophia.MonoBehaviourSingleton<T>.ShouldDestroyOnLoad
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).ShouldDestroyOnLoad
-  nameWithType: MonoBehaviourSingleton<T>.ShouldDestroyOnLoad
-  nameWithType.vb: MonoBehaviourSingleton(Of T).ShouldDestroyOnLoad
-- uid: Sophia.MonoBehaviourSingleton`1.ShouldDestroyOnLoad*
-  name: ShouldDestroyOnLoad
-  href: api/Sophia.MonoBehaviourSingleton-1.html#Sophia_MonoBehaviourSingleton_1_ShouldDestroyOnLoad_
-  commentId: Overload:Sophia.MonoBehaviourSingleton`1.ShouldDestroyOnLoad
-  isSpec: "True"
-  fullName: Sophia.MonoBehaviourSingleton<T>.ShouldDestroyOnLoad
-  fullName.vb: Sophia.MonoBehaviourSingleton(Of T).ShouldDestroyOnLoad
-  nameWithType: MonoBehaviourSingleton<T>.ShouldDestroyOnLoad
-  nameWithType.vb: MonoBehaviourSingleton(Of T).ShouldDestroyOnLoad
 - uid: Sophia.Platform
   name: Sophia.Platform
   href: api/Sophia.Platform.html
@@ -8391,6 +8256,135 @@ references:
   commentId: N:Sophia.Platform.Patterns
   fullName: Sophia.Platform.Patterns
   nameWithType: Sophia.Platform.Patterns
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1
+  name: MonoBehaviourSingleton<T>
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html
+  commentId: T:Sophia.Platform.Patterns.MonoBehaviourSingleton`1
+  name.vb: MonoBehaviourSingleton(Of T)
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T)
+  nameWithType: MonoBehaviourSingleton<T>
+  nameWithType.vb: MonoBehaviourSingleton(Of T)
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.getAs*
+  name: getAs
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_getAs_
+  commentId: Overload:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.getAs
+  isSpec: "True"
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.getAs
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).getAs
+  nameWithType: MonoBehaviourSingleton<T>.getAs
+  nameWithType.vb: MonoBehaviourSingleton(Of T).getAs
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.getAs``1
+  name: getAs<U>()
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_getAs__1
+  commentId: M:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.getAs``1
+  name.vb: getAs(Of U)()
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.getAs<U>()
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).getAs(Of U)()
+  nameWithType: MonoBehaviourSingleton<T>.getAs<U>()
+  nameWithType.vb: MonoBehaviourSingleton(Of T).getAs(Of U)()
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.Instance
+  name: Instance
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_Instance
+  commentId: P:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.Instance
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.Instance
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).Instance
+  nameWithType: MonoBehaviourSingleton<T>.Instance
+  nameWithType.vb: MonoBehaviourSingleton(Of T).Instance
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.Instance*
+  name: Instance
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_Instance_
+  commentId: Overload:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.Instance
+  isSpec: "True"
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.Instance
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).Instance
+  nameWithType: MonoBehaviourSingleton<T>.Instance
+  nameWithType.vb: MonoBehaviourSingleton(Of T).Instance
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onAwake
+  name: onAwake()
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_onAwake
+  commentId: M:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onAwake
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.onAwake()
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).onAwake()
+  nameWithType: MonoBehaviourSingleton<T>.onAwake()
+  nameWithType.vb: MonoBehaviourSingleton(Of T).onAwake()
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onAwake*
+  name: onAwake
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_onAwake_
+  commentId: Overload:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onAwake
+  isSpec: "True"
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.onAwake
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).onAwake
+  nameWithType: MonoBehaviourSingleton<T>.onAwake
+  nameWithType.vb: MonoBehaviourSingleton(Of T).onAwake
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onDestroy
+  name: onDestroy()
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_onDestroy
+  commentId: M:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onDestroy
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.onDestroy()
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).onDestroy()
+  nameWithType: MonoBehaviourSingleton<T>.onDestroy()
+  nameWithType.vb: MonoBehaviourSingleton(Of T).onDestroy()
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onDestroy*
+  name: onDestroy
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_onDestroy_
+  commentId: Overload:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onDestroy
+  isSpec: "True"
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.onDestroy
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).onDestroy
+  nameWithType: MonoBehaviourSingleton<T>.onDestroy
+  nameWithType.vb: MonoBehaviourSingleton(Of T).onDestroy
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onStart
+  name: onStart()
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_onStart
+  commentId: M:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onStart
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.onStart()
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).onStart()
+  nameWithType: MonoBehaviourSingleton<T>.onStart()
+  nameWithType.vb: MonoBehaviourSingleton(Of T).onStart()
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onStart*
+  name: onStart
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_onStart_
+  commentId: Overload:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onStart
+  isSpec: "True"
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.onStart
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).onStart
+  nameWithType: MonoBehaviourSingleton<T>.onStart
+  nameWithType.vb: MonoBehaviourSingleton(Of T).onStart
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onUpdate(System.Single)
+  name: onUpdate(Single)
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_onUpdate_System_Single_
+  commentId: M:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onUpdate(System.Single)
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.onUpdate(System.Single)
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).onUpdate(System.Single)
+  nameWithType: MonoBehaviourSingleton<T>.onUpdate(Single)
+  nameWithType.vb: MonoBehaviourSingleton(Of T).onUpdate(Single)
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onUpdate*
+  name: onUpdate
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_onUpdate_
+  commentId: Overload:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.onUpdate
+  isSpec: "True"
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.onUpdate
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).onUpdate
+  nameWithType: MonoBehaviourSingleton<T>.onUpdate
+  nameWithType.vb: MonoBehaviourSingleton(Of T).onUpdate
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.ShouldDestroyOnLoad
+  name: ShouldDestroyOnLoad
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_ShouldDestroyOnLoad
+  commentId: P:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.ShouldDestroyOnLoad
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.ShouldDestroyOnLoad
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).ShouldDestroyOnLoad
+  nameWithType: MonoBehaviourSingleton<T>.ShouldDestroyOnLoad
+  nameWithType.vb: MonoBehaviourSingleton(Of T).ShouldDestroyOnLoad
+- uid: Sophia.Platform.Patterns.MonoBehaviourSingleton`1.ShouldDestroyOnLoad*
+  name: ShouldDestroyOnLoad
+  href: api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html#Sophia_Platform_Patterns_MonoBehaviourSingleton_1_ShouldDestroyOnLoad_
+  commentId: Overload:Sophia.Platform.Patterns.MonoBehaviourSingleton`1.ShouldDestroyOnLoad
+  isSpec: "True"
+  fullName: Sophia.Platform.Patterns.MonoBehaviourSingleton<T>.ShouldDestroyOnLoad
+  fullName.vb: Sophia.Platform.Patterns.MonoBehaviourSingleton(Of T).ShouldDestroyOnLoad
+  nameWithType: MonoBehaviourSingleton<T>.ShouldDestroyOnLoad
+  nameWithType.vb: MonoBehaviourSingleton(Of T).ShouldDestroyOnLoad
 - uid: Sophia.Platform.Patterns.State
   name: State
   href: api/Sophia.Platform.Patterns.State.html
