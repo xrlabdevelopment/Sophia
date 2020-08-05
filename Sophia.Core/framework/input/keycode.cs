@@ -2,7 +2,7 @@
 // 	I did not wanna introduce a dependency towards Unity just for using a key code.
 //	If for some reason in the future this list might change, it might be better to move to towards Sophia.Platform.
 
-namespace Sophia
+namespace Sophia.Core.Gameplay.Input
 {
     //
     // Summary:

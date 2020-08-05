@@ -1,6 +1,6 @@
-using Sophia.Patterns;
+using Sophia.Core.Patterns;
 
-namespace Sophia
+namespace Sophia.Core.Gameplay.Input
 {
     public abstract class InputAxisCommand : IInputCommand
     {

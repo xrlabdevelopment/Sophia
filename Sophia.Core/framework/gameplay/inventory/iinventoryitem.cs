@@ -1,6 +1,6 @@
 using System;
 
-namespace Sophia
+namespace Sophia.Core.Gameplay
 {
     //-------------------------------------------------------------------------------------
     /// <summary>

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Sophia
+namespace Sophia.Core.Timing
 {
     public enum TimerFinishedBehaviour
     {

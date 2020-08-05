@@ -1,6 +1,6 @@
 using System;
 
-namespace Sophia
+namespace Sophia.Core.Timing
 {
     public delegate void Finished(Guid timerID);                    // When timer reached 0
     public delegate void Started(Guid timerID);                     // When timer is started

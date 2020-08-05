@@ -1,4 +1,4 @@
-namespace Sophia
+namespace Sophia.Core.Gameplay.Input
 {
     public interface IInputManager
     {

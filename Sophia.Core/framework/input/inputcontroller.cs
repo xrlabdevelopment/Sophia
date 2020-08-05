@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Sophia.Patterns;
+using Sophia.Core.Patterns;
 
-namespace Sophia
+namespace Sophia.Core.Gameplay.Input
 {
     public abstract class InputController
     {
@@ -21,7 +21,7 @@ namespace Sophia
         }
 
         //--------------------------------------------------------------------------------------
-        public void processInputFor(Patterns.ICommandReceiver receiver)
+        public void processInputFor(ICommandReceiver receiver)
         {
             foreach (KeyValuePair<string, List<IInputCommand>> input_command_list in input_command_lists)
                 processCommands(input_command_list.Value.FindAll(command => command.isTriggered()), receiver);

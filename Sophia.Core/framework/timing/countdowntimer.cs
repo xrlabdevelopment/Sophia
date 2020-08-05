@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Sophia
+namespace Sophia.Core.Timing
 {
     public class CountDownTimer : ITimer
     {
