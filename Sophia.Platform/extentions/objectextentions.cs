@@ -15,7 +15,7 @@ namespace Sophia.Extensions
         /// <param name="name">The name of the variable this
         /// methods is called on.</param>
         /// <exception cref="NullReferenceException"></exception>
-        public static void ThrowIfNull(this object o, string name)
+        public static void throwIfNull(this object o, string name)
 		{
 			if(o == null)
                 throw new NullReferenceException(name);
@@ -27,7 +27,7 @@ namespace Sophia.Extensions
         /// <param name="n">The integer to check.</param>
         /// <param name="name">The name of the variable.</param>
         /// <exception cref="ArgumentOutOfRangeException"></exception>
-        public static void ThrowIfNegative(this int n, string name)
+        public static void throwIfNegative(this int n, string name)
 		{
 			if(n < 0)
                 throw new ArgumentOutOfRangeException(name, n, "argument cannot be negative");
@@ -39,7 +39,7 @@ namespace Sophia.Extensions
         /// <param name="x">The float to check.</param>
         /// <param name="name">The name of the variable.</param>
         /// <exception cref="ArgumentOutOfRangeException"></exception>
-        public static void ThrowIfNegative(float x, string name)
+        public static void throwIfNegative(float x, string name)
 		{
 			if (x < 0)
                 throw new ArgumentOutOfRangeException(name, x, "argument cannot be negative");

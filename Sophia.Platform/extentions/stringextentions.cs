@@ -15,7 +15,7 @@ namespace Sophia.Extensions
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static string SplitCamelCase(this string str)
+        public static string splitCamelCase(this string str)
         {
             if (string.IsNullOrEmpty(str))
             {

@@ -18,7 +18,7 @@ namespace Sophia.Extensions
         /// </summary>
         /// <param name="color"></param>
         /// <returns></returns>
-        public static Color Lighter(this Color color)
+        public static Color lighter(this Color color)
 		{
 			return new Color(
 				color.r + LightOffset,
@@ -33,7 +33,7 @@ namespace Sophia.Extensions
         /// </summary>
         /// <param name="color"></param>
         /// <returns></returns>
-        public static Color Darker(this Color color)
+        public static Color darker(this Color color)
 		{
 			return new Color(
 				color.r - LightOffset,
@@ -49,7 +49,7 @@ namespace Sophia.Extensions
         /// </summary>
         /// <param name="color"></param>
         /// <returns></returns>
-        public static float Brightness(this Color color)
+        public static float brightness(this Color color)
 		{
 			return (color.r + color.g + color.b)/3;
 		}
@@ -65,14 +65,14 @@ namespace Sophia.Extensions
         /// </remarks>
         /// <param name="color"></param>
         /// <param name="brightness"></param>
-        public static Color WithBrightness(this Color color, float brightness)
+        public static Color withBrightness(this Color color, float brightness)
 		{
-			if (color.IsApproximatelyBlack())
+			if (color.isApproximatelyBlack())
 			{
 				return new Color(brightness, brightness, brightness, color.a);
 			}
 			
-			float factor = brightness/color.Brightness();
+			float factor = brightness/color.brightness();
 
 			float r = color.r*factor;
 			float g = color.g*factor;
@@ -89,7 +89,7 @@ namespace Sophia.Extensions
         /// </summary>
         /// <param name="color"></param>
         /// <returns></returns>
-        public static bool IsApproximatelyBlack(this Color color)
+        public static bool isApproximatelyBlack(this Color color)
 		{
 			return color.r + color.g + color.b <= Mathf.Epsilon;
 		}
@@ -100,7 +100,7 @@ namespace Sophia.Extensions
         /// </summary>
         /// <param name="color"></param>
         /// <returns></returns>
-        public static bool IsApproximatelyWhite(this Color color)
+        public static bool isApproximatelyWhite(this Color color)
 		{
 			return color.r + color.g + color.b >= 1 - Mathf.Epsilon;
 		}
@@ -111,7 +111,7 @@ namespace Sophia.Extensions
         /// </summary>
         /// <param name="color"></param>
         /// <returns></returns>
-        public static Color Opaque(this Color color)
+        public static Color opaque(this Color color)
 		{
 			return new Color(color.r, color.g, color.b);
 		}
@@ -123,7 +123,7 @@ namespace Sophia.Extensions
         /// <param name="color">The color.</param>
         /// <param name="alpha">The alpha.</param>
         /// <returns>Color.</returns>
-        public static Color WithAlpha(this Color color, float alpha)
+        public static Color withAlpha(this Color color, float alpha)
         {
             return new Color(color.r, color.g, color.b, alpha);
         }
@@ -134,7 +134,7 @@ namespace Sophia.Extensions
         /// </summary>
         /// <param name="color">The color to invert.</param>
         /// <returns></returns>
-        public static Color Invert(this Color color)
+        public static Color invert(this Color color)
 		{
 			return new Color(1.0f - color.r, 1.0f - color.g, 1.0f - color.b, color.a);
 		}

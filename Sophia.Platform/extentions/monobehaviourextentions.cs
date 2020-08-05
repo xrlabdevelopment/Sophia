@@ -17,7 +17,7 @@ namespace Sophia.Extensions
         /// <typeparam name="T"></typeparam>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public static T Clone<T>(this T obj)
+        public static T clone<T>(this T obj)
             where T : MonoBehaviour
 		{
 			return BaseMonoBehaviour.Instantiate<T>(obj);
@@ -30,14 +30,14 @@ namespace Sophia.Extensions
         /// <param name="obj"></param>
         /// <param name="count"></param>
         /// <returns></returns>
-        public static List<T> Clone<T>(this T obj, int count)
+        public static List<T> clone<T>(this T obj, int count)
             where T : MonoBehaviour
 		{
             List<T> list = new List<T>();
 
 			for (int i = 0; i < count; i++)
 			{
-				list.Add(obj.Clone<T>());
+				list.Add(obj.clone<T>());
 			}
 
 			return list;
@@ -50,7 +50,7 @@ namespace Sophia.Extensions
         /// <param name="component"></param>
         /// <param name="childName">Name of the child we are looking for</param>
         /// <returns>The returned child, null if no child was found</returns>
-        public static GameObject FindChild(this Component component, string childName)
+        public static GameObject findChild(this Component component, string childName)
         {
             return component.transform.Find(childName).gameObject;
         }
@@ -61,7 +61,7 @@ namespace Sophia.Extensions
         /// <param name="component"></param>
         /// <param name="childName">Name of the child we are looking for</param>
         /// <returns>The returned child, null if no child was found</returns>
-        public static GameObject FindChildRecursively(this Component component, string childName)
+        public static GameObject findChildRecursively(this Component component, string childName)
         {
             Transform target = component.transform;
             if (target.Find(childName) != null)
@@ -69,7 +69,7 @@ namespace Sophia.Extensions
 
             for (int i = 0; i < target.childCount; ++i)
             {
-                GameObject result = FindChildRecursively(target.GetChild(i), childName);
+                GameObject result = findChildRecursively(target.GetChild(i), childName);
                 if (result != null)
                 {
                     return result;
@@ -86,7 +86,7 @@ namespace Sophia.Extensions
 		/// <typeparam name="TInterface">The type of the t interface.</typeparam>
 		/// <param name="thisComponent">The this component.</param>
 		/// <returns>TInterface.</returns>
-		public static TInterface GetInterfaceComponent<TInterface>(this Component thisComponent)
+		public static TInterface getInterfaceComponent<TInterface>(this Component thisComponent)
             where TInterface : class
 		{
 			return thisComponent.GetComponent(typeof(TInterface)) as TInterface;
@@ -96,13 +96,13 @@ namespace Sophia.Extensions
         /// <summary>
         /// Invokes the given action after the given amount of time.
         /// </summary>
-        public static Coroutine Invoke(this MonoBehaviour monoBehaviour, Action action, float time)
+        public static Coroutine invoke(this MonoBehaviour monoBehaviour, Action action, float time)
         {
-            return monoBehaviour.StartCoroutine(InvokeImpl(action, time));
+            return monoBehaviour.StartCoroutine(invokeImpl(action, time));
         }
 
         //-------------------------------------------------------------------------------------
-        private static IEnumerator InvokeImpl(Action action, float time)
+        private static IEnumerator invokeImpl(Action action, float time)
         {
             yield return new WaitForSeconds(time);
 
@@ -114,13 +114,13 @@ namespace Sophia.Extensions
         /// Invokes the given action after the given amount of time, and repeats the 
         /// action after every repeatTime seconds.
         /// </summary>
-        public static Coroutine InvokeRepeating(this MonoBehaviour monoBehaviour, Action action, float time, float repeatTime)
+        public static Coroutine invokeRepeating(this MonoBehaviour monoBehaviour, Action action, float time, float repeatTime)
         {
-            return monoBehaviour.StartCoroutine(InvokeRepeatingImpl(action, time, repeatTime));
+            return monoBehaviour.StartCoroutine(invokeRepeatingImpl(action, time, repeatTime));
         }
 
         //-------------------------------------------------------------------------------------
-        private static IEnumerator InvokeRepeatingImpl(Action action, float time, float repeatTime)
+        private static IEnumerator invokeRepeatingImpl(Action action, float time, float repeatTime)
         {
             yield return new WaitForSeconds(time);
 

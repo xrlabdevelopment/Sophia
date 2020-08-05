@@ -11,9 +11,9 @@ namespace Sophia.Extensions
 	{
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the X position of this transform.
+        /// sets the X position of this transform.
         /// </summary>
-        public static void SetX(this Transform transform, float x)
+        public static void setX(this Transform transform, float x)
 		{
             Vector3 new_position = new Vector3(x, transform.position.y, transform.position.z);
 			transform.position = new_position;
@@ -21,9 +21,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the Y position of this transform.
+        /// sets the Y position of this transform.
         /// </summary>
-        public static void SetY(this Transform transform, float y)
+        public static void setY(this Transform transform, float y)
 		{
             Vector3 new_position = new Vector3(transform.position.x, y, transform.position.z);
 			transform.position = new_position;
@@ -31,9 +31,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the Z position of this transform.
+        /// sets the Z position of this transform.
         /// </summary>
-        public static void SetZ(this Transform transform, float z)
+        public static void setZ(this Transform transform, float z)
 		{
 			Vector3 new_position = new Vector3(transform.position.x, transform.position.y, z);
 			transform.position = new_position;
@@ -41,9 +41,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the X and Y position of this transform.
+        /// sets the X and Y position of this transform.
         /// </summary>
-        public static void SetXY(this Transform transform, float x, float y)
+        public static void setXY(this Transform transform, float x, float y)
 		{
 			Vector3 new_position = new Vector3(x, y, transform.position.z);
 			transform.position = new_position;
@@ -51,9 +51,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the X and Z position of this transform.
+        /// sets the X and Z position of this transform.
         /// </summary>
-        public static void SetXZ(this Transform transform, float x, float z)
+        public static void setXZ(this Transform transform, float x, float z)
 		{
 			Vector3 new_position = new Vector3(x, transform.position.y, z);
 			transform.position = new_position;
@@ -61,9 +61,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the Y and Z position of this transform.
+        /// sets the Y and Z position of this transform.
         /// </summary>
-        public static void SetYZ(this Transform transform, float y, float z)
+        public static void setYZ(this Transform transform, float y, float z)
 		{
 			Vector3 new_position = new Vector3(transform.position.x, y, z);
 			transform.position = new_position;
@@ -71,9 +71,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the X, Y and Z position of this transform.
+        /// sets the X, Y and Z position of this transform.
         /// </summary>
-        public static void SetXYZ(this Transform transform, float x, float y, float z)
+        public static void setXYZ(this Transform transform, float x, float y, float z)
 		{
 			Vector3 new_position = new Vector3(x, y, z);
 			transform.position = new_position;
@@ -83,7 +83,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Translates this transform along the X axis.
         /// </summary>
-        public static void TranslateX(this Transform transform, float x)
+        public static void translateX(this Transform transform, float x)
 		{
 			Vector3 offset = new Vector3(x, 0, 0);
 			transform.position += offset;
@@ -93,7 +93,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Translates this transform along the Y axis.
         /// </summary>
-        public static void TranslateY(this Transform transform, float y)
+        public static void translateY(this Transform transform, float y)
 		{
 			Vector3 offset = new Vector3(0, y, 0);
 			transform.position += offset;
@@ -103,7 +103,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Translates this transform along the Z axis.
         /// </summary>
-        public static void TranslateZ(this Transform transform, float z)
+        public static void translateZ(this Transform transform, float z)
 		{
 			Vector3 offset = new Vector3(0, 0, z);
 			transform.position += offset;
@@ -113,7 +113,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Translates this transform along the X and Y axes.
         /// </summary>
-        public static void TranslateXY(this Transform transform, float x, float y)
+        public static void translateXY(this Transform transform, float x, float y)
 		{
 			Vector3 offset = new Vector3(x, y, 0);
 			transform.position += offset;
@@ -123,7 +123,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Translates this transform along the X and Z axes.
         /// </summary>
-        public static void TranslateXZ(this Transform transform, float x, float z)
+        public static void translateXZ(this Transform transform, float x, float z)
 		{
 			Vector3 offset = new Vector3(x, 0, z);
 			transform.position += offset;
@@ -133,7 +133,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Translates this transform along the Y and Z axes.
         /// </summary>
-        public static void TranslateYZ(this Transform transform, float y, float z)
+        public static void translateYZ(this Transform transform, float y, float z)
 		{
 			Vector3 offset = new Vector3(0, y, z);
 			transform.position += offset;
@@ -143,7 +143,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Translates this transform along the X, Y and Z axis.
         /// </summary>
-        public static void TranslateXYZ(this Transform transform, float x, float y, float z)
+        public static void translateXYZ(this Transform transform, float x, float y, float z)
 		{
 			Vector3 offset = new Vector3(x, y, z);
 			transform.position += offset;
@@ -151,9 +151,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local X position of this transform.
+        /// sets the local X position of this transform.
         /// </summary>
-        public static void SetLocalX(this Transform transform, float x)
+        public static void setLocalX(this Transform transform, float x)
 		{
 			Vector3 new_position = new Vector3(x, transform.localPosition.y, transform.localPosition.z);
 			transform.localPosition = new_position;
@@ -161,9 +161,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local Y position of this transform.
+        /// sets the local Y position of this transform.
         /// </summary>
-        public static void SetLocalY(this Transform transform, float y)
+        public static void setLocalY(this Transform transform, float y)
 		{
 			Vector3 new_position = new Vector3(transform.localPosition.x, y, transform.localPosition.z);
 			transform.localPosition = new_position;
@@ -171,9 +171,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local Z position of this transform.
+        /// sets the local Z position of this transform.
         /// </summary>
-        public static void SetLocalZ(this Transform transform, float z)
+        public static void setLocalZ(this Transform transform, float z)
 		{
 			Vector3 new_position = new Vector3(transform.localPosition.x, transform.localPosition.y, z);
 			transform.localPosition = new_position;
@@ -181,9 +181,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local X and Y position of this transform.
+        /// sets the local X and Y position of this transform.
         /// </summary>
-        public static void SetLocalXY(this Transform transform, float x, float y)
+        public static void setLocalXY(this Transform transform, float x, float y)
 		{
 			Vector3 new_position = new Vector3(x, y, transform.localPosition.z);
 			transform.localPosition = new_position;
@@ -191,9 +191,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local X and Z position of this transform.
+        /// sets the local X and Z position of this transform.
         /// </summary>
-        public static void SetLocalXZ(this Transform transform, float x, float z)
+        public static void setLocalXZ(this Transform transform, float x, float z)
 		{
 			Vector3 new_position = new Vector3(x, transform.localPosition.z, z);
 			transform.localPosition = new_position;
@@ -201,9 +201,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local Y and Z position of this transform.
+        /// sets the local Y and Z position of this transform.
         /// </summary>
-        public static void SetLocalYZ(this Transform transform, float y, float z)
+        public static void setLocalYZ(this Transform transform, float y, float z)
 		{
 			Vector3 new_position = new Vector3(transform.localPosition.x, y, z);
 			transform.localPosition = new_position;
@@ -211,9 +211,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local X, Y and Z position of this transform.
+        /// sets the local X, Y and Z position of this transform.
         /// </summary>
-        public static void SetLocalXYZ(this Transform transform, float x, float y, float z)
+        public static void setLocalXYZ(this Transform transform, float x, float y, float z)
 		{
 			Vector3 new_position = new Vector3(x, y, z);
 			transform.localPosition = new_position;
@@ -221,27 +221,27 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the position to 0, 0, 0.
+        /// sets the position to 0, 0, 0.
         /// </summary>
-        public static void ResetPosition(this Transform transform)
+        public static void resetPosition(this Transform transform)
 		{
 			transform.position = Vector3.zero;
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local position to 0, 0, 0.
+        /// sets the local position to 0, 0, 0.
         /// </summary>
-        public static void ResetLocalPosition(this Transform transform)
+        public static void resetLocalPosition(this Transform transform)
 		{
 			transform.localPosition = Vector3.zero;
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local X scale of this transform.
+        /// sets the local X scale of this transform.
         /// </summary>
-        public static void SetScaleX(this Transform transform, float x)
+        public static void setScaleX(this Transform transform, float x)
 		{
 			Vector3 new_scale = new Vector3(x, transform.localScale.y, transform.localScale.z);
 			transform.localScale = new_scale;
@@ -249,9 +249,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local Y scale of this transform.
+        /// sets the local Y scale of this transform.
         /// </summary>
-        public static void SetScaleY(this Transform transform, float y)
+        public static void setScaleY(this Transform transform, float y)
 		{
 			Vector3 new_scale = new Vector3(transform.localScale.x, y, transform.localScale.z);
 			transform.localScale = new_scale;
@@ -259,9 +259,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local Z scale of this transform.
+        /// sets the local Z scale of this transform.
         /// </summary>
-        public static void SetScaleZ(this Transform transform, float z)
+        public static void setScaleZ(this Transform transform, float z)
 		{
 			Vector3 new_scale = new Vector3(transform.localScale.x, transform.localScale.y, z);
 			transform.localScale = new_scale;
@@ -269,9 +269,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local X and Y scale of this transform.
+        /// sets the local X and Y scale of this transform.
         /// </summary>
-        public static void SetScaleXY(this Transform transform, float x, float y)
+        public static void setScaleXY(this Transform transform, float x, float y)
 		{
 			Vector3 new_scale = new Vector3(x, y, transform.localScale.z);
 			transform.localScale = new_scale;
@@ -279,9 +279,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local X and Z scale of this transform.
+        /// sets the local X and Z scale of this transform.
         /// </summary>
-        public static void SetScaleXZ(this Transform transform, float x, float z)
+        public static void setScaleXZ(this Transform transform, float x, float z)
 		{
 			Vector3 new_scale = new Vector3(x, transform.localScale.y, z);
 			transform.localScale = new_scale;
@@ -289,9 +289,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local Y and Z scale of this transform.
+        /// sets the local Y and Z scale of this transform.
         /// </summary>
-        public static void SetScaleYZ(this Transform transform, float y, float z)
+        public static void setScaleYZ(this Transform transform, float y, float z)
 		{
 			Vector3 new_scale = new Vector3(transform.localScale.x, y, z);
 			transform.localScale = new_scale;
@@ -299,9 +299,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local X, Y and Z scale of this transform.
+        /// sets the local X, Y and Z scale of this transform.
         /// </summary>
-        public static void SetScaleXYZ(this Transform transform, float x, float y, float z)
+        public static void setScaleXYZ(this Transform transform, float x, float y, float z)
 		{
 			Vector3 new_scale = new Vector3(x, y, z);
 			transform.localScale = new_scale;
@@ -311,7 +311,7 @@ namespace Sophia.Extensions
         /// <summary>
         ///  Scale this transform in the X direction.
         /// </summary>
-        public static void ScaleByX(this Transform transform, float x)
+        public static void scaleByX(this Transform transform, float x)
 		{
 			transform.localScale = new Vector3(transform.localScale.x * x, transform.localScale.y, transform.localScale.z);
 		}
@@ -320,7 +320,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Scale this transform in the Y direction.
         /// </summary>
-        public static void ScaleByY(this Transform transform, float y)
+        public static void scaleByY(this Transform transform, float y)
 		{
 			transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * y, transform.localScale.z);
 		}
@@ -329,7 +329,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Scale this transform in the Z direction.
         /// </summary>
-        public static void ScaleByZ(this Transform transform, float z)
+        public static void scaleByZ(this Transform transform, float z)
 		{
 			transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z * z);
 		}
@@ -338,7 +338,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Scale this transform in the X, Y direction.
         /// </summary>
-        public static void ScaleByXY(this Transform transform, float x, float y)
+        public static void scaleByXY(this Transform transform, float x, float y)
 		{
 			transform.localScale = new Vector3(transform.localScale.x * x, transform.localScale.y * y, transform.localScale.z);
 		}
@@ -347,7 +347,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Scale this transform in the X, Z directions.
         /// </summary>
-        public static void ScaleByXZ(this Transform transform, float x, float z)
+        public static void scaleByXZ(this Transform transform, float x, float z)
 		{
 			transform.localScale = new Vector3(transform.localScale.x * x, transform.localScale.y, transform.localScale.z * z);
 		}
@@ -356,7 +356,7 @@ namespace Sophia.Extensions
         /// <summary>
         /// Scale this transform in the Y and Z directions.
         /// </summary>
-        public static void ScaleByYZ(this Transform transform, float y, float z)
+        public static void scaleByYZ(this Transform transform, float y, float z)
 		{
 			transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * y, transform.localScale.z * z);
 		}
@@ -365,34 +365,34 @@ namespace Sophia.Extensions
         /// <summary>
         /// Scale this transform in the X and Y directions.
         /// </summary>
-        public static void ScaleByXY(this Transform transform, float r)
+        public static void scaleByXY(this Transform transform, float r)
 		{
-			transform.ScaleByXY(r, r);
+			transform.scaleByXY(r, r);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
         /// Scale this transform in the X and Z directions.
         /// </summary>
-        public static void ScaleByXZ(this Transform transform, float r)
+        public static void scaleByXZ(this Transform transform, float r)
 		{
-			transform.ScaleByXZ(r, r);
+			transform.scaleByXZ(r, r);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
         /// Scale this transform in the Y and Z directions.
         /// </summary>
-        public static void ScaleByYZ(this Transform transform, float r)
+        public static void scaleByYZ(this Transform transform, float r)
 		{
-			transform.ScaleByYZ(r, r);
+			transform.scaleByYZ(r, r);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
         /// Scale this transform in the X, Y and Z directions.
         /// </summary>
-        public static void ScaleByXYZ(this Transform transform, float x, float y, float z)
+        public static void scaleByXYZ(this Transform transform, float x, float y, float z)
 		{
 			transform.localScale = new Vector3(x, y, z);
 		}
@@ -401,16 +401,16 @@ namespace Sophia.Extensions
         /// <summary>
         /// Scale this transform in the X, Y and Z directions.
         /// </summary>
-        public static void ScaleByXYZ(this Transform transform, float r)
+        public static void scaleByXYZ(this Transform transform, float r)
 		{
-			transform.ScaleByXYZ(r, r, r);
+			transform.scaleByXYZ(r, r, r);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Resets the local scale of this transform in to 1 1 1.
+        /// resets the local scale of this transform in to 1 1 1.
         /// </summary>
-        public static void ResetScale(this Transform transform)
+        public static void resetScale(this Transform transform)
 		{
 			transform.localScale = Vector3.one;
 		}
@@ -419,70 +419,70 @@ namespace Sophia.Extensions
         /// <summary>
         /// Negates the X scale.
         /// </summary>
-        public static void FlipX(this Transform transform)
+        public static void flipX(this Transform transform)
 		{
-			transform.SetScaleX(-transform.localScale.x);
+			transform.setScaleX(-transform.localScale.x);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
         /// Negates the Y scale.
         /// </summary>
-        public static void FlipY(this Transform transform)
+        public static void flipY(this Transform transform)
 		{
-			transform.SetScaleY(-transform.localScale.y);
+			transform.setScaleY(-transform.localScale.y);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
         /// Negates the Z scale.
         /// </summary>
-        public static void FlipZ(this Transform transform)
+        public static void flipZ(this Transform transform)
 		{
-			transform.SetScaleZ(-transform.localScale.z);
+			transform.setScaleZ(-transform.localScale.z);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
         /// Negates the X and Y scale.
         /// </summary>
-        public static void FlipXY(this Transform transform)
+        public static void flipXY(this Transform transform)
 		{
-			transform.SetScaleXY(-transform.localScale.x, -transform.localScale.y);
+			transform.setScaleXY(-transform.localScale.x, -transform.localScale.y);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
         /// Negates the X and Z scale.
         /// </summary>
-        public static void FlipXZ(this Transform transform)
+        public static void flipXZ(this Transform transform)
 		{
-			transform.SetScaleXZ(-transform.localScale.x, -transform.localScale.z);
+			transform.setScaleXZ(-transform.localScale.x, -transform.localScale.z);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
         /// Negates the Y and Z scale.
         /// </summary>
-        public static void FlipYZ(this Transform transform)
+        public static void flipYZ(this Transform transform)
 		{
-			transform.SetScaleYZ(-transform.localScale.y, -transform.localScale.z);
+			transform.setScaleYZ(-transform.localScale.y, -transform.localScale.z);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
         /// Negates the X, Y and Z scale.
         /// </summary>
-        public static void FlipXYZ(this Transform transform)
+        public static void flipXYZ(this Transform transform)
 		{
-			transform.SetScaleXYZ(-transform.localScale.z, -transform.localScale.y, -transform.localScale.z);
+			transform.setScaleXYZ(-transform.localScale.z, -transform.localScale.y, -transform.localScale.z);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets all scale values to the absolute values.
+        /// sets all scale values to the absolute values.
         /// </summary>
-        public static void FlipPostive(this Transform transform)
+        public static void flipPostive(this Transform transform)
 		{
 			transform.localScale = new Vector3
                 (
@@ -494,9 +494,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Rotates the transform around the X axis.
+        /// rotates the transform around the X axis.
         /// </summary>
-        public static void RotateAroundX(this Transform transform, float angle)
+        public static void rotateAroundX(this Transform transform, float angle)
 		{
 			Vector3 rotation = new Vector3(angle, 0, 0);
 			transform.Rotate(rotation);
@@ -504,9 +504,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Rotates the transform around the Y axis.
+        /// rotates the transform around the Y axis.
         /// </summary>
-        public static void RotateAroundY(this Transform transform, float angle)
+        public static void rotateAroundY(this Transform transform, float angle)
 		{
 			Vector3 rotation = new Vector3(0, angle, 0);
 			transform.Rotate(rotation);
@@ -514,9 +514,9 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Rotates the transform around the Z axis.
+        /// rotates the transform around the Z axis.
         /// </summary>
-        public static void RotateAroundZ(this Transform transform, float angle)
+        public static void rotateAroundZ(this Transform transform, float angle)
 		{
 			Vector3 rotation = new Vector3(0, 0, angle);
 			transform.Rotate(rotation);
@@ -524,97 +524,97 @@ namespace Sophia.Extensions
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the X rotation.
+        /// sets the X rotation.
         /// </summary>
-        public static void SetRotationX(this Transform transform, float angle)
+        public static void setRotationX(this Transform transform, float angle)
 		{
 			transform.eulerAngles = new Vector3(angle, 0, 0);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the Y rotation.
+        /// sets the Y rotation.
         /// </summary>
-        public static void SetRotationY(this Transform transform, float angle)
+        public static void setRotationY(this Transform transform, float angle)
 		{
 			transform.eulerAngles = new Vector3(0, angle, 0);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the Z rotation.
+        /// sets the Z rotation.
         /// </summary>
-        public static void SetRotationZ(this Transform transform, float angle)
+        public static void setRotationZ(this Transform transform, float angle)
 		{
 			transform.eulerAngles = new Vector3(0, 0, angle);
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local X rotation.
+        /// sets the local X rotation.
         /// </summary>
-        public static void SetLocalRotationX(this Transform transform, float angle)
+        public static void setLocalRotationX(this Transform transform, float angle)
 		{
 			transform.localRotation = Quaternion.Euler(new Vector3(angle, 0, 0));
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local Y rotation.
+        /// sets the local Y rotation.
         /// </summary>
-        public static void SetLocalRotationY(this Transform transform, float angle)
+        public static void setLocalRotationY(this Transform transform, float angle)
 		{
 			transform.localRotation = Quaternion.Euler(new Vector3(0, angle, 0));
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Sets the local Z rotation.
+        /// sets the local Z rotation.
         /// </summary>
-        public static void SetLocalRotationZ(this Transform transform, float angle)
+        public static void setLocalRotationZ(this Transform transform, float angle)
 		{
 			transform.localRotation = Quaternion.Euler(new Vector3(0, 0, angle));
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Resets the rotation to 0, 0, 0.
+        /// resets the rotation to 0, 0, 0.
         /// </summary>
-        public static void ResetRotation(this Transform transform)
+        public static void resetRotation(this Transform transform)
 		{
 			transform.rotation = Quaternion.identity;
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Resets the local rotation to 0, 0, 0.
+        /// resets the local rotation to 0, 0, 0.
         /// </summary>
-        public static void ResetLocalRotation(this Transform transform)
+        public static void resetLocalRotation(this Transform transform)
 		{
 			transform.localRotation = Quaternion.identity;
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Resets the ;local position, local rotation, and local scale.
+        /// resets the ;local position, local rotation, and local scale.
         /// </summary>
-        public static void ResetLocal(this Transform transform)
+        public static void resetLocal(this Transform transform)
 		{
-			transform.ResetLocalRotation();
-			transform.ResetLocalPosition();
-			transform.ResetScale();
+			transform.resetLocalRotation();
+			transform.resetLocalPosition();
+			transform.resetScale();
 
 		}
 
         //-------------------------------------------------------------------------------------
         /// <summary>
-        /// Resets the position, rotation, and local scale.
+        /// resets the position, rotation, and local scale.
         /// </summary>
-        public static void Reset(this Transform transform)
+        public static void reset(this Transform transform)
 		{
-			transform.ResetRotation();
-			transform.ResetPosition();
-			transform.ResetScale();
+			transform.resetRotation();
+			transform.resetPosition();
+			transform.resetScale();
 		}
 
         //-------------------------------------------------------------------------------------
@@ -622,9 +622,9 @@ namespace Sophia.Extensions
         /// Retrieve all children from this transform and destroy them.
         /// </summary>
         /// <param name="transform"></param>
-        public static void DestroyChildren(this Transform transform)
+        public static void destroyChildren(this Transform transform)
 		{
-            List<Transform> children = transform.GetChildren();
+            List<Transform> children = transform.getChildren();
 
             foreach (Transform child in children)
 			{
@@ -637,9 +637,9 @@ namespace Sophia.Extensions
         /// Retrieve all children from this transform and destroy them.
         /// </summary>
         /// <param name="transform"></param>
-        public static void DestroyChildrenImmediate(this Transform transform)
+        public static void destroyChildrenImmediate(this Transform transform)
 		{
-            List<Transform> children = transform.GetChildren();
+            List<Transform> children = transform.getChildren();
 
 			foreach (Transform child in children)
 			{
@@ -652,15 +652,15 @@ namespace Sophia.Extensions
         /// Retrieve all children from this transform and destroy them.
         /// </summary>
         /// <param name="transform"></param>
-        public static void DestroyChildrenUniversal(this Transform transform)
+        public static void destroyChildrenUniversal(this Transform transform)
 		{
 			if (Application.isPlaying)
 			{
-				transform.DestroyChildren();
+				transform.destroyChildren();
 			}
 			else
 			{
-				transform.DestroyChildrenImmediate();
+				transform.destroyChildrenImmediate();
 			}
 		}
 
@@ -670,7 +670,7 @@ namespace Sophia.Extensions
         /// </summary>
         /// <param name="transform"></param>
         /// <returns></returns>
-        public static List<Transform> GetChildren(this Transform transform)
+        public static List<Transform> getChildren(this Transform transform)
 		{
             List<Transform> children = new List<Transform>();
 
