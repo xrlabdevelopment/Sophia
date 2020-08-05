@@ -7,17 +7,18 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-using Sophia.Extensions;
+using Sophia.Platform.Attributes;
+using Sophia.Platform.Extension;
 
-namespace Sophia.Editor
+namespace Sophia.Editor.Extension
 {
-	/// <summary>
-	/// Class that can be used as a base class for custom editors with extra convenience methods
-	/// and properties.
-	/// </summary>
-	/// <typeparam name="T">The type this is an editor for.</typeparam>
-	/// <seealso cref="UnityEditor.Editor" />
-	public class BaseEditor<T> : UnityEditor.Editor
+    /// <summary>
+    /// Class that can be used as a base class for custom editors with extra convenience methods
+    /// and properties.
+    /// </summary>
+    /// <typeparam name="T">The type this is an editor for.</typeparam>
+    /// <seealso cref="UnityEditor.Editor" />
+    public class BaseEditor<T> : UnityEditor.Editor
 		where T : MonoBehaviour
 	{
         //--------------------------------------------------------------------------------------

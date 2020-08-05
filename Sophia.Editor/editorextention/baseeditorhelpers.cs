@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Sophia.Editor
+namespace Sophia.Editor.Extension
 {
 	/// <summary>
 	/// Functions to supplement Unity EditorGUI functions.

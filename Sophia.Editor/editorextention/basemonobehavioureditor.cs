@@ -1,6 +1,7 @@
+using Sophia.Platform;
 using UnityEditor;
 
-namespace Sophia.Editor
+namespace Sophia.Editor.Extension
 {
     /// <summary>
     /// This universal editor makes it possible to add buttons that will execute static methods

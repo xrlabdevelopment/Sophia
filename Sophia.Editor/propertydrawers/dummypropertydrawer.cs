@@ -1,7 +1,8 @@
+using Sophia.Platform.Attributes;
 using UnityEditor;
 using UnityEngine;
 
-namespace Sophia.Editor
+namespace Sophia.Editor.PropertyDrawers
 {
     /// <summary>
     /// Draws a property marked with the Dummy attribute (that is, does not draw it).

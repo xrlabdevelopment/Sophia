@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEditor;
+using Sophia.Platform.Attributes;
 
-namespace Sophia.Editor
+namespace Sophia.Editor.PropertyDrawers
 {
     /// <summary>
     /// A property drawer for fields marked with the CommentAttribute. Similar to Header, but useful
