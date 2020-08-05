@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "GGG0CCXy5BcCI53Xj58sCg=="
+          "hash": "A3pmmLFhzKuZ8sfw4T+4OQ=="
         }
       },
       "is_incremental": false,
@@ -40,11 +40,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Algorithms.yml",
+      "source_relative_path": "obj/Sophia.Core.Algorithms.Algorithms.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Algorithms.html",
-          "hash": "+/WrFPGyVnkMUL+PmZVIhQ=="
+          "relative_path": "api/Sophia.Core.Algorithms.Algorithms.html",
+          "hash": "gjO/1lOk7rPT01zpHbGrVQ=="
         }
       },
       "is_incremental": false,
@@ -52,11 +52,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.BaseMonoBehaviour.yml",
+      "source_relative_path": "obj/Sophia.Core.Algorithms.IRandom.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.BaseMonoBehaviour.html",
-          "hash": "IH/DW38gdnLKeXteNsuDgQ=="
+          "relative_path": "api/Sophia.Core.Algorithms.IRandom.html",
+          "hash": "VXlDjmoDgeqMAAuheU651Q=="
         }
       },
       "is_incremental": false,
@@ -64,11 +64,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.ColorList.yml",
+      "source_relative_path": "obj/Sophia.Core.Algorithms.Random.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.ColorList.html",
-          "hash": "E47cpMIEspMnqbl6UXVmmg=="
+          "relative_path": "api/Sophia.Core.Algorithms.Random.html",
+          "hash": "OkJRY9pC9muNSf962+IZQA=="
         }
       },
       "is_incremental": false,
@@ -76,11 +76,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.CommentAttribute.yml",
+      "source_relative_path": "obj/Sophia.Core.Algorithms.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.CommentAttribute.html",
-          "hash": "i8ZQznOyoiWAT7+Eytu/ag=="
+          "relative_path": "api/Sophia.Core.Algorithms.html",
+          "hash": "FhCT7AbWWFBY2p944Tk/Sg=="
         }
       },
       "is_incremental": false,
@@ -88,11 +88,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.CountDownTimer.yml",
+      "source_relative_path": "obj/Sophia.Core.Diagnostics.Logger.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.CountDownTimer.html",
-          "hash": "2J9vRX6aPVCE8BTjnkTSSA=="
+          "relative_path": "api/Sophia.Core.Diagnostics.Logger.html",
+          "hash": "FfmpYaT3AhUnqpRosgifQw=="
         }
       },
       "is_incremental": false,
@@ -100,11 +100,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Diagnostics.Logger.yml",
+      "source_relative_path": "obj/Sophia.Core.Diagnostics.LoggerCreationInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Diagnostics.Logger.html",
-          "hash": "qOLIqds05hA8zGIsi0egZw=="
+          "relative_path": "api/Sophia.Core.Diagnostics.LoggerCreationInfo.html",
+          "hash": "sj7PFnEIBpHWShMgJddNhA=="
         }
       },
       "is_incremental": false,
@@ -112,11 +112,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Diagnostics.LoggerCreationInfo.yml",
+      "source_relative_path": "obj/Sophia.Core.Diagnostics.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Diagnostics.LoggerCreationInfo.html",
-          "hash": "xHnZAzourHUDbAmNsU9d5Q=="
+          "relative_path": "api/Sophia.Core.Diagnostics.html",
+          "hash": "AJ1dHp21fcvRsnOjCb2kzQ=="
         }
       },
       "is_incremental": false,
@@ -124,11 +124,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Diagnostics.yml",
+      "source_relative_path": "obj/Sophia.Core.Events.Event.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Diagnostics.html",
-          "hash": "gT8ll5hFiQf5I+VaS6Oyyg=="
+          "relative_path": "api/Sophia.Core.Events.Event.html",
+          "hash": "fqSS+H4PmtFnolecNmj41g=="
         }
       },
       "is_incremental": false,
@@ -136,11 +136,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.DummyAttribute.yml",
+      "source_relative_path": "obj/Sophia.Core.Events.EventDispatch.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.DummyAttribute.html",
-          "hash": "oMW/RuFrzukZOTP3KwemFg=="
+          "relative_path": "api/Sophia.Core.Events.EventDispatch.html",
+          "hash": "qYD2fei9rU6fB4X1Yk0L0A=="
         }
       },
       "is_incremental": false,
@@ -148,11 +148,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Editor.BaseEditor-1.yml",
+      "source_relative_path": "obj/Sophia.Core.Events.IEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Editor.BaseEditor-1.html",
-          "hash": "wxEyEjYjlh3UWHv6OkkILA=="
+          "relative_path": "api/Sophia.Core.Events.IEvent.html",
+          "hash": "Wwa379OeTY22hdf76nyF6A=="
         }
       },
       "is_incremental": false,
@@ -160,11 +160,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Editor.BaseEditorHelpers.yml",
+      "source_relative_path": "obj/Sophia.Core.Events.IEventHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Editor.BaseEditorHelpers.html",
-          "hash": "ZR8oZf739bHRmHz1Kdqp1Q=="
+          "relative_path": "api/Sophia.Core.Events.IEventHandler.html",
+          "hash": "7E4His1mY6Ra7K6C7NIIdg=="
         }
       },
       "is_incremental": false,
@@ -172,11 +172,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Editor.BaseMonoBehaviourEditor.yml",
+      "source_relative_path": "obj/Sophia.Core.Events.IEventSender.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Editor.BaseMonoBehaviourEditor.html",
-          "hash": "99vmvi5Reql7MxnzZCmT5g=="
+          "relative_path": "api/Sophia.Core.Events.IEventSender.html",
+          "hash": "HLi8gamcr6dkUhWTYrrCJA=="
         }
       },
       "is_incremental": false,
@@ -184,11 +184,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Editor.CommentPropertyDrawer.yml",
+      "source_relative_path": "obj/Sophia.Core.Events.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Editor.CommentPropertyDrawer.html",
-          "hash": "PrTvL+gYxMd4k/X3xR1aVw=="
+          "relative_path": "api/Sophia.Core.Events.html",
+          "hash": "cb+QwwLdR85TbD5pTWfziQ=="
         }
       },
       "is_incremental": false,
@@ -196,11 +196,695 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Editor.DummyPorpertyDrawer.yml",
+      "source_relative_path": "obj/Sophia.Core.Extensions.ArrayExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Editor.DummyPorpertyDrawer.html",
-          "hash": "zq/Wv87iDc5pR1wnFJ+HbQ=="
+          "relative_path": "api/Sophia.Core.Extensions.ArrayExtensions.html",
+          "hash": "OND/JkwQ35mJTVKc5Pp5Hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Extensions.CollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Extensions.CollectionExtensions.html",
+          "hash": "J1Movv8QrvQkNsJsDpKgSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Extensions.ListExtentions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Extensions.ListExtentions.html",
+          "hash": "5KD4ljAgyFMgSSdrDaKHBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Extensions.html",
+          "hash": "Ks7pcsWRGvTefCcUFtgT6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.IInventoryItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.IInventoryItem.html",
+          "hash": "WwCRayRBK02YPAJPSE4IVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.IDesktopInputManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.Input.IDesktopInputManager.html",
+          "hash": "m9SoPrk8e/M+EAMBRvnZkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.IInputCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.Input.IInputCommand.html",
+          "hash": "POUyMwv8HzuThMHp/eX2UQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.IInputManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.Input.IInputManager.html",
+          "hash": "jj1zLSjU2D6dCKzNMlSTtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.InputAxisCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.Input.InputAxisCommand.html",
+          "hash": "ARQRGnovZ4RNkxfO5G7SZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.InputController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.Input.InputController.html",
+          "hash": "WzRhWwYfsKBqVmNvE392dQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.InputKeyCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.Input.InputKeyCommand.html",
+          "hash": "pcQEzjUw+gXBW9FcT1sbOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.KeyCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.Input.KeyCode.html",
+          "hash": "bIBeTfV8p49wEEeMCpmDNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.KeyState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.Input.KeyState.html",
+          "hash": "f4pspEsaDw2B70jxhHMKhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.MultiFunctionalCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.Input.MultiFunctionalCommand.html",
+          "hash": "SpNlCXYs9tjkjaoeGcrP7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.Input.html",
+          "hash": "QbucMIVI2mWrj1mBeSCuSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.InventoryController.Added.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.InventoryController.Added.html",
+          "hash": "Z6PMpaneEd1HId3jkSRAzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.InventoryController.Removed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.InventoryController.Removed.html",
+          "hash": "8ZhLPbAtYj9lQjYVQTvrHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.InventoryController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.InventoryController.html",
+          "hash": "69UB0kvfruHGCD+sA/6dGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Gameplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Gameplay.html",
+          "hash": "KqPHDP0Ndn6k0muTjJlKjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.IO.EventFilters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.IO.EventFilters.html",
+          "hash": "rZGETEr0d7NFrIgFOGfvfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.IO.FileSystemWatcher.ErrorEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.IO.FileSystemWatcher.ErrorEventHandler.html",
+          "hash": "fndkfAwPw7Cuu/utnOvyBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.IO.FileSystemWatcher.FileSystemEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.IO.FileSystemWatcher.FileSystemEventHandler.html",
+          "hash": "HBQ4QiInNZIAdP9e65lyPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.IO.FileSystemWatcher.RenamedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.IO.FileSystemWatcher.RenamedEventHandler.html",
+          "hash": "TyIMM5ujLqiiTw1l7E7eyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.IO.FileSystemWatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.IO.FileSystemWatcher.html",
+          "hash": "FwzSrqT0WQ4wPlkfCt2jTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.IO.FileWatcherCreationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.IO.FileWatcherCreationInfo.html",
+          "hash": "vU8qsclojZ0w0foS+8e0QQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.IO.html",
+          "hash": "tAd7jWczrBBiS9awKytJFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.BaseSubject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.BaseSubject-1.html",
+          "hash": "71O/Szp9FPRzCVgOS++W8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.EventSubject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.EventSubject-1.html",
+          "hash": "QIatPkQLPwjxCZ7X4d9/mQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.FSMEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.FSMEvent.html",
+          "hash": "+B0uvVJ1nf+uhv9oA9uiRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.FSMState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.FSMState.html",
+          "hash": "nMYZ8dvTLbpa4RVkzE2evg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.FSMTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.FSMTransition.html",
+          "hash": "1QE0Ool8Hy6GZC6GWeRdSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.FiniteStateMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.FiniteStateMachine.html",
+          "hash": "mhfFpSRHgu4UM6oYUSsRlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.Guard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.Guard.html",
+          "hash": "wY9PpLpUpPfXDggo1dzOdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.ICommand.html",
+          "hash": "Qx5vGoxpiwdOBx/mphNr9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.ICommandReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.ICommandReceiver.html",
+          "hash": "i/B3zvODaZ6V/f1kMXY0AA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.IEventObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.IEventObserver.html",
+          "hash": "ZqDfh06oVELLhM9PR4B9HQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.IObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.IObserver.html",
+          "hash": "mEzPYOnwWFVM0N95mkOyWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.IStateMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.IStateMachine.html",
+          "hash": "FKr+yK8FiE+Ga+jkx4cSEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.ISubject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.ISubject.html",
+          "hash": "pZRZF0+qW/DcwJrHymyAww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.Singleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.Singleton-1.html",
+          "hash": "+zQpQuG8eUw5Ho+YPKZQwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.Subject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.Subject-1.html",
+          "hash": "SjZHKl94oLaJnlqSh+olkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Patterns.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Patterns.html",
+          "hash": "grdKx6jHR4pRl90Iw4sJKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Threading.ITask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Threading.ITask.html",
+          "hash": "9X8L5kJM1esZCsbjLvsGOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Threading.Task.Finished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Threading.Task.Finished.html",
+          "hash": "e2kwHRDLfOFUluVmRdnARw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Threading.Task.Started.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Threading.Task.Started.html",
+          "hash": "YFrcIvvWBw0dN3irMkbHcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Threading.Task.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Threading.Task.html",
+          "hash": "Apz8+57labf9HHKTgiZrnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Threading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Threading.html",
+          "hash": "YMi/mF+dUekU5AdYKNRTsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.CountDownTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.CountDownTimer.html",
+          "hash": "8qyDyeKIEPkd1eG2Ve7OjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.Finished.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.Finished.html",
+          "hash": "GY5ZACaWDxzgY4Xixo1bog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.ITimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.ITimer.html",
+          "hash": "zTeXyrEc5oonAyYC+4uz/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.Started.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.Started.html",
+          "hash": "sdz2rnGDXP6liO/+9NoR9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.Stopped.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.Stopped.html",
+          "hash": "LRhFtUVDVgmlHjjRc84mSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.TimerCreationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.TimerCreationInfo.html",
+          "hash": "pUL0kwWeLvZIEb7yp09+Lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.TimerEventInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.TimerEventInfo.html",
+          "hash": "QWxTgk3lKdIkt9/GCBfmbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.TimerFinishedBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.TimerFinishedBehaviour.html",
+          "hash": "xzuUkutoeQckZFh/0rDB8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.TimerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.TimerManager.html",
+          "hash": "o0H5eFGHe/Ubgd8uY48gTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.Updated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.Updated.html",
+          "hash": "GxiWWmXIr6yHN4wK+cIh0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Timing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Timing.html",
+          "hash": "AL3zmcJnLvKHgve4Ma/R3Q=="
         }
       },
       "is_incremental": false,
@@ -212,7 +896,79 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.EditorStartup.html",
-          "hash": "QCykOG1iz0mVd0M731Pjsg=="
+          "hash": "7GrHRbbjH3TocBUi4dNbcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Editor.Extension.BaseEditor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Editor.Extension.BaseEditor-1.html",
+          "hash": "9tNMJYxYp4bsYD8mNNihNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Editor.Extension.BaseEditorHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Editor.Extension.BaseEditorHelpers.html",
+          "hash": "U0OqaxPST4Or4A6DiT9LSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Editor.Extension.BaseMonoBehaviourEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Editor.Extension.BaseMonoBehaviourEditor.html",
+          "hash": "M4uywyO4y92NnxwuJiu+Qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Editor.Extension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Editor.Extension.html",
+          "hash": "Q3dvD4bVhwuZexvRXffw5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Editor.PropertyDrawers.CommentPropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Editor.PropertyDrawers.CommentPropertyDrawer.html",
+          "hash": "6xCvkJFlQtmPJXW7jeH8aA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Editor.PropertyDrawers.DummyPorpertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Editor.PropertyDrawers.DummyPorpertyDrawer.html",
+          "hash": "UddegvzJpiVuRKTDnNRViQ=="
         }
       },
       "is_incremental": false,
@@ -224,7 +980,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.HighlightPropertyDrawer.html",
-          "hash": "ZNtV1qqg48n6ha5p3PqngQ=="
+          "hash": "f8ITxSHKybUDlFgKIhIw1Q=="
         }
       },
       "is_incremental": false,
@@ -236,7 +992,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.InspectorFlagsPropertyDrawer.html",
-          "hash": "GGS/5ceqz6I0OhRmZaJQWA=="
+          "hash": "CiNfvu2w37ESLHS9C9DEKA=="
         }
       },
       "is_incremental": false,
@@ -248,7 +1004,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.InspectorListPropertyDrawer.html",
-          "hash": "jUm+arcwPH50xxbMFY22CA=="
+          "hash": "2BHAJ7Uv3vr1vSxmaEfPTQ=="
         }
       },
       "is_incremental": false,
@@ -260,7 +1016,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.LabelFieldPropertyDrawer.html",
-          "hash": "GLJEIZBRPRoinSCpwAnElg=="
+          "hash": "NSctWgbuy6ynZpGSoSo4oA=="
         }
       },
       "is_incremental": false,
@@ -272,7 +1028,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.MinMaxFloatPropertyDrawer.html",
-          "hash": "UWn1PnCJFsogjrgV/ekmgg=="
+          "hash": "3F4ApVvWp6hYFI08ldOmUA=="
         }
       },
       "is_incremental": false,
@@ -284,7 +1040,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.NonNegativePropertyDrawer.html",
-          "hash": "BuV73jVJwiCsDiGFcnZIBQ=="
+          "hash": "iGTB9lGR30dt02VtSJLpiw=="
         }
       },
       "is_incremental": false,
@@ -296,7 +1052,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.OptionalPropertyDrawer.html",
-          "hash": "2+/AfS4UB+VElRXwKc8tMw=="
+          "hash": "vCLk/r6vKypkiNhQw4YBeA=="
         }
       },
       "is_incremental": false,
@@ -308,7 +1064,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.html",
-          "hash": "K22eZWKg9qaCPEB3qoURzQ=="
+          "hash": "vE4VPfdWSaLq8KK7I7XkBg=="
         }
       },
       "is_incremental": false,
@@ -320,7 +1076,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.WarningIfNullPropertyDrawer.html",
-          "hash": "PCPS8yqdIWv9hJMxI1/eHg=="
+          "hash": "Tj2qFaImI0tqpmOHwiB5Lg=="
         }
       },
       "is_incremental": false,
@@ -332,7 +1088,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.html",
-          "hash": "kFxwerYpjoSWwRwigyBMtw=="
+          "hash": "+4EsXGmdbc4zILlA6wc0yw=="
         }
       },
       "is_incremental": false,
@@ -344,595 +1100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.html",
-          "hash": "ptiLrkNH7UnieLVSJZFBfg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Events.Event.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Events.Event.html",
-          "hash": "rIk13jTquG9czENtVwu4GQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Events.EventDispatch.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Events.EventDispatch.html",
-          "hash": "8iCmWcmQKVY2ibggaaw4DQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Events.IEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Events.IEvent.html",
-          "hash": "JHAzK1NUYBD/5lUM5CZr2w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Events.IEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Events.IEventHandler.html",
-          "hash": "ZMaZhKitdNQuhTUv6HULcA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Events.IEventSender.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Events.IEventSender.html",
-          "hash": "Utm4TrFqqSYuuff3x9+RFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Events.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Events.html",
-          "hash": "6WI9DXwJ6B/HhlAGAUtRJg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Extensions.ArrayExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Extensions.ArrayExtensions.html",
-          "hash": "SoeUa/OVDDh30mLU0IOknw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Extensions.CollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Extensions.CollectionExtensions.html",
-          "hash": "SK+QGmXS/9iyy2aQM5M99w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Extensions.ColorExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Extensions.ColorExtensions.html",
-          "hash": "IN7gfXIKTj3JAOt/bRcCVQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Extensions.ListExtentions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Extensions.ListExtentions.html",
-          "hash": "yriBuYI/UtN+yuUb3xv6Rg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Extensions.MonoBehaviourExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Extensions.MonoBehaviourExtensions.html",
-          "hash": "sziBbszZP173nxxd5r/84A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Extensions.ObjectExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Extensions.ObjectExtensions.html",
-          "hash": "BHzYCcTQ40dgEgIuMAwAeA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Extensions.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Extensions.StringExtensions.html",
-          "hash": "UFncN3hdGtFFvtPRrwqKaQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Extensions.TransformExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Extensions.TransformExtensions.html",
-          "hash": "hqc/0tiPRRxEcXiEAoTZqg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Extensions.VectorExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Extensions.VectorExtensions.html",
-          "hash": "lBPwLiVfe/M+q7+6AzZiZQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Extensions.html",
-          "hash": "WiscK8VYU6Fzw7uh2WJvOw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Finished.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Finished.html",
-          "hash": "bdr1AzYUZn9HtOeEalxH3A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.FloatList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.FloatList.html",
-          "hash": "95DyLD8SY6CQqsiNjTBTtA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.HighlightAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.HighlightAttribute.html",
-          "hash": "feFqKiTthwJhtffrVcbkiA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IDesktopInputManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IDesktopInputManager.html",
-          "hash": "asFB83F41ZmIS2UWaksRcw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IInputCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IInputCommand.html",
-          "hash": "WJ/eSpHByjUZVJcE3gklCg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IInputManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IInputManager.html",
-          "hash": "873Moc6wVGDjRRIrbV3gWQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IInventoryItem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IInventoryItem.html",
-          "hash": "xFvAYtBqpW8ICSNKCtDcQA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IO.EventFilters.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IO.EventFilters.html",
-          "hash": "o8SP+xHjU52qiHtWDn00GQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IO.FileSystemWatcher.ErrorEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IO.FileSystemWatcher.ErrorEventHandler.html",
-          "hash": "keokQQMzWWcyUCxbzoYr2A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IO.FileSystemWatcher.FileSystemEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IO.FileSystemWatcher.FileSystemEventHandler.html",
-          "hash": "0Hs52ytRzwTJDn7PcJdMuQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IO.FileSystemWatcher.RenamedEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IO.FileSystemWatcher.RenamedEventHandler.html",
-          "hash": "h2D8oREgQqmwSEAcuHUM9w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IO.FileSystemWatcher.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IO.FileSystemWatcher.html",
-          "hash": "Sinr4g+4nrOY9xMmu6pNiQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IO.FileWatcherCreationInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IO.FileWatcherCreationInfo.html",
-          "hash": "lJd5nv+o4MDGb9LuGuJerw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IO.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IO.html",
-          "hash": "EiHvyNRym38s4Hey1giqYw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IRandom.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IRandom.html",
-          "hash": "lTeAHVZGD0mJ2FQJiVdFPQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.ITimer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.ITimer.html",
-          "hash": "+vXCY4mK60bWmfsskvlY0g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.InputAxisCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.InputAxisCommand.html",
-          "hash": "QN9+IQxs01HBJ4SToxWKyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.InputController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.InputController.html",
-          "hash": "gFw3MeGltjqXbLEY9oMbpg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.InputKeyCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.InputKeyCommand.html",
-          "hash": "odjIXYuJc33wIKHre3tFtQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.InspectorButtonAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.InspectorButtonAttribute.html",
-          "hash": "qB9HCDRlhOMTf2uREU2azg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.InspectorFlagsAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.InspectorFlagsAttribute.html",
-          "hash": "xLvVmOLKBq9RZAsoQLXtcg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.InspectorList-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.InspectorList-1.html",
-          "hash": "jvuZ6X9f1CaGxRbv3cBAhA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.InspectorList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.InspectorList.html",
-          "hash": "Qzp/ohks7EF6m9VXifo2KA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.IntList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.IntList.html",
-          "hash": "wcj7q8uLOk+3V0d0s+kwyw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.InventoryController.Added.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.InventoryController.Added.html",
-          "hash": "qUbb+N3A6HqYUQ7PlPh2AA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.InventoryController.Removed.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.InventoryController.Removed.html",
-          "hash": "P8wWc6QIB6P2mlzpT2yIug=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.InventoryController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.InventoryController.html",
-          "hash": "bVif1eltcfJLMgdlR2nasA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.KeyCode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.KeyCode.html",
-          "hash": "WhZnkQRzmxDKFjfBGBwnCg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.KeyState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.KeyState.html",
-          "hash": "Kl+8ZeDiStgnovkscW7ECw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.LabelFieldAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.LabelFieldAttribute.html",
-          "hash": "GT2T2Ki0FB2Uc6GWAndjew=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.MinMaxFloat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.MinMaxFloat.html",
-          "hash": "+j5sK2stOvRtAuxfBHaAhg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.MinMaxInt.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.MinMaxInt.html",
-          "hash": "BVQN5niJh8ImkurXl/HMNg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.MonoBehaviourList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.MonoBehaviourList.html",
-          "hash": "MjEYNUEYKEps5GOzQpmrVQ=="
+          "hash": "GX+GL2EuLlMJ4NO00VhOjA=="
         }
       },
       "is_incremental": false,
@@ -944,7 +1112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.MonoBehaviourSingleton-1.html",
-          "hash": "bw2opINDZruvo/v4eWcFXg=="
+          "hash": "CVgKD5HMlkpNgy5r6QbcgQ=="
         }
       },
       "is_incremental": false,
@@ -952,11 +1120,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.MultiFunctionalCommand.yml",
+      "source_relative_path": "obj/Sophia.Platform.Attributes.CommentAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.MultiFunctionalCommand.html",
-          "hash": "JQ39p9U1pHJxbhJPoDRIYQ=="
+          "relative_path": "api/Sophia.Platform.Attributes.CommentAttribute.html",
+          "hash": "H0ifsSfkEBzioRthgYiKhg=="
         }
       },
       "is_incremental": false,
@@ -964,11 +1132,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.NonNegativeAttribute.yml",
+      "source_relative_path": "obj/Sophia.Platform.Attributes.DummyAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.NonNegativeAttribute.html",
-          "hash": "8BGr552Wtm9gwlmzD6rn4w=="
+          "relative_path": "api/Sophia.Platform.Attributes.DummyAttribute.html",
+          "hash": "cKhX3onIMW8/4Cxwye8psQ=="
         }
       },
       "is_incremental": false,
@@ -976,11 +1144,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.ObjectList.yml",
+      "source_relative_path": "obj/Sophia.Platform.Attributes.HighlightAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.ObjectList.html",
-          "hash": "jUzNX+5YtOpwZYOl48uOdg=="
+          "relative_path": "api/Sophia.Platform.Attributes.HighlightAttribute.html",
+          "hash": "KhQXWYTSOee3/eR70cKgEg=="
         }
       },
       "is_incremental": false,
@@ -988,11 +1156,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Optional-1.yml",
+      "source_relative_path": "obj/Sophia.Platform.Attributes.InspectorButtonAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Optional-1.html",
-          "hash": "tqGuu9sSZepz2dJPJX9Dtg=="
+          "relative_path": "api/Sophia.Platform.Attributes.InspectorButtonAttribute.html",
+          "hash": "GcJ0ZnLddmsa95Q4lBYaBg=="
         }
       },
       "is_incremental": false,
@@ -1000,11 +1168,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Optional.yml",
+      "source_relative_path": "obj/Sophia.Platform.Attributes.InspectorFlagsAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Optional.html",
-          "hash": "g4feGR1dbVzioKkqRooOHQ=="
+          "relative_path": "api/Sophia.Platform.Attributes.InspectorFlagsAttribute.html",
+          "hash": "6cCC7mhgsd+Axioot0gJ6g=="
         }
       },
       "is_incremental": false,
@@ -1012,11 +1180,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.OptionalFloat.yml",
+      "source_relative_path": "obj/Sophia.Platform.Attributes.LabelFieldAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.OptionalFloat.html",
-          "hash": "PGyQaK4m3wr9V+qZW0K4HA=="
+          "relative_path": "api/Sophia.Platform.Attributes.LabelFieldAttribute.html",
+          "hash": "D36JeqNvHEcW49FZ83kcEg=="
         }
       },
       "is_incremental": false,
@@ -1024,11 +1192,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.OptionalGameObject.yml",
+      "source_relative_path": "obj/Sophia.Platform.Attributes.NonNegativeAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.OptionalGameObject.html",
-          "hash": "emi+cJUSdGDUQydJ7I38Qw=="
+          "relative_path": "api/Sophia.Platform.Attributes.NonNegativeAttribute.html",
+          "hash": "qYf4bwNID2NDsWbdP0Zoww=="
         }
       },
       "is_incremental": false,
@@ -1036,11 +1204,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.OptionalInt.yml",
+      "source_relative_path": "obj/Sophia.Platform.Attributes.ReadOnlyAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.OptionalInt.html",
-          "hash": "m5DLvjTx+N4FIK/+P5pHxw=="
+          "relative_path": "api/Sophia.Platform.Attributes.ReadOnlyAttribute.html",
+          "hash": "5PwcaCPp9xF8z86HlC5xEA=="
         }
       },
       "is_incremental": false,
@@ -1048,11 +1216,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.OptionalMonoBehaviour.yml",
+      "source_relative_path": "obj/Sophia.Platform.Attributes.WarningIfNullAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.OptionalMonoBehaviour.html",
-          "hash": "JvJqf9vB9TB+yoxVO3SRDA=="
+          "relative_path": "api/Sophia.Platform.Attributes.WarningIfNullAttribute.html",
+          "hash": "55EdJPncWPDqs62p0tdNDQ=="
         }
       },
       "is_incremental": false,
@@ -1060,11 +1228,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.OptionalString.yml",
+      "source_relative_path": "obj/Sophia.Platform.Attributes.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.OptionalString.html",
-          "hash": "+2dA45aAwdt59BsSYLQoVA=="
+          "relative_path": "api/Sophia.Platform.Attributes.html",
+          "hash": "rGVJzwx7x9CDrGHymTZhRQ=="
         }
       },
       "is_incremental": false,
@@ -1072,11 +1240,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.OptionalVector2.yml",
+      "source_relative_path": "obj/Sophia.Platform.BaseMonoBehaviour.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.OptionalVector2.html",
-          "hash": "Dle9JG6XiecLGAje7YcaeA=="
+          "relative_path": "api/Sophia.Platform.BaseMonoBehaviour.html",
+          "hash": "5b5qy54C77CiLCIYtu9gAg=="
         }
       },
       "is_incremental": false,
@@ -1084,11 +1252,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.OptionalVector3.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.ColorExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.OptionalVector3.html",
-          "hash": "U2JUId7qprNpEpz+tTWkAQ=="
+          "relative_path": "api/Sophia.Platform.Extension.ColorExtensions.html",
+          "hash": "Cq0EDF+HYgozqRGs881KSg=="
         }
       },
       "is_incremental": false,
@@ -1096,11 +1264,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.BaseSubject-1.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.ColorList.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.BaseSubject-1.html",
-          "hash": "obEeSA+bdWO8+1P/aO5tDQ=="
+          "relative_path": "api/Sophia.Platform.Extension.ColorList.html",
+          "hash": "oSKdpYpIbBqYwx7szEHA+Q=="
         }
       },
       "is_incremental": false,
@@ -1108,11 +1276,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.EventSubject-1.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.FloatList.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.EventSubject-1.html",
-          "hash": "+HIehaMsYs0oIK/460vTrw=="
+          "relative_path": "api/Sophia.Platform.Extension.FloatList.html",
+          "hash": "nrSXybrWl02vEzZL2Z3WEA=="
         }
       },
       "is_incremental": false,
@@ -1120,11 +1288,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.FSMEvent.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.InspectorList-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.FSMEvent.html",
-          "hash": "MZ94HyNmNM08eVpxNEN3wA=="
+          "relative_path": "api/Sophia.Platform.Extension.InspectorList-1.html",
+          "hash": "N/AO6DJ9aZO080Uf7kHhCQ=="
         }
       },
       "is_incremental": false,
@@ -1132,11 +1300,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.FSMState.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.InspectorList.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.FSMState.html",
-          "hash": "U/2z4ZUz9gku7oACUyM7sg=="
+          "relative_path": "api/Sophia.Platform.Extension.InspectorList.html",
+          "hash": "D8qIEoZNAsfjAf7W8hah/Q=="
         }
       },
       "is_incremental": false,
@@ -1144,11 +1312,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.FSMTransition.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.IntList.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.FSMTransition.html",
-          "hash": "hCoEN184EZpQSFtYuZaJ7g=="
+          "relative_path": "api/Sophia.Platform.Extension.IntList.html",
+          "hash": "mDfNAzuh9LiFJREC4gZ9KA=="
         }
       },
       "is_incremental": false,
@@ -1156,11 +1324,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.FiniteStateMachine.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.MinMaxFloat.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.FiniteStateMachine.html",
-          "hash": "ikGFzeW8bioA/tlkavvCmw=="
+          "relative_path": "api/Sophia.Platform.Extension.MinMaxFloat.html",
+          "hash": "EgOjDAuXN7DfAwbS04ErhQ=="
         }
       },
       "is_incremental": false,
@@ -1168,11 +1336,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.Guard.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.MinMaxInt.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.Guard.html",
-          "hash": "Jw+8Dxwod2BLwVjktVEcJw=="
+          "relative_path": "api/Sophia.Platform.Extension.MinMaxInt.html",
+          "hash": "cH3bLZDOu86U0yfwWG6qlg=="
         }
       },
       "is_incremental": false,
@@ -1180,11 +1348,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.ICommand.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.MonoBehaviourExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.ICommand.html",
-          "hash": "H8DRgapW9Ww5QDJEodP6qQ=="
+          "relative_path": "api/Sophia.Platform.Extension.MonoBehaviourExtensions.html",
+          "hash": "zLZlECNvi0BVwqxxwl0aVg=="
         }
       },
       "is_incremental": false,
@@ -1192,11 +1360,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.ICommandReceiver.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.MonoBehaviourList.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.ICommandReceiver.html",
-          "hash": "g3AeQ++0nV7EcZYIJ8zVIA=="
+          "relative_path": "api/Sophia.Platform.Extension.MonoBehaviourList.html",
+          "hash": "7gHey7QFSVPAQi0/4Z01Cg=="
         }
       },
       "is_incremental": false,
@@ -1204,11 +1372,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.IEventObserver.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.ObjectExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.IEventObserver.html",
-          "hash": "5LRCnMF4GPnExAOghsOinQ=="
+          "relative_path": "api/Sophia.Platform.Extension.ObjectExtensions.html",
+          "hash": "c2ZVoLogeogAxQMcyZ+z/Q=="
         }
       },
       "is_incremental": false,
@@ -1216,11 +1384,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.IObserver.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.ObjectList.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.IObserver.html",
-          "hash": "wOU5FglcsA5K/Osf1rj9ew=="
+          "relative_path": "api/Sophia.Platform.Extension.ObjectList.html",
+          "hash": "cIUrKUj7ZxCtD/24YYtuJA=="
         }
       },
       "is_incremental": false,
@@ -1228,11 +1396,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.IStateMachine.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.StringExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.IStateMachine.html",
-          "hash": "e+zA1B+VCWwo0Z2EVLooyA=="
+          "relative_path": "api/Sophia.Platform.Extension.StringExtensions.html",
+          "hash": "COkcds2Rh+AcbV8fMa+Gow=="
         }
       },
       "is_incremental": false,
@@ -1240,11 +1408,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.ISubject.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.StringList.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.ISubject.html",
-          "hash": "l7cXYDyoGz5K02S4Tn0k2g=="
+          "relative_path": "api/Sophia.Platform.Extension.StringList.html",
+          "hash": "HmIBVJMfmM8xg66bByTeVQ=="
         }
       },
       "is_incremental": false,
@@ -1252,11 +1420,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.Singleton-1.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.TransformExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.Singleton-1.html",
-          "hash": "uRPO1lwqq5E81BROva0V/g=="
+          "relative_path": "api/Sophia.Platform.Extension.TransformExtensions.html",
+          "hash": "jwrTbhcGWdn4DTglXnPbIw=="
         }
       },
       "is_incremental": false,
@@ -1264,11 +1432,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.Subject-1.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.Vector2List.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.Subject-1.html",
-          "hash": "isa0jPEFzDH9Q8DEE83yaQ=="
+          "relative_path": "api/Sophia.Platform.Extension.Vector2List.html",
+          "hash": "/at+zW8c4rsWs3kbAVgd5w=="
         }
       },
       "is_incremental": false,
@@ -1276,11 +1444,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Patterns.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.Vector3List.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Patterns.html",
-          "hash": "UGReclJtVVnayA4NqH6BUQ=="
+          "relative_path": "api/Sophia.Platform.Extension.Vector3List.html",
+          "hash": "FafUUNu7+AAFqnfplYzB7Q=="
         }
       },
       "is_incremental": false,
@@ -1288,11 +1456,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.PhysxMonoBehaviour.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.Vector4List.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.PhysxMonoBehaviour.html",
-          "hash": "IX3JzyskbrDMMWsxIu6WxQ=="
+          "relative_path": "api/Sophia.Platform.Extension.Vector4List.html",
+          "hash": "6oNnAQcVBgBxduccLk4hGg=="
         }
       },
       "is_incremental": false,
@@ -1300,11 +1468,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Random.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.VectorExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Random.html",
-          "hash": "63zoX1z0yRRvmIEBkEiN9A=="
+          "relative_path": "api/Sophia.Platform.Extension.VectorExtensions.html",
+          "hash": "CTan7owomk0wfOxfX0IuWg=="
         }
       },
       "is_incremental": false,
@@ -1312,11 +1480,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.ReadOnlyAttribute.yml",
+      "source_relative_path": "obj/Sophia.Platform.Extension.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.ReadOnlyAttribute.html",
-          "hash": "sYEBZidAYgiqlm77jjaZ9g=="
+          "relative_path": "api/Sophia.Platform.Extension.html",
+          "hash": "OCLuyYwEG7EGZRss9/fcwQ=="
         }
       },
       "is_incremental": false,
@@ -1324,11 +1492,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.ScreenshotTaker.yml",
+      "source_relative_path": "obj/Sophia.Platform.Gameplay.FPSCameraHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.ScreenshotTaker.html",
-          "hash": "puvo210dX19yySow28ASFA=="
+          "relative_path": "api/Sophia.Platform.Gameplay.FPSCameraHandler.html",
+          "hash": "VauLuT48ujAdg6eBlmEbwQ=="
         }
       },
       "is_incremental": false,
@@ -1336,11 +1504,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Started.yml",
+      "source_relative_path": "obj/Sophia.Platform.Gameplay.Input.DesktopInputManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Started.html",
-          "hash": "xvITX4Cfqcne9EjYMnYa2Q=="
+          "relative_path": "api/Sophia.Platform.Gameplay.Input.DesktopInputManager.html",
+          "hash": "1IfH34UOCJ8YiX3lwDU8Ow=="
         }
       },
       "is_incremental": false,
@@ -1348,11 +1516,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Stopped.yml",
+      "source_relative_path": "obj/Sophia.Platform.Gameplay.Input.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Stopped.html",
-          "hash": "cu5mzyn3tFA2qBkvyw466Q=="
+          "relative_path": "api/Sophia.Platform.Gameplay.Input.html",
+          "hash": "eoSBH+Tjox897qA7TDlHow=="
         }
       },
       "is_incremental": false,
@@ -1360,11 +1528,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.StringList.yml",
+      "source_relative_path": "obj/Sophia.Platform.Gameplay.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.StringList.html",
-          "hash": "4qOwbaZd5M+xF5dKgvhSpQ=="
+          "relative_path": "api/Sophia.Platform.Gameplay.html",
+          "hash": "8D7d1HybnGNYs80nhtjSLA=="
         }
       },
       "is_incremental": false,
@@ -1372,11 +1540,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Threading.ITask.yml",
+      "source_relative_path": "obj/Sophia.Platform.Patterns.State.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Threading.ITask.html",
-          "hash": "lQzN/MemENtXFz89XnN1lg=="
+          "relative_path": "api/Sophia.Platform.Patterns.State.html",
+          "hash": "/hla3E4FpdV0VmGv/W/HPw=="
         }
       },
       "is_incremental": false,
@@ -1384,11 +1552,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Threading.Task.Finished.yml",
+      "source_relative_path": "obj/Sophia.Platform.Patterns.StateMachine.StateMachineEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Threading.Task.Finished.html",
-          "hash": "IOi4Fr/Kvn6Eu1E5ZdX/KA=="
+          "relative_path": "api/Sophia.Platform.Patterns.StateMachine.StateMachineEvent.html",
+          "hash": "IueQ/ILlABkQDrtnxzbnJg=="
         }
       },
       "is_incremental": false,
@@ -1396,11 +1564,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Threading.Task.Started.yml",
+      "source_relative_path": "obj/Sophia.Platform.Patterns.StateMachine.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Threading.Task.Started.html",
-          "hash": "xkKaanL3tsZGW9+i4LBHGg=="
+          "relative_path": "api/Sophia.Platform.Patterns.StateMachine.html",
+          "hash": "kc3svfZXAssRQhfPluZn5A=="
         }
       },
       "is_incremental": false,
@@ -1408,11 +1576,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Threading.Task.yml",
+      "source_relative_path": "obj/Sophia.Platform.Patterns.Transition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Threading.Task.html",
-          "hash": "I3TAgAGm+r5SgwXfBLbUdA=="
+          "relative_path": "api/Sophia.Platform.Patterns.Transition.html",
+          "hash": "mgt8+X/CbvN2GUwY7VP9QA=="
         }
       },
       "is_incremental": false,
@@ -1420,11 +1588,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Threading.yml",
+      "source_relative_path": "obj/Sophia.Platform.Patterns.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Threading.html",
-          "hash": "kG6xsrnwKPgv0/0GJ/l6ig=="
+          "relative_path": "api/Sophia.Platform.Patterns.html",
+          "hash": "NlScVEdHNJLa0dqCw3DdrA=="
         }
       },
       "is_incremental": false,
@@ -1432,11 +1600,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.TimerCreationInfo.yml",
+      "source_relative_path": "obj/Sophia.Platform.PhysxMonoBehaviour.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.TimerCreationInfo.html",
-          "hash": "ALGCHnn1/9x5ycBFwireqQ=="
+          "relative_path": "api/Sophia.Platform.PhysxMonoBehaviour.html",
+          "hash": "IGuUGKqxvtW613CKIJSo5g=="
         }
       },
       "is_incremental": false,
@@ -1444,11 +1612,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.TimerEventInfo.yml",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.Optional-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.TimerEventInfo.html",
-          "hash": "SJ4pG01cCfOzigpt/spqww=="
+          "relative_path": "api/Sophia.Platform.Utilities.Optional-1.html",
+          "hash": "4jJWzwmTP9Qu5PjtZ/Cd3g=="
         }
       },
       "is_incremental": false,
@@ -1456,11 +1624,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.TimerFinishedBehaviour.yml",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.Optional.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.TimerFinishedBehaviour.html",
-          "hash": "KJHWKWxDk+7NjphPEg5u1w=="
+          "relative_path": "api/Sophia.Platform.Utilities.Optional.html",
+          "hash": "U7LkTiD0U/r14il1831gOA=="
         }
       },
       "is_incremental": false,
@@ -1468,11 +1636,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.TimerManager.yml",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.OptionalFloat.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.TimerManager.html",
-          "hash": "ZSRdmsjPTZQAnWeAvQZPZw=="
+          "relative_path": "api/Sophia.Platform.Utilities.OptionalFloat.html",
+          "hash": "uGPi53fTYW5OtW9d1wwEOg=="
         }
       },
       "is_incremental": false,
@@ -1480,11 +1648,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Updated.yml",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.OptionalGameObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Updated.html",
-          "hash": "ZHf+/aoZNs9f8yem19BV1g=="
+          "relative_path": "api/Sophia.Platform.Utilities.OptionalGameObject.html",
+          "hash": "k0kQ6mCznk65WWyczcH+4g=="
         }
       },
       "is_incremental": false,
@@ -1492,11 +1660,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Vector2List.yml",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.OptionalInt.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Vector2List.html",
-          "hash": "fRAmT2J7fIkYPYYq7ftGHA=="
+          "relative_path": "api/Sophia.Platform.Utilities.OptionalInt.html",
+          "hash": "J97bwGzOndeeUwtE7/btlA=="
         }
       },
       "is_incremental": false,
@@ -1504,11 +1672,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Vector3List.yml",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.OptionalMonoBehaviour.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Vector3List.html",
-          "hash": "AI0TQtdVGfFr31RxYKmWIg=="
+          "relative_path": "api/Sophia.Platform.Utilities.OptionalMonoBehaviour.html",
+          "hash": "VOVJoaS+78uTD9IZvua+UQ=="
         }
       },
       "is_incremental": false,
@@ -1516,11 +1684,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Vector4List.yml",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.OptionalString.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.Vector4List.html",
-          "hash": "hYpjNmq006MF7t68IR/CFQ=="
+          "relative_path": "api/Sophia.Platform.Utilities.OptionalString.html",
+          "hash": "LJwyudzGFTdEOzNRDDAMcQ=="
         }
       },
       "is_incremental": false,
@@ -1528,11 +1696,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.WarningIfNullAttribute.yml",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.OptionalVector2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sophia.WarningIfNullAttribute.html",
-          "hash": "M9JsJgsYXHshlNxO2CEYwQ=="
+          "relative_path": "api/Sophia.Platform.Utilities.OptionalVector2.html",
+          "hash": "c7x3zj4SziGY6kppbejmrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.OptionalVector3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Platform.Utilities.OptionalVector3.html",
+          "hash": "Yjtd3WxMVERVfjVHXo8sWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.ScreenshotTaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Platform.Utilities.ScreenshotTaker.html",
+          "hash": "g34frnVnbGxcJckcTC9i6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Platform.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Platform.Utilities.html",
+          "hash": "TNWoEQB/14ZbqYWAbcHq0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Platform.html",
+          "hash": "DYCBBvY8EJCRNRKh45EmpQ=="
         }
       },
       "is_incremental": false,
@@ -1544,7 +1760,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.html",
-          "hash": "w74iHVRkCOB1QZU+EHZBqQ=="
+          "hash": "NSzmOe796DVYB47pjIRc5w=="
         }
       },
       "is_incremental": false,
@@ -1556,7 +1772,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "DIXLyzlZzTDX0x80u4NAJA=="
+          "hash": "NpTd/XfHy5nAMTWNQPU2Sg=="
         }
       },
       "is_incremental": false,
@@ -1595,7 +1811,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 126,
+          "total_file_count": 144,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

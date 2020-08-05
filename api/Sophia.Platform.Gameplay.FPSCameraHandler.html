@@ -1,0 +1,759 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FPSCameraHandler
+   | Sophia </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FPSCameraHandler
+   | Sophia ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="">
+                <img id="logo" class="svg" style="vertical-align: middle;" src="../logo.svg" alt="">
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler">
+  
+  
+  <h1 id="Sophia_Platform_Gameplay_FPSCameraHandler" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler" class="text-break">Class FPSCameraHandler
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+    <div class="level5"><a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html">BaseMonoBehaviour</a></div>
+    <div class="level6"><span class="xref">FPSCameraHandler</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Sophia.Core.Patterns.ICommandReceiver.html">ICommandReceiver</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_transform">BaseMonoBehaviour.transform</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_gameObject">BaseMonoBehaviour.gameObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_changeLayersRecursively_UnityEngine_Transform_System_String_">BaseMonoBehaviour.changeLayersRecursively(Transform, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_changeLayersRecursively_UnityEngine_Transform_System_Int32_">BaseMonoBehaviour.changeLayersRecursively(Transform, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_instantiate__1___0_UnityEngine_GameObject_">BaseMonoBehaviour.instantiate&lt;T&gt;(T, GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_instantiate__1___0_UnityEngine_GameObject_UnityEngine_Vector3_UnityEngine_Quaternion_">BaseMonoBehaviour.instantiate&lt;T&gt;(T, GameObject, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_instantiate_UnityEngine_GameObject_">BaseMonoBehaviour.instantiate(GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_instantiate_UnityEngine_GameObject_UnityEngine_Vector3_UnityEngine_Quaternion_">BaseMonoBehaviour.instantiate(GameObject, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_instantiate_UnityEngine_GameObject_UnityEngine_GameObject_">BaseMonoBehaviour.instantiate(GameObject, GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_findObjectsOfInterface__1">BaseMonoBehaviour.findObjectsOfInterface&lt;I&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_Invoke_Action_System_Single_">BaseMonoBehaviour.Invoke(Action, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_InvokeRepeating_Action_System_Single_System_Single_">BaseMonoBehaviour.InvokeRepeating(Action, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_DestroyUniversal_UnityEngine_Object_">BaseMonoBehaviour.DestroyUniversal(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_getRequiredComponent__1">BaseMonoBehaviour.getRequiredComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_getRequiredComponentInChilderen__1">BaseMonoBehaviour.getRequiredComponentInChilderen&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_getRequiredComponentsInChilderen__1">BaseMonoBehaviour.getRequiredComponentsInChilderen&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sophia.Platform.BaseMonoBehaviour.html#Sophia_Platform_BaseMonoBehaviour_getRequiredComponentInParent__1">BaseMonoBehaviour.getRequiredComponentInParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.IsInvoking.html">MonoBehaviour.IsInvoking()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.CancelInvoke.html">MonoBehaviour.CancelInvoke()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.Invoke.html">MonoBehaviour.Invoke(String, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.InvokeRepeating.html">MonoBehaviour.InvokeRepeating(String, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.CancelInvoke.html">MonoBehaviour.CancelInvoke(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.IsInvoking.html">MonoBehaviour.IsInvoking(String)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html">MonoBehaviour.StartCoroutine(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine_Auto.html">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopCoroutine.html">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopCoroutine.html">MonoBehaviour.StopCoroutine(Coroutine)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopCoroutine.html">MonoBehaviour.StopCoroutine(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopAllCoroutines.html">MonoBehaviour.StopAllCoroutines()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour-print.html">MonoBehaviour.print(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour-useGUILayout.html">MonoBehaviour.useGUILayout</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour-runInEditMode.html">MonoBehaviour.runInEditMode</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour-enabled.html">Behaviour.enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour-isActiveAndEnabled.html">Behaviour.isActiveAndEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponent.html">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponent.html">Component.GetComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.TryGetComponent.html">Component.TryGetComponent(Type, Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.TryGetComponent.html">Component.TryGetComponent&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponent.html">Component.GetComponent(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentInChildren.html">Component.GetComponentInChildren(Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentInChildren.html">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentInChildren.html">Component.GetComponentInChildren&lt;T&gt;(Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html">Component.GetComponentsInChildren(Type, Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html">Component.GetComponentsInChildren&lt;T&gt;(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html">Component.GetComponentsInChildren&lt;T&gt;(Boolean, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html">Component.GetComponentsInChildren&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInChildren.html">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentInParent.html">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentInParent.html">Component.GetComponentInParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInParent.html">Component.GetComponentsInParent(Type, Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInParent.html">Component.GetComponentsInParent&lt;T&gt;(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInParent.html">Component.GetComponentsInParent&lt;T&gt;(Boolean, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponentsInParent.html">Component.GetComponentsInParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponents.html">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponents.html">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponents.html">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.GetComponents.html">Component.GetComponents&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.CompareTag.html">Component.CompareTag(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessageUpwards.html">Component.SendMessageUpwards(String, Object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessageUpwards.html">Component.SendMessageUpwards(String, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessage.html">Component.SendMessage(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessage.html">Component.SendMessage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessage.html">Component.SendMessage(String, Object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.SendMessage.html">Component.SendMessage(String, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.BroadcastMessage.html">Component.BroadcastMessage(String, Object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.BroadcastMessage.html">Component.BroadcastMessage(String, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Component-tag.html">Component.tag</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.rigidbody</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.rigidbody2D</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.camera</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.light</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.animation</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.constantForce</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.renderer</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.audio</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.networkView</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.collider</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.collider2D</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.hingeJoint</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.particleSystem</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.GetInstanceID.html">Object.GetInstanceID()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.GetHashCode.html">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Equals.html">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate(Object, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate(Object, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate(Object, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate(Object, Transform, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate&lt;T&gt;(T, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Object.Instantiate&lt;T&gt;(T, Transform, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.Destroy.html">Object.Destroy(Object, Single)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.DestroyImmediate.html">Object.DestroyImmediate(Object, Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html">Object.DontDestroyOnLoad(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.DestroyObject.html">Object.DestroyObject(Object, Single)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindSceneObjectsOfType.html">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfTypeIncludingAssets.html">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html">Object.FindObjectsOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectOfType.html">Object.FindObjectOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfTypeAll.html">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.FindObjectOfType.html">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.ToString.html">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object-name.html">Object.name</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.unity3d.com/ScriptReference/Object-hideFlags.html">Object.hideFlags</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sophia.Platform.Gameplay.html">Sophia.Platform.Gameplay</a></h6>
+  <h6><strong>Assembly</strong>: Sophia.Platform.dll</h6>
+  <h5 id="Sophia_Platform_Gameplay_FPSCameraHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class FPSCameraHandler : BaseMonoBehaviour, ICommandReceiver</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/111908ff0b862ea01aef09a23adf1aff026c2290/apiSpec/new?filename=Sophia_Platform_Gameplay_FPSCameraHandler_CameraTarget.md&amp;value=---%0Auid%3A%20Sophia.Platform.Gameplay.FPSCameraHandler.CameraTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/111908ff0b862ea01aef09a23adf1aff026c2290/Sophia.Platform/gameplay/camera/fpscamerahandler.cs/#L37">View Source</a>
+  </span>
+  <a id="Sophia_Platform_Gameplay_FPSCameraHandler_CameraTarget_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.CameraTarget*"></a>
+  <h4 id="Sophia_Platform_Gameplay_FPSCameraHandler_CameraTarget" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.CameraTarget">CameraTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform CameraTarget { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Transform.html">Transform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/111908ff0b862ea01aef09a23adf1aff026c2290/apiSpec/new?filename=Sophia_Platform_Gameplay_FPSCameraHandler_Awake.md&amp;value=---%0Auid%3A%20Sophia.Platform.Gameplay.FPSCameraHandler.Awake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/111908ff0b862ea01aef09a23adf1aff026c2290/Sophia.Platform/gameplay/camera/fpscamerahandler.cs/#L51">View Source</a>
+  </span>
+  <a id="Sophia_Platform_Gameplay_FPSCameraHandler_Awake_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.Awake*"></a>
+  <h4 id="Sophia_Platform_Gameplay_FPSCameraHandler_Awake" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Awake()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/111908ff0b862ea01aef09a23adf1aff026c2290/apiSpec/new?filename=Sophia_Platform_Gameplay_FPSCameraHandler_LateUpdate.md&amp;value=---%0Auid%3A%20Sophia.Platform.Gameplay.FPSCameraHandler.LateUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/111908ff0b862ea01aef09a23adf1aff026c2290/Sophia.Platform/gameplay/camera/fpscamerahandler.cs/#L70">View Source</a>
+  </span>
+  <a id="Sophia_Platform_Gameplay_FPSCameraHandler_LateUpdate_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.LateUpdate*"></a>
+  <h4 id="Sophia_Platform_Gameplay_FPSCameraHandler_LateUpdate" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LateUpdate()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/111908ff0b862ea01aef09a23adf1aff026c2290/apiSpec/new?filename=Sophia_Platform_Gameplay_FPSCameraHandler_OnApplicationQuit.md&amp;value=---%0Auid%3A%20Sophia.Platform.Gameplay.FPSCameraHandler.OnApplicationQuit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/111908ff0b862ea01aef09a23adf1aff026c2290/Sophia.Platform/gameplay/camera/fpscamerahandler.cs/#L81">View Source</a>
+  </span>
+  <a id="Sophia_Platform_Gameplay_FPSCameraHandler_OnApplicationQuit_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.OnApplicationQuit*"></a>
+  <h4 id="Sophia_Platform_Gameplay_FPSCameraHandler_OnApplicationQuit" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.OnApplicationQuit">OnApplicationQuit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnApplicationQuit()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/111908ff0b862ea01aef09a23adf1aff026c2290/apiSpec/new?filename=Sophia_Platform_Gameplay_FPSCameraHandler_OnDestroy.md&amp;value=---%0Auid%3A%20Sophia.Platform.Gameplay.FPSCameraHandler.OnDestroy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/111908ff0b862ea01aef09a23adf1aff026c2290/Sophia.Platform/gameplay/camera/fpscamerahandler.cs/#L76">View Source</a>
+  </span>
+  <a id="Sophia_Platform_Gameplay_FPSCameraHandler_OnDestroy_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.OnDestroy*"></a>
+  <h4 id="Sophia_Platform_Gameplay_FPSCameraHandler_OnDestroy" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDestroy()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/111908ff0b862ea01aef09a23adf1aff026c2290/apiSpec/new?filename=Sophia_Platform_Gameplay_FPSCameraHandler_OnDrawGizmos.md&amp;value=---%0Auid%3A%20Sophia.Platform.Gameplay.FPSCameraHandler.OnDrawGizmos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/111908ff0b862ea01aef09a23adf1aff026c2290/Sophia.Platform/gameplay/camera/fpscamerahandler.cs/#L87">View Source</a>
+  </span>
+  <a id="Sophia_Platform_Gameplay_FPSCameraHandler_OnDrawGizmos_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.OnDrawGizmos*"></a>
+  <h4 id="Sophia_Platform_Gameplay_FPSCameraHandler_OnDrawGizmos" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.OnDrawGizmos">OnDrawGizmos()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDrawGizmos()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/111908ff0b862ea01aef09a23adf1aff026c2290/apiSpec/new?filename=Sophia_Platform_Gameplay_FPSCameraHandler_rotateCameraOverPitch_System_Single_.md&amp;value=---%0Auid%3A%20Sophia.Platform.Gameplay.FPSCameraHandler.rotateCameraOverPitch(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/111908ff0b862ea01aef09a23adf1aff026c2290/Sophia.Platform/gameplay/camera/fpscamerahandler.cs/#L121">View Source</a>
+  </span>
+  <a id="Sophia_Platform_Gameplay_FPSCameraHandler_rotateCameraOverPitch_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.rotateCameraOverPitch*"></a>
+  <h4 id="Sophia_Platform_Gameplay_FPSCameraHandler_rotateCameraOverPitch_System_Single_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.rotateCameraOverPitch(System.Single)">rotateCameraOverPitch(Single)</h4>
+  <div class="markdown level1 summary"><p>Rotate the camera using the pitch axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool rotateCameraOverPitch(float axis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The direction and rotation amount</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/111908ff0b862ea01aef09a23adf1aff026c2290/apiSpec/new?filename=Sophia_Platform_Gameplay_FPSCameraHandler_rotateCameraOverYaw_System_Single_.md&amp;value=---%0Auid%3A%20Sophia.Platform.Gameplay.FPSCameraHandler.rotateCameraOverYaw(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/111908ff0b862ea01aef09a23adf1aff026c2290/Sophia.Platform/gameplay/camera/fpscamerahandler.cs/#L106">View Source</a>
+  </span>
+  <a id="Sophia_Platform_Gameplay_FPSCameraHandler_rotateCameraOverYaw_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.rotateCameraOverYaw*"></a>
+  <h4 id="Sophia_Platform_Gameplay_FPSCameraHandler_rotateCameraOverYaw_System_Single_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.rotateCameraOverYaw(System.Single)">rotateCameraOverYaw(Single)</h4>
+  <div class="markdown level1 summary"><p>Rotate the camera using the yaw axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool rotateCameraOverYaw(float axis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The direction and rotation amount</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xrlabdevelopment/Sophia/new/111908ff0b862ea01aef09a23adf1aff026c2290/apiSpec/new?filename=Sophia_Platform_Gameplay_FPSCameraHandler_Start.md&amp;value=---%0Auid%3A%20Sophia.Platform.Gameplay.FPSCameraHandler.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xrlabdevelopment/Sophia/blob/111908ff0b862ea01aef09a23adf1aff026c2290/Sophia.Platform/gameplay/camera/fpscamerahandler.cs/#L63">View Source</a>
+  </span>
+  <a id="Sophia_Platform_Gameplay_FPSCameraHandler_Start_" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.Start*"></a>
+  <h4 id="Sophia_Platform_Gameplay_FPSCameraHandler_Start" data-uid="Sophia.Platform.Gameplay.FPSCameraHandler.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Start()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Sophia.Core.Patterns.ICommandReceiver.html">ICommandReceiver</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Sophia.Platform.Extension.MonoBehaviourExtensions.html#Sophia_Platform_Extension_MonoBehaviourExtensions_clone__1___0_">MonoBehaviourExtensions.clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Platform.Extension.MonoBehaviourExtensions.html#Sophia_Platform_Extension_MonoBehaviourExtensions_clone__1___0_System_Int32_">MonoBehaviourExtensions.clone&lt;T&gt;(T, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Platform.Extension.MonoBehaviourExtensions.html#Sophia_Platform_Extension_MonoBehaviourExtensions_findChild_UnityEngine_Component_System_String_">MonoBehaviourExtensions.findChild(Component, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Platform.Extension.MonoBehaviourExtensions.html#Sophia_Platform_Extension_MonoBehaviourExtensions_findChildRecursively_UnityEngine_Component_System_String_">MonoBehaviourExtensions.findChildRecursively(Component, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Platform.Extension.MonoBehaviourExtensions.html#Sophia_Platform_Extension_MonoBehaviourExtensions_getInterfaceComponent__1_UnityEngine_Component_">MonoBehaviourExtensions.getInterfaceComponent&lt;TInterface&gt;(Component)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Platform.Extension.MonoBehaviourExtensions.html#Sophia_Platform_Extension_MonoBehaviourExtensions_invoke_UnityEngine_MonoBehaviour_Action_System_Single_">MonoBehaviourExtensions.invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Platform.Extension.MonoBehaviourExtensions.html#Sophia_Platform_Extension_MonoBehaviourExtensions_invokeRepeating_UnityEngine_MonoBehaviour_Action_System_Single_System_Single_">MonoBehaviourExtensions.invokeRepeating(MonoBehaviour, Action, Single, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sophia.Platform.Extension.ObjectExtensions.html#Sophia_Platform_Extension_ObjectExtensions_throwIfNull_System_Object_System_String_">ObjectExtensions.throwIfNull(Object, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xrlabdevelopment/Sophia/new/111908ff0b862ea01aef09a23adf1aff026c2290/apiSpec/new?filename=Sophia_Platform_Gameplay_FPSCameraHandler.md&amp;value=---%0Auid%3A%20Sophia.Platform.Gameplay.FPSCameraHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xrlabdevelopment/Sophia/blob/111908ff0b862ea01aef09a23adf1aff026c2290/Sophia.Platform/gameplay/camera/fpscamerahandler.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Library provided by <a href="https://www.digitalartsandentertainment.be/page/133/Research">DAE Research</a>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
