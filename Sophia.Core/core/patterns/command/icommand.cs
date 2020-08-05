@@ -1,10 +1,7 @@
-namespace Sophia
+namespace Sophia.Core.Patterns
 {
-    namespace Patterns
+    public interface ICommand
     {
-        public interface ICommand
-        {
-            bool execute(ICommandReceiver receiver);
-        }
+        bool execute(ICommandReceiver receiver);
     }
 }

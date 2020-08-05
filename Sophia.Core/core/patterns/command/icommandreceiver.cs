@@ -1,7 +1,4 @@
-namespace Sophia
+namespace Sophia.Core.Patterns
 {
-    namespace Patterns
-    {
-        public interface ICommandReceiver { }
-    }
+    public interface ICommandReceiver { }
 }

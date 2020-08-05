@@ -1,11 +1,9 @@
-namespace Sophia
+namespace Sophia.Core.Events
 {
-    namespace Events
-    {
-        /// <summary>
-        /// Interface of what an event should look like
-        /// </summary>
-        public interface IEvent
+    /// <summary>
+    /// Interface of what an event should look like
+    /// </summary>
+    public interface IEvent
         {
             //-------------------------------------------------------------------------------------
             // Properties
@@ -25,4 +23,3 @@ namespace Sophia
             IEventSender Sender { get; }
         }
     }
-}

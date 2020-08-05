@@ -1,11 +1,9 @@
-namespace Sophia
+namespace Sophia.Core.Events
 {
-    namespace Events
-    {
-        /// <summary>
-        /// Interface of an event handler
-        /// </summary>
-        public interface IEventHandler
+    /// <summary>
+    /// Interface of an event handler
+    /// </summary>
+    public interface IEventHandler
         {
             /// <summary>
             /// If the event that is fired is equal to the event category of the handler
@@ -21,4 +19,3 @@ namespace Sophia
             bool handleEvent(IEvent evt);
         }
     }
-}

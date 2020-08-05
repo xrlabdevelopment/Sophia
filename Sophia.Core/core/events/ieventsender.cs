@@ -1,11 +1,8 @@
-namespace Sophia
+namespace Sophia.Core.Events
 {
-    namespace Events
-    {
-        /// <summary>
-        /// An interface for event instigators
-        /// </summary>
-        public interface IEventSender
+    /// <summary>
+    /// An interface for event instigators
+    /// </summary>
+    public interface IEventSender
         { }
     }
-}

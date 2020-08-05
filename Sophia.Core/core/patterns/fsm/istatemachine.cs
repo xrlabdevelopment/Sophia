@@ -1,13 +1,10 @@
-namespace Sophia
+namespace Sophia.Core.Patterns
 {
-    namespace Patterns
+    public interface IStateMachine
     {
-        public interface IStateMachine
-        {
-            void start();
-            void update();
-            void reset();
-            void stop();
-        }
+        void start();
+        void update();
+        void reset();
+        void stop();
     }
 }

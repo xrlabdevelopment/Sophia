@@ -1,4 +1,4 @@
-namespace Sophia
+namespace Sophia.Core.Algorithms
 {
 	/// <summary>
 	/// Some convenience functions for random booleans and integers.
