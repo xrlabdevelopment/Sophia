@@ -27,7 +27,7 @@ namespace Sophia
 		[SerializeField]
 		private string FileNamePrefix = "screen_";
 
-		//[Tooltip("Set this to true to have screenshots taken periodically and specify the interval in seconds.")]
+		//[Tooltip("set this to true to have screenshots taken periodically and specify the interval in seconds.")]
 		[SerializeField]
 		private OptionalFloat AutomaticScreenshotInterval = new OptionalFloat { UseValue = false, Value = 60f};
 		
@@ -51,16 +51,18 @@ namespace Sophia
 
         //-------------------------------------------------------------------------------------
         [InspectorButton]
-		public static void Take()
+		public static void take()
 		{
-			Instance.TakeImpl();
+			Instance.takeImpl();
 		}
         //-------------------------------------------------------------------------------------
         [InspectorButton]
-		public static void TakeClean()
+		public static void takeClean()
 		{
-			Instance.TakeCleanImpl();
+			Instance.takeCleanImpl();
 		}
+
+        #region Unity Messages
 
         //-------------------------------------------------------------------------------------
         protected override void onAwake()
@@ -75,11 +77,11 @@ namespace Sophia
             {
                 if (DirtyObjects.Length > 0)
                 {
-                    InvokeRepeating(TakeCleanImpl, AutomaticScreenshotInterval.Value, AutomaticScreenshotInterval.Value);
+                    InvokeRepeating(takeCleanImpl, AutomaticScreenshotInterval.Value, AutomaticScreenshotInterval.Value);
                 }
                 else
                 {
-                    InvokeRepeating(TakeImpl, AutomaticScreenshotInterval.Value, AutomaticScreenshotInterval.Value);
+                    InvokeRepeating(takeImpl, AutomaticScreenshotInterval.Value, AutomaticScreenshotInterval.Value);
                 }
             }
         }
@@ -91,11 +93,11 @@ namespace Sophia
             {
                 if (DirtyObjects.Length > 0)
                 {
-                    TakeClean();
+                    takeClean();
                 }
                 else
                 {
-                    Take();
+                    take();
                 }
             }
         }
@@ -106,14 +108,16 @@ namespace Sophia
             // Nothing to implement
         }
 
+        #endregion
+
         //-------------------------------------------------------------------------------------
-        private void TakeCleanImpl()
+        private void takeCleanImpl()
 		{
-			StartCoroutine(TakeCleanEnumerator());
+			StartCoroutine(takeCleanEnumerator());
 		}
 
         //-------------------------------------------------------------------------------------
-        private IEnumerator TakeCleanEnumerator()
+        private IEnumerator takeCleanEnumerator()
 		{
 			state_of_dirty_objects = new Dictionary<GameObject, bool>();
 
@@ -125,7 +129,7 @@ namespace Sophia
 
 			yield return new WaitForEndOfFrame();
 
-			TakeImpl();
+			takeImpl();
 
 			yield return new WaitForEndOfFrame();
 
@@ -136,7 +140,7 @@ namespace Sophia
 		}
 
         //-------------------------------------------------------------------------------------
-        private void TakeImpl()
+        private void takeImpl()
 		{
 			string path = FileNamePrefix + DateTime.Now.Ticks + ".png";
 			ScreenCapture.CaptureScreenshot(path, Scale);
