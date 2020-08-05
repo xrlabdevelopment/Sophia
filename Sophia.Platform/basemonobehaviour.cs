@@ -72,7 +72,7 @@ namespace Sophia
             T new_object = Instantiate(prefab);
 
             new_object.transform.SetParent(root.transform, false);
-            new_object.transform.ResetLocal();
+            new_object.transform.resetLocal();
 
             return new_object;
         }
@@ -91,7 +91,7 @@ namespace Sophia
 
             new_object.transform.localPosition = localPosition;
             new_object.transform.localRotation = localRotation;
-            new_object.transform.ResetScale();
+            new_object.transform.resetScale();
 
             return new_object;
         }
@@ -132,7 +132,7 @@ namespace Sophia
 
             new_object.transform.parent = root.transform;
 
-            new_object.transform.ResetLocal();
+            new_object.transform.resetLocal();
 
             return new_object;
         }
@@ -153,13 +153,13 @@ namespace Sophia
         //-------------------------------------------------------------------------------------
         public Coroutine Invoke(Action action, float time)
         {
-            return MonoBehaviourExtensions.Invoke(this, action, time);
+            return MonoBehaviourExtensions.invoke(this, action, time);
         }
 
         //-------------------------------------------------------------------------------------
         public Coroutine InvokeRepeating(Action action, float time, float repeatTime)
         {
-            return MonoBehaviourExtensions.InvokeRepeating(this, action, time, repeatTime);
+            return MonoBehaviourExtensions.invokeRepeating(this, action, time, repeatTime);
         }
 
         //-------------------------------------------------------------------------------------
