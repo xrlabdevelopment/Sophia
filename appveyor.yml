@@ -3,7 +3,7 @@ version: '{branch}-{build}'
 skip_tags: true
 
 image: Visual Studio 2019
-configuration: Release
+configuration: Debug
 
 environment:
   nodejs_version: 12
@@ -26,7 +26,7 @@ build:
   verbosity: minimal
 
 test_script:
-  - .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -returntargetcode -register:user -target:"dotnet.exe" -targetargs:"test Sophia.Tests\bin\Release\netcoreapp3.1\Sophia.Tests.dll" -output:"coverage.xml" -filter:"+[Sophia*]* -[Sophia.Tests*]*"
+  - .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -returntargetcode -register:user -target:"dotnet.exe" -targetargs:"test Sophia.Tests\bin\Debug\netcoreapp3.1\Sophia.Tests.dll" -output:"coverage.xml" -filter:"+[Sophia*]* -[Sophia.Tests*]*"
   - codecov -f "coverage.xml"
 
 before_package:
@@ -34,7 +34,7 @@ before_package:
 
 artifacts:
 - path: '*.unitypackage'
-- path: '*Sophia*\bin\Release\*\*Sophia*'
+- path: '*Sophia*\bin\Debug\*\*Sophia*'
 
 cache: '%APPDATA%\npm'
 
