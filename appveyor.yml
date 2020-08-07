@@ -34,6 +34,7 @@ before_package:
 
 artifacts:
 - path: '*.unitypackage'
+- path: '*Sophia*\bin\Release\*\*Sophia*'
 
 cache: '%APPDATA%\npm'
 
