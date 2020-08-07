@@ -3,7 +3,11 @@ version: '{branch}-{build}'
 skip_tags: true
 
 image: Visual Studio 2019
-configuration: Release
+configuration:
+
+- Release
+
+- Debug
 
 environment:
   nodejs_version: 12
@@ -18,9 +22,16 @@ skip_commits:
     
 before_build:
   - nuget restore
+  - nuget install OpenCover -OutputDirectory packages -Version 4.6.519
+  - choco install codecov
+
 build:
   project: Sophia.sln
   verbosity: minimal
+
+test_script:
+  - .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -returntargetcode -register:user -target:"dotnet.exe" -targetargs:"test Sohia.Tests\bin\Release\netcoreapp3.1\Sophia.Tests.dll" -output:"coverage.xml" -filter:"+[Sophia*]* -[Sophia.Tests*]* "
+  - codecov -f "coverage.xml"
 
 before_package:
 - ps: .\BuildUnityPackages.ps1
