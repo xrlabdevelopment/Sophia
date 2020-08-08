@@ -344,6 +344,19 @@ references:
   isSpec: "True"
   fullName: Sophia.Core.Events.Event.EventType
   nameWithType: Event.EventType
+- uid: Sophia.Core.Events.Event.Handled
+  name: Handled
+  href: api/Sophia.Core.Events.Event.html#Sophia_Core_Events_Event_Handled
+  commentId: P:Sophia.Core.Events.Event.Handled
+  fullName: Sophia.Core.Events.Event.Handled
+  nameWithType: Event.Handled
+- uid: Sophia.Core.Events.Event.Handled*
+  name: Handled
+  href: api/Sophia.Core.Events.Event.html#Sophia_Core_Events_Event_Handled_
+  commentId: Overload:Sophia.Core.Events.Event.Handled
+  isSpec: "True"
+  fullName: Sophia.Core.Events.Event.Handled
+  nameWithType: Event.Handled
 - uid: Sophia.Core.Events.Event.Sender
   name: Sender
   href: api/Sophia.Core.Events.Event.html#Sophia_Core_Events_Event_Sender
@@ -447,6 +460,19 @@ references:
   isSpec: "True"
   fullName: Sophia.Core.Events.IEvent.EventType
   nameWithType: IEvent.EventType
+- uid: Sophia.Core.Events.IEvent.Handled
+  name: Handled
+  href: api/Sophia.Core.Events.IEvent.html#Sophia_Core_Events_IEvent_Handled
+  commentId: P:Sophia.Core.Events.IEvent.Handled
+  fullName: Sophia.Core.Events.IEvent.Handled
+  nameWithType: IEvent.Handled
+- uid: Sophia.Core.Events.IEvent.Handled*
+  name: Handled
+  href: api/Sophia.Core.Events.IEvent.html#Sophia_Core_Events_IEvent_Handled_
+  commentId: Overload:Sophia.Core.Events.IEvent.Handled
+  isSpec: "True"
+  fullName: Sophia.Core.Events.IEvent.Handled
+  nameWithType: IEvent.Handled
 - uid: Sophia.Core.Events.IEvent.Sender
   name: Sender
   href: api/Sophia.Core.Events.IEvent.html#Sophia_Core_Events_IEvent_Sender
