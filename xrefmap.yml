@@ -5609,6 +5609,38 @@ references:
   commentId: N:Sophia.Editor.PropertyDrawers
   fullName: Sophia.Editor.PropertyDrawers
   nameWithType: Sophia.Editor.PropertyDrawers
+- uid: Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer
+  name: BeginReadOnlyGroupDrawer
+  href: api/Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.html
+  commentId: T:Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer
+  fullName: Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer
+  nameWithType: BeginReadOnlyGroupDrawer
+- uid: Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.GetHeight
+  name: GetHeight()
+  href: api/Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.html#Sophia_Editor_PropertyDrawers_BeginReadOnlyGroupDrawer_GetHeight
+  commentId: M:Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.GetHeight
+  fullName: Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.GetHeight()
+  nameWithType: BeginReadOnlyGroupDrawer.GetHeight()
+- uid: Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.GetHeight*
+  name: GetHeight
+  href: api/Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.html#Sophia_Editor_PropertyDrawers_BeginReadOnlyGroupDrawer_GetHeight_
+  commentId: Overload:Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.GetHeight
+  isSpec: "True"
+  fullName: Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.GetHeight
+  nameWithType: BeginReadOnlyGroupDrawer.GetHeight
+- uid: Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.OnGUI(UnityEngine.Rect)
+  name: OnGUI(Rect)
+  href: api/Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.html#Sophia_Editor_PropertyDrawers_BeginReadOnlyGroupDrawer_OnGUI_UnityEngine_Rect_
+  commentId: M:Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.OnGUI(UnityEngine.Rect)
+  fullName: Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.OnGUI(UnityEngine.Rect)
+  nameWithType: BeginReadOnlyGroupDrawer.OnGUI(Rect)
+- uid: Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.OnGUI*
+  name: OnGUI
+  href: api/Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.html#Sophia_Editor_PropertyDrawers_BeginReadOnlyGroupDrawer_OnGUI_
+  commentId: Overload:Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.OnGUI
+  isSpec: "True"
+  fullName: Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.OnGUI
+  nameWithType: BeginReadOnlyGroupDrawer.OnGUI
 - uid: Sophia.Editor.PropertyDrawers.CommentPropertyDrawer
   name: CommentPropertyDrawer
   href: api/Sophia.Editor.PropertyDrawers.CommentPropertyDrawer.html
@@ -5673,6 +5705,38 @@ references:
   isSpec: "True"
   fullName: Sophia.Editor.PropertyDrawers.DummyPorpertyDrawer.OnGUI
   nameWithType: DummyPorpertyDrawer.OnGUI
+- uid: Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer
+  name: EndReadOnlyGroupDrawer
+  href: api/Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.html
+  commentId: T:Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer
+  fullName: Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer
+  nameWithType: EndReadOnlyGroupDrawer
+- uid: Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.GetHeight
+  name: GetHeight()
+  href: api/Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.html#Sophia_Editor_PropertyDrawers_EndReadOnlyGroupDrawer_GetHeight
+  commentId: M:Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.GetHeight
+  fullName: Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.GetHeight()
+  nameWithType: EndReadOnlyGroupDrawer.GetHeight()
+- uid: Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.GetHeight*
+  name: GetHeight
+  href: api/Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.html#Sophia_Editor_PropertyDrawers_EndReadOnlyGroupDrawer_GetHeight_
+  commentId: Overload:Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.GetHeight
+  isSpec: "True"
+  fullName: Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.GetHeight
+  nameWithType: EndReadOnlyGroupDrawer.GetHeight
+- uid: Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.OnGUI(UnityEngine.Rect)
+  name: OnGUI(Rect)
+  href: api/Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.html#Sophia_Editor_PropertyDrawers_EndReadOnlyGroupDrawer_OnGUI_UnityEngine_Rect_
+  commentId: M:Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.OnGUI(UnityEngine.Rect)
+  fullName: Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.OnGUI(UnityEngine.Rect)
+  nameWithType: EndReadOnlyGroupDrawer.OnGUI(Rect)
+- uid: Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.OnGUI*
+  name: OnGUI
+  href: api/Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.html#Sophia_Editor_PropertyDrawers_EndReadOnlyGroupDrawer_OnGUI_
+  commentId: Overload:Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.OnGUI
+  isSpec: "True"
+  fullName: Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.OnGUI
+  nameWithType: EndReadOnlyGroupDrawer.OnGUI
 - uid: Sophia.Editor.PropertyDrawers.HighlightPropertyDrawer
   name: HighlightPropertyDrawer
   href: api/Sophia.Editor.PropertyDrawers.HighlightPropertyDrawer.html
@@ -5845,38 +5909,38 @@ references:
   isSpec: "True"
   fullName: Sophia.Editor.PropertyDrawers.OptionalPropertyDrawer.OnGUI
   nameWithType: OptionalPropertyDrawer.OnGUI
-- uid: Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer
-  name: ReadOnlyPropertyDrawer
-  href: api/Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.html
-  commentId: T:Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer
-  fullName: Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer
-  nameWithType: ReadOnlyPropertyDrawer
-- uid: Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+- uid: Sophia.Editor.PropertyDrawers.ReadOnlyDrawer
+  name: ReadOnlyDrawer
+  href: api/Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.html
+  commentId: T:Sophia.Editor.PropertyDrawers.ReadOnlyDrawer
+  fullName: Sophia.Editor.PropertyDrawers.ReadOnlyDrawer
+  nameWithType: ReadOnlyDrawer
+- uid: Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   name: GetPropertyHeight(SerializedProperty, GUIContent)
-  href: api/Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.html#Sophia_Editor_PropertyDrawers_ReadOnlyPropertyDrawer_GetPropertyHeight_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
-  commentId: M:Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
-  fullName: Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty, UnityEngine.GUIContent)
-  nameWithType: ReadOnlyPropertyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
-- uid: Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.GetPropertyHeight*
+  href: api/Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.html#Sophia_Editor_PropertyDrawers_ReadOnlyDrawer_GetPropertyHeight_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  commentId: M:Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  nameWithType: ReadOnlyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.GetPropertyHeight*
   name: GetPropertyHeight
-  href: api/Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.html#Sophia_Editor_PropertyDrawers_ReadOnlyPropertyDrawer_GetPropertyHeight_
-  commentId: Overload:Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.GetPropertyHeight
+  href: api/Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.html#Sophia_Editor_PropertyDrawers_ReadOnlyDrawer_GetPropertyHeight_
+  commentId: Overload:Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.GetPropertyHeight
   isSpec: "True"
-  fullName: Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.GetPropertyHeight
-  nameWithType: ReadOnlyPropertyDrawer.GetPropertyHeight
-- uid: Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.GetPropertyHeight
+  nameWithType: ReadOnlyDrawer.GetPropertyHeight
+- uid: Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   name: OnGUI(Rect, SerializedProperty, GUIContent)
-  href: api/Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.html#Sophia_Editor_PropertyDrawers_ReadOnlyPropertyDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
-  commentId: M:Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
-  fullName: Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
-  nameWithType: ReadOnlyPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
-- uid: Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.OnGUI*
+  href: api/Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.html#Sophia_Editor_PropertyDrawers_ReadOnlyDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  commentId: M:Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  nameWithType: ReadOnlyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.OnGUI*
   name: OnGUI
-  href: api/Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.html#Sophia_Editor_PropertyDrawers_ReadOnlyPropertyDrawer_OnGUI_
-  commentId: Overload:Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.OnGUI
+  href: api/Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.html#Sophia_Editor_PropertyDrawers_ReadOnlyDrawer_OnGUI_
+  commentId: Overload:Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.OnGUI
   isSpec: "True"
-  fullName: Sophia.Editor.PropertyDrawers.ReadOnlyPropertyDrawer.OnGUI
-  nameWithType: ReadOnlyPropertyDrawer.OnGUI
+  fullName: Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.OnGUI
+  nameWithType: ReadOnlyDrawer.OnGUI
 - uid: Sophia.Editor.PropertyDrawers.WarningIfNullPropertyDrawer
   name: WarningIfNullPropertyDrawer
   href: api/Sophia.Editor.PropertyDrawers.WarningIfNullPropertyDrawer.html
@@ -5921,6 +5985,12 @@ references:
   commentId: N:Sophia.Platform.Attributes
   fullName: Sophia.Platform.Attributes
   nameWithType: Sophia.Platform.Attributes
+- uid: Sophia.Platform.Attributes.BeginReadOnlyGroupAttribute
+  name: BeginReadOnlyGroupAttribute
+  href: api/Sophia.Platform.Attributes.BeginReadOnlyGroupAttribute.html
+  commentId: T:Sophia.Platform.Attributes.BeginReadOnlyGroupAttribute
+  fullName: Sophia.Platform.Attributes.BeginReadOnlyGroupAttribute
+  nameWithType: BeginReadOnlyGroupAttribute
 - uid: Sophia.Platform.Attributes.CommentAttribute
   name: CommentAttribute
   href: api/Sophia.Platform.Attributes.CommentAttribute.html
@@ -5959,6 +6029,12 @@ references:
   commentId: T:Sophia.Platform.Attributes.DummyAttribute
   fullName: Sophia.Platform.Attributes.DummyAttribute
   nameWithType: DummyAttribute
+- uid: Sophia.Platform.Attributes.EndReadOnlyGroupAttribute
+  name: EndReadOnlyGroupAttribute
+  href: api/Sophia.Platform.Attributes.EndReadOnlyGroupAttribute.html
+  commentId: T:Sophia.Platform.Attributes.EndReadOnlyGroupAttribute
+  fullName: Sophia.Platform.Attributes.EndReadOnlyGroupAttribute
+  nameWithType: EndReadOnlyGroupAttribute
 - uid: Sophia.Platform.Attributes.HighlightAttribute
   name: HighlightAttribute
   href: api/Sophia.Platform.Attributes.HighlightAttribute.html

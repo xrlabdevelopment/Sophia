@@ -86,12 +86,21 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Sophia.Platform.Attributes.BeginReadOnlyGroupAttribute.html">BeginReadOnlyGroupAttribute</a></h4>
+      <section><p>Display one or more fields as read-only in the inspector.
+Use <a class="xref" href="Sophia.Platform.Attributes.EndReadOnlyGroupAttribute.html">EndReadOnlyGroupAttribute</a> to close the group.
+Works with CustomPropertyDrawers.</p>
+</section>
       <h4><a class="xref" href="Sophia.Platform.Attributes.CommentAttribute.html">CommentAttribute</a></h4>
       <section><p>Used to mark a field to add a comment above the field in the inspector.</p>
 </section>
       <h4><a class="xref" href="Sophia.Platform.Attributes.DummyAttribute.html">DummyAttribute</a></h4>
       <section><p>Used to mark the last field in a MonoBehaviour
 This is useful to add a decorator that should be displayed below all fields.</p>
+</section>
+      <h4><a class="xref" href="Sophia.Platform.Attributes.EndReadOnlyGroupAttribute.html">EndReadOnlyGroupAttribute</a></h4>
+      <section><p>Use with <a class="xref" href="Sophia.Platform.Attributes.BeginReadOnlyGroupAttribute.html">BeginReadOnlyGroupAttribute</a>.
+Close the read-only group and resume editable fields.</p>
 </section>
       <h4><a class="xref" href="Sophia.Platform.Attributes.HighlightAttribute.html">HighlightAttribute</a></h4>
       <section><p>Mark simple types to be highligted in the inspector.</p>
@@ -109,7 +118,8 @@ This is useful to add a decorator that should be displayed below all fields.</p>
       <section><p>Mark numeric values that should always be non-negative.</p>
 </section>
       <h4><a class="xref" href="Sophia.Platform.Attributes.ReadOnlyAttribute.html">ReadOnlyAttribute</a></h4>
-      <section><p>Used to mark inspectable fields as read-only (that is, making them uneditable, even if they are visible).</p>
+      <section><p>Display a field as read-only in the inspector.
+CustomPropertyDrawers will not work when this attribute is used.</p>
 </section>
       <h4><a class="xref" href="Sophia.Platform.Attributes.WarningIfNullAttribute.html">WarningIfNullAttribute</a></h4>
       <section><p>Mark fields in a MonoBehaviour with this attribute to give a specific warning
