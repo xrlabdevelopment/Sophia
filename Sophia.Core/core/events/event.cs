@@ -8,6 +8,15 @@ namespace Sophia.Core.Events
         //-------------------------------------------------------------------------------------
         // Properties
         /// <summary>
+        /// Did we handled this event or not
+        /// </summary>
+        public bool Handled
+        {
+            get;
+            set;
+        } = false;
+
+        /// <summary>
         /// The type of the event
         /// </summary>
         public abstract int EventType { get; }
