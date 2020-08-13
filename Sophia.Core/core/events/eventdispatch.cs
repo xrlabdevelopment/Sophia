@@ -8,6 +8,13 @@ namespace Sophia.Core.Events
     public class EventDispatch
     {
         //-------------------------------------------------------------------------------------
+        // Properties
+        public int CategoryCount
+        {
+            get { return handlers.Keys.Count; }
+        }
+
+        //-------------------------------------------------------------------------------------
         // Fields
         private readonly Dictionary<int, List<IEventHandler>> handlers;
 
@@ -18,6 +25,34 @@ namespace Sophia.Core.Events
         public EventDispatch()
         {
             handlers = new Dictionary<int, List<IEventHandler>>();
+        }
+
+        //-------------------------------------------------------------------------------------
+        /// <summary>
+        /// Retrieve the event handlers for a specific category
+        /// </summary>
+        /// <param name="category">The category we require</param>
+        /// <returns>The event handlers for this category, null if it does not exist.</returns>
+        public IEventHandler[] getHandlers(int category)
+        {
+            if (!handlers.ContainsKey(category))
+                return null;
+
+            return handlers[category].ToArray();
+        }
+        //-------------------------------------------------------------------------------------
+        /// <summary>
+        /// Retrieve the event handlers for all categories
+        /// </summary>
+        /// <returns>The event handlers for all categories</returns>
+        public IEventHandler[][] getHandlers()
+        {
+            IEventHandler[][] all_handlers = new IEventHandler[handlers.Count][];
+
+            foreach(var pair in handlers)
+                all_handlers[pair.Key] = pair.Value.ToArray();
+
+            return all_handlers;
         }
 
         //-------------------------------------------------------------------------------------
