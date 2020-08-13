@@ -21,5 +21,12 @@ namespace Sophia.Core.Extensions
 
             return array;
         }
+
+        //-------------------------------------------------------------------------------------
+        public static void fill<T>(this T[] array, T value)
+        {
+            for (int i = 0; i < array.Length; ++i)
+                array[i] = value;
+        }
     }
 }
