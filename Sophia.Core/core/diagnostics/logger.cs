@@ -65,7 +65,7 @@ namespace Sophia.Core.Diagnostics
         /// <param name="message">Message we would like to print</param>
         public void warning(string message)
         {
-            System.Diagnostics.Debug.Assert(log_function != null, "Log function was not specified");
+            System.Diagnostics.Debug.Assert(warn_function != null, "Log function was not specified");
             warn_function(message);
             if (print_to_diagnostic_listeners)
                 System.Diagnostics.Debug.WriteLine("WARN: " + message);
@@ -77,7 +77,7 @@ namespace Sophia.Core.Diagnostics
         /// <param name="message">Message we would like to print</param>
         public void error(string message)
         {
-            System.Diagnostics.Debug.Assert(log_function != null, "Log function was not specified");
+            System.Diagnostics.Debug.Assert(error_function != null, "Log function was not specified");
             error_function(message);
             if (print_to_diagnostic_listeners)
                 System.Diagnostics.Debug.WriteLine("ERROR: " + message);
