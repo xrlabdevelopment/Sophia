@@ -138,7 +138,7 @@ namespace Sophia.Core.Algorithms
         /// <returns>A random value between value - range/2 and value + range/2.</returns>
         public static float randomOffset(float value, float range)
 		{
-            double offset = g_Random.nextDouble()*range - range/2;
+            double offset = (g_Random.nextDouble() * range) - (range / 2);
 			return (float) (value + offset);
 		}
 
