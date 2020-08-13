@@ -17,6 +17,23 @@ namespace Sophia.Core.Utilities
         private int bit_field;
 
         //-------------------------------------------------------------------------------------
+        public static BitField generateBitField(int value)
+        {
+            return new BitField(value);
+        }
+        //-------------------------------------------------------------------------------------
+        public static int generateBitFieldValue(int value)
+        {
+            long x = 1 << value;
+
+            Debug.Assert(x < int.MaxValue, "Out of range");
+
+            return x <= int.MaxValue
+                ? 1 << value
+                : 0;
+        }
+
+        //-------------------------------------------------------------------------------------
         public BitField(int value)
         {
             long x = 1 << value;
