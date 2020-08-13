@@ -1,3 +1,5 @@
+using Sophia.Core.Utilities;
+
 namespace Sophia.Core.Events
 {
     /// <summary>
@@ -20,7 +22,7 @@ namespace Sophia.Core.Events
             /// <summary>
             /// The category of the event
             /// </summary>
-            int EventCategory { get; }
+            BitField EventCategory { get; }
 
             /// <summary>
             /// The instigator of the event

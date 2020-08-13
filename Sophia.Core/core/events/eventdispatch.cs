@@ -1,4 +1,7 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using Sophia.Core.Utilities;
 
 namespace Sophia.Core.Events
 {
@@ -33,12 +36,12 @@ namespace Sophia.Core.Events
         /// </summary>
         /// <param name="category">The category we require</param>
         /// <returns>The event handlers for this category, null if it does not exist.</returns>
-        public IEventHandler[] getHandlers(int category)
+        public IEventHandler[] getHandlers(BitField category)
         {
-            if (!handlers.ContainsKey(category))
+            if (!handlers.ContainsKey(category.Value))
                 return null;
 
-            return handlers[category].ToArray();
+            return handlers[category.Value].ToArray();
         }
         //-------------------------------------------------------------------------------------
         /// <summary>
@@ -47,10 +50,18 @@ namespace Sophia.Core.Events
         /// <returns>The event handlers for all categories</returns>
         public IEventHandler[][] getHandlers()
         {
-            IEventHandler[][] all_handlers = new IEventHandler[handlers.Count][];
-
+            List<int> available_handlers = new List<int>();
             foreach(var pair in handlers)
-                all_handlers[pair.Key] = pair.Value.ToArray();
+            {
+                if (pair.Value != null && pair.Value.Count > 0)
+                    available_handlers.Add(pair.Key);
+            }
+
+            IEventHandler[][] all_handlers = new IEventHandler[available_handlers.Count][];
+            for(int i = 0; i < available_handlers.Count; ++i)
+            {
+                all_handlers[i] = handlers[available_handlers[i]].ToArray();
+            }
 
             return all_handlers;
         }
@@ -64,20 +75,22 @@ namespace Sophia.Core.Events
         public void subscribe(IEventHandler handler)
         {
             // We should not handle negative event categories
-            System.Diagnostics.Debug.Assert(handler.EventCategory >= 0, "An event category cannot be smaller than 0");
-            if (handler.EventCategory < 0)
+            System.Diagnostics.Debug.Assert(handler.EventCategory != null && handler.EventCategory.Value >= 0, "An event category cannot be smaller than are equal to 0");
+            if (handler.EventCategory == null || handler.EventCategory.Value <= 0)
             {
-                System.Diagnostics.Debug.WriteLine("Event category smaller than zero, this hander will not be added");
+                System.Diagnostics.Debug.WriteLine("Handler not created because of one of the following reasons: ");
+                System.Diagnostics.Debug.WriteLine("Event category is null");
+                System.Diagnostics.Debug.WriteLine("Event category smaller than or equal to zero");
                 return;
             }
 
-            if (handlers.ContainsKey(handler.EventCategory))
+            if (handlers.ContainsKey(handler.EventCategory.Value))
             {
-                handlers[handler.EventCategory].Add(handler);
+                handlers[handler.EventCategory.Value].Add(handler);
             }
             else
             {
-                handlers.Add(handler.EventCategory, new List<IEventHandler>() { handler });
+                handlers.Add(handler.EventCategory.Value, new List<IEventHandler>() { handler });
             }
         }
         //-------------------------------------------------------------------------------------
@@ -101,28 +114,19 @@ namespace Sophia.Core.Events
         public bool dispatch(IEvent evt)
         {
             // We should not handle negative event categories
-            System.Diagnostics.Debug.Assert(evt.EventCategory >= 0, "An event category cannot be smaller than 0");
-            if (evt.EventCategory < 0)
+            System.Diagnostics.Debug.Assert(evt.EventCategory != null && evt.EventCategory.Value >= 0, "An event category cannot be smaller than are equal to 0");
+            if (evt.EventCategory == null || evt.EventCategory.Value <= 0)
             {
-                System.Diagnostics.Debug.WriteLine("Event category smaller than zero, this event will not be handled");
+                System.Diagnostics.Debug.WriteLine("Event not dispatched because of one of the following reasons: ");
+                System.Diagnostics.Debug.WriteLine("Event category is null");
+                System.Diagnostics.Debug.WriteLine("Event category smaller than or equal to zero");
                 return false;
             }
 
             bool handled = false;
             foreach (KeyValuePair<int, List<IEventHandler>> pair in handlers)
             {
-                //
-                // We are required to add 1 to our category because using the AND operator on a category that is already zero,
-                //  will end up in not handling the event. ( event_category & handler_category )
-                //
-                // It will be very confusing from a client perspective to instantiate event categories starting from 1.
-                //
-                // Hence we resolve the issue here by adding one to the category before testing it.
-                //
-                int event_category = evt.EventCategory + 1;
-                int handler_category = pair.Key + 1;
-
-                if ((event_category & handler_category) != 0)
+                if ((evt.EventCategory & pair.Key) != 0)
                 {
                     foreach (IEventHandler handler in pair.Value)
                         handled |= handler.handleEvent(evt);

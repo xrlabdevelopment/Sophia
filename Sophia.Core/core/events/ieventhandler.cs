@@ -1,3 +1,5 @@
+using Sophia.Core.Utilities;
+
 namespace Sophia.Core.Events
 {
     /// <summary>
@@ -9,7 +11,7 @@ namespace Sophia.Core.Events
             /// If the event that is fired is equal to the event category of the handler
             /// The event will be passed along, otherwise this handler will be skipped
             /// </summary>
-            int EventCategory { get; }
+            BitField EventCategory { get; }
 
             /// <summary>
             /// Function to be called when we process an event
