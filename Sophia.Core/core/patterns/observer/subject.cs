@@ -127,7 +127,7 @@ namespace Sophia.Core.Patterns
             bool handled = false;
             foreach (IEventObserver observer in getObservers())
             {
-                if ((observer.EventCategory & evt.EventCategory) != 0)
+                if ((evt.EventCategory & observer.EventCategory) != 0)
                     handled |= observer.notify(this, evt);
             }
             return handled;
