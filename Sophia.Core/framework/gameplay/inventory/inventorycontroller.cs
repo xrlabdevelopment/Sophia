@@ -122,10 +122,10 @@ namespace Sophia.Core.Gameplay
         /// </summary>
         /// <typeparam name="T">The type of the items to be retrieved</typeparam>
         /// <returns>A list of all items of the specific type</returns>
-        public List<IInventoryItem> getItemsOfType<T>()
+        public IInventoryItem[] getItemsOfType<T>()
             where T : class, IInventoryItem
         {
-            return inventory_items.FindAll(i => (i as T) != null).ToList();
+            return inventory_items.FindAll(i => (i as T) != null).ToArray();
         }
 
         //--------------------------------------------------------------------------------------
