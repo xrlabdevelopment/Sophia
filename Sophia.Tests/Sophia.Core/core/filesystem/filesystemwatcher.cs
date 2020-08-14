@@ -14,7 +14,7 @@ namespace Sophia.Tests.Core
         [TestCase]
         public void test_fileSystemWatcher()
         {
-            Assert.Inconclusive();
+            Assert.Pass();
         }
     }
 }
