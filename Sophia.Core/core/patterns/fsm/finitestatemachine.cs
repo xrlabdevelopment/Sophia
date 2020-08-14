@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Sophia.Core.Patterns
 {
@@ -13,9 +14,27 @@ namespace Sophia.Core.Patterns
     {
         //--------------------------------------------------------------------------------
         // Properties
+        /// <summary>
+        /// Is the state machine currently active
+        /// </summary>
         public bool IsRunning
         {
             get { return running; }
+        }
+
+        /// <summary>
+        /// The amount of states in this state machine
+        /// </summary>
+        public FSMState[] States
+        {
+            get { return states.Values.ToArray(); }
+        }
+        /// <summary>
+        /// The amount of registered events in this state machine
+        /// </summary>
+        public FSMEvent[] RegisteredEvents
+        {
+            get { return registered_events.Values.ToArray(); }
         }
 
         //--------------------------------------------------------------------------------
