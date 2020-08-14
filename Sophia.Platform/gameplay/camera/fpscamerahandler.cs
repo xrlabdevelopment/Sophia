@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Sophia.Platform.Gameplay
 {
-    public abstract class FPSCameraHandler : BaseMonoBehaviour, ICommandReceiver
+    public abstract class FPSCameraHandler : BaseMonoBehaviour
     {
         //--------------------------------------------------------------------------------------
         // Inspector
