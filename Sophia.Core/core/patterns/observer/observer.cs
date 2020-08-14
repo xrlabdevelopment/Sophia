@@ -1,4 +1,5 @@
 using Sophia.Core.Events;
+using Sophia.Core.Utilities;
 
 namespace Sophia.Core.Patterns
 {
@@ -18,7 +19,7 @@ namespace Sophia.Core.Patterns
         /// If the event that is fired is equal to the eventcategory of the handler
         /// The event will be passed along, otherwise this handler will be skipped
         /// </summary>
-        int EventCategory { get; }
+        BitField EventCategory { get; }
 
         //--------------------------------------------------------------------------------------
         /// <summary>
