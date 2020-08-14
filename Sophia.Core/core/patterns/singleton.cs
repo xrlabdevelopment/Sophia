@@ -9,7 +9,14 @@ namespace Sophia.Core.Patterns
         {
             get
             {
-                System.Diagnostics.Debug.Assert(instance != null, "Instance not created!");
+#if DEBUG
+                if (instance == null)
+                {
+                    System.Diagnostics.Debug.WriteLine("WARNING: Instance was not created!");
+                    createInstance();
+                }
+#endif
+
                 return instance;
             }
         }
