@@ -18,9 +18,6 @@ skip_commits:
     - '*.md'
     - 'docs/*'
     
-before_build:
-  - nuget restore
-
 build:
   project: Sophia.sln
   verbosity: minimal
@@ -41,6 +38,7 @@ for:
     only:
       - configuration: Debug
   before_build:
+   - nuget restore
    - nuget install OpenCover -OutputDirectory packages -Version 4.7.922
    - choco install codecov
   artifacts:
@@ -52,6 +50,8 @@ for:
   matrix:
     only:
       - configuration: Release
+  before_build:
+   - nuget restore
   artifacts:
   - path: '*Sophia*\bin\Release\*\*Sophia*'
   cache:
