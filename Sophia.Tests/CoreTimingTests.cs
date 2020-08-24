@@ -4,6 +4,7 @@ using Sophia.Core.Timing;
 
 namespace Sophia.Tests.Core
 {
+    //timermanager.cs
     [TestFixture]
     public class testsuit_TimerManager
     {
