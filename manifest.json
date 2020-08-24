@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ykfTB9R60ka+OVlAY/KY7Q=="
+          "hash": "h+zXE7ba6y9XRmRuqo7QaA=="
         }
       },
       "is_incremental": false,
@@ -44,7 +44,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Algorithms.Algorithms.html",
-          "hash": "I42aSo3W6/1Z4+BwD2+JKQ=="
+          "hash": "E/5Lte5MnK1wAchp6a0vlw=="
         }
       },
       "is_incremental": false,
@@ -56,7 +56,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Algorithms.IRandom.html",
-          "hash": "yNyoI0kTs2ex8O50axb2ow=="
+          "hash": "+H9giCmwO7iVhbB19T9Hrg=="
         }
       },
       "is_incremental": false,
@@ -68,7 +68,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Algorithms.Random.html",
-          "hash": "sFCtCunikhwJdMTHCAjzNw=="
+          "hash": "hY1K+rrxGIemecxQ4MhCww=="
         }
       },
       "is_incremental": false,
@@ -92,7 +92,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Diagnostics.Logger.html",
-          "hash": "Zj2/vC1D6fA0mR7FcOp/mQ=="
+          "hash": "agUouj36FhgJ0MMEhoLs2g=="
         }
       },
       "is_incremental": false,
@@ -104,7 +104,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Diagnostics.LoggerCreationInfo.html",
-          "hash": "D315iBTJUMGV7kcxACZgaA=="
+          "hash": "vWmYFPFhRWJraU2M/+i3fQ=="
         }
       },
       "is_incremental": false,
@@ -128,7 +128,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Events.Event.html",
-          "hash": "eqhH6NRZXhbY/GCAZeRn4g=="
+          "hash": "x3FJerjm5XdSXt4o+6vsIw=="
         }
       },
       "is_incremental": false,
@@ -140,7 +140,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Events.EventDispatch.html",
-          "hash": "NPWev1QpxJxnWMKoK840bQ=="
+          "hash": "WoMkTqRsoQ0RXdExpvbniA=="
         }
       },
       "is_incremental": false,
@@ -152,7 +152,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Events.IEvent.html",
-          "hash": "SE7y4Q1KQWvwbBCa1/jaeA=="
+          "hash": "27bSDqlk9cSw4QBRlAG7CQ=="
         }
       },
       "is_incremental": false,
@@ -164,7 +164,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Events.IEventHandler.html",
-          "hash": "Mw9RtWPGcD8++gnzl2Bt9Q=="
+          "hash": "5sMvb+faCjxGxOIlXdkdMg=="
         }
       },
       "is_incremental": false,
@@ -176,7 +176,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Events.IEventSender.html",
-          "hash": "sooYvxyxEqvOXy3jQe7WoA=="
+          "hash": "CnAa3r29tQMCEwKeYIBoMg=="
         }
       },
       "is_incremental": false,
@@ -200,7 +200,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Extensions.ArrayExtensions.html",
-          "hash": "rXueyBozSTcVRvIUyH/gVw=="
+          "hash": "OJJlBadxCyOPHkKsYCusGg=="
         }
       },
       "is_incremental": false,
@@ -212,7 +212,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Extensions.CollectionExtensions.html",
-          "hash": "s/mDiQvgzmQ3I/Thzj/m+A=="
+          "hash": "zFyrbORqD5kyhYcBZTnZLw=="
         }
       },
       "is_incremental": false,
@@ -224,7 +224,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Extensions.ListExtentions.html",
-          "hash": "ix6/YIIhR4Vr0+hLow1Fmw=="
+          "hash": "YEv6aLaDJwulIBKPOexoxg=="
         }
       },
       "is_incremental": false,
@@ -248,127 +248,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Gameplay.IInventoryItem.html",
-          "hash": "6kON5E7wMX6O2DYyeqQafw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.IDesktopInputManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Gameplay.Input.IDesktopInputManager.html",
-          "hash": "vvOaMXC9+BQds1ixh+7wrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.IInputCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Gameplay.Input.IInputCommand.html",
-          "hash": "XPzjEaxsWiuoTVts27FmMQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.IInputManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Gameplay.Input.IInputManager.html",
-          "hash": "JHi6rqQdplq7wVI+N9dhxA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.InputAxisCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Gameplay.Input.InputAxisCommand.html",
-          "hash": "zOrGHLHrReEY5bauLYujzQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.InputController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Gameplay.Input.InputController.html",
-          "hash": "IzdftrzmNpRbNnC9UNQzqg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.InputKeyCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Gameplay.Input.InputKeyCommand.html",
-          "hash": "0X12qMy+czxp+U1vyIhYZQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.KeyCode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Gameplay.Input.KeyCode.html",
-          "hash": "N16svPIm27QkL4Lt5bXbcQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.KeyState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Gameplay.Input.KeyState.html",
-          "hash": "ZUxWKZSMYyyouj3V1m5BtQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.MultiFunctionalCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Gameplay.Input.MultiFunctionalCommand.html",
-          "hash": "NngIxfIrzt+OeUCrDzYNHg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Gameplay.Input.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Gameplay.Input.html",
-          "hash": "QbucMIVI2mWrj1mBeSCuSQ=="
+          "hash": "0dfiIyYYopuwFyu6al0Ciw=="
         }
       },
       "is_incremental": false,
@@ -380,7 +260,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Gameplay.InventoryController.Added.html",
-          "hash": "I5zbMHvOgwdjfA7ueDa9fw=="
+          "hash": "NO+tyXAzKzSI1ruCQduDXg=="
         }
       },
       "is_incremental": false,
@@ -392,7 +272,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Gameplay.InventoryController.Removed.html",
-          "hash": "HW7oKujO5eOCyJDlXaG2ZQ=="
+          "hash": "w5jByjiz0ulha27bFTjb8Q=="
         }
       },
       "is_incremental": false,
@@ -404,7 +284,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Gameplay.InventoryController.html",
-          "hash": "0R++F8yCkAp85MCa4SBfwg=="
+          "hash": "ANo7qFp0CoJrgfkWWJXbrg=="
         }
       },
       "is_incremental": false,
@@ -428,7 +308,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.IO.EventFilters.html",
-          "hash": "Q8YvOD7Ht12o4n08TbeACQ=="
+          "hash": "MnFbxMroq8a1LA9KsZLeYQ=="
         }
       },
       "is_incremental": false,
@@ -440,7 +320,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.IO.FileSystemWatcher.ErrorEventHandler.html",
-          "hash": "bfYgEct6/0TSxa/3zit/0Q=="
+          "hash": "hfPcrmrnV66nM5C8s5AGkw=="
         }
       },
       "is_incremental": false,
@@ -452,7 +332,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.IO.FileSystemWatcher.FileSystemEventHandler.html",
-          "hash": "U/lev89XIGQkLlFiyiGDaw=="
+          "hash": "m8asM8FuBM4j+UCYllfkBQ=="
         }
       },
       "is_incremental": false,
@@ -464,7 +344,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.IO.FileSystemWatcher.RenamedEventHandler.html",
-          "hash": "rBPwslk7r/2z8LUEAPS1yw=="
+          "hash": "pFOj9HKGuOU/FZOLMDRi0g=="
         }
       },
       "is_incremental": false,
@@ -476,7 +356,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.IO.FileSystemWatcher.html",
-          "hash": "Jk+wp391J5kY4CLUlRlKCw=="
+          "hash": "OfzKRvjM89T6RuDF08TQkg=="
         }
       },
       "is_incremental": false,
@@ -488,7 +368,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.IO.FileWatcherCreationInfo.html",
-          "hash": "aULSvaSJuMtXBSCP4AggOg=="
+          "hash": "6i7MQXcsR3zFkcYWQ//+gQ=="
         }
       },
       "is_incremental": false,
@@ -512,7 +392,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.BaseSubject-1.html",
-          "hash": "JXcQCgaGBH1rlZY5ZD8l0A=="
+          "hash": "XpP/3ohbpF6nmtIBC7jZ9A=="
         }
       },
       "is_incremental": false,
@@ -524,7 +404,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.EventSubject-1.html",
-          "hash": "8I6SNuH/ydrV9LpU+4dCYQ=="
+          "hash": "RitCJY0UMZhTqnC31gRydQ=="
         }
       },
       "is_incremental": false,
@@ -536,7 +416,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.FSMEvent.html",
-          "hash": "ERTBBZ919kekYIVYCz3hVQ=="
+          "hash": "Qj/VNZ16GiJxub6fStNKWw=="
         }
       },
       "is_incremental": false,
@@ -548,7 +428,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.FSMState.html",
-          "hash": "yUFQcurhWe0TNCwNjRmZ3g=="
+          "hash": "8nKmvrawx5fRDf5sucVOHA=="
         }
       },
       "is_incremental": false,
@@ -560,7 +440,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.FSMTransition.html",
-          "hash": "w02gCgiTomWQJF/ky0HvtA=="
+          "hash": "sm6dYc1IQ7t9jn9AOLF54g=="
         }
       },
       "is_incremental": false,
@@ -572,7 +452,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.FiniteStateMachine.html",
-          "hash": "O/U/rEijhhjHwIFsF4lK1Q=="
+          "hash": "VKCZnRXRyWGa/NlzUiMSnA=="
         }
       },
       "is_incremental": false,
@@ -584,31 +464,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.Guard.html",
-          "hash": "C9NkhzvcGaupie0iFMHfng=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Patterns.ICommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Patterns.ICommand.html",
-          "hash": "qlA1GpwiVr93rwvVM20TGg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Core.Patterns.ICommandReceiver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Core.Patterns.ICommandReceiver.html",
-          "hash": "Nqjr7wBCNIe7bYGl7uCL1A=="
+          "hash": "vH7d2QGZqtP39o5EY8kstg=="
         }
       },
       "is_incremental": false,
@@ -620,7 +476,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.IEventObserver.html",
-          "hash": "1rLaFyQ1uzGg0451MU6rMQ=="
+          "hash": "6uozugFvOp8Aq/YTBjoxGA=="
         }
       },
       "is_incremental": false,
@@ -632,7 +488,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.IObserver.html",
-          "hash": "MV1sjWDdi7yyacfPLMzm2A=="
+          "hash": "9B97vDmjnfxWIpulJnFjCQ=="
         }
       },
       "is_incremental": false,
@@ -644,7 +500,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.IStateMachine.html",
-          "hash": "VeFfmcd0gR6/IjRABz02Ug=="
+          "hash": "scZsEpm+sv/K2RF/ujYP4Q=="
         }
       },
       "is_incremental": false,
@@ -656,7 +512,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.ISubject.html",
-          "hash": "1XenjGbA+4Dn6C4TEyI6hA=="
+          "hash": "V9fN3uhLdk2aRiE/tL4new=="
         }
       },
       "is_incremental": false,
@@ -668,7 +524,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.Singleton-1.html",
-          "hash": "/mcqITm22FZks8Y9OPe4YA=="
+          "hash": "EXnmq98WPbfHlcXyx6S8qQ=="
         }
       },
       "is_incremental": false,
@@ -680,7 +536,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.Subject-1.html",
-          "hash": "GUbaanbx0SpM6aSBpaAb6Q=="
+          "hash": "Ok7uG6ApbFDpiZhilIJASQ=="
         }
       },
       "is_incremental": false,
@@ -692,7 +548,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Patterns.html",
-          "hash": "grdKx6jHR4pRl90Iw4sJKQ=="
+          "hash": "gksYj962pl61yyy9FxTaZQ=="
         }
       },
       "is_incremental": false,
@@ -704,7 +560,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Threading.ITask.html",
-          "hash": "ORx6jJS5VjV2sQNIgGkjkQ=="
+          "hash": "85Xz4InLRj4jVAgffoW6eQ=="
         }
       },
       "is_incremental": false,
@@ -716,7 +572,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Threading.Task.Finished.html",
-          "hash": "q5v+6XCrJoPzHaf0cIDEng=="
+          "hash": "dRqDspEf0dlUFbXe6haX0w=="
         }
       },
       "is_incremental": false,
@@ -728,7 +584,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Threading.Task.Started.html",
-          "hash": "CL0LNNfI+5bF9NozdEg/7A=="
+          "hash": "Q5m33KzbqnIIN0CkcfEaVQ=="
         }
       },
       "is_incremental": false,
@@ -740,7 +596,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Threading.Task.html",
-          "hash": "BlkLoZrcPcgjHG9R8Sp9wA=="
+          "hash": "qDikUDttR/b3s1LRvILBDQ=="
         }
       },
       "is_incremental": false,
@@ -764,7 +620,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Timing.CountDownTimer.html",
-          "hash": "czsM+3FRNxPKEkalkLCCBQ=="
+          "hash": "pHqKQVOureUTUPcnFErSHA=="
         }
       },
       "is_incremental": false,
@@ -776,7 +632,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Timing.Finished.html",
-          "hash": "kXqyOAnvduiPG+kcQ1QuZw=="
+          "hash": "ZLD5GY6LQciiXsoTxFsTkg=="
         }
       },
       "is_incremental": false,
@@ -788,7 +644,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Timing.ITimer.html",
-          "hash": "O3KfOTLhaXTM0RjUTMMi6Q=="
+          "hash": "p5OCvg3ujgAfRXDp3qRu+Q=="
         }
       },
       "is_incremental": false,
@@ -800,7 +656,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Timing.Started.html",
-          "hash": "AVEhe/Y09zgSqDsst+Xbtw=="
+          "hash": "HrqDPP9GcQ/RLed9jhdAug=="
         }
       },
       "is_incremental": false,
@@ -812,7 +668,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Timing.Stopped.html",
-          "hash": "YrOKe5Yw3/lxUqG5oiK8Mw=="
+          "hash": "SKdOSfDc39gGeq3iPhsw4A=="
         }
       },
       "is_incremental": false,
@@ -824,7 +680,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Timing.TimerCreationInfo.html",
-          "hash": "AyaTvrCBVZf5qTURahkt/w=="
+          "hash": "/ItecTJpMkiUgRhll8DkpQ=="
         }
       },
       "is_incremental": false,
@@ -836,7 +692,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Timing.TimerEventInfo.html",
-          "hash": "Mn8YrT+xKI0P0nMcZC1xXA=="
+          "hash": "ohY6m4JC2MR4JaNi9vEI/w=="
         }
       },
       "is_incremental": false,
@@ -848,7 +704,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Timing.TimerFinishedBehaviour.html",
-          "hash": "T2bA9EtXtGkK7GgENATkgQ=="
+          "hash": "bGMozce3TX4aFmP82kKLpw=="
         }
       },
       "is_incremental": false,
@@ -860,7 +716,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Timing.TimerManager.html",
-          "hash": "Gm8QMEUY0EIQuPghbWqRRQ=="
+          "hash": "oi/b7c56G19lskYloCzabQ=="
         }
       },
       "is_incremental": false,
@@ -872,7 +728,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Core.Timing.Updated.html",
-          "hash": "d+JKLREy+Xy2D3hI2VZhnQ=="
+          "hash": "DIn2s89j/iFOAWTmslozkQ=="
         }
       },
       "is_incremental": false,
@@ -892,11 +748,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Utilities.BitField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Utilities.BitField.html",
+          "hash": "3tx256p/gC7rNfx0TuEP7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Core.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Core.Utilities.html",
+          "hash": "viKoJgGxf86x+Z5MwBeqvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/Sophia.Editor.EditorStartup.yml",
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.EditorStartup.html",
-          "hash": "pAYkTghacMnF3Kg54CBOZQ=="
+          "hash": "DdL0nG8E3nmwMymXO0bGzA=="
         }
       },
       "is_incremental": false,
@@ -908,7 +788,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.Extension.BaseEditor-1.html",
-          "hash": "Eqyrw5F+34WbNw76FhMFew=="
+          "hash": "0pVSNi+bXoODZ4EWTeJhGw=="
         }
       },
       "is_incremental": false,
@@ -920,7 +800,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.Extension.BaseEditorHelpers.html",
-          "hash": "8w7+gT94WQuVi8fS0hUjvw=="
+          "hash": "MuEZxciPXIMxow97DlyTYw=="
         }
       },
       "is_incremental": false,
@@ -932,7 +812,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.Extension.BaseMonoBehaviourEditor.html",
-          "hash": "ayJpMXctkPr/lxWTFwqSrg=="
+          "hash": "3/c0bm6N0/uVlFI+8Tbm0g=="
         }
       },
       "is_incremental": false,
@@ -956,7 +836,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.html",
-          "hash": "5FtKA7phv9VPwq/s3gP2ug=="
+          "hash": "72hbFOKereogC4lBr1RgRw=="
         }
       },
       "is_incremental": false,
@@ -968,7 +848,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.CommentPropertyDrawer.html",
-          "hash": "v5CIn8WO0/yvHqEedAwgTg=="
+          "hash": "hqEp3LsWZLTnf1QKF59FkA=="
         }
       },
       "is_incremental": false,
@@ -980,7 +860,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.DummyPorpertyDrawer.html",
-          "hash": "zkaYMOHGT5241dBC561GQQ=="
+          "hash": "hLuac88SytN3RuIMk8KAzQ=="
         }
       },
       "is_incremental": false,
@@ -992,7 +872,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.html",
-          "hash": "GySzJkQqKL9f0lxurJit/Q=="
+          "hash": "G7vodHbbQNx+zJmq1LhO6A=="
         }
       },
       "is_incremental": false,
@@ -1004,7 +884,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.HighlightPropertyDrawer.html",
-          "hash": "cd0mberTRJBEmdBCfEnn/Q=="
+          "hash": "SAvsQursssc9A+f08Xz6Cw=="
         }
       },
       "is_incremental": false,
@@ -1016,7 +896,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.InspectorFlagsPropertyDrawer.html",
-          "hash": "Rf+BsUV09BMBsWmaknCy3g=="
+          "hash": "mSrxPjk6Ug8emMOMlDfZkw=="
         }
       },
       "is_incremental": false,
@@ -1028,7 +908,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.InspectorListPropertyDrawer.html",
-          "hash": "U7bpkavMFdnYbgxKxvLduA=="
+          "hash": "Jj/KQYOKRUUcVB/PMVAC7Q=="
         }
       },
       "is_incremental": false,
@@ -1040,7 +920,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.LabelFieldPropertyDrawer.html",
-          "hash": "L2LkwKGLU5mUYIfnjlmKwg=="
+          "hash": "D4YMr0/rusdcHEAqvIkk3g=="
         }
       },
       "is_incremental": false,
@@ -1052,7 +932,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.MinMaxFloatPropertyDrawer.html",
-          "hash": "qzkTN0Wumf1IQayfSJPn3g=="
+          "hash": "Nf8plB3xgTYcsqgtozfarg=="
         }
       },
       "is_incremental": false,
@@ -1064,7 +944,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.NonNegativePropertyDrawer.html",
-          "hash": "p9pO+NPyZaeFy4liK1BGaw=="
+          "hash": "GfW1d6oSZc5CEHLI+JZVwA=="
         }
       },
       "is_incremental": false,
@@ -1076,7 +956,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.OptionalPropertyDrawer.html",
-          "hash": "W8B5dxHhDCzRF6Up22uh9A=="
+          "hash": "x1p7NuKlpPRjJzNyMM4sUw=="
         }
       },
       "is_incremental": false,
@@ -1088,7 +968,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.html",
-          "hash": "PgKgVLH6ud60Rh1OGxL8pg=="
+          "hash": "ezEhfPW96FPpYxUDvR8wKg=="
         }
       },
       "is_incremental": false,
@@ -1100,7 +980,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Editor.PropertyDrawers.WarningIfNullPropertyDrawer.html",
-          "hash": "ItH678CYP8E0iuv1yBOvpg=="
+          "hash": "F31vR5jbJ1MQr+sZbMhKQw=="
         }
       },
       "is_incremental": false,
@@ -1136,7 +1016,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.BeginReadOnlyGroupAttribute.html",
-          "hash": "TNkn4k715p1QOU6U7FgVig=="
+          "hash": "W19iIPZ5Pqs2yIuPDfJk0w=="
         }
       },
       "is_incremental": false,
@@ -1148,7 +1028,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.CommentAttribute.html",
-          "hash": "3oHq84Z7SxoB8OuCvgB2rg=="
+          "hash": "BmYWeDDBpqj7VEf6zL5vEg=="
         }
       },
       "is_incremental": false,
@@ -1160,7 +1040,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.DummyAttribute.html",
-          "hash": "1QSbovwT55g9TPnxboTtjQ=="
+          "hash": "iqy2+RWZIba+Hfu2NwX/uw=="
         }
       },
       "is_incremental": false,
@@ -1172,7 +1052,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.EndReadOnlyGroupAttribute.html",
-          "hash": "/c8WvpHBTkyqJQDFfI3yjg=="
+          "hash": "aMpT1KOx1DLULrCUfjEnhA=="
         }
       },
       "is_incremental": false,
@@ -1184,7 +1064,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.HighlightAttribute.html",
-          "hash": "hkAsRDms4GDJnbKanElAnQ=="
+          "hash": "W9Whd1h6iujpDg87FF8gQQ=="
         }
       },
       "is_incremental": false,
@@ -1196,7 +1076,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.InspectorButtonAttribute.html",
-          "hash": "aOBs4mC/6CR22UkI9cKOrw=="
+          "hash": "NGYgjbKrQ5uKX/Mg3OoVIQ=="
         }
       },
       "is_incremental": false,
@@ -1208,7 +1088,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.InspectorFlagsAttribute.html",
-          "hash": "BFK3pI00xSehaMHDs7c8rA=="
+          "hash": "12Md3OO74lU2uyT7uzyzjw=="
         }
       },
       "is_incremental": false,
@@ -1220,7 +1100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.LabelFieldAttribute.html",
-          "hash": "sxdlqe35QwjAoTJrj90C/A=="
+          "hash": "/EKrs4GGUQTGJFqsekkTyw=="
         }
       },
       "is_incremental": false,
@@ -1232,7 +1112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.NonNegativeAttribute.html",
-          "hash": "pO4DL5Ia7sSq+0SIJZ0PDQ=="
+          "hash": "DvokSojlYx9poWCFoRzpNw=="
         }
       },
       "is_incremental": false,
@@ -1244,7 +1124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.ReadOnlyAttribute.html",
-          "hash": "+WsC9hIms/s1PZW35xG06g=="
+          "hash": "mpn6TxRfU5oiSC7nAlGOjA=="
         }
       },
       "is_incremental": false,
@@ -1256,7 +1136,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Attributes.WarningIfNullAttribute.html",
-          "hash": "C82rFaxH5ZgiiyqHcnt0zA=="
+          "hash": "LTgzZk1JF0KSl/QelERdFQ=="
         }
       },
       "is_incremental": false,
@@ -1280,7 +1160,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.BaseMonoBehaviour.html",
-          "hash": "4f/6z+jbXrzZgRAuOoog8g=="
+          "hash": "pseSUi//mlP3DQpRojlfhg=="
         }
       },
       "is_incremental": false,
@@ -1292,7 +1172,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.ColorExtensions.html",
-          "hash": "pczVQ57JBB/sz8gTuaKTiQ=="
+          "hash": "j93KGQ2FiDDgjpk/MkGIMg=="
         }
       },
       "is_incremental": false,
@@ -1304,7 +1184,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.ColorList.html",
-          "hash": "WMjnCKLXKMZ7Aq5EnK+zLA=="
+          "hash": "jTN6v1Qb1hmtDlSt9LLzlg=="
         }
       },
       "is_incremental": false,
@@ -1316,7 +1196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.FloatList.html",
-          "hash": "Y+0BdWdk4/KntwWyIUYvNw=="
+          "hash": "kyWI8R8hMcdqyE1htd2H/g=="
         }
       },
       "is_incremental": false,
@@ -1328,7 +1208,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.InspectorList-1.html",
-          "hash": "xtV9XjsvSkBREFm40KD7Mg=="
+          "hash": "+ZLiGeS5wFbvCBw1UPfTvg=="
         }
       },
       "is_incremental": false,
@@ -1340,7 +1220,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.InspectorList.html",
-          "hash": "oNXVjfWgFL/Jc3h+fUawpQ=="
+          "hash": "CehFkCjJr/DdBOV4gUHGRA=="
         }
       },
       "is_incremental": false,
@@ -1352,7 +1232,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.IntList.html",
-          "hash": "V5Ntchz/GrVchA/8nQpDuQ=="
+          "hash": "cxSVy0sHqsOGCA/sVfJ8aw=="
         }
       },
       "is_incremental": false,
@@ -1364,7 +1244,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.MinMaxFloat.html",
-          "hash": "s+3BadlslNgUGkPVyJxu/w=="
+          "hash": "no6KPwzeqqvmcOFWZDyX/w=="
         }
       },
       "is_incremental": false,
@@ -1376,7 +1256,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.MinMaxInt.html",
-          "hash": "03V60KRLRanc7g+AYtYwhA=="
+          "hash": "s9jEJ95ox0h/ZqcYv/HA0Q=="
         }
       },
       "is_incremental": false,
@@ -1388,7 +1268,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.MonoBehaviourExtensions.html",
-          "hash": "f/zCouQFVYnPPWgx5HffYQ=="
+          "hash": "qp+r1fq+suDQQxB5a6fQAA=="
         }
       },
       "is_incremental": false,
@@ -1400,7 +1280,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.MonoBehaviourList.html",
-          "hash": "4z4smNJUP4hGsim+ee8EYQ=="
+          "hash": "YrU1ybTBQqjFg7Rbq89q2g=="
         }
       },
       "is_incremental": false,
@@ -1412,7 +1292,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.ObjectExtensions.html",
-          "hash": "q2Ulho+F5oBl5B0Oo/LpUw=="
+          "hash": "gLEEAWu3UmkjR65+za2QdA=="
         }
       },
       "is_incremental": false,
@@ -1424,7 +1304,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.ObjectList.html",
-          "hash": "9yzH26Lsqvif+pCpy3rTeg=="
+          "hash": "6cmhROt0okqUAkaUSEW+Xw=="
         }
       },
       "is_incremental": false,
@@ -1436,7 +1316,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.StringExtensions.html",
-          "hash": "sInt61HFnXMQsyHXoB1Euw=="
+          "hash": "YviCK0a1zk7flU8R1s+05w=="
         }
       },
       "is_incremental": false,
@@ -1448,7 +1328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.StringList.html",
-          "hash": "EjVpFsiqSEoxM7BgpgzOqQ=="
+          "hash": "3H1KnRZVgGHbUQg1g+SQ7g=="
         }
       },
       "is_incremental": false,
@@ -1460,7 +1340,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.TransformExtensions.html",
-          "hash": "G/0ttmNPZGPKHd6J6LtLzg=="
+          "hash": "QXyKl046EIAn04ztUc490w=="
         }
       },
       "is_incremental": false,
@@ -1472,7 +1352,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.Vector2List.html",
-          "hash": "t3L3/j+MrJCoyRvF8E5Odw=="
+          "hash": "bylgNQ1jvirC7prdjv5S5A=="
         }
       },
       "is_incremental": false,
@@ -1484,7 +1364,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.Vector3List.html",
-          "hash": "QZvezcrzZYJK7rdsp49NAw=="
+          "hash": "Yhv8vjEZu3leD23bYnq9nQ=="
         }
       },
       "is_incremental": false,
@@ -1496,7 +1376,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.Vector4List.html",
-          "hash": "DtzJFXWrU/3a7I73Rhbt9g=="
+          "hash": "v80SSLQxJq+kncBCx5IOmw=="
         }
       },
       "is_incremental": false,
@@ -1508,7 +1388,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Extension.VectorExtensions.html",
-          "hash": "lEWXdpr31L2N2hADkU5NBQ=="
+          "hash": "Okd5/9xu7m5e36p9bfMVVw=="
         }
       },
       "is_incremental": false,
@@ -1532,31 +1412,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Gameplay.FPSCameraHandler.html",
-          "hash": "Y1l5nkKmhjnppj3PLoFdXA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Platform.Gameplay.Input.DesktopInputManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Platform.Gameplay.Input.DesktopInputManager.html",
-          "hash": "kS3BYguGaV9c4TUmD/BKOQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/Sophia.Platform.Gameplay.Input.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sophia.Platform.Gameplay.Input.html",
-          "hash": "eoSBH+Tjox897qA7TDlHow=="
+          "hash": "3QFb12RMtXJpY1/rwbPwIg=="
         }
       },
       "is_incremental": false,
@@ -1580,7 +1436,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html",
-          "hash": "cinnE3xgTQ/BWHWmEeR7xg=="
+          "hash": "tDXczZ+Ql5PwWNlna5gotw=="
         }
       },
       "is_incremental": false,
@@ -1592,7 +1448,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Patterns.State.html",
-          "hash": "PKun5hrwcVbOqWn1tOLjjg=="
+          "hash": "WvHha7MOjL8PskKZn/B9TQ=="
         }
       },
       "is_incremental": false,
@@ -1604,7 +1460,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Patterns.StateMachine.StateMachineEvent.html",
-          "hash": "cGcrYA70ZGd13y5ZEMuHpQ=="
+          "hash": "aWIi1SRyoIPv5ML9vbbNlg=="
         }
       },
       "is_incremental": false,
@@ -1616,7 +1472,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Patterns.StateMachine.html",
-          "hash": "VC86ZlCGHXL2iGGFNfRK9w=="
+          "hash": "sRhUgS5KgDvsFMtdmmvbjA=="
         }
       },
       "is_incremental": false,
@@ -1628,7 +1484,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Patterns.Transition.html",
-          "hash": "/T1mH4RpnbFN3RIO/nrukQ=="
+          "hash": "yaW6f2+wuqwtmCNVNrTihg=="
         }
       },
       "is_incremental": false,
@@ -1652,7 +1508,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.PhysxMonoBehaviour.html",
-          "hash": "AYXkGg0gZRtOyWmFAC/2KA=="
+          "hash": "IIU2AoZO0+ajf5Oe4jwx7Q=="
         }
       },
       "is_incremental": false,
@@ -1664,7 +1520,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Utilities.Optional-1.html",
-          "hash": "kWU9A/CvkQxOBuykoFrWYA=="
+          "hash": "K59CZ4WzFvjlrXlJWPe3mQ=="
         }
       },
       "is_incremental": false,
@@ -1676,7 +1532,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Utilities.Optional.html",
-          "hash": "bqddDwtygl6cS/uc16BLRA=="
+          "hash": "CKibZ1H4rYpA90J9q7ruHw=="
         }
       },
       "is_incremental": false,
@@ -1688,7 +1544,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Utilities.OptionalFloat.html",
-          "hash": "OS4LM711eB0GzGfRbxqwNA=="
+          "hash": "QWvNrJYBfm6W9pkQHvGY7w=="
         }
       },
       "is_incremental": false,
@@ -1700,7 +1556,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Utilities.OptionalGameObject.html",
-          "hash": "OJSqKcEZHscbdFdrNHURdQ=="
+          "hash": "LW7UA9Vf5v7soMD0WtsiHA=="
         }
       },
       "is_incremental": false,
@@ -1712,7 +1568,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Utilities.OptionalInt.html",
-          "hash": "MaY0daRoF4Ip9741JPV1BA=="
+          "hash": "rYdCJCUVo7Q43miAGeIaLw=="
         }
       },
       "is_incremental": false,
@@ -1724,7 +1580,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Utilities.OptionalMonoBehaviour.html",
-          "hash": "CUR+IXyIGtxJhK+hHR4fRw=="
+          "hash": "pfN9NwUl/4ZrYn64cXElOg=="
         }
       },
       "is_incremental": false,
@@ -1736,7 +1592,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Utilities.OptionalString.html",
-          "hash": "wlgoXs/p2mujWZyvBYzsXw=="
+          "hash": "Qdekn/3OHlNvFSy4jRTIbQ=="
         }
       },
       "is_incremental": false,
@@ -1748,7 +1604,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Utilities.OptionalVector2.html",
-          "hash": "nxk98wFGhMLpbwMpPeUOcQ=="
+          "hash": "sl0xLJFvutgbqgkFFWkHVw=="
         }
       },
       "is_incremental": false,
@@ -1760,7 +1616,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Utilities.OptionalVector3.html",
-          "hash": "+hnWWAVpC3kVJe4VTWPbqQ=="
+          "hash": "pD2La+YpJX3Mr2gwsqmcdw=="
         }
       },
       "is_incremental": false,
@@ -1772,7 +1628,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sophia.Platform.Utilities.ScreenshotTaker.html",
-          "hash": "hSGvKJSjv01I7N22t35P2g=="
+          "hash": "4SwMi3xdPhIjEEoVgQWnvA=="
         }
       },
       "is_incremental": false,
@@ -1803,12 +1659,192 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_ArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_ArrayExtensions.html",
+          "hash": "H+0IsaLLYIuiIDedfbyz+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_Clamp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_Clamp.html",
+          "hash": "hOtHyuMqusWag6zaIgbKGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_CollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_CollectionExtensions.html",
+          "hash": "jrTkHfs9ON1SYyi4sYrqGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_EventDispatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_EventDispatch.html",
+          "hash": "SQBGSh7Sz3eXHvssBEUFxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_EventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_EventHandler.html",
+          "hash": "LxzMEbhQWLhllLk4bAtHsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_Inventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_Inventory.html",
+          "hash": "HwBAmXXco2HQy2CPSzgsVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_ListExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_ListExtensions.html",
+          "hash": "UXfEpSrA+W99hjSvjE7pXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_Logger.html",
+          "hash": "vt8aoGTnn7Rk8iIZ8qmDlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_Observer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_Observer.html",
+          "hash": "Psbpvf9sQ6HJNfaC5Ixerg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_Random.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_Random.html",
+          "hash": "1sz6asVBtI/NdCQdvbI3Pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_Singleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_Singleton.html",
+          "hash": "964GgQtIQ/twZQJDerxzhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_Statemachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_Statemachine.html",
+          "hash": "FM8TF+a1avegUCWeFM3b0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_TimerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_TimerManager.html",
+          "hash": "QytLkVdlgYvE/f5gmbn44w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.testsuit_fileSystemWatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.testsuit_fileSystemWatcher.html",
+          "hash": "XVoVwqxgGHv2FWrz8KNoJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/Sophia.Tests.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sophia.Tests.Core.html",
+          "hash": "Ot7fveY8ESaTLjy0DnQu8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "obj/toc.yml",
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "eTop63hTzWrV0Zhz9nwGVQ=="
+          "hash": "TAoJehoJl8fb+p0q6o3Xmg=="
         }
       },
       "is_incremental": false,
@@ -1847,7 +1883,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 147,
+          "total_file_count": 150,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
