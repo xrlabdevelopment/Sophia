@@ -8,6 +8,39 @@ using System.Collections.Generic;
 
 namespace Sophia.Tests.Core
 {
+    //arrayextensions.cs
+    [TestFixture]
+    public class testsuit_ArrayExtensions
+    {
+        //--------------------------------------------------------------------------------------
+        [TestCase]
+        public void test_arrayextensions_concat()
+        {
+            int[] first = new int[] { 0, 1, 2, 3, 4 };
+            int[] second = new int[] { 5, 6, 7, 8, 9 };
+
+            int[] result = first.concat(second);
+            for(int i = 0; i < 10; ++i)
+            {
+                Assert.That(i, Is.EqualTo(result[i]));
+            }
+        }
+        //--------------------------------------------------------------------------------------
+        [TestCase]
+        public void test_arrayextensions_fill()
+        {
+            const int array_size = 10;
+
+            int[] array = new int[array_size];
+            array.fill(1);
+
+            for(int i = 0; i < array_size; ++i)
+            {
+                Assert.That(1, Is.EqualTo(array[i]));
+            }
+        }
+    }
+    //collectionextensions.cs
     [TestFixture]
     public class testsuit_CollectionExtensions
     {
@@ -242,4 +275,26 @@ namespace Sophia.Tests.Core
             }
         }
     }
+    //listextensions.cs
+    [TestFixture]
+    public class testsuit_ListExtensions
+    {
+        //--------------------------------------------------------------------------------------
+        [TestCase]
+        public void test_listextensions_front()
+        {
+            List<int> items = new List<int>() { 0, 1, 2, 3 };
+
+            Assert.That(0, Is.EqualTo(items.front()));
+        }
+        //--------------------------------------------------------------------------------------
+        [TestCase]
+        public void test_listextensions_back()
+        {
+            List<int> items = new List<int>() { 0, 1, 2, 3 };
+
+            Assert.That(3, Is.EqualTo(items.back()));
+        }
+    }
+    
 }

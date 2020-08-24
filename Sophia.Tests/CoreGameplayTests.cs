@@ -4,6 +4,7 @@ using Sophia.Core.Gameplay;
 
 namespace Sophia.Tests.Core
 {
+    //inventory.cs
     [TestFixture]
     public class testsuit_Inventory
     {
