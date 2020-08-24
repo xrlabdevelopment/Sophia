@@ -18,7 +18,7 @@ skip_commits:
     
 before_build:
   - nuget restore
-  - nuget install OpenCover -OutputDirectory packages -Version 4.6.519
+  - nuget install OpenCover -OutputDirectory packages -Version 4.7.922
   - choco install codecov
 
 build:
@@ -26,7 +26,7 @@ build:
   verbosity: minimal
 
 test_script:
-  - .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -returntargetcode -register -target:"dotnet.exe" -targetargs:"vstest Sophia.Tests\bin\Debug\netcoreapp3.1\Sophia.Tests.dll" -output:"coverage.xml" -filter:"+[Sophia*]* -[Sophia.Tests*]*"
+  - .\packages\OpenCover.4.7.922\tools\OpenCover.Console.exe -returntargetcode -register -target:"dotnet.exe" -targetargs:"vstest Sophia.Tests\bin\Debug\netcoreapp3.1\Sophia.Tests.dll" -output:"coverage.xml" -filter:"+[Sophia*]* -[Sophia.Tests*]*"
   - codecov -f "coverage.xml"
 
 before_package:
