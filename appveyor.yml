@@ -3,7 +3,9 @@ version: '{branch}-{build}'
 skip_tags: true
 
 image: Visual Studio 2019
-configuration: Debug
+configuration:
+    - Debug
+    - Release
 
 environment:
   nodejs_version: 12
@@ -16,37 +18,46 @@ skip_commits:
     - '*.md'
     - 'docs/*'
     
-before_build:
-  - nuget restore
-  - nuget install OpenCover -OutputDirectory packages -Version 4.7.922
-  - choco install codecov
-
 build:
   project: Sophia.sln
   verbosity: minimal
 
-test_script:
-  - .\packages\OpenCover.4.7.922\tools\OpenCover.Console.exe -returntargetcode -register -target:"dotnet.exe" -targetargs:"vstest Sophia.Tests\bin\Debug\netcoreapp3.1\Sophia.Tests.dll" -output:"coverage.xml" -filter:"+[Sophia*]* -[Sophia.Tests*]*"
-  - codecov -f "coverage.xml"
 
 before_package:
 - ps: .\BuildUnityPackages.ps1
 
 artifacts:
 - path: '*.unitypackage'
-- path: '*Sophia*\bin\Debug\*\*Sophia*'
 
-cache: '%APPDATA%\npm'
+matrix:
+  fast_finish: true
 
-install:
-- ps: >-
-
-    Install-Product node $env:nodejs_version
-
-
-
-    npm install -g semantic-release
-
-
-deploy_script:
-- semantic-release
+for:
+-
+  matrix:
+    only:
+      - configuration: Debug
+  before_build:
+   - nuget restore
+   - nuget install OpenCover -OutputDirectory packages -Version 4.7.922
+   - choco install codecov
+  artifacts:
+   - path: '*Sophia*\bin\Debug\*\*Sophia*'
+  test_script:
+   - .\packages\OpenCover.4.7.922\tools\OpenCover.Console.exe -returntargetcode -register -target:"dotnet.exe" -targetargs:"vstest Sophia.Tests\bin\Debug\netcoreapp3.1\Sophia.Tests.dll" -output:"coverage.xml" -filter:"+[Sophia*]* -[Sophia.Tests*]*"
+   - codecov -f "coverage.xml"
+-
+  matrix:
+    only:
+      - configuration: Release
+  before_build:
+   - nuget restore
+  artifacts:
+  - path: '*Sophia*\bin\Release\*\*Sophia*'
+  cache:
+   - '%APPDATA%\npm'
+  install:
+   - ps: Install-Product node $env:nodejs_version
+   - npm install -g semantic-release
+  deploy_script:
+   - semantic-release
