@@ -23,8 +23,9 @@
             },
             {
                 "files": [
-                 "index.md",
-                 "toc.yml"
+                    "**/*.{md, yml}",
+                    "**/index.md",
+                    "**/toc.yml"
                 ]
             }
         ],
