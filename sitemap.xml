@@ -2,907 +2,931 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/index.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Algorithms.Algorithms.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Algorithms.IRandom.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Algorithms.Random.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Algorithms.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Diagnostics.Logger.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Diagnostics.LoggerCreationInfo.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Diagnostics.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Events.Event.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Events.EventDispatch.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Events.IEvent.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Events.IEventHandler.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Events.IEventSender.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Events.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Extensions.ArrayExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Extensions.CollectionExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Extensions.ListExtentions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Extensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Gameplay.IInventoryItem.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Gameplay.InventoryController.Added.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Gameplay.InventoryController.Removed.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Gameplay.InventoryController.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Gameplay.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.IO.EventFilters.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.IO.FileSystemWatcher.ErrorEventHandler.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.IO.FileSystemWatcher.FileSystemEventHandler.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.IO.FileSystemWatcher.RenamedEventHandler.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.IO.FileSystemWatcher.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.IO.FileWatcherCreationInfo.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.IO.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.BaseSubject-1.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.EventSubject-1.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.FiniteStateMachine.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.FSMEvent.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.FSMState.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.FSMTransition.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.Guard.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.IEventObserver.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.IObserver.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.IStateMachine.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.ISubject.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.Singleton-1.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.Subject-1.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Patterns.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Threading.ITask.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Threading.Task.Finished.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Threading.Task.Started.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Threading.Task.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Threading.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.CountDownTimer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.Finished.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.ITimer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.Started.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.Stopped.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.TimerCreationInfo.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.TimerEventInfo.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.TimerFinishedBehaviour.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.TimerManager.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.Updated.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Timing.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Utilities.BitField.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Core.Utilities.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.EditorStartup.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.Extension.BaseEditor-1.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.Extension.BaseEditorHelpers.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.Extension.BaseMonoBehaviourEditor.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.Extension.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.BeginReadOnlyGroupDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.CommentPropertyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.DummyPorpertyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.EndReadOnlyGroupDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.HighlightPropertyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.InspectorFlagsPropertyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.InspectorListPropertyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.LabelFieldPropertyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.MinMaxFloatPropertyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.NonNegativePropertyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.OptionalPropertyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.ReadOnlyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.WarningIfNullPropertyDrawer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.PropertyDrawers.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Editor.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.BeginReadOnlyGroupAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.CommentAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.DummyAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.EndReadOnlyGroupAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.HighlightAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.InspectorButtonAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.InspectorFlagsAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.LabelFieldAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.NonNegativeAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.ReadOnlyAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.WarningIfNullAttribute.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Attributes.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.BaseMonoBehaviour.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.ColorExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.ColorList.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.FloatList.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.InspectorList.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.InspectorList-1.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.IntList.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.MinMaxFloat.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.MinMaxInt.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.MonoBehaviourExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.MonoBehaviourList.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.ObjectExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.ObjectList.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.StringExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.StringList.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.TransformExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.Vector2List.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.Vector3List.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.Vector4List.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.VectorExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Extension.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Gameplay.FPSCameraHandler.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Gameplay.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Patterns.MonoBehaviourSingleton-1.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Patterns.State.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Patterns.StateMachine.StateMachineEvent.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Patterns.StateMachine.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Patterns.Transition.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Patterns.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.PhysxMonoBehaviour.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.Optional.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.Optional-1.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.OptionalFloat.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.OptionalGameObject.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.OptionalInt.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.OptionalMonoBehaviour.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.OptionalString.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.OptionalVector2.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.OptionalVector3.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.ScreenshotTaker.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.Utilities.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Platform.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_ArrayExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_Clamp.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_CollectionExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_EventDispatch.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_EventHandler.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_fileSystemWatcher.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_Inventory.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_ListExtensions.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_Logger.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_Observer.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_Random.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_Singleton.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_Statemachine.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.testsuit_TimerManager.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xrlabdevelopment.github.io/Sophia/api/Sophia.Tests.Core.html</loc>
-    <lastmod>2020-08-24T02:34:17+00:00</lastmod>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://xrlabdevelopment.github.io/Sophia/api/System.IO.Compression.html</loc>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://xrlabdevelopment.github.io/Sophia/api/System.IO.Compression.ZipStorer.Compression.html</loc>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://xrlabdevelopment.github.io/Sophia/api/System.IO.Compression.ZipStorer.html</loc>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://xrlabdevelopment.github.io/Sophia/api/System.IO.Compression.ZipStorer.ZipFileEntry.html</loc>
+    <lastmod>2020-08-25T11:09:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

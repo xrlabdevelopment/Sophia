@@ -7720,3 +7720,302 @@ references:
   isSpec: "True"
   fullName: Sophia.Tests.Core.testsuit_TimerManager.test_timermanager_update
   nameWithType: testsuit_TimerManager.test_timermanager_update
+- uid: System.IO.Compression
+  name: System.IO.Compression
+  href: api/System.IO.Compression.html
+  commentId: N:System.IO.Compression
+  fullName: System.IO.Compression
+  nameWithType: System.IO.Compression
+- uid: System.IO.Compression.ZipStorer
+  name: ZipStorer
+  href: api/System.IO.Compression.ZipStorer.html
+  commentId: T:System.IO.Compression.ZipStorer
+  fullName: System.IO.Compression.ZipStorer
+  nameWithType: ZipStorer
+- uid: System.IO.Compression.ZipStorer.AddDirectory(System.IO.Compression.ZipStorer.Compression,System.String,System.String,System.String)
+  name: AddDirectory(ZipStorer.Compression, String, String, String)
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_AddDirectory_System_IO_Compression_ZipStorer_Compression_System_String_System_String_System_String_
+  commentId: M:System.IO.Compression.ZipStorer.AddDirectory(System.IO.Compression.ZipStorer.Compression,System.String,System.String,System.String)
+  fullName: System.IO.Compression.ZipStorer.AddDirectory(System.IO.Compression.ZipStorer.Compression, System.String, System.String, System.String)
+  nameWithType: ZipStorer.AddDirectory(ZipStorer.Compression, String, String, String)
+- uid: System.IO.Compression.ZipStorer.AddDirectory*
+  name: AddDirectory
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_AddDirectory_
+  commentId: Overload:System.IO.Compression.ZipStorer.AddDirectory
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.AddDirectory
+  nameWithType: ZipStorer.AddDirectory
+- uid: System.IO.Compression.ZipStorer.AddFile(System.IO.Compression.ZipStorer.Compression,System.String,System.String,System.String)
+  name: AddFile(ZipStorer.Compression, String, String, String)
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_AddFile_System_IO_Compression_ZipStorer_Compression_System_String_System_String_System_String_
+  commentId: M:System.IO.Compression.ZipStorer.AddFile(System.IO.Compression.ZipStorer.Compression,System.String,System.String,System.String)
+  fullName: System.IO.Compression.ZipStorer.AddFile(System.IO.Compression.ZipStorer.Compression, System.String, System.String, System.String)
+  nameWithType: ZipStorer.AddFile(ZipStorer.Compression, String, String, String)
+- uid: System.IO.Compression.ZipStorer.AddFile*
+  name: AddFile
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_AddFile_
+  commentId: Overload:System.IO.Compression.ZipStorer.AddFile
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.AddFile
+  nameWithType: ZipStorer.AddFile
+- uid: System.IO.Compression.ZipStorer.AddStream(System.IO.Compression.ZipStorer.Compression,System.String,Stream,DateTime,System.String)
+  name: AddStream(ZipStorer.Compression, String, Stream, DateTime, String)
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_AddStream_System_IO_Compression_ZipStorer_Compression_System_String_Stream_DateTime_System_String_
+  commentId: M:System.IO.Compression.ZipStorer.AddStream(System.IO.Compression.ZipStorer.Compression,System.String,Stream,DateTime,System.String)
+  fullName: System.IO.Compression.ZipStorer.AddStream(System.IO.Compression.ZipStorer.Compression, System.String, Stream, DateTime, System.String)
+  nameWithType: ZipStorer.AddStream(ZipStorer.Compression, String, Stream, DateTime, String)
+- uid: System.IO.Compression.ZipStorer.AddStream*
+  name: AddStream
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_AddStream_
+  commentId: Overload:System.IO.Compression.ZipStorer.AddStream
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.AddStream
+  nameWithType: ZipStorer.AddStream
+- uid: System.IO.Compression.ZipStorer.Close
+  name: Close()
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_Close
+  commentId: M:System.IO.Compression.ZipStorer.Close
+  fullName: System.IO.Compression.ZipStorer.Close()
+  nameWithType: ZipStorer.Close()
+- uid: System.IO.Compression.ZipStorer.Close*
+  name: Close
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_Close_
+  commentId: Overload:System.IO.Compression.ZipStorer.Close
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.Close
+  nameWithType: ZipStorer.Close
+- uid: System.IO.Compression.ZipStorer.Compression
+  name: ZipStorer.Compression
+  href: api/System.IO.Compression.ZipStorer.Compression.html
+  commentId: T:System.IO.Compression.ZipStorer.Compression
+  fullName: System.IO.Compression.ZipStorer.Compression
+  nameWithType: ZipStorer.Compression
+- uid: System.IO.Compression.ZipStorer.Compression.Deflate
+  name: Deflate
+  href: api/System.IO.Compression.ZipStorer.Compression.html#System_IO_Compression_ZipStorer_Compression_Deflate
+  commentId: F:System.IO.Compression.ZipStorer.Compression.Deflate
+  fullName: System.IO.Compression.ZipStorer.Compression.Deflate
+  nameWithType: ZipStorer.Compression.Deflate
+- uid: System.IO.Compression.ZipStorer.Compression.Store
+  name: Store
+  href: api/System.IO.Compression.ZipStorer.Compression.html#System_IO_Compression_ZipStorer_Compression_Store
+  commentId: F:System.IO.Compression.ZipStorer.Compression.Store
+  fullName: System.IO.Compression.ZipStorer.Compression.Store
+  nameWithType: ZipStorer.Compression.Store
+- uid: System.IO.Compression.ZipStorer.Create(Stream,System.String,System.Boolean)
+  name: Create(Stream, String, Boolean)
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_Create_Stream_System_String_System_Boolean_
+  commentId: M:System.IO.Compression.ZipStorer.Create(Stream,System.String,System.Boolean)
+  fullName: System.IO.Compression.ZipStorer.Create(Stream, System.String, System.Boolean)
+  nameWithType: ZipStorer.Create(Stream, String, Boolean)
+- uid: System.IO.Compression.ZipStorer.Create(System.String,System.String)
+  name: Create(String, String)
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_Create_System_String_System_String_
+  commentId: M:System.IO.Compression.ZipStorer.Create(System.String,System.String)
+  fullName: System.IO.Compression.ZipStorer.Create(System.String, System.String)
+  nameWithType: ZipStorer.Create(String, String)
+- uid: System.IO.Compression.ZipStorer.Create*
+  name: Create
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_Create_
+  commentId: Overload:System.IO.Compression.ZipStorer.Create
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.Create
+  nameWithType: ZipStorer.Create
+- uid: System.IO.Compression.ZipStorer.Dispose
+  name: Dispose()
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_Dispose
+  commentId: M:System.IO.Compression.ZipStorer.Dispose
+  fullName: System.IO.Compression.ZipStorer.Dispose()
+  nameWithType: ZipStorer.Dispose()
+- uid: System.IO.Compression.ZipStorer.Dispose*
+  name: Dispose
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_Dispose_
+  commentId: Overload:System.IO.Compression.ZipStorer.Dispose
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.Dispose
+  nameWithType: ZipStorer.Dispose
+- uid: System.IO.Compression.ZipStorer.EncodeUTF8
+  name: EncodeUTF8
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_EncodeUTF8
+  commentId: F:System.IO.Compression.ZipStorer.EncodeUTF8
+  fullName: System.IO.Compression.ZipStorer.EncodeUTF8
+  nameWithType: ZipStorer.EncodeUTF8
+- uid: System.IO.Compression.ZipStorer.ExtractFile(System.IO.Compression.ZipStorer.ZipFileEntry,Stream)
+  name: ExtractFile(ZipStorer.ZipFileEntry, Stream)
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_ExtractFile_System_IO_Compression_ZipStorer_ZipFileEntry_Stream_
+  commentId: M:System.IO.Compression.ZipStorer.ExtractFile(System.IO.Compression.ZipStorer.ZipFileEntry,Stream)
+  fullName: System.IO.Compression.ZipStorer.ExtractFile(System.IO.Compression.ZipStorer.ZipFileEntry, Stream)
+  nameWithType: ZipStorer.ExtractFile(ZipStorer.ZipFileEntry, Stream)
+- uid: System.IO.Compression.ZipStorer.ExtractFile(System.IO.Compression.ZipStorer.ZipFileEntry,System.Byte[]@)
+  name: ExtractFile(ZipStorer.ZipFileEntry, out Byte[])
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_ExtractFile_System_IO_Compression_ZipStorer_ZipFileEntry_System_Byte____
+  commentId: M:System.IO.Compression.ZipStorer.ExtractFile(System.IO.Compression.ZipStorer.ZipFileEntry,System.Byte[]@)
+  name.vb: ExtractFile(ZipStorer.ZipFileEntry, ByRef Byte())
+  fullName: System.IO.Compression.ZipStorer.ExtractFile(System.IO.Compression.ZipStorer.ZipFileEntry, out System.Byte[])
+  fullName.vb: System.IO.Compression.ZipStorer.ExtractFile(System.IO.Compression.ZipStorer.ZipFileEntry, ByRef System.Byte())
+  nameWithType: ZipStorer.ExtractFile(ZipStorer.ZipFileEntry, out Byte[])
+  nameWithType.vb: ZipStorer.ExtractFile(ZipStorer.ZipFileEntry, ByRef Byte())
+- uid: System.IO.Compression.ZipStorer.ExtractFile(System.IO.Compression.ZipStorer.ZipFileEntry,System.String)
+  name: ExtractFile(ZipStorer.ZipFileEntry, String)
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_ExtractFile_System_IO_Compression_ZipStorer_ZipFileEntry_System_String_
+  commentId: M:System.IO.Compression.ZipStorer.ExtractFile(System.IO.Compression.ZipStorer.ZipFileEntry,System.String)
+  fullName: System.IO.Compression.ZipStorer.ExtractFile(System.IO.Compression.ZipStorer.ZipFileEntry, System.String)
+  nameWithType: ZipStorer.ExtractFile(ZipStorer.ZipFileEntry, String)
+- uid: System.IO.Compression.ZipStorer.ExtractFile*
+  name: ExtractFile
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_ExtractFile_
+  commentId: Overload:System.IO.Compression.ZipStorer.ExtractFile
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.ExtractFile
+  nameWithType: ZipStorer.ExtractFile
+- uid: System.IO.Compression.ZipStorer.ForceDeflating
+  name: ForceDeflating
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_ForceDeflating
+  commentId: F:System.IO.Compression.ZipStorer.ForceDeflating
+  fullName: System.IO.Compression.ZipStorer.ForceDeflating
+  nameWithType: ZipStorer.ForceDeflating
+- uid: System.IO.Compression.ZipStorer.Open(Stream,FileAccess,System.Boolean)
+  name: Open(Stream, FileAccess, Boolean)
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_Open_Stream_FileAccess_System_Boolean_
+  commentId: M:System.IO.Compression.ZipStorer.Open(Stream,FileAccess,System.Boolean)
+  fullName: System.IO.Compression.ZipStorer.Open(Stream, FileAccess, System.Boolean)
+  nameWithType: ZipStorer.Open(Stream, FileAccess, Boolean)
+- uid: System.IO.Compression.ZipStorer.Open(System.String,FileAccess)
+  name: Open(String, FileAccess)
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_Open_System_String_FileAccess_
+  commentId: M:System.IO.Compression.ZipStorer.Open(System.String,FileAccess)
+  fullName: System.IO.Compression.ZipStorer.Open(System.String, FileAccess)
+  nameWithType: ZipStorer.Open(String, FileAccess)
+- uid: System.IO.Compression.ZipStorer.Open*
+  name: Open
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_Open_
+  commentId: Overload:System.IO.Compression.ZipStorer.Open
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.Open
+  nameWithType: ZipStorer.Open
+- uid: System.IO.Compression.ZipStorer.ReadCentralDir
+  name: ReadCentralDir()
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_ReadCentralDir
+  commentId: M:System.IO.Compression.ZipStorer.ReadCentralDir
+  fullName: System.IO.Compression.ZipStorer.ReadCentralDir()
+  nameWithType: ZipStorer.ReadCentralDir()
+- uid: System.IO.Compression.ZipStorer.ReadCentralDir*
+  name: ReadCentralDir
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_ReadCentralDir_
+  commentId: Overload:System.IO.Compression.ZipStorer.ReadCentralDir
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.ReadCentralDir
+  nameWithType: ZipStorer.ReadCentralDir
+- uid: System.IO.Compression.ZipStorer.RemoveEntries(System.IO.Compression.ZipStorer@,List{System.IO.Compression.ZipStorer.ZipFileEntry})
+  name: RemoveEntries(ref ZipStorer, List<ZipStorer.ZipFileEntry>)
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_RemoveEntries_System_IO_Compression_ZipStorer__List_System_IO_Compression_ZipStorer_ZipFileEntry__
+  commentId: M:System.IO.Compression.ZipStorer.RemoveEntries(System.IO.Compression.ZipStorer@,List{System.IO.Compression.ZipStorer.ZipFileEntry})
+  name.vb: RemoveEntries(ByRef ZipStorer, List(Of ZipStorer.ZipFileEntry))
+  fullName: System.IO.Compression.ZipStorer.RemoveEntries(ref System.IO.Compression.ZipStorer, List<System.IO.Compression.ZipStorer.ZipFileEntry>)
+  fullName.vb: System.IO.Compression.ZipStorer.RemoveEntries(ByRef System.IO.Compression.ZipStorer, List(Of System.IO.Compression.ZipStorer.ZipFileEntry))
+  nameWithType: ZipStorer.RemoveEntries(ref ZipStorer, List<ZipStorer.ZipFileEntry>)
+  nameWithType.vb: ZipStorer.RemoveEntries(ByRef ZipStorer, List(Of ZipStorer.ZipFileEntry))
+- uid: System.IO.Compression.ZipStorer.RemoveEntries*
+  name: RemoveEntries
+  href: api/System.IO.Compression.ZipStorer.html#System_IO_Compression_ZipStorer_RemoveEntries_
+  commentId: Overload:System.IO.Compression.ZipStorer.RemoveEntries
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.RemoveEntries
+  nameWithType: ZipStorer.RemoveEntries
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry
+  name: ZipStorer.ZipFileEntry
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html
+  commentId: T:System.IO.Compression.ZipStorer.ZipFileEntry
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry
+  nameWithType: ZipStorer.ZipFileEntry
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.AccessTime
+  name: AccessTime
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_AccessTime
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.AccessTime
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.AccessTime
+  nameWithType: ZipStorer.ZipFileEntry.AccessTime
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.Comment
+  name: Comment
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_Comment
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.Comment
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.Comment
+  nameWithType: ZipStorer.ZipFileEntry.Comment
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.CompressedSize
+  name: CompressedSize
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_CompressedSize
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.CompressedSize
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.CompressedSize
+  nameWithType: ZipStorer.ZipFileEntry.CompressedSize
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.Crc32
+  name: Crc32
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_Crc32
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.Crc32
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.Crc32
+  nameWithType: ZipStorer.ZipFileEntry.Crc32
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.CreationTime
+  name: CreationTime
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_CreationTime
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.CreationTime
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.CreationTime
+  nameWithType: ZipStorer.ZipFileEntry.CreationTime
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.EncodeUTF8
+  name: EncodeUTF8
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_EncodeUTF8
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.EncodeUTF8
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.EncodeUTF8
+  nameWithType: ZipStorer.ZipFileEntry.EncodeUTF8
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.FilenameInZip
+  name: FilenameInZip
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_FilenameInZip
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.FilenameInZip
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.FilenameInZip
+  nameWithType: ZipStorer.ZipFileEntry.FilenameInZip
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.FileOffset
+  name: FileOffset
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_FileOffset
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.FileOffset
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.FileOffset
+  nameWithType: ZipStorer.ZipFileEntry.FileOffset
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.FileSize
+  name: FileSize
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_FileSize
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.FileSize
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.FileSize
+  nameWithType: ZipStorer.ZipFileEntry.FileSize
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.HeaderOffset
+  name: HeaderOffset
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_HeaderOffset
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.HeaderOffset
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.HeaderOffset
+  nameWithType: ZipStorer.ZipFileEntry.HeaderOffset
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.HeaderSize
+  name: HeaderSize
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_HeaderSize
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.HeaderSize
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.HeaderSize
+  nameWithType: ZipStorer.ZipFileEntry.HeaderSize
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.Method
+  name: Method
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_Method
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.Method
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.Method
+  nameWithType: ZipStorer.ZipFileEntry.Method
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.ModifyTime
+  name: ModifyTime
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_ModifyTime
+  commentId: F:System.IO.Compression.ZipStorer.ZipFileEntry.ModifyTime
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.ModifyTime
+  nameWithType: ZipStorer.ZipFileEntry.ModifyTime
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.ToString
+  name: ToString()
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_ToString
+  commentId: M:System.IO.Compression.ZipStorer.ZipFileEntry.ToString
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.ToString()
+  nameWithType: ZipStorer.ZipFileEntry.ToString()
+- uid: System.IO.Compression.ZipStorer.ZipFileEntry.ToString*
+  name: ToString
+  href: api/System.IO.Compression.ZipStorer.ZipFileEntry.html#System_IO_Compression_ZipStorer_ZipFileEntry_ToString_
+  commentId: Overload:System.IO.Compression.ZipStorer.ZipFileEntry.ToString
+  isSpec: "True"
+  fullName: System.IO.Compression.ZipStorer.ZipFileEntry.ToString
+  nameWithType: ZipStorer.ZipFileEntry.ToString
