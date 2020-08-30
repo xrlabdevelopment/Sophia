@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 
 namespace Sophia.Platform.Extension
 {
@@ -13,6 +14,15 @@ namespace Sophia.Platform.Extension
         public int Min { get; set; } = 0;
 		public int Max { get; set; } = 1;
 
+        public int Level
+        {
+            get { return (int)((Max - Min) * 0.5f); }
+        }
+        public int Window
+        {
+            get { return (int)(Max - Min); }
+        }
+
         //-------------------------------------------------------------------------------------
         public MinMaxInt()
 		{
@@ -24,6 +34,8 @@ namespace Sophia.Platform.Extension
 		{
 			this.Min = min;
 			this.Max = max;
+
+            Debug.Assert(Max > Min, "Maximum is smaller than the minimum");
 		}
 	}
 }

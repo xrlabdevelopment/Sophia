@@ -1,13 +1,20 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace Sophia.Core.Gameplay
+namespace Sophia.Platform.Gameplay
 {
+    public enum InventoryResult
+    {
+        SUCCESS,
+        MAX_ITEMS,
+        FAILURE
+    }
+
     /// <summary>
     /// An inventory system
     /// </summary>
-    public class InventoryController
+    public class InventoryController : IEnumerable
     {
         //--------------------------------------------------------------------------------------
         // Delegate
@@ -30,6 +37,10 @@ namespace Sophia.Core.Gameplay
         public int Count
         {
             get { return inventory_items.Count; }
+        }
+        public IInventoryItem[] Items
+        {
+            get { return inventory_items.ToArray(); }
         }
 
         //--------------------------------------------------------------------------------------
@@ -54,15 +65,15 @@ namespace Sophia.Core.Gameplay
         /// </summary>
         /// <param name="item">The item to be added</param>
         /// <returns>Returns true when it was added, false if not</returns>
-        public bool add(IInventoryItem item)
+        public virtual InventoryResult add(IInventoryItem item)
         {
             if (inventory_items.Find(i => i.ID == item.ID) != null)
-                return false;
+                return InventoryResult.FAILURE;
 
             inventory_items.Add(item);
             if (OnItemAdded != null)
                 OnItemAdded(item);
-            return true;
+            return InventoryResult.SUCCESS;
         }
         //--------------------------------------------------------------------------------------
         /// <summary>
@@ -142,5 +153,64 @@ namespace Sophia.Core.Gameplay
 
             inventory_items.Clear();
         }
+
+        //--------------------------------------------------------------------------------------
+        public IEnumerator GetEnumerator()
+        {
+            return new InventoryControllerEnumarator(inventory_items.ToArray());
+        }
     }
+
+    public class InventoryControllerEnumarator : IEnumerator
+    {
+        //--------------------------------------------------------------------------------------
+        // Properties
+        public IInventoryItem Current
+        {
+            get
+            {
+                try
+                {
+                    return inventory_items[position];
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    throw new InvalidOperationException();
+                }
+            }
+        }
+
+        object IEnumerator.Current
+        {
+            get
+            {
+                return Current;
+            }
+        }
+
+        //--------------------------------------------------------------------------------------
+        // Fields
+        private IInventoryItem[] inventory_items;
+
+        private int position = -1;
+
+        //--------------------------------------------------------------------------------------
+        public InventoryControllerEnumarator(IInventoryItem[] items)
+        {
+            inventory_items = items;
+        }
+
+        //--------------------------------------------------------------------------------------
+        public bool MoveNext()
+        {
+            position++;
+            return (position < inventory_items.Length);
+        }
+        //--------------------------------------------------------------------------------------
+        public void Reset()
+        {
+            position = -1;
+        }
+    }
+
 }

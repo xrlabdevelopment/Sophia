@@ -1,6 +1,6 @@
 using System;
 
-namespace Sophia.Core.Gameplay
+namespace Sophia.Platform.Gameplay
 {
     //-------------------------------------------------------------------------------------
     /// <summary>
@@ -9,5 +9,7 @@ namespace Sophia.Core.Gameplay
     public interface IInventoryItem
     {
         Guid ID { get; }
+
+        IInventoryItemView View { get; }
     }
 }

@@ -13,6 +13,18 @@ namespace Sophia.Platform.Extension
         public float Min { get; set; } = 0.0f;
 		public float Max { get; set; } = 1.0f;
 
+        public float Level
+        {
+            get
+            {
+                return ((Max - Min) * 0.5f);
+            }
+        }
+        public float Window
+        {
+            get { return (int)(Max - Min); }
+        }
+
         //-------------------------------------------------------------------------------------
         public MinMaxFloat()
 		{

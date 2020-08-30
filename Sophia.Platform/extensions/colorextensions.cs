@@ -21,10 +21,10 @@ namespace Sophia.Platform.Extension
         public static Color lighter(this Color color)
 		{
 			return new Color(
-				color.r + LightOffset,
-				color.g + LightOffset,
-				color.b + LightOffset,
-				color.a);
+				Mathf.Clamp(color.r + LightOffset, 0.0f, 1.0f),
+				Mathf.Clamp(color.g + LightOffset, 0.0f, 1.0f),
+				Mathf.Clamp(color.b + LightOffset, 0.0f, 1.0f),
+                Mathf.Clamp(color.a, 0.0f, 1.0f));
 		}
 
         //-------------------------------------------------------------------------------------
@@ -36,10 +36,10 @@ namespace Sophia.Platform.Extension
         public static Color darker(this Color color)
 		{
 			return new Color(
-				color.r - LightOffset,
-				color.g - LightOffset,
-				color.b - LightOffset,
-				color.a);
+                Mathf.Clamp(color.r - LightOffset, 0.0f, 1.0f),
+                Mathf.Clamp(color.g - LightOffset, 0.0f, 1.0f),
+                Mathf.Clamp(color.b - LightOffset, 0.0f, 1.0f),
+                Mathf.Clamp(color.a, 0.0f, 1.0f));
 		}
 
         //-------------------------------------------------------------------------------------
@@ -91,7 +91,7 @@ namespace Sophia.Platform.Extension
         /// <returns></returns>
         public static bool isApproximatelyBlack(this Color color)
 		{
-			return color.r + color.g + color.b <= Mathf.Epsilon;
+            return color.r <= float.Epsilon && color.g <= float.Epsilon && color.b <= float.Epsilon;
 		}
 
         //-------------------------------------------------------------------------------------
@@ -102,7 +102,7 @@ namespace Sophia.Platform.Extension
         /// <returns></returns>
         public static bool isApproximatelyWhite(this Color color)
 		{
-			return color.r + color.g + color.b >= 1 - Mathf.Epsilon;
+            return color.r >= 1.0f - float.Epsilon && color.g >= 1.0f - float.Epsilon && color.b >= 1.0f - float.Epsilon;
 		}
 
         //-------------------------------------------------------------------------------------
