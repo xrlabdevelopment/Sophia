@@ -151,13 +151,13 @@ namespace Sophia.Platform
         }
 
         //-------------------------------------------------------------------------------------
-        public Coroutine Invoke(Action action, float time)
+        public Coroutine invoke(Action action, float time)
         {
             return MonoBehaviourExtensions.invoke(this, action, time);
         }
 
         //-------------------------------------------------------------------------------------
-        public Coroutine InvokeRepeating(Action action, float time, float repeatTime)
+        public Coroutine invokeRepeating(Action action, float time, float repeatTime)
         {
             return MonoBehaviourExtensions.invokeRepeating(this, action, time, repeatTime);
         }
@@ -169,7 +169,7 @@ namespace Sophia.Platform
         /// writing methods that is used by both editor tools and the game itself.
         /// </summary>
         /// <param name="obj">The object to destroy.</param>
-        public static void DestroyUniversal(UnityEngine.Object obj)
+        public static void destroyUniversal(UnityEngine.Object obj)
         {
             if (Application.isPlaying)
             {
@@ -210,7 +210,7 @@ namespace Sophia.Platform
         /// </summary>
         /// <typeparam name="T">Type of the component</typeparam>
         /// <returns>The requested component</returns>
-        protected T getRequiredComponentInChilderen<T>()
+        protected T getRequiredComponentInChildren<T>()
             where T : Component
         {
             UnityEngine.Debug.Assert(transform.childCount > 0, "We cannot retrieve any components from our children if there are no children.");
