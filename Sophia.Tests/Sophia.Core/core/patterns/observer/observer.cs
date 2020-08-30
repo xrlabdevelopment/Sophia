@@ -1,4 +1,3 @@
-using Sophia.Core.Algorithms;
 
 using NUnit.Framework;
 using Sophia.Core.Patterns;

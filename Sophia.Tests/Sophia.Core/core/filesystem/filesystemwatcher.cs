@@ -1,9 +1,5 @@
-using Sophia.Core.Algorithms;
 
 using NUnit.Framework;
-
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Sophia.Tests.Core
 {
