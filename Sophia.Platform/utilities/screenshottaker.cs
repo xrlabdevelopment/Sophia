@@ -7,10 +7,11 @@ using UnityEngine;
 
 namespace Sophia.Platform.Utilities
 {
-	/// <summary>
-	/// A component that makes it easy to take screenshots, usually for development purposes.
-	/// </summary>
-	[AddComponentMenu("Sophia/ScreenshotTaker")]
+    //-------------------------------------------------------------------------------------
+    /// <summary>
+    /// A component that makes it easy to take screenshots, usually for development purposes.
+    /// </summary>
+    [AddComponentMenu("Sophia/ScreenshotTaker")]
 	[ExecuteInEditMode]
 	public sealed class ScreenshotTaker : MonoBehaviourSingleton<ScreenshotTaker>
 	{
@@ -79,11 +80,11 @@ namespace Sophia.Platform.Utilities
             {
                 if (DirtyObjects.Length > 0)
                 {
-                    InvokeRepeating(takeCleanImpl, AutomaticScreenshotInterval.Value, AutomaticScreenshotInterval.Value);
+                    invokeRepeating(takeCleanImpl, AutomaticScreenshotInterval.Value, AutomaticScreenshotInterval.Value);
                 }
                 else
                 {
-                    InvokeRepeating(takeImpl, AutomaticScreenshotInterval.Value, AutomaticScreenshotInterval.Value);
+                    invokeRepeating(takeImpl, AutomaticScreenshotInterval.Value, AutomaticScreenshotInterval.Value);
                 }
             }
         }
