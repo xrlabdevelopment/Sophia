@@ -66,9 +66,9 @@ namespace Sophia.Tests.Core
             BitField field = new BitField(0);
             BitField other = new BitField(1);
 
-            int r = field | other;
+            BitField r = field | other;
 
-            Assert.That(r, Is.EqualTo(3));
+            Assert.That(r.Value, Is.EqualTo(3));
         }
 
         //--------------------------------------------------------------------------------------
