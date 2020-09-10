@@ -15,7 +15,6 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          projectPath: /
           unityVersion: 2019.3.0f6
       - name: Upload test results
         uses: actions/upload-artifact@v1
