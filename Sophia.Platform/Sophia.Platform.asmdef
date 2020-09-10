@@ -1,0 +1,15 @@
+{
+    "name": "Sophia.Platform",
+    "references": [
+        "GUID:4e6bef1faeb90aa4b8984e094d266c04"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Sophia.Core.Patterns",
+    "references": [
+        "GUID:09874ebf970e27949ad5accee9fe8d48",
+        "GUID:d5b622036d1252542b4032a5830ab0fe"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

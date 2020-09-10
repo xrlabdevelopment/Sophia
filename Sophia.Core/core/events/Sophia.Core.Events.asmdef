@@ -1,0 +1,15 @@
+{
+    "name": "Sophia.Core.Events",
+    "references": [
+        "GUID:d5b622036d1252542b4032a5830ab0fe"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

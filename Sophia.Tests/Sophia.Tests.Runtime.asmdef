@@ -1,0 +1,29 @@
+{
+    "name": "Sophia.Tests.Runtime",
+    "references": [
+        "Sophia.Core.Algorithms",
+        "Sophia.Platform",
+        "Sophia.Core.Diagnostics",
+        "Sophia.Core.Events",
+        "Sophia.Core.Utilities",
+        "Sophia.Core.Extentions",
+        "Sophia.Core.Gameplay",
+        "Sophia.Core.Patterns",
+        "Sophia.Core.Timing"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

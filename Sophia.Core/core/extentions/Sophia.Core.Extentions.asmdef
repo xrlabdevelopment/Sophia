@@ -1,0 +1,15 @@
+{
+    "name": "Sophia.Core.Extentions",
+    "references": [
+        "GUID:6ff71515fb6bae64294d61fc41e9f400"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
