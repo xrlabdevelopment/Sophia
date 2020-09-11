@@ -1,7 +1,7 @@
 $libraryFiles = @("Sophia.Core.dll", "Sophia.Platform.dll")
 $installerFiles = @("SophiaEditor.cs")
 
-$editorFiles = Get-ChildItem -Path "./Sophia.Editor/*.cs" -Recurse -Exclude ("*AssemblyInfo.cs", "SophiaEditor.cs")
+$editorFiles = Get-ChildItem -Path "./Sophia.Editor/*.cs" -Recurse -Exclude ("*AssemblyInfo.cs", "*AssemblyAttributes.cs", "SophiaEditor.cs")
 $editorFiles = $editorFiles.FullName.Replace("\", "/")
 
 $myPath = (Get-Item -Path ".\").FullName;
