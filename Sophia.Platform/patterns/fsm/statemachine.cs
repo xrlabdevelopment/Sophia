@@ -12,11 +12,13 @@ namespace Sophia.Platform.Patterns
         //--------------------------------------------------------------------------------
         // Delegates
         public delegate void StateMachineEvent();
+        public delegate void StateMachineTransitionEvent(FSMState previousState, FSMState newState);
 
         public StateMachineEvent OnStateMachineStarted;
         public StateMachineEvent OnStateMachineUpdated;
         public StateMachineEvent OnStateMachineReset;
         public StateMachineEvent OnStateMachineStopped;
+        public StateMachineTransitionEvent OnStateMachineTransitioned;
 
         //--------------------------------------------------------------------------------
         // Properties
@@ -24,7 +26,7 @@ namespace Sophia.Platform.Patterns
         {
             get { return state_machine.CurrentState; }
         }
-        public Component Owner
+        public UnityEngine.Object Owner
         {
             get { return owner; }
         }
@@ -33,27 +35,27 @@ namespace Sophia.Platform.Patterns
         // Fields
         private FiniteStateMachine state_machine;
         private readonly List<string> queued_transitions = new List<string>();
-        private readonly Component owner;
+        private readonly UnityEngine.Object owner;
         private bool initialized;
 
         //--------------------------------------------------------------------------------
-        public StateMachine(Component owner = null)
+        public StateMachine(UnityEngine.Object owner = null)
         {
             this.owner = owner;
             this.initialized = false;
         }
 
         //--------------------------------------------------------------------------------
-        public void initialize(State startState, List<State> otherStates)
+        public void initialize(IState startState, List<IState> otherStates)
         {
             state_machine = new FiniteStateMachine();
 
             addStateToStateMachine(startState, true);
-            foreach (State state in otherStates)
+            foreach (IState state in otherStates)
                 addStateToStateMachine(state, false);
 
             addStateTransitions(startState);
-            foreach (State state in otherStates)
+            foreach (IState state in otherStates)
                 addStateTransitions(state);
 
             initialized = true;
@@ -108,6 +110,7 @@ namespace Sophia.Platform.Patterns
         //--------------------------------------------------------------------------------
         public void transition(string eventName)
         {
+
             UnityEngine.Debug.Assert(initialized, "Initialize state machine first");
 
             if (!state_machine.IsRunning)
@@ -116,20 +119,28 @@ namespace Sophia.Platform.Patterns
             }
             else
             {
-                state_machine.triggerEvent(eventName);
+                FSMState current_state = state_machine.CurrentState;
+
+                if(state_machine.triggerEvent(eventName))
+                {
+                    FSMState new_state = state_machine.CurrentState;
+
+                    if (OnStateMachineTransitioned != null)
+                        OnStateMachineTransitioned(current_state, new_state);
+                }
             }
         }
 
         //--------------------------------------------------------------------------------
-        private void addStateToStateMachine(State state, bool startState)
+        private void addStateToStateMachine(IState state, bool startState)
         {
             state.onInitialize(this);
             state_machine.addState(state.Name, startState, state.onUpdate, state.onEnter, state.onExit);
         }
         //--------------------------------------------------------------------------------
-        private void addStateTransitions(State state)
+        private void addStateTransitions(IState state)
         {
-            foreach (Transition transition in state.Transitions)
+            foreach (ITransition transition in state.Transitions)
             {
                 FSMEvent evt = state_machine.registerEvent(transition.EventName);
                 state_machine.addTransition(state.Name, transition.TargetState.Name, evt, state.onGuard, state.onTransition);

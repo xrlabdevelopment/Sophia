@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace Sophia.Platform.Patterns
 {
-    [CreateAssetMenu(menuName = "ScriptableObjects/Transition")]
-    public class Transition : ScriptableObject
+    [CreateAssetMenu(menuName = "ScriptableObjects/Default Transition")]
+    public class Transition : ScriptableObject, ITransition
     {
         //--------------------------------------------------------------------------------
         // Inspector
@@ -20,20 +20,41 @@ namespace Sophia.Platform.Patterns
         //--------------------------------------------------------------------------------
         // Properties
         /// <summary>
+        /// Instance ID of this transition object
+        /// </summary>
+        public int InstanceID
+        {
+            get { return GetInstanceID(); }
+        }
+
+        /// <summary>
+        /// Instance name of this transition object
+        /// </summary>
+        public string InstanceName
+        {
+            get { return name; }
+        }
+
+        /// <summary>
         /// Name of the event that will trigger this transition
         /// </summary>
         public string EventName
         {
             get { return TriggerEventName; }
-            internal set { TriggerEventName = value; }
+            set { TriggerEventName = value; }
         }
 
         //--------------------------------------------------------------------------------
         //The target event we want to transition to.
-        public State TargetState
+        public IState TargetState
         {
             get { return TransitionState; }
-            internal set { TransitionState = value; }
+            set
+            {
+                Debug.Assert((value as State) != null, "Given value was not an actual \" " + TransitionState.GetType().Name + " \" ");
+
+                TransitionState = value as State;
+            }
         }
 
         //--------------------------------------------------------------------------------
