@@ -1,10 +1,9 @@
 using System;
 using NUnit.Framework;
-using Sophia.Core.Gameplay;
+using Sophia.Platform.Gameplay;
 
-namespace Sophia.Tests.Core
+namespace Sophia.Tests.Platform
 {
-    //inventory.cs
     [TestFixture]
     public class testsuit_Inventory
     {
@@ -17,6 +16,8 @@ namespace Sophia.Tests.Core
                 get;
                 private set;
             } = Guid.NewGuid();
+
+            public IInventoryItemView View => throw new NotImplementedException();  // In tests there is not view required
         }
 
         internal class MyOtherInventoryItem : IInventoryItem
@@ -28,6 +29,8 @@ namespace Sophia.Tests.Core
                 get;
                 private set;
             } = Guid.NewGuid();
+
+            public IInventoryItemView View => throw new NotImplementedException();  // In tests there is not view required
         }
 
         //--------------------------------------------------------------------------------------
