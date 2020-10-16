@@ -12,14 +12,13 @@ namespace Sophia.Platform.Patterns
     public interface IState
     {
         string Name { get; }
-        List<ITransition> Transitions { get; set; }
 
         //--------------------------------------------------------------------------------
         /// <summary>
         /// This is only called once per state.
         /// Implement this function to initialize some properties on a certain state.
         /// </summary>
-        void onInitialize(StateMachine stateMachineController);
+        void onInitialize(IStateMachine stateMachineController);
         //--------------------------------------------------------------------------------
         /// <summary>
         /// We enter this state
@@ -50,21 +49,6 @@ namespace Sophia.Platform.Patterns
         /// <param name="state">State to transition to</param>
         /// <returns></returns>
         bool onGuard(FSMEvent trigger, FSMState state);
-
-        //--------------------------------------------------------------------------------
-        /// <summary>
-        /// Add a new transition
-        /// </summary>
-        /// <param name="transition">Transition to be added</param>
-        /// <returns>Return true when the transition is added, false otherwise</returns>
-        bool addTransition(ITransition transition);
-        //--------------------------------------------------------------------------------
-        /// <summary>
-        /// Add new transitions
-        /// </summary>
-        /// <param name="transition">Transitions to be added</param>
-        /// <returns>Return true when the transitions are added, false otherwise</returns>
-        bool addTransitions(List<ITransition> transitions);
     }
 
     /// <summary>
@@ -96,29 +80,10 @@ namespace Sophia.Platform.Patterns
         /// <summary>
         /// List of transitions this state has
         /// </summary>
-        public List<ITransition> Transitions
+        public List<TTransitionType> Transitions
         {
-            get
-            {
-                List<ITransition> transition_interfaces = new List<ITransition>();
-                foreach (TTransitionType t in StateTransitions)
-                    transition_interfaces.Add(t);
-                return transition_interfaces;
-            }
-            set
-            {
-                List<TTransitionType> actual_transitions = new List<TTransitionType>();
-                foreach(ITransition t in value)
-                {
-                    TTransitionType actual_t = t as TTransitionType;
-                    if (actual_t == null)
-                        continue;
-
-                    actual_transitions.Add(actual_t);
-                }
-
-                StateTransitions = actual_transitions;
-            }
+            get { return StateTransitions; }
+            set { StateTransitions = value; }
         }
 
         //--------------------------------------------------------------------------------
@@ -126,7 +91,7 @@ namespace Sophia.Platform.Patterns
         /// This is only called once per state.
         /// Implement this function to initialize some properties on a certain state.
         /// </summary>
-        public abstract void onInitialize(StateMachine stateMachineController);
+        public abstract void onInitialize(IStateMachine stateMachineController);
 
         //--------------------------------------------------------------------------------
         /// <summary>
@@ -150,50 +115,45 @@ namespace Sophia.Platform.Patterns
         public abstract bool onGuard(FSMEvent trigger, FSMState state);
 
         //--------------------------------------------------------------------------------
-        public bool addTransition(ITransition transition)
+        public bool addTransition(TTransitionType transition)
         {
-            if (Transitions.Find(t => t.InstanceID == transition.InstanceID) != null)
+            if (StateTransitions.Find(t => t.InstanceID == transition.InstanceID) != null)
             {
                 Debug.Log("Transition with name: " + transition.InstanceName + "was already added");
                 return false;
             }
 
-            Transitions.Add(transition);
+            StateTransitions.Add(transition);
             return true;
         }
         //--------------------------------------------------------------------------------
-        public bool addTransitions(List<ITransition> transitions)
+        public bool addTransitions(List<TTransitionType> transitions)
         {
-            bool success = true;
-            foreach (ITransition t in transitions)
-            {
-                success &= addTransition(t);
-            }
-
-            return success;
+            StateTransitions = transitions;
+            return true;
         }
 
         //--------------------------------------------------------------------------------
-        public static IState create<TStateType>()
+        public static TStateType create<TStateType>()
             where TStateType : ScriptableObject, IState
         {
-            IState state = ScriptableObject.CreateInstance<TStateType>();
+            BaseState<TTransitionType> state = ScriptableObject.CreateInstance<TStateType>() as BaseState<TTransitionType>;
 
-            state.Transitions = new List<ITransition>();
+            state.Transitions = new List<TTransitionType>();
 
-            return state;
+            return state as TStateType;
         }
         //--------------------------------------------------------------------------------
-        public static IState create<TStateType>(List<ITransition> transitions)
+        public static TStateType create<TStateType>(List<TTransitionType> transitions)
             where TStateType : ScriptableObject, IState
         {
-            IState state = ScriptableObject.CreateInstance<TStateType>();
+            BaseState<TTransitionType> state = ScriptableObject.CreateInstance<TStateType>() as BaseState<TTransitionType>;
 
             state.Transitions = transitions == null
-                ? new List<ITransition>()
+                ? new List<TTransitionType>()
                 : transitions;
 
-            return state;
+            return state as TStateType;
         }
     }
 

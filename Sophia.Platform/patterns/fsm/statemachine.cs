@@ -7,7 +7,8 @@ using UnityEngine;
 
 namespace Sophia.Platform.Patterns
 {
-    public class StateMachine : IStateMachine
+    public class BaseStateMachine<TTransitionType> : IStateMachine
+        where TTransitionType : ScriptableObject, ITransition
     {
         //--------------------------------------------------------------------------------
         // Delegates
@@ -44,7 +45,7 @@ namespace Sophia.Platform.Patterns
         private bool initialized;
 
         //--------------------------------------------------------------------------------
-        public StateMachine(UnityEngine.Object owner = null)
+        public BaseStateMachine(UnityEngine.Object owner = null)
         {
             this.owner = owner;
             this.initialized = false;
@@ -139,13 +140,21 @@ namespace Sophia.Platform.Patterns
         //--------------------------------------------------------------------------------
         private void addStateToStateMachine(IState state, bool startState)
         {
+            BaseState<TTransitionType> base_state = state as BaseState<TTransitionType>;
+            if (base_state == null)
+                return;
+
             state.onInitialize(this);
             state_machine.addState(state.Name, startState, state.onUpdate, state.onEnter, state.onExit);
         }
         //--------------------------------------------------------------------------------
         private void addStateTransitions(IState state)
         {
-            foreach (ITransition transition in state.Transitions)
+            BaseState<TTransitionType> base_state = state as BaseState<TTransitionType>;
+            if (base_state == null)
+                return;
+
+            foreach (ITransition transition in base_state.Transitions)
             {
                 FSMEvent evt = state_machine.registerEvent(transition.EventName);
                 state_machine.addTransition(state.Name, transition.TargetState.Name, evt, state.onGuard, state.onTransition);
@@ -164,5 +173,13 @@ namespace Sophia.Platform.Patterns
                 transition(event_name);
             }
         }
+    }
+
+    public class StateMachine : BaseStateMachine<Transition>
+    {
+        //--------------------------------------------------------------------------------
+        public StateMachine(UnityEngine.Object owner = null)
+            :base(owner)
+        {}
     }
 }
