@@ -31,6 +31,11 @@ namespace Sophia.Platform.Patterns
             get { return owner; }
         }
 
+        public FSMState[] States
+        {
+            get { return state_machine.States.ToArray(); }
+        }
+
         //--------------------------------------------------------------------------------
         // Fields
         private FiniteStateMachine state_machine;
