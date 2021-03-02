@@ -6,7 +6,58 @@ using UnityEngine;
 
 namespace Sophia.Platform.Patterns
 {
-    public abstract class State : ScriptableObject
+    /// <summary>
+    /// Interface that each state should implement
+    /// </summary>
+    public interface IState
+    {
+        string Name { get; }
+
+        //--------------------------------------------------------------------------------
+        /// <summary>
+        /// This is only called once per state.
+        /// Implement this function to initialize some properties on a certain state.
+        /// </summary>
+        void onInitialize(IStateMachine stateMachineController);
+        //--------------------------------------------------------------------------------
+        /// <summary>
+        /// We enter this state
+        /// </summary>
+        void onEnter();
+        //--------------------------------------------------------------------------------
+        /// <summary>
+        /// We update this state
+        /// </summary>
+        void onUpdate();
+        //--------------------------------------------------------------------------------
+        /// <summary>
+        /// We exit this state
+        /// </summary>
+        void onExit();
+        //--------------------------------------------------------------------------------
+        /// <summary>
+        /// Fired when we transition from state towards a different state
+        /// </summary>
+        /// <param name="trigger">Transition trigger</param>
+        /// <param name="state">State to transition to</param>
+        void onTransition(FSMEvent trigger, FSMState state);
+        //--------------------------------------------------------------------------------
+        /// <summary>
+        /// Fired when we guard ourselves against a transition
+        /// </summary>
+        /// <param name="trigger">Transition trigger</param>
+        /// <param name="state">State to transition to</param>
+        /// <returns></returns>
+        bool onGuard(FSMEvent trigger, FSMState state);
+    }
+
+    /// <summary>
+    /// Abstract base state
+    /// Use this if you have a custom transition type
+    /// </summary>
+    /// <typeparam name="TTransitionType"></typeparam>
+    public abstract class BaseState<TTransitionType> : ScriptableObject, IState
+        where TTransitionType : ScriptableObject, ITransition
     {
         //--------------------------------------------------------------------------------
         // Inspector
@@ -14,7 +65,7 @@ namespace Sophia.Platform.Patterns
         /// List of transitions this state has
         /// </summary>
         [SerializeField]
-        private List<Transition> StateTransitions;
+        private List<TTransitionType> StateTransitions;
 
         //--------------------------------------------------------------------------------
         // Properties
@@ -29,10 +80,10 @@ namespace Sophia.Platform.Patterns
         /// <summary>
         /// List of transitions this state has
         /// </summary>
-        public List<Transition> Transitions
+        public List<TTransitionType> Transitions
         {
             get { return StateTransitions; }
-            internal set { StateTransitions = value; }
+            set { StateTransitions = value; }
         }
 
         //--------------------------------------------------------------------------------
@@ -40,7 +91,7 @@ namespace Sophia.Platform.Patterns
         /// This is only called once per state.
         /// Implement this function to initialize some properties on a certain state.
         /// </summary>
-        public abstract void onInitialize(StateMachine stateMachineController);
+        public abstract void onInitialize(IStateMachine stateMachineController);
 
         //--------------------------------------------------------------------------------
         /// <summary>
@@ -64,50 +115,51 @@ namespace Sophia.Platform.Patterns
         public abstract bool onGuard(FSMEvent trigger, FSMState state);
 
         //--------------------------------------------------------------------------------
-        public bool addTransition(Transition transition)
+        public bool addTransition(TTransitionType transition)
         {
-            if (Transitions.Find(t => t.GetInstanceID() == transition.GetInstanceID()) != null)
+            if (StateTransitions.Find(t => t.InstanceID == transition.InstanceID) != null)
             {
-                Debug.Log("Transition with name: " + transition.name + "was already added");
+                Debug.Log("Transition with name: " + transition.InstanceName + "was already added");
                 return false;
             }
 
-            Transitions.Add(transition);
+            StateTransitions.Add(transition);
             return true;
         }
         //--------------------------------------------------------------------------------
-        public bool addTransitions(List<Transition> transitions)
+        public bool addTransitions(List<TTransitionType> transitions)
         {
-            bool success = true;
-            foreach (Transition t in transitions)
-            {
-                success &= addTransition(t);
-            }
-
-            return success;
+            StateTransitions = transitions;
+            return true;
         }
 
         //--------------------------------------------------------------------------------
-        public static State create<T>()
-            where T : State
+        public static TStateType create<TStateType>()
+            where TStateType : ScriptableObject, IState
         {
-            State state = ScriptableObject.CreateInstance<T>();
+            BaseState<TTransitionType> state = ScriptableObject.CreateInstance<TStateType>() as BaseState<TTransitionType>;
 
-            state.Transitions = new List<Transition>();
+            state.Transitions = new List<TTransitionType>();
 
-            return state;
+            return state as TStateType;
         }
         //--------------------------------------------------------------------------------
-        public static State create<T>(List<Transition> transitions)
-            where T : State
+        public static TStateType create<TStateType>(List<TTransitionType> transitions)
+            where TStateType : ScriptableObject, IState
         {
-            State state = ScriptableObject.CreateInstance<T>();
+            BaseState<TTransitionType> state = ScriptableObject.CreateInstance<TStateType>() as BaseState<TTransitionType>;
 
             state.Transitions = transitions == null
-                ? new List<Transition>()
+                ? new List<TTransitionType>()
                 : transitions;
 
-            return state;
+            return state as TStateType;
         }
     }
+
+    /// <summary>
+    /// Default state class
+    /// Using default transition objects
+    /// </summary>
+    public abstract class State : BaseState<Transition> { }
 }

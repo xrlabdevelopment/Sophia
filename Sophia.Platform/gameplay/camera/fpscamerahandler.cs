@@ -1,4 +1,3 @@
-using Sophia.Core.Patterns;
 using UnityEngine;
 
 namespace Sophia.Platform.Gameplay

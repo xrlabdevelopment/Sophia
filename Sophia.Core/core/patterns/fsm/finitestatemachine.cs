@@ -233,7 +233,7 @@ namespace Sophia.Core.Patterns
         /// target state.
         /// </summary>
         /// <param name="eventName">The event name.</param>
-        public void triggerEvent(string eventName)
+        public bool triggerEvent(string eventName)
         {
             if (current_state == null)
                 throw new InvalidOperationException("No current state (you may need to call Start)");
@@ -243,6 +243,8 @@ namespace Sophia.Core.Patterns
             FSMState newState = current_state.triggerEvent(registered_events[eventName]);
             if (newState != null)
                 current_state = newState;
+
+            return newState != null;    // Transition occured
         }
     }
 }

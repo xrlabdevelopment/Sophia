@@ -28,6 +28,11 @@ namespace Sophia.Core.Patterns
             get { return name; }
         }
 
+        public Dictionary<FSMEvent, List<FSMTransition>> Transitions
+        {
+            get { return transitions; }
+        }
+
         //-------------------------------------------------------------------------------------
         /// <summary>
         /// Create a new state

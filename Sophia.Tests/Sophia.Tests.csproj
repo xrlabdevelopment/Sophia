@@ -18,4 +18,10 @@
     <ProjectReference Include="..\Sophia.Platform\Sophia.Platform.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Libraries\Unity\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

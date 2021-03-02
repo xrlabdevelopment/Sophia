@@ -51,5 +51,16 @@ namespace Sophia.Core.Events
         {
             sender = s;
         }
+
+        //-------------------------------------------------------------------------------------
+        /// <summary>
+        /// Helper function to check if an event is consumed
+        /// </summary>
+        /// <param name="evt">The event we need to check</param>
+        /// <returns>Return true if it is consumed, false if it is not</returns>
+        public static bool isConsumed(IEvent evt)
+        {
+            return evt is IConsumable && evt.Handled;
+        }
     }
 }

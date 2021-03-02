@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using Sophia.Core.Extensions;
 
 namespace Sophia.Core.Utilities
 {
@@ -33,6 +32,11 @@ namespace Sophia.Core.Utilities
                 : 0;
         }
 
+        //-------------------------------------------------------------------------------------
+        public BitField()
+        {
+            bit_field = 0;
+        }
         //-------------------------------------------------------------------------------------
         public BitField(int value)
         {
@@ -146,9 +150,13 @@ namespace Sophia.Core.Utilities
             return (field.bit_field | value);
         }
         //-------------------------------------------------------------------------------------
-        public static int operator |(BitField field, BitField other)
+        public static BitField operator |(BitField field, BitField other)
         {
-            return (field.bit_field | other.bit_field);
+            BitField new_field = new BitField();
+
+            new_field.bit_field = (field.bit_field | other.bit_field);
+
+            return new_field;
         }
     }
 }
